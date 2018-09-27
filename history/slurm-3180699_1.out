@@ -1,0 +1,38 @@
+[ERROR] - Cannot open file 003235_Gig9_S28_R1_filtered.fastq.gz
+[ERROR] - Cannot open file 003235_Gig9_S28_R2_filtered.fastq.gz
+ ____  _____    _    ____ 
+|  _ \| ____|  / \  |  _ \
+| |_) |  _|   / _ \ | |_) |
+|  __/| |___ / ___ \|  _ <
+|_|   |_____/_/   \_\_| \_\
+
+PEAR v0.9.10 [May 30, 2016]
+
+Citation - PEAR: a fast and accurate Illumina Paired-End reAd mergeR
+Zhang et al (2014) Bioinformatics 30(5): 614-620 | doi:10.1093/bioinformatics/btt593
+
+Forward reads file.................: 003235_Gig9_S28_R1_filtered.fastq.gz
+Reverse reads file.................: 003235_Gig9_S28_R2_filtered.fastq.gz
+PHRED..............................: 33
+Using empirical frequencies........: YES
+Statistical method.................: OES
+Maximum assembly length............: 999999
+Minimum assembly length............: 50
+p-value............................: 0.010000
+Quality score threshold (trimming).: 20
+Minimum read size after trimming...: 1
+Maximal ratio of uncalled bases....: 1.000000
+Minimum overlap....................: 10
+Scoring method.....................: Scaled score
+Threads............................: 4
+
+/var/spool/slurmd/job3180699/slurm_script: line 24: bowtei2-build: command not found
+(ERR): "amplicons" does not exist or is not a Bowtie 2 index
+Exiting now ...
+[E::hts_open_format] Failed to open file Gig9.sam
+samtools view: failed to open "Gig9.sam" for reading: No such file or directory
+[bam_rmdup] input SAM does not have header. Abort!
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+<mpileup> Set max per-file depth to 8000
+[bam_fillmd] input SAM does not have header. Abort!

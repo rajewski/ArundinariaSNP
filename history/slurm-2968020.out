@@ -1,0 +1,11 @@
+Warning message:
+output directory ' H-2D_screening.mapped.reduced ' already exists, deleting directory  
+Using 16 processors
+Joining reads with flash
+Reading merged read files:
+ H-2D_screening.mapped.reduced/flash.extendedFrags.fastq.gz 
+ H-2D_screening.mapped.reduced/flash.notCombined_1.fastq.gz 
+ H-2D_screening.mapped.reduced/flash.notCombined_2.fastq.gz
+Error in FUN(X[[i]], ...) : subscript out of bounds
+Calls: sapply -> sapply -> lapply
+Execution halted

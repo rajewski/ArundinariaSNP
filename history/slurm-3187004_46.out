@@ -1,0 +1,185 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening JT182.filtered.ACB1ysxVOeRF/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening JT182.filtered.ACB1ysxVOeRF/spl_pipe for write.
+[M::process] read 30606 sequences (3711024 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 13372, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (88, 143, 213)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 463)
+[M::mem_pestat] mean and std.dev: (157.63, 91.02)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 588)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 30606 reads in 3.133 CPU sec, 0.805 real sec
+samblaster: Loaded 5 header sequence entries.
+[main] Version: 0.7.12-r1039
+samblaster: Output 85 discordant read pairs to JT182.filtered.ACB1ysxVOeRF/disc_pipe
+[main] CMD:samblaster: Output 24 split reads to JT182.filtered.ACB1ysxVOeRF/spl_pipe
+ /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 4 -R @RG\tID:id\tSM:JT182\tLB:Lib references.fasta data/003280_JT182_S73_R1_filtered.fastq.gz data/003280_JT182_S73_R2_filtered.fastq.gzsamblaster: Marked 2895 of 15303 (18.92%) read ids as duplicates using 1328k memory in 
+[main] Real time: 3.913 sec; CPU: 3.304 sec
+0.066S CPU seconds and 4S wall time.
+Done
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R references.fasta -I results/JT182.filtered.bam -O results/JT182.g.vcf -ERC GVCF
+22:07:54.930 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+22:07:55.635 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:07:55.638 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.0.8.1
+22:07:55.638 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+22:07:55.640 INFO  HaplotypeCaller - Executing as arajewski@c35 on Linux v3.10.0-693.11.6.el7.x86_64 amd64
+22:07:55.640 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+22:07:55.641 INFO  HaplotypeCaller - Start Date/Time: September 9, 2018 10:07:54 PM PDT
+22:07:55.641 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:07:55.641 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:07:55.642 INFO  HaplotypeCaller - HTSJDK Version: 2.16.0
+22:07:55.642 INFO  HaplotypeCaller - Picard Version: 2.18.7
+22:07:55.642 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+22:07:55.642 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+22:07:55.642 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+22:07:55.643 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+22:07:55.643 INFO  HaplotypeCaller - Deflater: IntelDeflater
+22:07:55.643 INFO  HaplotypeCaller - Inflater: IntelInflater
+22:07:55.643 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+22:07:55.643 INFO  HaplotypeCaller - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+22:07:55.653 INFO  HaplotypeCaller - Initializing engine
+22:07:56.382 INFO  HaplotypeCaller - Done initializing engine
+22:07:56.389 INFO  HaplotypeCallerEngine - Tool is in reference confidence mode and the annotation, the following changes will be made to any specified annotations: 'StrandBiasBySample' will be enabled. 'ChromosomeCounts', 'FisherStrand', 'StrandOddsRatio' and 'QualByDepth' annotations have been disabled
+22:07:56.395 INFO  HaplotypeCallerEngine - Standard Emitting and Calling confidence set to 0.0 for reference-model confidence output
+22:07:56.395 INFO  HaplotypeCallerEngine - All sites annotated with PLs forced to true for reference-model confidence output
+22:07:56.415 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_utils.so
+22:07:56.419 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+22:07:56.484 WARN  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+22:07:56.485 INFO  IntelPairHmm - Available threads: 4
+22:07:56.485 INFO  IntelPairHmm - Requested threads: 4
+22:07:56.485 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+22:07:56.574 INFO  ProgressMeter - Starting traversal
+22:07:56.575 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+22:08:41.725 INFO  ProgressMeter -             matK:276              0.8                    10             13.3
+22:09:11.082 INFO  HaplotypeCaller - 5818 read(s) filtered by: ((((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter) AND GoodCigarReadFilter) AND WellformedReadFilter)
+  5818 read(s) filtered by: (((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter) AND GoodCigarReadFilter)
+      5818 read(s) filtered by: ((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter)
+          5818 read(s) filtered by: (((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter)
+              5818 read(s) filtered by: ((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter)
+                  27 read(s) filtered by: (((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter)
+                      27 read(s) filtered by: ((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter)
+                          27 read(s) filtered by: (MappingQualityReadFilter AND MappingQualityAvailableReadFilter)
+                              27 read(s) filtered by: MappingQualityReadFilter 
+                  5791 read(s) filtered by: NotDuplicateReadFilter 
+
+22:09:11.084 INFO  ProgressMeter -             trnL:601              1.2                    26             20.9
+22:09:11.084 INFO  ProgressMeter - Traversal complete. Processed 26 total regions in 1.2 minutes.
+22:09:11.095 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.37907266700000003
+22:09:11.095 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 43.383534835000006
+22:09:11.096 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 6.14 sec
+22:09:11.096 INFO  HaplotypeCaller - Shutting down engine
+[September 9, 2018 10:09:11 PM PDT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 1.27 minutes.
+Runtime.totalMemory()=2921857024
+This is WhatsHap 0.17 running under Python 3.6.6
+Working on 1 samples from 1 family
+======== Working on chromosome 'WXY'
+---- Processing individual JT182
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'JT182'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+======== Working on chromosome 'matK'
+---- Processing individual JT182
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'JT182'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+======== Working on chromosome 'psaA'
+---- Processing individual JT182
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'JT182'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+======== Working on chromosome 'trnL'
+---- Processing individual JT182
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'JT182'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+======== Working on chromosome 'LFY'
+---- Processing individual JT182
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'JT182'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+
+== SUMMARY ==
+Maximum memory usage: 0.042 GB
+Time spent reading BAM/CRAM:                    0.5 s
+Time spent parsing VCF:                         0.0 s
+Time spent selecting reads:                     0.0 s
+Time spent phasing:                             0.0 s
+Time spent writing VCF:                         0.0 s
+Time spent finding components:                  0.0 s
+Time spent on rest:                             0.0 s
+Total elapsed time:                             0.6 s

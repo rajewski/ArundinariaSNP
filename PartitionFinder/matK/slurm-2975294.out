@@ -1,0 +1,53 @@
+miniconda2/4.4.10(23):ERROR:150: Module 'miniconda2/4.4.10' conflicts with the currently loaded module(s) 'python/2.7.12'
+miniconda2/4.4.10(23):ERROR:102: Tcl command execution failed: conflict    python
+
+INFO     | 2018-08-13 11:37:33,248 | ------------- PartitionFinder 2.1.1 -----------------
+INFO     | 2018-08-13 11:37:33,248 | You have Python version 2.7
+INFO     | 2018-08-13 11:37:33,249 | Command-line arguments used: /opt/linux/centos/7.x/x86_64/pkgs/PartitionFinder/2.1.1/PartitionFinder.py -p 16 ./
+INFO     | 2018-08-13 11:37:33,249 | ------------- Configuring Parameters -------------
+INFO     | 2018-08-13 11:37:33,249 | Setting datatype to 'DNA'
+INFO     | 2018-08-13 11:37:33,249 | Setting phylogeny program to 'phyml'
+INFO     | 2018-08-13 11:37:33,249 | Program path is here /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/PartitionFinder/2.1.1/programs
+INFO     | 2018-08-13 11:37:33,250 | Setting working folder to: '/bigdata/littlab/arajewski/Arundinaria/PartitionFinder'
+INFO     | 2018-08-13 11:37:33,252 | Loading configuration at './partition_finder.cfg'
+INFO     | 2018-08-13 11:37:33,273 | Setting 'alignment' to 'matK.phy'
+INFO     | 2018-08-13 11:37:33,273 | Setting 'branchlengths' to 'linked'
+INFO     | 2018-08-13 11:37:33,274 | You set 'models' to: all
+INFO     | 2018-08-13 11:37:33,314 | This analysis will use the following 56 models of molecular evolution
+INFO     | 2018-08-13 11:37:33,315 | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2018-08-13 11:37:33,315 | Setting 'model_selection' to 'aicc'
+INFO     | 2018-08-13 11:37:33,317 | Setting 'search' to 'greedy'
+INFO     | 2018-08-13 11:37:33,317 | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2018-08-13 11:37:33,317 | Looking for alignment file './matK.phy'...
+INFO     | 2018-08-13 11:37:33,334 | Beginning Analysis
+INFO     | 2018-08-13 11:37:33,436 | Reading alignment file './matK.phy'
+INFO     | 2018-08-13 11:37:33,482 | Reading alignment file './analysis/start_tree/source.phy'
+INFO     | 2018-08-13 11:37:33,503 | Starting tree will be estimated from the data.
+INFO     | 2018-08-13 11:37:33,521 | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2018-08-13 11:37:33,522 | Using a separate GTR+G model for each data block
+INFO     | 2018-08-13 11:50:39,309 | Estimating GTR+G branch lengths on ML tree using all partitions
+INFO     | 2018-08-13 11:50:47,583 | ML topology estimation finished
+INFO     | 2018-08-13 11:50:47,714 | Performing Greedy Analysis
+INFO     | 2018-08-13 11:50:47,715 |    *** Analysing starting scheme ***
+INFO     | 2018-08-13 11:51:59,086 |       Finished subset 1/1, 100.00 percent done
+INFO     | 2018-08-13 11:51:59,089 |    Greedy algorithm finished after 1 steps
+INFO     | 2018-08-13 11:51:59,089 |    Best scoring scheme is scheme start_scheme, with aicc score of 13948.898
+INFO     | 2018-08-13 11:51:59,090 |    Information on best scheme is here: ./analysis/best_scheme.txt
+INFO     | 2018-08-13 11:51:59,107 |    
+INFO     | 2018-08-13 11:51:59,107 |    
+INFO     | 2018-08-13 11:51:59,108 |    *Citations for this analysis*
+INFO     | 2018-08-13 11:51:59,108 |    -----------------------------
+INFO     | 2018-08-13 11:51:59,108 |    
+INFO     | 2018-08-13 11:51:59,108 |    If you use this analysis in your published work, please cite the following papers on which your analysis relied.
+INFO     | 2018-08-13 11:51:59,108 |    
+INFO     | 2018-08-13 11:51:59,108 |    For the version of PartitionFinder you used, please cite:
+INFO     | 2018-08-13 11:51:59,116 |    Lanfear, R., Frandsen, P. B., Wright, A. M., Senfeld, T., Calcott, B. (2016) PartitionFinder 2: new methods for selecting partitioned models of evolution formolecular and morphological phylogenetic analyses. Molecular biology and evolution. DOI: dx.doi.org/10.1093/molbev/msw260
+INFO     | 2018-08-13 11:51:59,116 |    
+INFO     | 2018-08-13 11:51:59,117 |    For the greedy algorithm you used, please cite:
+INFO     | 2018-08-13 11:51:59,117 |    Lanfear, R., Calcott, B., Ho, S. Y., & Guindon, S. (2012). PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses. Molecular biology and evolution, 29(6), 1695-1701.
+INFO     | 2018-08-13 11:51:59,117 |    
+INFO     | 2018-08-13 11:51:59,117 |    Your analysis also used PhyML, so please cite:
+INFO     | 2018-08-13 11:51:59,117 |    Guindon, S., Dufayard, J. F., Lefort, V., Anisimova, M., Hordijk, W., & Gascuel, O. (2010). New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. Systematic biology, 59(3), 307-321.
+INFO     | 2018-08-13 11:51:59,117 |    
+INFO     | 2018-08-13 11:51:59,121 | Total processing time: 0:14:26 (h:m:s)
+INFO     | 2018-08-13 11:51:59,121 | Processing complete.

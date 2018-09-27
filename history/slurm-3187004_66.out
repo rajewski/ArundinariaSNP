@@ -1,0 +1,63 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening L111.filtered.jsRF1J65Xs4W/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[E::main_mem] fail to open file `data/003300_L111_S93_R1_filtered.fastq.gz'.
+samblaster: Opening L111.filtered.jsRF1J65Xs4W/spl_pipe for write.
+samblaster: Missing header on input sam file.  Exiting.
+
+Done
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R references.fasta -I results/L111.filtered.bam -O results/L111.g.vcf -ERC GVCF
+22:08:06.764 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+22:08:07.250 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:08:07.252 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.0.8.1
+22:08:07.253 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+22:08:07.253 INFO  HaplotypeCaller - Executing as arajewski@c05 on Linux v3.10.0-693.11.6.el7.x86_64 amd64
+22:08:07.253 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+22:08:07.254 INFO  HaplotypeCaller - Start Date/Time: September 9, 2018 10:08:06 PM PDT
+22:08:07.254 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:08:07.254 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:08:07.255 INFO  HaplotypeCaller - HTSJDK Version: 2.16.0
+22:08:07.255 INFO  HaplotypeCaller - Picard Version: 2.18.7
+22:08:07.255 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+22:08:07.255 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+22:08:07.255 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+22:08:07.255 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+22:08:07.256 INFO  HaplotypeCaller - Deflater: IntelDeflater
+22:08:07.256 INFO  HaplotypeCaller - Inflater: IntelInflater
+22:08:07.256 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+22:08:07.256 INFO  HaplotypeCaller - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+22:08:07.256 INFO  HaplotypeCaller - Initializing engine
+22:08:07.969 INFO  HaplotypeCaller - Shutting down engine
+[September 9, 2018 10:08:07 PM PDT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=2549612544
+***********************************************************************
+
+A USER ERROR has occurred: Input files reference and reads have incompatible contigs: No overlapping contigs found.
+  reference contigs = [WXY, matK, psaA, trnL, LFY]
+  reads contigs = []
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.
+This is WhatsHap 0.17 running under Python 3.6.6
+Traceback (most recent call last):
+  File "/rhome/arajewski/.conda/envs/pythree/bin/whatshap", line 11, in <module>
+    load_entry_point('whatshap==0.17', 'console_scripts', 'whatshap')()
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/__main__.py", line 83, in main
+    module.main(args)
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/phase.py", line 1089, in main
+    run_whatshap(**vars(args))
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/phase.py", line 542, in run_whatshap
+    numeric_sample_ids, mapq_threshold=mapping_quality))
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/variants.py", line 47, in __init__
+    self._reader = SampleBamReader(paths[0], reference=reference)
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/bam.py", line 53, in __init__
+    self._samfile = pysam.AlignmentFile(path, reference_filename=reference)
+  File "pysam/libcalignmentfile.pyx", line 734, in pysam.libcalignmentfile.AlignmentFile.__cinit__
+  File "pysam/libcalignmentfile.pyx", line 983, in pysam.libcalignmentfile.AlignmentFile._open
+ValueError: file has no sequences defined (mode='r') - is it SAM/BAM format? Consider opening with check_sq=False

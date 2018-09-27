@@ -1,0 +1,23 @@
+Warning: editdist library not loaded, Insertion/Deletion detection in barcodes and primers will not be performed
+Warning: trim library not loaded, trimming using python
+Error retrieving github version_number
+19932 reads; of these:
+  19932 (100.00%) were paired; of these:
+    5536 (27.77%) aligned concordantly 0 times
+    14145 (70.97%) aligned concordantly exactly 1 time
+    251 (1.26%) aligned concordantly >1 times
+    ----
+    5536 pairs aligned concordantly 0 times; of these:
+      589 (10.64%) aligned discordantly 1 time
+    ----
+    4947 pairs aligned 0 times concordantly or discordantly; of these:
+      9894 mates make up the pairs; of these:
+        9792 (98.97%) aligned 0 times
+        98 (0.99%) aligned exactly 1 time
+        4 (0.04%) aligned >1 times
+75.44% overall alignment rate
+Cleaning up.
+bowtie2-build data/references.fasta data/references.fasta
+Successfully indexed data/references.fasta
+bowtie2 -I 0 -X 1500 --sensitive-local -p 6 -x data/references.fasta -1 <(gunzip -c data/003237_H-2D_S30_R1_filtered.fastq.gz| sed 's, ,_:_,g') -2 <(gunzip -c data/003237_H-2D_S30_R2_filtered.fastq.gz| sed 's, ,_:_,g')
+Records processed: 39864, PE in ref: 15085, SE in ref: 0

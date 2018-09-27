@@ -1,0 +1,188 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening Gig9.filtered.yxUAP0Xcrrb1/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening Gig9.filtered.yxUAP0Xcrrb1/spl_pipe for write.
+[M::process] read 35636 sequences (4091744 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (3, 16346, 0, 3)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (77, 125, 191)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 419)
+[M::mem_pestat] mean and std.dev: (140.02, 80.51)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 533)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 35636 reads in 3.707 CPU sec, 3.706 real sec
+samblaster: Loaded 5 header sequence entries.
+samblaster: Output 97 discordant read pairs to Gig9.filtered.yxUAP0Xcrrb1/disc_pipe
+[main] Version: 0.7.12-r1039
+samblaster: Output 30 split reads to Gig9.filtered.yxUAP0Xcrrb1/spl_pipe
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1samblaster: Marked 6721 of 17818 (37.72%) read ids as duplicates -R using 1332k memory in  @RG\tID:id\tSM:Gig9\tLB:Lib0.082S references.fasta CPU seconds and  data/003235_Gig9_S28_R1_filtered.fastq.gz4S data/003235_Gig9_S28_R2_filtered.fastq.gz wall time.
+
+[main] Real time: 4.019 sec; CPU: 3.888 sec
+Done
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R references.fasta -I Gig9.filtered.bam -O Gig9.gvcf -ERC GVCF
+21:30:23.457 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+21:30:24.091 INFO  HaplotypeCaller - ------------------------------------------------------------
+21:30:24.093 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.0.8.1
+21:30:24.093 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+21:30:24.094 INFO  HaplotypeCaller - Executing as arajewski@c01 on Linux v3.10.0-693.11.6.el7.x86_64 amd64
+21:30:24.095 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+21:30:24.095 INFO  HaplotypeCaller - Start Date/Time: September 9, 2018 9:30:23 PM PDT
+21:30:24.095 INFO  HaplotypeCaller - ------------------------------------------------------------
+21:30:24.095 INFO  HaplotypeCaller - ------------------------------------------------------------
+21:30:24.096 INFO  HaplotypeCaller - HTSJDK Version: 2.16.0
+21:30:24.096 INFO  HaplotypeCaller - Picard Version: 2.18.7
+21:30:24.097 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+21:30:24.097 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+21:30:24.097 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+21:30:24.097 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+21:30:24.097 INFO  HaplotypeCaller - Deflater: IntelDeflater
+21:30:24.097 INFO  HaplotypeCaller - Inflater: IntelInflater
+21:30:24.097 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+21:30:24.098 INFO  HaplotypeCaller - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+21:30:24.104 INFO  HaplotypeCaller - Initializing engine
+21:30:24.887 INFO  HaplotypeCaller - Done initializing engine
+21:30:24.894 INFO  HaplotypeCallerEngine - Tool is in reference confidence mode and the annotation, the following changes will be made to any specified annotations: 'StrandBiasBySample' will be enabled. 'ChromosomeCounts', 'FisherStrand', 'StrandOddsRatio' and 'QualByDepth' annotations have been disabled
+21:30:24.900 INFO  HaplotypeCallerEngine - Standard Emitting and Calling confidence set to 0.0 for reference-model confidence output
+21:30:24.900 INFO  HaplotypeCallerEngine - All sites annotated with PLs forced to true for reference-model confidence output
+21:30:24.922 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_utils.so
+21:30:24.925 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+21:30:24.996 WARN  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+21:30:24.997 INFO  IntelPairHmm - Available threads: 4
+21:30:24.997 INFO  IntelPairHmm - Requested threads: 4
+21:30:24.997 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+21:30:25.018 WARN  GATKVariantContextUtils - Can't determine output variant file format from output file extension "gvcf". Defaulting to VCF.
+21:30:25.111 INFO  ProgressMeter - Starting traversal
+21:30:25.112 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+21:30:50.754 INFO  ProgressMeter -              WXY:660              0.4                    10             23.4
+21:31:08.829 INFO  ProgressMeter -               psaA:1              0.7                    20             27.4
+21:31:36.915 INFO  ProgressMeter -              LFY:303              1.2                    30             25.1
+21:31:39.518 INFO  HaplotypeCaller - 13482 read(s) filtered by: ((((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter) AND GoodCigarReadFilter) AND WellformedReadFilter)
+  13482 read(s) filtered by: (((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter) AND GoodCigarReadFilter)
+      13482 read(s) filtered by: ((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter)
+          13482 read(s) filtered by: (((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter)
+              13482 read(s) filtered by: ((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter)
+                  38 read(s) filtered by: (((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter)
+                      38 read(s) filtered by: ((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter)
+                          38 read(s) filtered by: (MappingQualityReadFilter AND MappingQualityAvailableReadFilter)
+                              38 read(s) filtered by: MappingQualityReadFilter 
+                  13444 read(s) filtered by: NotDuplicateReadFilter 
+
+21:31:39.518 INFO  ProgressMeter -              LFY:303              1.2                    31             25.0
+21:31:39.519 INFO  ProgressMeter - Traversal complete. Processed 31 total regions in 1.2 minutes.
+21:31:39.536 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.104879387
+21:31:39.536 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 44.931416052
+21:31:39.537 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 5.93 sec
+21:31:39.537 INFO  HaplotypeCaller - Shutting down engine
+[September 9, 2018 9:31:39 PM PDT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 1.27 minutes.
+Runtime.totalMemory()=3057647616
+This is WhatsHap 0.17 running under Python 3.6.6
+Working on 1 samples from 1 family
+======== Working on chromosome 'WXY'
+---- Processing individual Gig9
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'Gig9'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+======== Working on chromosome 'matK'
+---- Processing individual Gig9
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'Gig9'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+======== Working on chromosome 'psaA'
+---- Processing individual Gig9
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'Gig9'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+======== Working on chromosome 'trnL'
+---- Processing individual Gig9
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'Gig9'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+======== Working on chromosome 'LFY'
+---- Processing individual Gig9
+Using maximum coverage per sample of 20X
+Number of variants skipped due to missing genotypes: 0
+Number of remaining heterozygous variants: 0
+Reading alignments for sample 'Gig9'and detecting alleles ...
+Found 0 reads covering 0 variants
+Kept 0 reads that cover at least two variants each
+Reducing coverage to at most 20X by selecting most informative reads ...
+Selected 0 reads covering 0 variants
+Best-case phasing would result in 0 non-singleton phased blocks (0 in total)
+... after read selection: 0 non-singleton phased blocks (0 in total)
+Variants covered by at least one phase-informative read in at least one individual after read selection: 0
+Phasing 1 sample by solving the MEC problem ...
+MEC cost: 0
+No. of phased blocks: 0
+======== Writing VCF
+Done writing VCF
+
+== SUMMARY ==
+Maximum memory usage: 0.034 GB
+Time spent reading BAM/CRAM:                    0.6 s
+Time spent parsing VCF:                         0.0 s
+Time spent selecting reads:                     0.0 s
+Time spent phasing:                             0.0 s
+Time spent writing VCF:                         0.0 s
+Time spent finding components:                  0.0 s
+Time spent on rest:                             0.0 s
+Total elapsed time:                             0.7 s

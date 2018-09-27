@@ -1,0 +1,83 @@
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.00 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.00 sec
+[main] Version: 0.7.12-r1039
+[main] CMD: bwa index references.fasta
+[main] Real time: 0.048 sec; CPU: 0.007 sec
+/var/spool/slurmd/job3186943/slurm_script: line 26: [: missing `]'
+Sourcing executables from /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/speedseq.config ...
+
+usage:   speedseq align [options] <reference.fa> <in1.fq> [in2.fq]
+
+positional args:
+         reference.fa
+                  fasta file (indexed with bwa)
+         in1.fq   paired-end fastq file. if -p flag is used then expected to be
+                    an interleaved paired-end fastq file, and in2.fq may be omitted.
+                    (can be gzipped)
+         in2.fq   paired-end fastq file. (can be gzipped)
+
+alignment options:
+         -o STR   output prefix [in1.fq]
+         -R       read group header line such as "@RG\tID:id\tSM:samplename\tLB:lib" (required)
+         -p       first fastq file consists of interleaved paired-end sequences
+         -t INT   threads [1]
+         -T DIR   temp directory [./output_prefix.XXXXXXXXXXXX]
+         -I FLOAT[,FLOAT[,INT[,INT]]]
+                  specify the mean, standard deviation (10% of the mean if absent), max
+                    (4 sigma from the mean if absent) and min of the insert size distribution.
+                    FR orientation only. [inferred]
+
+samblaster options:
+         -i       include duplicates in splitters and discordants
+         -c INT   maximum number of split alignments for a read to be included in splitter file [2]
+         -m INT   minimum non-overlapping base pairs between two alignments for a read to be included in splitter file [20]
+
+sambamba options:
+         -M       amount of memory in GB to be used for sorting [20]
+
+global options:
+         -K FILE  path to speedseq.config file (default: same directory as speedseq)
+         -v       verbose
+         -h       show this message
+
+Error: bwa executable not found. Please set path in /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/speedseq.config file
+
+[E::hts_open_format] Failed to open file Gig9.filtered.sam
+samtools view: failed to open "Gig9.filtered.sam" for reading: No such file or directory
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R references.fasta -I Gig9.filtered.sort.bam -O Gig9.gvcf -ERC GVCF
+19:45:05.323 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+19:45:05.856 INFO  HaplotypeCaller - ------------------------------------------------------------
+19:45:05.860 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.0.8.1
+19:45:05.860 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+19:45:05.861 INFO  HaplotypeCaller - Executing as arajewski@c01 on Linux v3.10.0-693.11.6.el7.x86_64 amd64
+19:45:05.861 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+19:45:05.861 INFO  HaplotypeCaller - Start Date/Time: September 9, 2018 7:45:05 PM PDT
+19:45:05.861 INFO  HaplotypeCaller - ------------------------------------------------------------
+19:45:05.862 INFO  HaplotypeCaller - ------------------------------------------------------------
+19:45:05.862 INFO  HaplotypeCaller - HTSJDK Version: 2.16.0
+19:45:05.862 INFO  HaplotypeCaller - Picard Version: 2.18.7
+19:45:05.869 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+19:45:05.869 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+19:45:05.870 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+19:45:05.870 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+19:45:05.870 INFO  HaplotypeCaller - Deflater: IntelDeflater
+19:45:05.870 INFO  HaplotypeCaller - Inflater: IntelInflater
+19:45:05.870 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+19:45:05.870 INFO  HaplotypeCaller - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+19:45:05.870 INFO  HaplotypeCaller - Initializing engine
+19:45:05.890 INFO  HaplotypeCaller - Shutting down engine
+[September 9, 2018 7:45:05 PM PDT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2499805184
+***********************************************************************
+
+A USER ERROR has occurred: Fasta dict file file:///bigdata/littlab/arajewski/Arundinaria/references.dict for reference file:///bigdata/littlab/arajewski/Arundinaria/references.fasta does not exist. Please see http://gatkforums.broadinstitute.org/discussion/1601/how-can-i-prepare-a-fasta-file-to-use-as-reference for help creating it.
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.
+/var/spool/slurmd/job3186943/slurm_script: line 45: whatshap: command not found
