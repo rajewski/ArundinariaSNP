@@ -1,0 +1,96 @@
+INFO     | 2018-08-13 11:23:11,136 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2018-08-13 11:23:11,142 | config     | Setting 'alignment' to 'matK.phy'
+INFO     | 2018-08-13 11:23:11,143 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2018-08-13 11:23:11,143 | parser     | You set 'models' to: all
+INFO     | 2018-08-13 11:23:11,193 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2018-08-13 11:23:11,194 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2018-08-13 11:23:11,194 | config     | Setting 'model_selection' to 'aicc'
+ERROR    | 2018-08-13 11:23:11,194 | parser     | There was a problem loading your .cfg file, please check and try again
+ERROR    | 2018-08-13 11:23:11,195 | parser     | Expected W:(ABCD...) (at char 191), (line:15, col:1)
+INFO     | 2018-08-13 11:23:11,195 | parser     | The line causing the problem is this: '[schemes]'. Please check that line, and make sure it appears in the right place in the config file. If it looks OK, try double-checking the semi-colons on other lines
+ERROR    | 2018-08-13 11:23:11,195 | main       | Failed to run. See previous errors.
+INFO     | 2018-08-13 11:28:01,747 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2018-08-13 11:28:01,753 | config     | Setting 'alignment' to 'matK.phy'
+INFO     | 2018-08-13 11:28:01,753 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2018-08-13 11:28:01,753 | parser     | You set 'models' to: all
+INFO     | 2018-08-13 11:28:01,769 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2018-08-13 11:28:01,769 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2018-08-13 11:28:01,769 | config     | Setting 'model_selection' to 'aicc'
+ERROR    | 2018-08-13 11:28:01,770 | parser     | There was a problem loading your .cfg file, please check and try again
+ERROR    | 2018-08-13 11:28:01,770 | parser     | Expected ";" (at char 205), (line:16, col:1)
+INFO     | 2018-08-13 11:28:01,770 | parser     | The line causing the problem is this: '[schemes]'. Please check that line, and make sure it appears in the right place in the config file. If it looks OK, try double-checking the semi-colons on other lines
+ERROR    | 2018-08-13 11:28:01,770 | main       | Failed to run. See previous errors.
+INFO     | 2018-08-13 11:30:57,963 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2018-08-13 11:30:57,969 | config     | Setting 'alignment' to 'matK.phy'
+INFO     | 2018-08-13 11:30:57,970 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2018-08-13 11:30:57,970 | parser     | You set 'models' to: all
+INFO     | 2018-08-13 11:30:58,030 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2018-08-13 11:30:58,030 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2018-08-13 11:30:58,034 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2018-08-13 11:30:58,036 | config     | Setting 'search' to 'greedy'
+INFO     | 2018-08-13 11:30:58,037 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2018-08-13 11:30:58,037 | config     | Looking for alignment file './matK.phy'...
+INFO     | 2018-08-13 11:30:58,037 | threadpool | Using 16 cpus
+INFO     | 2018-08-13 11:30:58,037 | analysis   | Beginning Analysis
+INFO     | 2018-08-13 11:30:58,056 | alignment  | Reading alignment file './matK.phy'
+ERROR    | 2018-08-13 11:30:58,065 | alignment  | Line 2: Line should be species and bases separated by whitespace
+ERROR    | 2018-08-13 11:30:58,072 | main       | Failed to run. See previous errors.
+INFO     | 2018-08-13 11:33:32,532 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2018-08-13 11:33:32,539 | config     | Setting 'alignment' to 'matK.phy'
+INFO     | 2018-08-13 11:33:32,539 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2018-08-13 11:33:32,540 | parser     | You set 'models' to: all
+INFO     | 2018-08-13 11:33:32,555 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2018-08-13 11:33:32,556 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2018-08-13 11:33:32,556 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2018-08-13 11:33:32,558 | config     | Setting 'search' to 'greedy'
+INFO     | 2018-08-13 11:33:32,558 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2018-08-13 11:33:32,558 | config     | Looking for alignment file './matK.phy'...
+INFO     | 2018-08-13 11:33:32,558 | threadpool | Using 16 cpus
+INFO     | 2018-08-13 11:33:32,558 | analysis   | Beginning Analysis
+INFO     | 2018-08-13 11:33:32,633 | alignment  | Reading alignment file './matK.phy'
+INFO     | 2018-08-13 11:33:32,642 | analysis   | Starting tree will be estimated from the data.
+INFO     | 2018-08-13 11:33:32,642 | raxml      | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2018-08-13 11:33:32,643 | raxml      | Using a separate GTR+G model for each data block
+ERROR    | 2018-08-13 11:34:20,631 | main       | User interrupted the Program
+INFO     | 2018-08-13 11:37:33,252 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2018-08-13 11:37:33,273 | config     | Setting 'alignment' to 'matK.phy'
+INFO     | 2018-08-13 11:37:33,273 | config     | Setting 'branchlengths' to 'linked'
+INFO     | 2018-08-13 11:37:33,274 | parser     | You set 'models' to: all
+INFO     | 2018-08-13 11:37:33,314 | model_load | This analysis will use the following 56 models of molecular evolution
+INFO     | 2018-08-13 11:37:33,315 | model_load | JC, K80, TRNEF, K81, TVMEF, TIMEF, SYM, F81, HKY, TRN, K81UF, TVM, TIM, GTR, JC+G, K80+G, TRNEF+G, K81+G, TVMEF+G, TIMEF+G, SYM+G, F81+G, HKY+G, TRN+G, K81UF+G, TVM+G, TIM+G, GTR+G, JC+I, K80+I, TRNEF+I, K81+I, TVMEF+I, TIMEF+I, SYM+I, F81+I, HKY+I, TRN+I, K81UF+I, TVM+I, TIM+I, GTR+I, JC+I+G, K80+I+G, TRNEF+I+G, K81+I+G, TVMEF+I+G, TIMEF+I+G, SYM+I+G, F81+I+G, HKY+I+G, TRN+I+G, K81UF+I+G, TVM+I+G, TIM+I+G, GTR+I+G
+INFO     | 2018-08-13 11:37:33,315 | config     | Setting 'model_selection' to 'aicc'
+INFO     | 2018-08-13 11:37:33,317 | config     | Setting 'search' to 'greedy'
+INFO     | 2018-08-13 11:37:33,317 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2018-08-13 11:37:33,317 | config     | Looking for alignment file './matK.phy'...
+INFO     | 2018-08-13 11:37:33,334 | analysis   | Beginning Analysis
+INFO     | 2018-08-13 11:37:33,436 | alignment  | Reading alignment file './matK.phy'
+INFO     | 2018-08-13 11:37:33,482 | alignment  | Reading alignment file './analysis/start_tree/source.phy'
+INFO     | 2018-08-13 11:37:33,503 | analysis   | Starting tree will be estimated from the data.
+INFO     | 2018-08-13 11:37:33,521 | raxml      | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2018-08-13 11:37:33,522 | raxml      | Using a separate GTR+G model for each data block
+INFO     | 2018-08-13 11:50:39,309 | raxml      | Estimating GTR+G branch lengths on ML tree using all partitions
+INFO     | 2018-08-13 11:50:47,583 | raxml      | ML topology estimation finished
+INFO     | 2018-08-13 11:50:47,714 | analysis_m | Performing Greedy Analysis
+INFO     | 2018-08-13 11:50:47,715 | analysis_m |    *** Analysing starting scheme ***
+INFO     | 2018-08-13 11:51:59,086 | progress   |       Finished subset 1/1, 100.00 percent done
+INFO     | 2018-08-13 11:51:59,089 | analysis_m |    Greedy algorithm finished after 1 steps
+INFO     | 2018-08-13 11:51:59,089 | analysis_m |    Best scoring scheme is scheme start_scheme, with aicc score of 13948.898
+INFO     | 2018-08-13 11:51:59,090 | model_util |    Information on best scheme is here: ./analysis/best_scheme.txt
+INFO     | 2018-08-13 11:51:59,107 | model_util |    
+INFO     | 2018-08-13 11:51:59,107 | model_util |    
+INFO     | 2018-08-13 11:51:59,108 | model_util |    *Citations for this analysis*
+INFO     | 2018-08-13 11:51:59,108 | model_util |    -----------------------------
+INFO     | 2018-08-13 11:51:59,108 | model_util |    
+INFO     | 2018-08-13 11:51:59,108 | model_util |    If you use this analysis in your published work, please cite the following papers on which your analysis relied.
+INFO     | 2018-08-13 11:51:59,108 | model_util |    
+INFO     | 2018-08-13 11:51:59,108 | model_util |    For the version of PartitionFinder you used, please cite:
+INFO     | 2018-08-13 11:51:59,116 | model_util |    Lanfear, R., Frandsen, P. B., Wright, A. M., Senfeld, T., Calcott, B. (2016) PartitionFinder 2: new methods for selecting partitioned models of evolution formolecular and morphological phylogenetic analyses. Molecular biology and evolution. DOI: dx.doi.org/10.1093/molbev/msw260
+INFO     | 2018-08-13 11:51:59,116 | model_util |    
+INFO     | 2018-08-13 11:51:59,117 | model_util |    For the greedy algorithm you used, please cite:
+INFO     | 2018-08-13 11:51:59,117 | model_util |    Lanfear, R., Calcott, B., Ho, S. Y., & Guindon, S. (2012). PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses. Molecular biology and evolution, 29(6), 1695-1701.
+INFO     | 2018-08-13 11:51:59,117 | model_util |    
+INFO     | 2018-08-13 11:51:59,117 | model_util |    Your analysis also used PhyML, so please cite:
+INFO     | 2018-08-13 11:51:59,117 | model_util |    Guindon, S., Dufayard, J. F., Lefort, V., Anisimova, M., Hordijk, W., & Gascuel, O. (2010). New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. Systematic biology, 59(3), 307-321.
+INFO     | 2018-08-13 11:51:59,117 | model_util |    
+INFO     | 2018-08-13 11:51:59,121 | main       | Total processing time: 0:14:26 (h:m:s)
+INFO     | 2018-08-13 11:51:59,121 | main       | Processing complete.
