@@ -1,0 +1,19 @@
+This is WhatsHap 0.17 running under Python 3.6.6
+Traceback (most recent call last):
+  File "/rhome/arajewski/.conda/envs/pythree/bin/whatshap", line 11, in <module>
+    load_entry_point('whatshap==0.17', 'console_scripts', 'whatshap')()
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/__main__.py", line 83, in main
+    module.main(args)
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/phase.py", line 1089, in main
+    run_whatshap(**vars(args))
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/phase.py", line 542, in run_whatshap
+    numeric_sample_ids, mapq_threshold=mapping_quality))
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/variants.py", line 49, in __init__
+    self._reader = MultiBamReader(paths, reference=reference)
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/bam.py", line 152, in __init__
+    self._readers.append(SampleBamReader(path, source_id=source_id, reference=reference))
+  File "/rhome/arajewski/.conda/envs/pythree/lib/python3.6/site-packages/whatshap/bam.py", line 53, in __init__
+    self._samfile = pysam.AlignmentFile(path, reference_filename=reference)
+  File "pysam/libcalignmentfile.pyx", line 734, in pysam.libcalignmentfile.AlignmentFile.__cinit__
+  File "pysam/libcalignmentfile.pyx", line 983, in pysam.libcalignmentfile.AlignmentFile._open
+ValueError: file has no sequences defined (mode='r') - is it SAM/BAM format? Consider opening with check_sq=False

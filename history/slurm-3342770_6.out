@@ -1,0 +1,84 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening H10B.filtered.Fjt4sSb8VmBY/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening H10B.filtered.Fjt4sSb8VmBY/spl_pipe for write.
+[M::process] read 40568 sequences (4593252 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (4, 19117, 0, 2)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (76, 119, 185)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 403)
+[M::mem_pestat] mean and std.dev: (135.73, 78.25)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 512)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 40568 reads in 4.032 CPU sec, 1.356 real sec
+samblaster: Loaded 5 header sequence entries.
+[main] Version: 0.7.12-r1039
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 4 -R @RG\tID:H10B\tSM:H10B\tLB:Lib\ references.fasta data/003240_H10B_S33_R1_filtered.fastq.gz data/003240_H10B_S33_R2_filtered.fastq.gz
+[main] Real time: 1.848 sec; CPU: 4.258 sec
+samblaster: Output 91 discordant read pairs to H10B.filtered.Fjt4sSb8VmBY/disc_pipe
+samblaster: Output 80 split reads to H10B.filtered.Fjt4sSb8VmBY/spl_pipe
+samblaster: Marked 5945 of 20284 (29.31%) read ids as duplicates using 1596k memory in 0.077S CPU seconds and 2S wall time.
+Done
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R references.fasta -I results/H10B.filtered.bam -O results/H10B.g.vcf -ERC GVCF
+22:23:51.257 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+22:23:51.423 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:23:51.426 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.0.8.1
+22:23:51.426 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+22:23:51.641 INFO  HaplotypeCaller - Executing as arajewski@c33 on Linux v3.10.0-693.11.6.el7.x86_64 amd64
+22:23:51.641 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+22:23:51.642 INFO  HaplotypeCaller - Start Date/Time: September 27, 2018 10:23:51 PM PDT
+22:23:51.642 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:23:51.642 INFO  HaplotypeCaller - ------------------------------------------------------------
+22:23:51.643 INFO  HaplotypeCaller - HTSJDK Version: 2.16.0
+22:23:51.643 INFO  HaplotypeCaller - Picard Version: 2.18.7
+22:23:51.643 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+22:23:51.643 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+22:23:51.643 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+22:23:51.644 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+22:23:51.644 INFO  HaplotypeCaller - Deflater: IntelDeflater
+22:23:51.644 INFO  HaplotypeCaller - Inflater: IntelInflater
+22:23:51.645 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+22:23:51.645 INFO  HaplotypeCaller - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+22:23:51.652 INFO  HaplotypeCaller - Initializing engine
+22:23:52.398 INFO  HaplotypeCaller - Done initializing engine
+22:23:52.407 INFO  HaplotypeCallerEngine - Tool is in reference confidence mode and the annotation, the following changes will be made to any specified annotations: 'StrandBiasBySample' will be enabled. 'ChromosomeCounts', 'FisherStrand', 'StrandOddsRatio' and 'QualByDepth' annotations have been disabled
+22:23:52.412 INFO  HaplotypeCallerEngine - Standard Emitting and Calling confidence set to 0.0 for reference-model confidence output
+22:23:52.413 INFO  HaplotypeCallerEngine - All sites annotated with PLs forced to true for reference-model confidence output
+22:23:52.436 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_utils.so
+22:23:52.439 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+22:23:52.504 WARN  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+22:23:52.505 INFO  IntelPairHmm - Available threads: 4
+22:23:52.505 INFO  IntelPairHmm - Requested threads: 4
+22:23:52.505 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+22:23:52.611 INFO  ProgressMeter - Starting traversal
+22:23:52.612 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+22:24:35.464 INFO  ProgressMeter -              WXY:794              0.7                    10             14.0
+22:24:46.864 INFO  ProgressMeter -               trnL:1              0.9                    20             22.1
+22:25:14.159 INFO  ProgressMeter -              LFY:362              1.4                    30             22.1
+22:25:22.561 INFO  HaplotypeCaller - 11933 read(s) filtered by: ((((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter) AND GoodCigarReadFilter) AND WellformedReadFilter)
+  11933 read(s) filtered by: (((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter) AND GoodCigarReadFilter)
+      11933 read(s) filtered by: ((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter)
+          11933 read(s) filtered by: (((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter)
+              11933 read(s) filtered by: ((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter)
+                  43 read(s) filtered by: (((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter)
+                      43 read(s) filtered by: ((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter)
+                          43 read(s) filtered by: (MappingQualityReadFilter AND MappingQualityAvailableReadFilter)
+                              43 read(s) filtered by: MappingQualityReadFilter 
+                  11890 read(s) filtered by: NotDuplicateReadFilter 
+
+22:25:22.562 INFO  ProgressMeter -              LFY:362              1.5                    31             20.7
+22:25:22.562 INFO  ProgressMeter - Traversal complete. Processed 31 total regions in 1.5 minutes.
+22:25:22.569 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.14903443100000002
+22:25:22.570 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 52.275646727
+22:25:22.570 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 7.86 sec
+22:25:22.571 INFO  HaplotypeCaller - Shutting down engine
+[September 27, 2018 10:25:22 PM PDT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 1.52 minutes.
+Runtime.totalMemory()=3233284096
