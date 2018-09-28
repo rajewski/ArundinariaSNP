@@ -31,11 +31,10 @@ fi
 
 #map the reads
 if [ ! -f "results/"$Indiv".filtered.bam" ]; then
-    #ReadGroup=$(echo "\'@RG\tID:'$Indiv'\tSM:'$Indiv'\tLB:Lib\'")
     module load speedseq/a95704a
     speedseq align -t $SLURM_NTASKS -K speedseq.config -o results/$Indiv.filtered -R '@RG\tID:'$Indiv'\tSM:'$Indiv'\tLB:Lib\' references.fasta data/$Sample"_R1_filtered.fastq.gz" data/$Sample"_R2_filtered.fastq.gz"
 fi
 
 #Use GATK to make the VCF
 module load gatk/4.0.8.1
-gatk HaplotypeCaller -nt $SLURM_NTASKS --allow_potentially_misencoded_quality_scores -R references.fasta -I results/$Indiv.filtered.bam -O results/$Indiv.g.vcf -ERC GVCF
+gatk HaplotypeCaller --allow_potentially_misencoded_quality_scores -R references.fasta -I results/$Indiv.filtered.bam -O results/$Indiv.g.vcf -ERC GVCF
