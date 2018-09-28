@@ -37,4 +37,4 @@ fi
 
 #Use GATK to make the VCF
 module load gatk/4.0.8.1
-gatk HaplotypeCaller --allow_potentially_misencoded_quality_scores -R references.fasta -I results/$Indiv.filtered.bam -O results/$Indiv.g.vcf -ERC GVCF
+gatk HaplotypeCaller -R references.fasta -I results/$Indiv.filtered.bam -O results/$Indiv.g.vcf -ERC GVCF
