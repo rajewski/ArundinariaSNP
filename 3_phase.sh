@@ -6,6 +6,7 @@
 #SBATCH --mail-user=araje002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH -p batch
+#SBATCH -o ./history/slurm-%A_%a.out
 
 #get sample names for all files to be processed
 #SamList=~/bigdata/Arundinaria/names.txt
