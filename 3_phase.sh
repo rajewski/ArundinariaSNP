@@ -13,6 +13,8 @@
 #Sample=$(awk "NR==$SLURM_ARRAY_TASK_ID" $SamList)
 #Indiv=$(echo $Sample | cut -d "_" -f 2)
 Bams=$(find results/ -name "*.filtered.bam" | tr "\n" " ")
+module load samtools
+samtools merge results/merged.filtered.bam
 
 source activate pythree
-whatshap phase --indels --max-coverage 20 -o results/Phased.vcf results/Joint.vcf $Bams
+whatshap phase --indels --max-coverage 20 -o results/Phased.vcf results/Joint.vcf results/merged.filtered.bam
