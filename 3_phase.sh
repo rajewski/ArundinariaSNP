@@ -15,6 +15,7 @@
 Bams=$(find results/ -name "*.filtered.bam" | tr "\n" " ")
 module load samtools
 samtools merge results/merged.filtered.bam
+samtools index results/merged.filtered.bam
 
 source activate pythree
 whatshap phase --indels --max-coverage 20 -o results/Phased.vcf results/Joint.vcf results/merged.filtered.bam
