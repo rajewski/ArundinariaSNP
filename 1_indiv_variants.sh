@@ -6,6 +6,7 @@
 #SBATCH --mail-user=araje002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH -p batch
+#SBATCH -o ./history/slurm-%A_%a.out
 
 #get sample names for all files to be processed
 SamList=~/bigdata/Arundinaria/names.txt
@@ -30,7 +31,7 @@ fi
 
 #map the reads
 if [ ! -f "results/"$Indiv".filtered.bam" ]; then
-    ReadGroup=$(echo "\"@RG\tID:"$Indiv"\tSM:"$Indiv"\tLB:Lib\"")
+    ReadGroup=$(echo '\'@RG\tID:'$Indiv'\tSM:'$Indiv'\tLB:Lib\'')
     module load speedseq/a95704a
     speedseq align -t $SLURM_NTASKS -K speedseq.config -o results/$Indiv.filtered -R $ReadGroup references.fasta data/$Sample"_R1_filtered.fastq.gz" data/$Sample"_R2_filtered.fastq.gz"
 fi
