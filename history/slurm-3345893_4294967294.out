@@ -1,0 +1,3 @@
+[bam_merge] File 'results/merged.filtered.bam' exists. Please apply '-f' to overwrite. Abort.
+This is WhatsHap 0.17 running under Python 3.6.6
+ERROR: The file 'results/merged.filtered.bam' is not indexed. Please create the appropriate BAM/CRAM index with "samtools index"
