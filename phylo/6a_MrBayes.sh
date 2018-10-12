@@ -1,10 +1,12 @@
 #!/bin/bash -l
-#SBATCH --ntasks=1
+#SBATCH --ntasks=8
 #SBATCH --nodes=1
-#SBATCH --mem=1G
-#SBATCH --time=2:00:00
+#SBATCH --mem=6G
+#SBATCH --time=10:00:00
 #SBATCH --mail-user=araje002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH -p batch
 #SBATCH -o ../history/slurm-%A_%a.out
 
+module load mrbayes/3.2.6
+mpiexec -n $SLURM_NTASKS mb plastid_nomissing.par #Change the par file for whatever analysis you are running

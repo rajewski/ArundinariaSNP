@@ -87,3 +87,16 @@ trnlsamples <- trnlsamples[order(trnlsamples)]
 trnLs <- trnLs[names(trnLs)[names(trnLs) %in% trnlsamples]]
 writeXStringSet(trnLs,"trnL_Phased.fasta")
 
+# Write the psaA loci
+psaAs <- rep(refs[4], 148)
+names(psaAs) <- paste0("psaA_", colnames(g.both))
+psaASNPs <- t(g.both[grep('^psaA', rownames(g.both)),])
+colnames(psaASNPs) <- gsub("psaA_","", colnames(psaASNPs))
+for (i in 1:148) {
+  pos <- psaASNPs[i,!is.na(psaASNPs[i,])]
+  psaAs[[i]] <- replaceLetterAt(psaAs[[i]], 1:length(psaAs[[1]]) %in% as.numeric(names(pos)), as.character(psaASNPs[i,names(pos)]))
+}
+psaasamples <- c(paste0(samples[grep('^psaA',samples)],"_0"),paste0(samples[grep('^psaA',samples)],"_1"))
+psaasamples <- psaasamples[order(psaasamples)]
+psaAs <- psaAs[names(psaAs)[names(psaAs) %in% psaasamples]]
+writeXStringSet(psaAs,"psaA_Phased.fasta")
