@@ -8,10 +8,13 @@
 #SBATCH -p batch
 #SBATCH -o ./history/slurm-%A_%a.out
 
+#Made with help from https://www.biostars.org/p/78929/
+
+
 module load bcftools/1.8
 
 for file in results/Phased.vcf.gz; do
     for sample in `bcftools query -l $file`; do
-	bcftools view -c1 -0z -s $sample -0 ${file/.vcf*/.$sample.vcf.gz} $file
+	bcftools view -c1 -Oz -s $sample -o ${file/.vcf*/.$sample.vcf.gz} $file
     done
 done

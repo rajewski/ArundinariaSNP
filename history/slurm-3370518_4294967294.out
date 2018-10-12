@@ -1,0 +1,4060 @@
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 30
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 931
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 919 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon   1 -> P._edulis
+      Taxon   2 -> Gig9_0
+      Taxon   3 -> Gig9_1
+      Taxon   4 -> H0B_0
+      Taxon   5 -> H0B_1
+      Taxon   6 -> H0C_0
+      Taxon   7 -> H0C_1
+      Taxon   8 -> H2A_0
+      Taxon   9 -> H2A_1
+      Taxon  10 -> H2B_0
+      Taxon  11 -> H2B_1
+182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+      Taxon 116 -> JT179_0
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  12 -> H2C_0
+      Taxon  13 -> H2C_1
+      Taxon  14 -> H4A_0
+      Taxon  15 -> H4A_1
+      Taxon  16 -> H4B_0
+      Taxon  17 -> H4B_1
+      Taxon  18 -> H4C_0
+      Taxon  19 -> H4C_1
+      Taxon  20 -> H4D_0
+      Taxon  21 -> H4D_1
+      Taxon  22 -> H6A_0
+      Taxon  23 -> H6A_1
+      Taxon  24 -> H6B_0
+      Taxon  25 -> H6B_1
+      Taxon  26 -> H6C_0
+      Taxon  27 -> H6C_1
+      Taxon  28 -> H6D_0
+      Taxon  29 -> H6D_1
+      Taxon  30 -> H8A_0
+      Taxon  31 -> H8A_1
+      Taxon  32 -> H8B_0
+      Taxon  33 -> H8B_1
+      Taxon  34 -> H8C_0
+      Taxon  35 -> H8C_1
+      Taxon  36 -> H8D_0
+      Taxon  37 -> H8D_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -8598.475150 -- 172.458204
+         Chain 2 -- -8621.568197 -- 172.458204
+         Chain 3 -- -8688.852741 -- 172.458204
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -8598.475150 -- 172.458204
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -8598.475150 -- 172.458204
+         Chain 2 -- -8621.568197 -- 172.458204
+         Chain 3 -- -8688.852741 -- 172.458204
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -8598.475150 -- 172.458204
+         Chain 2 -- -8621.568197 -- 172.458204
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon  38 -> H10B_0
+      Taxon  39 -> H10B_1
+      Taxon  40 -> H10C_0
+      Taxon  41 -> H10C_1
+      Taxon  42 -> H10D_0
+      Taxon  43 -> H10D_1
+      Taxon  44 -> H10E_0
+      Taxon  45 -> H10E_1
+      Taxon  46 -> H12D_0
+      Taxon  47 -> H12D_1
+      Taxon  48 -> H14C_0
+      Taxon  49 -> H14C_1
+      Taxon  50 -> H14D_0
+      Taxon  51 -> H14D_1
+      Taxon  52 -> H_2C_0
+      Taxon  53 -> H_2C_1
+      Taxon  54 -> H_2D_0
+      Taxon  55 -> H_2D_1
+      Taxon  56 -> JT6_0
+      Taxon  57 -> JT6_1
+      Taxon  58 -> JT8_0
+      Taxon  59 -> JT8_1
+      Taxon  60 -> JT19_0
+      Taxon  61 -> JT19_1
+      Taxon  62 -> JT20_0
+      Taxon  63 -> JT20_1
+      Taxon  64 -> JT21_0
+      Taxon  65 -> JT21_1
+      Taxon  66 -> JT23_0
+      Taxon  67 -> JT23_1
+      Taxon  68 -> JT25_0
+      Taxon  69 -> JT25_1
+      Taxon  70 -> JT27_0
+      Taxon  71 -> JT27_1
+      Taxon  72 -> JT85_0
+      Taxon  73 -> JT85_1
+      Taxon  74 -> JT87_0
+      Taxon  75 -> JT87_1
+      Taxon  76 -> JT89_0
+      Taxon  77 -> JT89_1
+      Taxon  78 -> JT90_0
+      Taxon  79 -> JT90_1
+      Taxon  80 -> JT97_0
+      Taxon  81 -> JT97_1
+      Taxon  82 -> JT98_0
+      Taxon  83 -> JT98_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon  84 -> JT108_0
+      Taxon  85 -> JT108_1
+      Taxon  86 -> JT112_0
+      Taxon  87 -> JT112_1
+      Taxon  88 -> JT162_0
+      Taxon  89 -> JT162_1
+      Taxon  90 -> JT164_0
+      Taxon  91 -> JT164_1
+      Taxon  92 -> JT165_0
+      Taxon  93 -> JT165_1
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 2 -- -8621.568197 -- 172.458204
+         Chain 3 -- -8688.852741 -- 172.458204
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 3 -- -8688.852741 -- 172.458204
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+         Chain 2 -- -8525.044163 -- 172.458204
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 2 -- -8525.044163 -- 172.458204
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -8598.475150 -- 172.458204
+      Taxon 120 -> JT182_0
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 2 -- -8525.044163 -- 172.458204
+      Taxon  94 -> JT166_0
+      Taxon  95 -> JT166_1
+      Taxon  96 -> JT167_0
+      Taxon  97 -> JT167_1
+      Taxon  98 -> JT168_0
+      Taxon  99 -> JT168_1
+      Taxon 100 -> JT170_0
+      Taxon 101 -> JT170_1
+      Taxon 102 -> JT171_0
+      Taxon 103 -> JT171_1
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+         Chain 3 -- -8667.658603 -- 172.458204
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 3 -- -8667.658603 -- 172.458204
+      Initializing invariable-site conditional likelihoods
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+         Chain 4 -- -8554.887296 -- 172.458204
+
+         Chain 2 -- -8525.044163 -- 172.458204
+         Chain 4 -- -8554.887296 -- 172.458204
+
+
+      Initial log likelihoods and log prior probs for run 1:
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+         Chain 3 -- -8667.658603 -- 172.458204
+      Taxon 104 -> JT172_0
+      Taxon 105 -> JT172_1
+      Taxon 106 -> JT173_0
+      Taxon 107 -> JT173_1
+      Taxon 108 -> JT174_0
+      Taxon 109 -> JT174_1
+      Taxon 110 -> JT175_0
+      Taxon 111 -> JT175_1
+      Taxon 112 -> JT177_0
+      Taxon 113 -> JT177_1
+      Taxon 114 -> JT178_0
+         Chain 1 -- -8598.475150 -- 172.458204
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+         Chain 3 -- -8667.658603 -- 172.458204
+         Chain 2 -- -8621.568197 -- 172.458204
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 115 -> JT178_1
+      Taxon 116 -> JT179_0
+      Taxon 117 -> JT179_1
+      Taxon 118 -> JT80_0
+      Taxon 119 -> JT80_1
+      Taxon 120 -> JT182_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+         Chain 4 -- -8554.887296 -- 172.458204
+
+      Overwriting file "LFY.nex.mcmc"
+         Chain 3 -- -8688.852741 -- 172.458204
+      Taxon 121 -> JT182_1
+      Taxon 122 -> JT183_0
+      Taxon 123 -> JT183_1
+      Taxon 124 -> JT184_0
+      Taxon 125 -> JT184_1
+         Chain 2 -- -8621.568197 -- 172.458204
+      Taxon 126 -> JT185_0
+      Taxon 127 -> JT185_1
+      Taxon 128 -> JT188_0
+      Taxon 129 -> JT188_1
+      Taxon 130 -> L5_0
+      Taxon 131 -> L5_1
+         Chain 4 -- -8554.887296 -- 172.458204
+
+      Overwriting file "LFY.nex.mcmc"
+      Overwriting file "LFY.nex.run1.p"
+      Overwriting file "LFY.nex.run1.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+      Overwriting file "LFY.nex.run2.p"
+      Overwriting file "LFY.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+      Overwriting file "LFY.nex.run2.p"
+      Taxon 132 -> L62_0
+      Taxon 133 -> L62_1
+      Taxon 134 -> L65_0
+      Taxon 135 -> L65_1
+      Taxon 136 -> L93_0
+      Overwriting file "LFY.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 3 -- -8688.852741 -- 172.458204
+      Overwriting file "LFY.nex.run1.t"
+      Taxon 137 -> L93_1
+      Taxon 138 -> Lo9_0
+      Taxon 139 -> Lo9_1
+      Taxon 140 -> Lo16_0
+      Taxon 141 -> Lo16_1
+      Taxon 142 -> Lo28_0
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+      Taxon 143 -> Lo28_1
+      Taxon 144 -> Lo43_0
+      Taxon 145 -> Lo43_1
+      Taxon 146 -> Tec7_0
+      Taxon 147 -> Tec7_1
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -8598.475150 -- 172.458204
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1539138346
+         Chain 2 -- -8525.044163 -- 172.458204
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 2 -- -8621.568197 -- 172.458204
+         Chain 3 -- -8667.658603 -- 172.458204
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 2 -- -8525.044163 -- 172.458204
+         Chain 3 -- -8667.658603 -- 172.458204
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Setting output file names to "LFY.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+         Chain 4 -- -8554.887296 -- 172.458204
+
+      Overwriting file "LFY.nex.mcmc"
+      Overwriting file "LFY.nex.run1.p"
+      Overwriting file "LFY.nex.run1.t"
+      Overwriting file "LFY.nex.run2.p"
+      Overwriting file "LFY.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+      Overwriting file "LFY.nex.run2.p"
+      Overwriting file "LFY.nex.run2.t"
+         Chain 1 -- -8598.475150 -- 172.458204
+         Chain 3 -- -8688.852741 -- 172.458204
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+         Chain 2 -- -8621.568197 -- 172.458204
+         Chain 4 -- -8554.887296 -- 172.458204
+
+      Overwriting file "LFY.nex.mcmc"
+      Overwriting file "LFY.nex.run1.p"
+      Overwriting file "LFY.nex.run1.t"
+         Chain 1 -- -8855.215796 -- 172.458204
+      Running Markov chain
+      MCMC stamp = 8684587458
+      Seed = 794663787
+      Swapseed = 1539138346
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+         Chain 3 -- -8688.852741 -- 172.458204
+      Division 1 has 92 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Overwriting file "LFY.nex.run2.p"
+      Overwriting file "LFY.nex.run2.t"
+         Chain 2 -- -8525.044163 -- 172.458204
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 3 -- -8667.658603 -- 172.458204
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 4 -- -8554.887296 -- 172.458204
+
+      Overwriting file "LFY.nex.mcmc"
+         Chain 2 -- -8525.044163 -- 172.458204
+      Overwriting file "LFY.nex.run1.p"
+      Overwriting file "LFY.nex.run1.t"
+      Overwriting file "LFY.nex.run2.p"
+      Overwriting file "LFY.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 3 -- -8667.658603 -- 172.458204
+         Chain 1 -- -8598.475150 -- 172.458204
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 4 -- -8554.887296 -- 172.458204
+
+      Overwriting file "LFY.nex.mcmc"
+      Overwriting file "LFY.nex.run1.p"
+      Overwriting file "LFY.nex.run1.t"
+      Overwriting file "LFY.nex.run2.p"
+      Overwriting file "LFY.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+         Chain 2 -- -8621.568197 -- 172.458204
+         Chain 1 -- -8598.475150 -- 172.458204
+         Chain 3 -- -8688.852741 -- 172.458204
+         Chain 2 -- -8621.568197 -- 172.458204
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 3 -- -8688.852741 -- 172.458204
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 4 -- -8749.246243 -- 172.458204
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 2 -- -8525.044163 -- 172.458204
+         Chain 1 -- -8855.215796 -- 172.458204
+         Chain 3 -- -8667.658603 -- 172.458204
+         Chain 2 -- -8525.044163 -- 172.458204
+         Chain 4 -- -8554.887296 -- 172.458204
+
+      Overwriting file "LFY.nex.mcmc"
+         Chain 3 -- -8667.658603 -- 172.458204
+      Overwriting file "LFY.nex.run1.p"
+      Overwriting file "LFY.nex.run1.t"
+      Overwriting file "LFY.nex.run2.p"
+      Overwriting file "LFY.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+         Chain 4 -- -8554.887296 -- 172.458204
+
+      Overwriting file "LFY.nex.mcmc"
+      Overwriting file "LFY.nex.run1.p"
+      Overwriting file "LFY.nex.run1.t"
+      Overwriting file "LFY.nex.run2.p"
+      Overwriting file "LFY.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-8598.475] (-8621.568) (-8688.853) (-8749.246) * [-8855.216] (-8525.044) (-8667.659) (-8554.887) 
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:13:12
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:13:12
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:29:51
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:29:51
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:29:51
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:29:51
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:29:51
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:29:51
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:29:51
+       1000 -- (-5596.013) [-5085.701] (-5526.386) (-5670.135) * (-5733.396) (-5559.254) (-5550.509) [-5031.424] -- 2:29:51
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 2:54:39
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 2:54:39
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 3:19:36
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 3:19:36
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 3:19:36
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 3:19:36
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 3:19:36
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 3:19:36
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 3:19:36
+       2000 -- (-4484.963) [-4237.549] (-4526.019) (-4459.939) * (-4589.893) (-4630.794) (-4804.771) [-4290.342] -- 3:19:36
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:19:24
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:30:28
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:36:01
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:47:05
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:47:05
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:47:05
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:47:05
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:52:38
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:52:38
+       3000 -- (-4012.598) [-3921.324] (-3995.436) (-3913.112) * (-4052.761) (-4010.056) (-4230.223) [-3780.777] -- 3:52:38
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:27:30
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:35:48
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:44:06
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:56:33
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:56:33
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:56:33
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:56:33
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:56:33
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 3:56:33
+       4000 -- (-3708.911) (-3631.206) (-3716.919) [-3609.746] * (-3678.397) (-3683.510) (-3808.259) [-3593.841] -- 4:00:42
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 3:32:16
+
+      Average standard deviation of split frequencies: 0.097816
+
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 3:48:51
+
+      Average standard deviation of split frequencies: 0.097816
+
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 3:55:29
+
+      Average standard deviation of split frequencies: 0.097816
+
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 3:58:48
+
+      Average standard deviation of split frequencies: 0.097816
+
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 4:02:07
+
+      Average standard deviation of split frequencies: 0.097816
+
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 4:02:07
+
+      Average standard deviation of split frequencies: 0.097816
+
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 4:05:26
+
+      Average standard deviation of split frequencies: 0.097816
+
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 4:05:26
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 4:05:26
+
+      Average standard deviation of split frequencies: 0.097816
+
+
+      Average standard deviation of split frequencies: 0.097816
+
+       5000 -- (-3551.548) (-3453.493) (-3564.358) [-3518.909] * (-3477.361) (-3533.770) (-3723.497) [-3402.578] -- 4:05:26
+
+      Average standard deviation of split frequencies: 0.097816
+
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 3:35:22
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 3:54:41
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 3:54:41
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 4:00:13
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 4:05:44
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 4:05:44
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 4:05:44
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 4:05:44
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 4:08:30
+       6000 -- (-3427.702) (-3346.274) (-3508.913) [-3374.364] * (-3303.267) (-3410.053) (-3586.516) [-3288.672] -- 4:08:30
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 3:42:14
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:01:09
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:05:53
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:08:15
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:15:20
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:15:20
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:15:20
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:15:20
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:17:42
+       7000 -- (-3314.195) [-3234.951] (-3376.065) (-3323.873) * (-3255.422) (-3380.076) (-3488.324) [-3259.038] -- 4:17:42
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 3:49:24
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:05:56
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:14:12
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:18:20
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:24:32
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:24:32
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:24:32
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:24:32
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:24:32
+       8000 -- (-3254.596) [-3191.401] (-3305.168) (-3271.631) * [-3161.989] (-3307.641) (-3438.755) (-3202.107) -- 4:24:32
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 3:56:44
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:11:25
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:24:16
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:27:56
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:02:33
+
+      Average standard deviation of split frequencies: 0.124840
+
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:33:26
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:33:26
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:33:26
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:33:26
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:33:26
+       9000 -- (-3215.030) [-3183.690] (-3319.599) (-3250.695) * [-3144.700] (-3296.033) (-3369.374) (-3176.493) -- 4:33:26
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:14:06
+
+      Average standard deviation of split frequencies: 0.124840
+
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:32:15
+
+      Average standard deviation of split frequencies: 0.124840
+
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:07:15
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:33:54
+
+      Average standard deviation of split frequencies: 0.124840
+
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:38:51
+
+      Average standard deviation of split frequencies: 0.124840
+
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:38:51
+
+      Average standard deviation of split frequencies: 0.124840
+
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:38:51
+
+      Average standard deviation of split frequencies: 0.124840
+
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:38:51
+
+      Average standard deviation of split frequencies: 0.124840
+
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:38:51
+
+      Average standard deviation of split frequencies: 0.124840
+
+      10000 -- (-3159.044) [-3137.830] (-3271.022) (-3220.191) * [-3095.320] (-3249.841) (-3350.060) (-3162.936) -- 4:40:30
+
+      Average standard deviation of split frequencies: 0.124840
+
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:19:14
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:09:44
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:37:13
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:40:13
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:44:42
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:44:42
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:44:42
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:20:43
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:44:42
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:44:42
+      11000 -- (-3133.140) [-3125.747] (-3236.620) (-3172.996) * [-3058.729] (-3225.528) (-3299.394) (-3143.970) -- 4:44:42
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:13:04
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:41:18
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:44:03
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:23:12
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:48:10
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:48:10
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:48:10
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:48:10
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:48:10
+      12000 -- (-3125.256) [-3097.522] (-3198.200) (-3139.977) * [-3051.852] (-3230.142) (-3271.770) (-3120.189) -- 4:49:32
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:17:03
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:45:58
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:26:27
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:48:30
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:51:02
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:52:18
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:52:18
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:52:18
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:52:18
+      13000 -- (-3115.312) [-3093.103] (-3179.318) (-3172.102) * [-3075.771] (-3190.252) (-3233.400) (-3117.876) -- 4:52:18
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 4:21:34
+
+      Average standard deviation of split frequencies: 0.144021
+
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 4:29:14
+
+      Average standard deviation of split frequencies: 0.144021
+
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:51:06
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:53:27
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:55:48
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:55:48
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:56:58
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:56:58
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:56:58
+      14000 -- (-3111.293) [-3081.572] (-3147.150) (-3172.838) * [-3083.861] (-3197.954) (-3221.595) (-3094.087) -- 4:56:58
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 4:22:24
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 4:29:34
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 4:56:35
+
+      Average standard deviation of split frequencies: 0.144021
+
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 4:57:41
+
+      Average standard deviation of split frequencies: 0.144021
+
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 4:22:08
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 5:00:58
+
+      Average standard deviation of split frequencies: 0.144021
+
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 5:00:58
+
+      Average standard deviation of split frequencies: 0.144021
+
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 5:00:58
+
+      Average standard deviation of split frequencies: 0.144021
+
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 5:00:58
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 5:00:58
+
+      Average standard deviation of split frequencies: 0.144021
+
+
+      Average standard deviation of split frequencies: 0.144021
+
+      15000 -- (-3095.660) [-3067.379] (-3136.039) (-3168.095) * (-3076.760) (-3173.665) (-3217.540) [-3082.856] -- 5:02:04
+
+      Average standard deviation of split frequencies: 0.144021
+
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 4:29:50
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 4:22:46
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 4:57:15
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 4:59:18
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 5:01:21
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 5:02:22
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 5:02:22
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 5:02:22
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 5:02:22
+      16000 -- (-3105.281) [-3065.241] (-3175.317) (-3134.140) * (-3066.091) (-3139.331) (-3224.224) [-3066.545] -- 5:02:22
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 4:30:03
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 4:24:10
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 4:58:45
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 4:59:43
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 5:02:36
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 5:02:36
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 5:02:36
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 5:02:36
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 5:02:36
+      17000 -- (-3109.810) [-3058.673] (-3165.609) (-3122.320) * (-3066.379) (-3142.577) (-3238.713) [-3064.485] -- 5:03:34
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 4:31:03
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 4:25:25
+
+      Average standard deviation of split frequencies: 0.162389
+
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 4:59:08
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 5:00:57
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 5:02:47
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 4:31:57
+
+      Average standard deviation of split frequencies: 0.162389
+
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 5:02:47
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 5:02:47
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 5:03:41
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 5:03:41
+      18000 -- (-3086.818) [-3067.010] (-3168.517) (-3116.530) * (-3071.560) (-3145.312) (-3224.017) [-3056.164] -- 5:03:41
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 4:27:16
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 5:01:11
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 5:02:54
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 4:33:29
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 5:04:37
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 5:04:37
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 5:05:29
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 5:05:29
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 5:05:29
+      19000 -- (-3071.127) [-3067.306] (-3152.318) (-3104.925) * (-3069.351) (-3155.837) (-3216.664) [-3057.029] -- 5:05:29
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 4:28:12
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 4:34:08
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 5:02:59
+
+      Average standard deviation of split frequencies: 0.162389
+
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 5:04:37
+
+      Average standard deviation of split frequencies: 0.162389
+
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 5:06:15
+
+      Average standard deviation of split frequencies: 0.162389
+
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 5:06:15
+
+      Average standard deviation of split frequencies: 0.162389
+
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 5:06:15
+
+      Average standard deviation of split frequencies: 0.162389
+
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 5:06:15
+
+      Average standard deviation of split frequencies: 0.162389
+
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 5:06:15
+
+      Average standard deviation of split frequencies: 0.162389
+
+      20000 -- (-3063.020) [-3058.502] (-3146.993) (-3105.835) * (-3071.994) (-3131.064) (-3197.819) [-3054.411] -- 5:07:04
+
+      Average standard deviation of split frequencies: 0.162389
+
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 4:28:19
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 4:33:59
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 5:04:34
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 5:06:07
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 4:28:24
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 5:07:41
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 5:07:41
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 5:08:27
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 5:08:27
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 5:08:27
+      21000 -- (-3074.569) [-3050.405] (-3184.688) (-3095.414) * (-3070.728) (-3111.451) (-3206.188) [-3062.099] -- 5:08:27
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 4:33:49
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 5:05:59
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 4:29:45
+
+      Average standard deviation of split frequencies: 0.152843
+
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 5:07:28
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 5:08:57
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 5:08:57
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 5:08:57
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 5:08:57
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 5:09:42
+      22000 -- (-3056.267) [-3037.629] (-3156.360) (-3120.356) * (-3063.127) (-3108.907) (-3177.314) [-3056.597] -- 5:09:42
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 4:34:57
+
+      Average standard deviation of split frequencies: 0.152843
+
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 5:06:33
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 5:07:15
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 4:31:35
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 5:08:40
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 5:08:40
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 5:09:23
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 5:09:23
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 5:09:23
+      23000 -- (-3052.425) [-3039.670] (-3152.323) (-3112.951) * (-3064.623) (-3093.949) (-3197.539) [-3049.834] -- 5:10:05
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 4:36:35
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 5:07:02
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 5:07:42
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 4:32:40
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 5:09:04
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 5:09:04
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 5:09:04
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 5:09:44
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 5:09:44
+      24000 -- (-3040.810) [-3039.925] (-3120.991) (-3096.283) * (-3064.262) (-3090.226) (-3190.900) [-3057.209] -- 5:09:44
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 4:38:41
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 4:32:30
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 5:08:06
+
+      Average standard deviation of split frequencies: 0.152843
+
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 5:08:45
+
+      Average standard deviation of split frequencies: 0.152843
+
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 5:09:24
+
+      Average standard deviation of split frequencies: 0.152843
+
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 5:10:42
+
+      Average standard deviation of split frequencies: 0.152843
+
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 5:10:42
+
+      Average standard deviation of split frequencies: 0.152843
+
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 5:10:42
+
+      Average standard deviation of split frequencies: 0.152843
+
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 5:10:42
+
+      Average standard deviation of split frequencies: 0.152843
+
+      25000 -- (-3044.375) [-3037.545] (-3138.585) (-3129.334) * (-3053.314) (-3084.260) (-3188.296) [-3065.642] -- 5:10:42
+
+      Average standard deviation of split frequencies: 0.152843
+
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 4:40:01
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 4:33:26
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 5:09:03
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 5:10:55
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 5:11:33
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 5:12:48
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 5:12:48
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 5:12:48
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 5:12:48
+      26000 -- (-3048.544) [-3045.020] (-3130.187) (-3142.466) * (-3061.245) (-3086.437) (-3223.345) [-3048.183] -- 5:12:48
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 4:42:22
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 4:33:45
+
+      Average standard deviation of split frequencies: 0.175903
+
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 5:09:19
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 5:12:19
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 5:12:55
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 5:14:07
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 5:14:07
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 5:14:07
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 5:14:43
+      27000 -- (-3050.514) [-3055.766] (-3115.292) (-3117.563) * (-3068.184) (-3063.959) (-3214.706) [-3047.405] -- 5:14:43
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 4:33:30
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 4:43:59
+
+      Average standard deviation of split frequencies: 0.175903
+
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 5:07:48
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 5:12:25
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 5:13:00
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 5:14:09
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 5:14:44
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 5:14:44
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 4:34:16
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 5:14:44
+      28000 -- (-3048.409) [-3041.422] (-3111.409) (-3147.408) * (-3071.956) (-3060.469) (-3213.479) [-3039.582] -- 5:14:44
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 4:44:58
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 5:07:29
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 4:33:29
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 5:13:37
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 5:14:10
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 5:14:44
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 5:15:17
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 5:15:17
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 5:15:17
+      29000 -- (-3046.247) [-3044.187] (-3136.041) (-3136.088) * (-3074.375) (-3064.699) (-3192.109) [-3040.738] -- 5:15:17
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 4:46:22
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 5:06:37
+
+      Average standard deviation of split frequencies: 0.175903
+
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 4:33:42
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 5:14:10
+
+      Average standard deviation of split frequencies: 0.175903
+
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 5:14:42
+
+      Average standard deviation of split frequencies: 0.175903
+
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 5:15:15
+
+      Average standard deviation of split frequencies: 0.175903
+
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 5:15:47
+
+      Average standard deviation of split frequencies: 0.175903
+
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 5:15:47
+
+      Average standard deviation of split frequencies: 0.175903
+
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 5:15:47
+
+      Average standard deviation of split frequencies: 0.175903
+
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 5:05:17
+      30000 -- (-3041.229) [-3058.913] (-3136.538) (-3134.246) * (-3095.048) (-3070.891) (-3211.394) [-3040.432] -- 5:15:47
+
+      Average standard deviation of split frequencies: 0.175903
+
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 4:46:40
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 4:32:57
+
+      Average standard deviation of split frequencies: 0.168972
+
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 5:13:37
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 5:14:39
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 5:04:31
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 5:15:11
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 5:15:42
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 5:15:42
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 5:15:42
+      31000 -- (-3055.021) [-3044.259] (-3143.437) (-3144.064) * (-3078.365) (-3055.971) (-3206.110) [-3048.460] -- 5:15:42
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 4:47:25
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 4:32:14
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 5:03:17
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 5:14:05
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 5:14:36
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 4:47:12
+
+      Average standard deviation of split frequencies: 0.168972
+
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 5:15:36
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 5:16:06
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 5:16:06
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 5:16:06
+      32000 -- (-3039.707) [-3035.360] (-3112.547) (-3113.637) * (-3072.678) [-3044.761] (-3199.975) (-3048.742) -- 5:16:06
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 4:31:58
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 5:02:35
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 5:13:32
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 5:14:01
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 4:47:51
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 5:15:00
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 5:15:29
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 5:15:29
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 4:32:34
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 5:15:29
+      33000 -- (-3057.021) [-3042.172] (-3099.640) (-3123.244) * (-3099.491) [-3043.140] (-3191.933) (-3046.421) -- 5:15:29
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 5:00:59
+
+      Average standard deviation of split frequencies: 0.168972
+
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 5:13:57
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 5:14:25
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 4:48:01
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 5:15:22
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 5:15:22
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 5:15:22
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 5:15:22
+      34000 -- (-3056.824) [-3058.045] (-3100.054) (-3136.360) * (-3063.411) [-3027.196] (-3200.186) (-3076.810) -- 5:15:22
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 4:33:55
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 4:59:27
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 5:12:56
+
+      Average standard deviation of split frequencies: 0.168972
+
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 5:13:51
+
+      Average standard deviation of split frequencies: 0.168972
+
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 5:14:18
+
+      Average standard deviation of split frequencies: 0.168972
+
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 5:14:18
+
+      Average standard deviation of split frequencies: 0.168972
+
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 5:14:46
+
+      Average standard deviation of split frequencies: 0.168972
+
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 5:14:46
+
+      Average standard deviation of split frequencies: 0.168972
+
+      35000 -- (-3046.168) [-3038.446] (-3101.239) (-3133.396) * (-3077.474) [-3034.628] (-3215.525) (-3061.113) -- 5:14:46
+
+      Average standard deviation of split frequencies: 0.168972
+
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 4:49:26
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 4:34:24
+
+      Average standard deviation of split frequencies: 0.170928
+
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 4:58:26
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 5:12:51
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 5:13:18
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 5:13:44
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 5:14:11
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 5:14:11
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 5:14:11
+      36000 -- [-3024.951] (-3046.876) (-3097.982) (-3109.525) * (-3068.777) [-3057.094] (-3185.386) (-3071.174) -- 5:14:11
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 4:34:26
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 4:58:18
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 4:51:35
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 5:12:19
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 5:12:45
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 4:34:28
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 5:13:37
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 5:13:37
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 5:13:37
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 5:13:37
+      37000 -- [-3032.604] (-3052.573) (-3095.711) (-3076.756) * (-3059.914) [-3049.248] (-3174.206) (-3093.147) -- 5:13:37
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 4:58:58
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 4:52:48
+
+      Average standard deviation of split frequencies: 0.170928
+
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 4:34:51
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 5:12:39
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 5:13:29
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 5:13:54
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 5:13:54
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 5:14:20
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 5:14:20
+      38000 -- [-3036.909] (-3035.497) (-3103.649) (-3074.285) * (-3050.711) [-3037.168] (-3168.187) (-3094.095) -- 5:14:20
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 4:58:48
+
+      Average standard deviation of split frequencies: 0.170928
+
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 4:53:32
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 4:34:29
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 4:58:13
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 5:14:35
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 5:14:59
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 5:15:48
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 5:15:48
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 5:15:48
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 5:16:13
+      39000 -- (-3050.299) [-3024.812] (-3132.782) (-3106.523) * (-3042.032) [-3036.947] (-3178.597) (-3108.788) -- 5:16:13
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 4:54:14
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 4:34:07
+
+      Average standard deviation of split frequencies: 0.157333
+
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 4:57:39
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 5:15:12
+
+      Average standard deviation of split frequencies: 0.170928
+
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 5:15:36
+
+      Average standard deviation of split frequencies: 0.170928
+
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 5:16:00
+
+      Average standard deviation of split frequencies: 0.170928
+
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 5:16:24
+
+      Average standard deviation of split frequencies: 0.170928
+
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 5:16:24
+
+      Average standard deviation of split frequencies: 0.170928
+
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 5:16:24
+
+      Average standard deviation of split frequencies: 0.170928
+
+      40000 -- (-3045.492) [-3021.893] (-3128.016) (-3099.041) * (-3063.064) [-3025.558] (-3189.972) (-3085.134) -- 5:16:24
+
+      Average standard deviation of split frequencies: 0.170928
+
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 4:34:06
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 4:54:53
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 4:57:29
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 5:15:22
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 4:33:44
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 5:15:46
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 5:16:32
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 5:16:32
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 5:16:32
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 5:16:56
+      41000 -- (-3058.154) [-3031.827] (-3150.989) (-3089.527) * (-3068.021) [-3034.630] (-3174.322) (-3094.659) -- 5:16:56
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 4:55:07
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 4:56:34
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 4:33:02
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 5:15:31
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 5:15:54
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 5:16:17
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 5:16:40
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 5:16:40
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 5:16:40
+      42000 -- (-3049.438) [-3020.233] (-3115.527) (-3082.012) * (-3054.393) [-3035.277] (-3177.152) (-3085.701) -- 5:16:40
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 4:55:20
+
+      Average standard deviation of split frequencies: 0.157333
+
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 4:55:41
+
+      Average standard deviation of split frequencies: 0.157333
+
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 4:33:39
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 5:15:39
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 5:16:24
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 5:16:46
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 4:55:11
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 5:16:46
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 5:17:08
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 5:17:08
+      43000 -- (-3045.570) [-3033.331] (-3095.786) (-3070.270) * (-3062.845) [-3033.290] (-3194.780) (-3087.349) -- 5:17:08
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 4:55:52
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 4:33:17
+
+      Average standard deviation of split frequencies: 0.168760
+
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 5:15:24
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 4:54:20
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 5:15:46
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 5:16:07
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 5:16:29
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 5:16:29
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 5:16:29
+      44000 -- (-3045.672) [-3034.375] (-3104.574) (-3090.327) * (-3086.250) [-3035.629] (-3187.030) (-3081.039) -- 5:16:29
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 4:55:42
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 4:32:54
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 4:53:12
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 5:15:09
+
+      Average standard deviation of split frequencies: 0.157333
+
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 5:15:30
+
+      Average standard deviation of split frequencies: 0.157333
+
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 5:16:12
+
+      Average standard deviation of split frequencies: 0.157333
+
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 5:16:12
+
+      Average standard deviation of split frequencies: 0.157333
+
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 5:16:12
+
+      Average standard deviation of split frequencies: 0.157333
+
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 4:55:31
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 5:16:33
+
+      Average standard deviation of split frequencies: 0.157333
+
+      45000 -- (-3031.178) [-3007.070] (-3112.067) (-3087.950) * (-3101.513) [-3019.564] (-3189.807) (-3078.643) -- 5:16:33
+
+      Average standard deviation of split frequencies: 0.157333
+
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 4:32:33
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 4:53:23
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 5:15:14
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 5:15:34
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 5:15:55
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 5:16:16
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 4:32:29
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 5:16:16
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 5:16:16
+      46000 -- (-3051.041) [-3027.247] (-3129.815) (-3078.711) * (-3111.836) [-3030.826] (-3171.941) (-3078.323) -- 5:16:37
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 4:56:37
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 4:52:36
+
+      Average standard deviation of split frequencies: 0.168760
+
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 5:14:37
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 5:15:18
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 5:15:38
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 5:15:38
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 5:15:38
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 5:15:58
+      47000 -- (-3050.924) [-3007.372] (-3107.317) (-3072.962) * (-3109.562) [-3027.454] (-3180.424) (-3084.957) -- 5:15:58
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 4:33:17
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 4:56:43
+
+      Average standard deviation of split frequencies: 0.168760
+
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 4:51:49
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 5:14:01
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 5:14:41
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 5:15:01
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 5:15:01
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 5:15:01
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 5:15:21
+      48000 -- (-3066.320) [-3017.828] (-3134.458) (-3072.601) * (-3083.672) [-3022.493] (-3176.997) (-3065.476) -- 5:15:21
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 4:33:28
+
+      Average standard deviation of split frequencies: 0.176200
+
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 4:56:29
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 4:51:05
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 5:14:24
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 4:33:05
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 5:15:03
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 5:15:22
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 4:56:15
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 5:15:22
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 5:15:42
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 5:15:42
+      49000 -- (-3058.041) [-3035.944] (-3146.500) (-3062.578) * (-3099.475) [-3015.004] (-3175.623) (-3089.754) -- 5:15:42
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 4:50:39
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 4:32:58
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 5:14:27
+
+      Average standard deviation of split frequencies: 0.168760
+
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 5:14:46
+
+      Average standard deviation of split frequencies: 0.168760
+
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 5:15:05
+
+      Average standard deviation of split frequencies: 0.168760
+
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 5:15:24
+
+      Average standard deviation of split frequencies: 0.168760
+
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 5:15:24
+
+      Average standard deviation of split frequencies: 0.168760
+
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 5:15:24
+
+      Average standard deviation of split frequencies: 0.168760
+
+      50000 -- (-3051.553) [-3026.062] (-3108.045) (-3078.089) * (-3105.474) [-3021.981] (-3141.879) (-3079.938) -- 5:15:24
+
+      Average standard deviation of split frequencies: 0.168760
+
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 4:56:54
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 4:51:05
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 4:32:35
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 5:13:32
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 5:14:09
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 5:14:28
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 5:14:28
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 5:14:46
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 5:14:46
+      51000 -- (-3045.244) [-3015.109] (-3097.546) (-3095.731) * (-3105.778) [-3009.744] (-3145.354) (-3083.910) -- 5:14:46
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 4:50:56
+
+      Average standard deviation of split frequencies: 0.176200
+
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 4:58:06
+      59000 -- (-3096.400) [-3002.772] (-3115.151) (-3082.461) * (-3097.282) [-3042.405] (-3152.172) (-3056.641) -- 4:32:27
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 5:13:15
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 5:13:34
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 5:13:52
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 4:50:13
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 5:14:10
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 5:14:10
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 5:14:10
+      52000 -- (-3061.170) [-3012.699] (-3129.595) (-3098.791) * (-3112.991) [-3025.057] (-3156.104) (-3094.820) -- 5:14:28
+      60000 -- (-3095.218) [-3010.692] (-3108.379) (-3060.801) * (-3099.434) [-3035.816] (-3142.720) (-3062.434) -- 4:32:20
+
+      Average standard deviation of split frequencies: 0.182034
+
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 4:58:40
+
+      Average standard deviation of split frequencies: 0.176200
+
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 4:49:47
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 5:13:17
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 5:13:52
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 5:14:10
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 5:14:10
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 5:14:10
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 5:14:28
+      53000 -- (-3054.641) [-3008.989] (-3115.135) (-3093.539) * (-3108.065) [-3025.788] (-3157.434) (-3074.689) -- 5:14:28
+      61000 -- (-3078.385) [-3013.410] (-3104.762) (-3067.677) * (-3085.974) [-3038.563] (-3140.436) (-3053.713) -- 4:32:12
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 4:58:39
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 4:49:05
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 5:14:27
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 5:14:44
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 5:15:02
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 5:15:02
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 5:15:20
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 5:15:20
+      54000 -- (-3094.362) [-3008.412] (-3108.806) (-3072.231) * (-3097.327) [-3041.044] (-3143.062) (-3065.027) -- 5:15:20
+      62000 -- (-3069.527) [-3018.626] (-3106.586) (-3064.008) * (-3091.978) [-3032.843] (-3150.234) (-3053.927) -- 4:32:34
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 4:58:37
+      59000 -- (-3096.400) [-3002.772] (-3115.151) (-3082.461) * (-3097.282) [-3042.405] (-3152.172) (-3056.641) -- 4:48:40
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 5:14:42
+
+      Average standard deviation of split frequencies: 0.176200
+
+      63000 -- (-3095.496) [-3017.299] (-3105.980) (-3065.465) * (-3075.471) [-3045.789] (-3154.962) (-3067.128) -- 4:32:25
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 5:15:00
+
+      Average standard deviation of split frequencies: 0.176200
+
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 5:15:17
+
+      Average standard deviation of split frequencies: 0.176200
+
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 5:15:34
+
+      Average standard deviation of split frequencies: 0.176200
+
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 5:15:34
+
+      Average standard deviation of split frequencies: 0.176200
+
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 5:15:34
+
+      Average standard deviation of split frequencies: 0.176200
+
+      55000 -- (-3075.194) [-3005.079] (-3105.919) (-3073.182) * (-3087.149) [-3027.518] (-3141.248) (-3065.849) -- 5:15:34
+
+      Average standard deviation of split frequencies: 0.176200
+
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 4:58:34
+      60000 -- (-3095.218) [-3010.692] (-3108.379) (-3060.801) * (-3099.434) [-3035.816] (-3142.720) (-3062.434) -- 4:48:16
+
+      Average standard deviation of split frequencies: 0.182034
+
+      64000 -- (-3047.085) [-3025.587] (-3114.555) (-3059.231) * (-3079.148) [-3029.719] (-3184.563) (-3048.389) -- 4:32:30
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 5:14:06
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 5:14:40
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 5:14:56
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 5:14:56
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 5:15:13
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 5:15:13
+      61000 -- (-3078.385) [-3013.410] (-3104.762) (-3067.677) * (-3085.974) [-3038.563] (-3140.436) (-3053.713) -- 4:47:51
+      56000 -- (-3092.228) [-3018.409] (-3101.587) (-3086.888) * (-3101.540) [-3025.502] (-3144.480) (-3064.099) -- 5:15:13
+      59000 -- (-3096.400) [-3002.772] (-3115.151) (-3082.461) * (-3097.282) [-3042.405] (-3152.172) (-3056.641) -- 4:58:46
+      65000 -- (-3068.746) [-3021.630] (-3095.672) (-3063.072) * (-3051.126) [-3027.200] (-3168.223) (-3074.165) -- 4:32:35
+
+      Average standard deviation of split frequencies: 0.169949
+
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 5:14:03
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 5:14:20
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 5:14:36
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 5:14:53
+      62000 -- (-3069.527) [-3018.626] (-3106.586) (-3064.008) * (-3091.978) [-3032.843] (-3150.234) (-3053.927) -- 4:47:57
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 5:14:53
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 5:14:53
+      57000 -- (-3097.158) [-3004.316] (-3093.534) (-3056.549) * (-3080.488) [-3029.781] (-3161.375) (-3051.348) -- 5:14:53
+      60000 -- (-3095.218) [-3010.692] (-3108.379) (-3060.801) * (-3099.434) [-3035.816] (-3142.720) (-3062.434) -- 4:58:42
+
+      Average standard deviation of split frequencies: 0.182034
+
+      66000 -- (-3048.783) [-3035.654] (-3118.401) (-3077.869) * (-3027.857) [-3031.867] (-3184.830) (-3060.877) -- 4:32:25
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 5:13:43
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 5:14:00
+      63000 -- (-3095.496) [-3017.299] (-3105.980) (-3065.465) * (-3075.471) [-3045.789] (-3154.962) (-3067.128) -- 4:47:32
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 5:14:16
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 5:14:32
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 5:14:32
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 5:14:32
+      58000 -- (-3102.333) [-3006.154] (-3105.914) (-3084.118) * (-3092.341) [-3035.616] (-3146.574) (-3070.928) -- 5:14:32
+      61000 -- (-3078.385) [-3013.410] (-3104.762) (-3067.677) * (-3085.974) [-3038.563] (-3140.436) (-3053.713) -- 4:58:53
+slurmstepd-c34: error: *** JOB 3370518 ON c34 CANCELLED AT 2018-10-09T19:45:21 ***

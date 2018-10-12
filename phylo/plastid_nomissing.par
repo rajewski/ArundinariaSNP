@@ -1,0 +1,5 @@
+set autoclose=yes nowarn=yes;
+execute plastid/Plastid_NoMissing.nex;
+lset nst=6 rates=invgamma;
+mcmc;
+sumt;

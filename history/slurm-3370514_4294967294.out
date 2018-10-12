@@ -1,0 +1,510 @@
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   UNIX line termination
+   Longest line length = 933
+   Parsing file
+   UNIX line termination
+   UNIX line termination
+   UNIX line termination
+   UNIX line termination
+   UNIX line termination
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+
+   Executing file "LFY.par"
+   UNIX line termination
+   Longest line length = 31
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "LFY.nex"...
+
+   UNIX line termination
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+   UNIX line termination
+   UNIX line termination
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+   Longest line length = 933
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 147 taxa
+      Expecting '<name> or <number>'
+      Instead found ''' in command 'Taxlabels'
+      The error occurred when reading char. 2 on line 5
+         in the file 'LFY.nex'
+
+   Returning execution to calling file ...
+
+      Error in command "Execute"
+      The error occurred when reading char. 2 on line 2
+         in the file 'LFY.par'
+   Error in command "Execute"
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
+[?1034hMrBayes >    Could not read command from stdin; quitting
+
+   Deleting previously defined taxa
+   Quitting program
+
