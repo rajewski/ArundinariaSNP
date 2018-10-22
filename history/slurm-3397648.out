@@ -1,0 +1,265 @@
+Warning, you specified a working directory via "-w"
+Keep in mind that RAxML only accepts absolute path names, not relative ones!
+
+You are using a proportion of Invariable sites estimate, although I don't
+like it. The likelihood epsilon "-f e" will be automatically lowered to 0.001
+to avoid unfavorable effects caused by simultaneous optimization of alpha and P-Invar
+
+
+IMPORTANT WARNING: Sequences A.gig and Gig are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and JT80 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and JT112 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and JT175 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and JT177 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and L5 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and L62 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and L65 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and L93 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and L111 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and L132 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and Lo9 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and Lo16 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and Lo28 are exactly identical
+
+
+IMPORTANT WARNING: Sequences A.gig and Lo43 are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and H6B are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and H8C are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and H10B are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and H10E are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and H14D are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and H_2C are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and JT27 are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and JT170 are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and JT173_0 are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0B and JT178_0 are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H2A are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H2B are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H2C are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H4A are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H4B are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H4D are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H6A are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H6D are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H8A are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H8E are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H10D_0 are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H12D are exactly identical
+
+
+IMPORTANT WARNING: Sequences H0C and H_2D are exactly identical
+
+
+IMPORTANT WARNING: Sequences H4C and H6C are exactly identical
+
+
+IMPORTANT WARNING: Sequences H4C and H8D are exactly identical
+
+
+IMPORTANT WARNING: Sequences H4C and H14C are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT6 and JT85 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT6 and JT87 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT6 and JT164 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT6 and JT183 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT8 and JT21 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT8 and JT165 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT8 and JT166 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT8 and JT185 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT8 and JT188 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT23 and JT25 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT89 and JT162 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT89 and JT182 are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT89 and Tec are exactly identical
+
+
+IMPORTANT WARNING: Sequences JT173_1 and JT178_1 are exactly identical
+
+IMPORTANT WARNING
+Found 55 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates removed is printed to file plastid/Plastid_NoMissing.phy.reduced
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+This is the RAxML Master Pthread
+
+This is RAxML Worker Pthread Number: 2
+
+This is RAxML Worker Pthread Number: 1
+
+This is RAxML Worker Pthread Number: 3
+
+This is RAxML Worker Pthread Number: 4
+
+
+This is RAxML version 8.2.11 released by Alexandros Stamatakis on June 2017.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 51 distinct alignment patterns
+
+Found 0 invariant alignment patterns that correspond to 0 columns 
+Proportion of gaps and completely undetermined characters in this alignment: 1.29%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 1000 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA+P-Invar model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA+P-Invar Model parameters will be estimated up to an accuracy of 0.0010000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 51
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-SSE3 -f a -m GTRGAMMAI -p 121787 -x 92191 -N 1000 -T 5 -s plastid/Plastid_NoMissing.phy -w /rhome/arajewski/bigdata/Arundinaria/phylo/plastid/ -n Plastid.NoMissing.RAxML 
+
+
+
+Time for BS model parameter optimization 0.051187
+Bootstrap[0]: Time 0.879083 seconds, bootstrap likelihood -3483.802256, best rearrangement setting 13
+Bootstrap[1]: Time 0.214328 seconds, bootstrap likelihood -3500.925240, best rearrangement setting 5
+Bootstrap[2]: Time 0.816945 seconds, bootstrap likelihood -3505.023553, best rearrangement setting 15
+Bootstrap[3]: Time 0.419063 seconds, bootstrap likelihood -3509.128835, best rearrangement setting 11
+Bootstrap[4]: Time 0.631896 seconds, bootstrap likelihood -3507.604080, best rearrangement setting 7
+Bootstrap[5]: Time 0.316444 seconds, bootstrap likelihood -3378.563270, best rearrangement setting 7
+Bootstrap[6]: Time 0.795481 seconds, bootstrap likelihood -3438.688055, best rearrangement setting 13
+Bootstrap[7]: Time 0.409840 seconds, bootstrap likelihood -3510.065330, best rearrangement setting 5
+Bootstrap[8]: Time 0.451884 seconds, bootstrap likelihood -3484.509359, best rearrangement setting 15
+Bootstrap[9]: Time 0.648728 seconds, bootstrap likelihood -3359.950484, best rearrangement setting 7
+Bootstrap[10]: Time 0.351653 seconds, bootstrap likelihood -3563.663327, best rearrangement setting 9
+Bootstrap[11]: Time 0.890880 seconds, bootstrap likelihood -3418.237894, best rearrangement setting 10
+Bootstrap[12]: Time 0.849154 seconds, bootstrap likelihood -3534.611775, best rearrangement setting 13
+Bootstrap[13]: Time 0.219728 seconds, bootstrap likelihood -3491.577885, best rearrangement setting 5
+Bootstrap[14]: Time 0.368805 seconds, bootstrap likelihood -3549.285494, best rearrangement setting 12
+Bootstrap[15]: Time 0.427852 seconds, bootstrap likelihood -3433.191983, best rearrangement setting 13
+Bootstrap[16]: Time 0.379016 seconds, bootstrap likelihood -3439.715306, best rearrangement setting 9
+Bootstrap[17]: Time 0.315794 seconds, bootstrap likelihood -3454.853383, best rearrangement setting 8
+Bootstrap[18]: Time 0.424392 seconds, bootstrap likelihood -3590.140766, best rearrangement setting 13
+Bootstrap[19]: Time 0.295184 seconds, bootstrap likelihood -3473.628690, best rearrangement setting 7
+Bootstrap[20]: Time 0.418395 seconds, bootstrap likelihood -3471.699480, best rearrangement setting 5
+Bootstrap[21]: Time 0.389424 seconds, bootstrap likelihood -3431.112796, best rearrangement setting 13
