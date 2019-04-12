@@ -32,7 +32,7 @@ samples <- read.csv("../sampleNames.txt",header=TRUE, sep="\t")[,1:2]
 samples <- paste0(samples$X.target,"_",samples$sample)
 
 # Write WXY Loci
-WXYs <- rep(refs[1], 148)
+WXYs <- rep(refs["WXY"], 148)
 names(WXYs) <- paste0("WXY_", colnames(g.both))
 WXYSNPs <- t(g.both[grep('^WXY', rownames(g.both)),])
 colnames(WXYSNPs) <- gsub("WXY_","", colnames(WXYSNPs))
@@ -46,7 +46,7 @@ WXYs <- WXYs[names(WXYs)[names(WXYs) %in% wxysamples]]
 writeXStringSet(WXYs,"WXY_Phased.fasta")
 
 # Write ambiguous WXY Loci
-WXYsa <- rep(refs[1], 74)
+WXYsa <- rep(refs["WXY"], 74)
 names(WXYsa) <- paste0("WXY_", colnames(g.ambig.save))
 WXYSNPsa <- t(g.ambig.save[grep('^WXY', rownames(g.ambig.save)),])
 colnames(WXYSNPsa) <- gsub("WXY_","", colnames(WXYSNPsa))
@@ -57,7 +57,7 @@ for (i in 1:74) {
 writeXStringSet(WXYsa,"WXY_ambig.fasta")
 
 # Write LFY Loci
-LFYs <- rep(refs[2], 148)
+LFYs <- rep(refs["LFY"], 148)
 names(LFYs) <- paste0("LFY_", colnames(g.both))
 LFYSNPs <- t(g.both[grep('^LFY', rownames(g.both)),])
 LFYSNPs[95:96, 41] <- "G" #Manual correction of error, sorry
@@ -73,7 +73,7 @@ LFYs <- LFYs[names(LFYs)[names(LFYs) %in% lfysamples]]
 writeXStringSet(LFYs,"LFY_Phased.fasta")
 
 # Write ambiguous LFY Loci
-LFYsa <- rep(refs[2], 74)
+LFYsa <- rep(refs["LFY"], 74)
 names(LFYsa) <- paste0("LFY_", colnames(g.ambig.save))
 LFYSNPsa <- t(g.ambig.save[grep('^LFY', rownames(g.ambig.save)),])
 LFYSNPsa[48, 41] <- "G" #Manual correction of error, sorry
@@ -86,7 +86,7 @@ for (i in 1:74) {
 writeXStringSet(LFYsa,"LFY_amibg.fasta")
 
 # Write matK Loci
-matKs <- rep(refs[3], 148)
+matKs <- rep(refs["matK"], 148)
 names(matKs) <- paste0("matK_", colnames(g.both))
 matKSNPs <- t(g.both[grep('^matK', rownames(g.both)),])
 colnames(matKSNPs) <- gsub("matK_","", colnames(matKSNPs))
@@ -100,7 +100,7 @@ matKs <- matKs[names(matKs)[names(matKs) %in% matksamples]]
 writeXStringSet(matKs,"matK_Phased.fasta")
 
 # Write ambiguous matK Loci
-matKsa <- rep(refs[3], 74)
+matKsa <- rep(refs["matK"], 74)
 names(matKsa) <- paste0("matK_", colnames(g.ambig.save))
 matKSNPsa <- t(g.ambig.save[grep('^matK', rownames(g.ambig.save)),])
 colnames(matKSNPsa) <- gsub("matK_","", colnames(matKSNPsa))
@@ -111,7 +111,7 @@ for (i in 1:74) {
 writeXStringSet(matKsa,"matK_ambig.fasta")
 
 # Write the trnL loci
-trnLs <- rep(refs[5], 148)
+trnLs <- rep(refs["trnL"], 148)
 names(trnLs) <- paste0("trnL_", colnames(g.both))
 trnLSNPs <- t(g.both[grep('^trnL', rownames(g.both)),])
 colnames(trnLSNPs) <- gsub("trnL_","", colnames(trnLSNPs))
@@ -125,7 +125,7 @@ trnLs <- trnLs[names(trnLs)[names(trnLs) %in% trnlsamples]]
 writeXStringSet(trnLs,"trnL_Phased.fasta")
 
 # Write the ambiguous trnL loci
-trnLsa <- rep(refs[5], 74)
+trnLsa <- rep(refs["trnL"], 74)
 names(trnLsa) <- paste0("trnL_", colnames(g.ambig.save))
 trnLSNPsa <- t(g.ambig.save[grep('^trnL', rownames(g.ambig.save)),])
 colnames(trnLSNPsa) <- gsub("trnL_","", colnames(trnLSNPsa))
@@ -136,7 +136,7 @@ for (i in 1:74) {
 writeXStringSet(trnLsa,"trnL_ambig.fasta")
 
 # Write the psaA loci
-psaAs <- rep(refs[4], 148)
+psaAs <- rep(refs["psaA"], 148)
 names(psaAs) <- paste0("psaA_", colnames(g.both))
 psaASNPs <- t(g.both[grep('^psaA', rownames(g.both)),])
 colnames(psaASNPs) <- gsub("psaA_","", colnames(psaASNPs))
@@ -150,7 +150,7 @@ psaAs <- psaAs[names(psaAs)[names(psaAs) %in% psaasamples]]
 writeXStringSet(psaAs,"psaA_Phased.fasta")
 
 # Write the ambiguous psaA loci
-psaAsa <- rep(refs[4], 74)
+psaAsa <- rep(refs["psaA"], 74)
 names(psaAsa) <- paste0("psaA_", colnames(g.ambig.save))
 psaASNPsa <- t(g.ambig.save[grep('^psaA', rownames(g.ambig.save)),])
 colnames(psaASNPsa) <- gsub("psaA_","", colnames(psaASNPsa))
