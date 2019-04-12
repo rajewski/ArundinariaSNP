@@ -1,5 +1,5 @@
 set autoclose=yes nowarn=yes;
-execute plastid/Plastid_NoMissing.nex;
-lset nst=6 rates=invgamma;
+execute plastid/Plastid_NoMissingrenamedJimmy.nex;
+lset applyto=(all) nst=1 rates=propinv;
 mcmc;
 sumt;
