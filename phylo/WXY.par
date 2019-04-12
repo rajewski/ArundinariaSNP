@@ -1,5 +1,6 @@
 set autoclose=yes nowarn=yes;
-execute WXY/WXY.nex;
-lset nst=6 rates=invgamma;
+execute WXY/WXYrenamedJimmy.nex;
+lset applyto=(all) nst=6 rates=propinv;
+prset applyto=(all) statefreqpr=fixed(equal);
 mcmc;
 sumt;

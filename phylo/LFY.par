@@ -1,5 +1,5 @@
 set autoclose=yes nowarn=yes;
-execute LFY/LFY.nex;
-lset nst=6 rates=invgamma;
+execute LFY/LFYrenamedJimmy.nex;
+lset applyto=(all) nst=2 rates=propinv;
 mcmc;
 sumt;

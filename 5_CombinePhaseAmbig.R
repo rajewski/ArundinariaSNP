@@ -1,3 +1,4 @@
+setwd("~/bigdata/Arundinaria/results")
 library(vcfR)
 g <- read.vcfR("Phased.vcf")
 g.SNP <- extract.indels(g, return.indels = FALSE) # remove all indels to only deal with SNPs
@@ -12,6 +13,7 @@ hapsNA <- extract.haps(g.SNP) # Make table of only the phased variants, with unp
 # write.csv(hapsnoNA, file="HaplotypesNoNa.csv")
 
 #manipulate g.ambig table into same format as others to make lookups easier 
+g.ambig.save <- g.ambig
 g.ambig <- do.call(cbind, replicate(n=2, g.ambig, simplify = FALSE))
 g.ambig <- g.ambig[,order(colnames(g.ambig))]
 colnames(g.ambig) <- colnames(hapsNA)
@@ -21,12 +23,12 @@ g.both <- ifelse(is.na(hapsNA),g.ambig,hapsNA)
 g.both <- toupper(g.both) #make them uppercase bc...OCD
 
 # Add these SNPs into the ref sequences
-source("https://bioconductor.org/biocLite.R")
-biocLite("Biostrings")
+# source("https://bioconductor.org/biocLite.R")
+# biocLite("Biostrings")
 library(Biostrings)
-refs <- readDNAStringSet("references.fasta")
+refs <- readDNAStringSet("../references.fasta")
 # make a list to filter out samples we didnt sequence later
-samples <- read.csv("sampleNames.txt",header=TRUE, sep="\t")[,1:2]
+samples <- read.csv("../sampleNames.txt",header=TRUE, sep="\t")[,1:2]
 samples <- paste0(samples$X.target,"_",samples$sample)
 
 # Write WXY Loci
@@ -42,6 +44,17 @@ wxysamples <- c(paste0(samples[grep('^WXY',samples)],"_0"),paste0(samples[grep('
 wxysamples <- wxysamples[order(wxysamples)]
 WXYs <- WXYs[names(WXYs)[names(WXYs) %in% wxysamples]]
 writeXStringSet(WXYs,"WXY_Phased.fasta")
+
+# Write ambiguous WXY Loci
+WXYsa <- rep(refs[1], 74)
+names(WXYsa) <- paste0("WXY_", colnames(g.ambig.save))
+WXYSNPsa <- t(g.ambig.save[grep('^WXY', rownames(g.ambig.save)),])
+colnames(WXYSNPsa) <- gsub("WXY_","", colnames(WXYSNPsa))
+for (i in 1:74) {
+  pos <- WXYSNPsa[i,!is.na(WXYSNPsa[i,])]
+  WXYsa[[i]] <- replaceLetterAt(WXYsa[[i]], 1:length(WXYsa[[1]]) %in% as.numeric(names(pos)), as.character(WXYSNPsa[i,names(pos)]))
+}
+writeXStringSet(WXYsa,"WXY_ambig.fasta")
 
 # Write LFY Loci
 LFYs <- rep(refs[2], 148)
@@ -59,6 +72,19 @@ lfysamples <- lfysamples[order(lfysamples)]
 LFYs <- LFYs[names(LFYs)[names(LFYs) %in% lfysamples]]
 writeXStringSet(LFYs,"LFY_Phased.fasta")
 
+# Write ambiguous LFY Loci
+LFYsa <- rep(refs[2], 74)
+names(LFYsa) <- paste0("LFY_", colnames(g.ambig.save))
+LFYSNPsa <- t(g.ambig.save[grep('^LFY', rownames(g.ambig.save)),])
+LFYSNPsa[48, 41] <- "G" #Manual correction of error, sorry
+LFYSNPsa[48, 42] <- "A" #Manual correction of error, sorry
+colnames(LFYSNPsa) <- gsub("LFY_","", colnames(LFYSNPsa))
+for (i in 1:74) {
+  pos <- LFYSNPsa[i,!is.na(LFYSNPsa[i,])]
+  LFYsa[[i]] <- replaceLetterAt(LFYsa[[i]], 1:length(LFYsa[[1]]) %in% as.numeric(names(pos)), as.character(LFYSNPsa[i,names(pos)]))
+}
+writeXStringSet(LFYsa,"LFY_amibg.fasta")
+
 # Write matK Loci
 matKs <- rep(refs[3], 148)
 names(matKs) <- paste0("matK_", colnames(g.both))
@@ -72,6 +98,17 @@ matksamples <- c(paste0(samples[grep('^matK',samples)],"_0"),paste0(samples[grep
 matksamples <- matksamples[order(matksamples)]
 matKs <- matKs[names(matKs)[names(matKs) %in% matksamples]]
 writeXStringSet(matKs,"matK_Phased.fasta")
+
+# Write ambiguous matK Loci
+matKsa <- rep(refs[3], 74)
+names(matKsa) <- paste0("matK_", colnames(g.ambig.save))
+matKSNPsa <- t(g.ambig.save[grep('^matK', rownames(g.ambig.save)),])
+colnames(matKSNPsa) <- gsub("matK_","", colnames(matKSNPsa))
+for (i in 1:74) {
+  pos <- matKSNPsa[i,!is.na(matKSNPsa[i,])]
+  matKsa[[i]] <- replaceLetterAt(matKsa[[i]], 1:length(matKsa[[1]]) %in% as.numeric(names(pos)), as.character(matKSNPsa[i,names(pos)]))
+}
+writeXStringSet(matKsa,"matK_ambig.fasta")
 
 # Write the trnL loci
 trnLs <- rep(refs[5], 148)
@@ -87,6 +124,17 @@ trnlsamples <- trnlsamples[order(trnlsamples)]
 trnLs <- trnLs[names(trnLs)[names(trnLs) %in% trnlsamples]]
 writeXStringSet(trnLs,"trnL_Phased.fasta")
 
+# Write the ambiguous trnL loci
+trnLsa <- rep(refs[5], 74)
+names(trnLsa) <- paste0("trnL_", colnames(g.ambig.save))
+trnLSNPsa <- t(g.ambig.save[grep('^trnL', rownames(g.ambig.save)),])
+colnames(trnLSNPsa) <- gsub("trnL_","", colnames(trnLSNPsa))
+for (i in 1:74) {
+  pos <- trnLSNPsa[i,!is.na(trnLSNPsa[i,])]
+  trnLsa[[i]] <- replaceLetterAt(trnLsa[[i]], 1:length(trnLsa[[1]]) %in% as.numeric(names(pos)), as.character(trnLSNPsa[i,names(pos)]))
+}
+writeXStringSet(trnLsa,"trnL_ambig.fasta")
+
 # Write the psaA loci
 psaAs <- rep(refs[4], 148)
 names(psaAs) <- paste0("psaA_", colnames(g.both))
@@ -100,3 +148,14 @@ psaasamples <- c(paste0(samples[grep('^psaA',samples)],"_0"),paste0(samples[grep
 psaasamples <- psaasamples[order(psaasamples)]
 psaAs <- psaAs[names(psaAs)[names(psaAs) %in% psaasamples]]
 writeXStringSet(psaAs,"psaA_Phased.fasta")
+
+# Write the ambiguous psaA loci
+psaAsa <- rep(refs[4], 74)
+names(psaAsa) <- paste0("psaA_", colnames(g.ambig.save))
+psaASNPsa <- t(g.ambig.save[grep('^psaA', rownames(g.ambig.save)),])
+colnames(psaASNPsa) <- gsub("psaA_","", colnames(psaASNPsa))
+for (i in 1:74) {
+  pos <- psaASNPsa[i,!is.na(psaASNPsa[i,])]
+  psaAsa[[i]] <- replaceLetterAt(psaAsa[[i]], 1:length(psaAsa[[1]]) %in% as.numeric(names(pos)), as.character(psaASNPsa[i,names(pos)]))
+}
+writeXStringSet(psaAsa,"psaA_ambig.fasta")
