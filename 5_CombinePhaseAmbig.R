@@ -159,3 +159,14 @@ for (i in 1:74) {
   psaAsa[[i]] <- replaceLetterAt(psaAsa[[i]], 1:length(psaAsa[[1]]) %in% as.numeric(names(pos)), as.character(psaASNPsa[i,names(pos)]))
 }
 writeXStringSet(psaAsa,"psaA_ambig.fasta")
+
+# try to merge the ambiguious datasets into a single stringset since theyre in the same order
+mergedsa <- xscat(LFYsa, WXYsa, matKsa, trnLsa, psaAsa)
+names(mergedsa) <- colnames(g.ambig.save)
+writeXStringSet(mergedsa,"Concatenated_ambig.fasta")
+
+
+
+
+
+
