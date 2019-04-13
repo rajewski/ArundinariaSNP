@@ -1,2 +1,5 @@
 results/*
 download.sh
+*~
+*.out
+*.console
