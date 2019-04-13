@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#SBATCH --ntasks=4
+#SBATCH --ntasks=10
 #SBATCH --nodes=1
 #SBATCH --mem=1G
-#SBATCH --time=02:00:00
+#SBATCH --time=04:00:00
 #SBATCH --mail-user=araje002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH -p batch
