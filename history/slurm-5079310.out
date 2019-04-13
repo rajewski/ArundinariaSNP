@@ -1,0 +1,16 @@
+
+# $((SLURM_MEM_PER_NODE/1000))'G'
+# $SLURM_NTASKS
+
+# echo $SLURM_NTASKS is the number of core
+# echo $SLURM_MEM_PER_NODE is the amount of memory
+
+java -jar /opt/linux/centos/7.x/x86_64/pkgs/jmodeltest2/2.1.10/jModelTest.jar -d ../concatenated/TESTJimmyConcatenated.phy -f -i -g 4 -s 11 -AIC -AICc -DT -BIC -tr $SLURM_NTASKS -o TESTJimmyConcatenated.out
+[MPI] Testing MPI environment... (c28)
+[MPI] Proceed without MPI
+WARNING: Cannot write in 'log' directory (/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/jmodeltest2/2.1.10/log): All logging will be disabled
+         If you want to fix this warning, check 'conf/jmodeltest.conf'
+         Change the logging directory to where you have writing permission
+         or disable 'checkpointing', 'html-logging' and 'phyml-logging' properties
+
+PhyML binary: /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/jmodeltest2/2.1.10/exe/phyml/PhyML_3.0_linux64 v20130103
