@@ -54,6 +54,9 @@ for (i in 1:74) {
   pos <- WXYSNPsa[i,!is.na(WXYSNPsa[i,])]
   WXYsa[[i]] <- replaceLetterAt(WXYsa[[i]], 1:length(WXYsa[[1]]) %in% as.numeric(names(pos)), as.character(WXYSNPsa[i,names(pos)]))
 }
+wxysamplesa <- c(samples[grep('^WXY',samples)])
+wxysamplesa <- wxysamplesa[order(wxysamplesa)]
+WXYsa <- WXYsa[names(WXYsa)[names(WXYsa) %in% wxysamplesa]]
 writeXStringSet(WXYsa,"WXY_ambig.fasta")
 
 # Write LFY Loci
@@ -83,7 +86,10 @@ for (i in 1:74) {
   pos <- LFYSNPsa[i,!is.na(LFYSNPsa[i,])]
   LFYsa[[i]] <- replaceLetterAt(LFYsa[[i]], 1:length(LFYsa[[1]]) %in% as.numeric(names(pos)), as.character(LFYSNPsa[i,names(pos)]))
 }
-writeXStringSet(LFYsa,"LFY_amibg.fasta")
+lfysamplesa <- c(samples[grep('^LFY',samples)])
+lfysamplesa <- lfysamplesa[order(lfysamplesa)]
+LFYsa <- LFYsa[names(LFYsa)[names(LFYsa) %in% lfysamplesa]]
+writeXStringSet(LFYsa,"LFY_ambig.fasta")
 
 # Write matK Loci
 matKs <- rep(refs["matK"], 148)
@@ -108,6 +114,9 @@ for (i in 1:74) {
   pos <- matKSNPsa[i,!is.na(matKSNPsa[i,])]
   matKsa[[i]] <- replaceLetterAt(matKsa[[i]], 1:length(matKsa[[1]]) %in% as.numeric(names(pos)), as.character(matKSNPsa[i,names(pos)]))
 }
+matksamplesa <- c(samples[grep('^matK',samples)])
+matksamplesa <- matksamplesa[order(matksamplesa)]
+matKsa <- matKsa[names(matKsa)[names(matKsa) %in% matksamplesa]]
 writeXStringSet(matKsa,"matK_ambig.fasta")
 
 # Write the trnL loci
@@ -133,6 +142,9 @@ for (i in 1:74) {
   pos <- trnLSNPsa[i,!is.na(trnLSNPsa[i,])]
   trnLsa[[i]] <- replaceLetterAt(trnLsa[[i]], 1:length(trnLsa[[1]]) %in% as.numeric(names(pos)), as.character(trnLSNPsa[i,names(pos)]))
 }
+trnlsamplesa <- c(samples[grep('^trnL',samples)])
+trnlsamplesa <- trnlsamplesa[order(trnlsamplesa)]
+trnLsa <- trnLsa[names(trnLsa)[names(trnLsa) %in% trnlsamplesa]]
 writeXStringSet(trnLsa,"trnL_ambig.fasta")
 
 # Write the psaA loci
@@ -158,6 +170,9 @@ for (i in 1:74) {
   pos <- psaASNPsa[i,!is.na(psaASNPsa[i,])]
   psaAsa[[i]] <- replaceLetterAt(psaAsa[[i]], 1:length(psaAsa[[1]]) %in% as.numeric(names(pos)), as.character(psaASNPsa[i,names(pos)]))
 }
+psaasamplesa <- c(samples[grep('^psaA',samples)])
+psaasamplesa <- psaasamplesa[order(psaasamplesa)]
+psaAsa <- psaAsa[names(psaAsa)[names(psaAsa) %in% psaasamplesa]]
 writeXStringSet(psaAsa,"psaA_ambig.fasta")
 
 # try to merge the ambiguious datasets into a single stringset since theyre in the same order
