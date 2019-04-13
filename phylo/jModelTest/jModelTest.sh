@@ -15,4 +15,4 @@ set -euv
 # echo $SLURM_NTASKS is the number of core
 # echo $SLURM_MEM_PER_NODE is the amount of memory
 
-java -jar /opt/linux/centos/7.x/x86_64/pkgs/jmodeltest2/2.1.10/jModelTest.jar -d ../concatenated/TESTJimmyConcatenated.phy -f -i -g 4 -s 11 -AIC -AICc -DT -BIC -tr $SLURM_NTASKS -o TESTJimmyConcatenated.out
+java -jar /opt/linux/centos/7.x/x86_64/pkgs/jmodeltest2/2.1.10/jModelTest.jar -d ../concatenated/TESTJimmyConcatenated.phy -f -i -g 4 -s 3 -AIC -AICc -DT -BIC -tr $SLURM_NTASKS -o TESTJimmyConcatenated.out
