@@ -6,7 +6,7 @@
 #SBATCH --mail-user=araje002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH -p batch
-#SBATCH -o ./history/slurm-%A.out
+#SBATCH -o ../../history/slurm-%A.out
 set -euv
 
 # $((SLURM_MEM_PER_NODE/1000))'G'
