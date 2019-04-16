@@ -13,8 +13,9 @@ set -euv
 # $SLURM_NTASKS
 
 #load the module for making a PCA or MDS plot from a VCF
-module load plink
+module load plink/1.90b3.38
 
-plink --allow-extra-chr --vcf test_snps1.vcf --pca -mind 0.5
+#Do a PCA
+plink --allow-extra-chr --threads $SLURM_NTASKS --memory $SLURM_MEM_PER_NODE --vcf ../../Phased.vcf --pca -mind 0.5
 
-plink --allow-extra-chr --vcf test_snps1.vcf --mds-plot 2 -mind 0.5 --cluster
+plink --allow-extra-chr --threads $SLURM_NTASKS --memory $SLURM_MEM_PER_NODE --vcf ../../Phased.vcf --mds-plot 2 -mind 0.5 --cluster
