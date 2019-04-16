@@ -27,3 +27,4 @@ Scripts:
 
 9. phylo/7b_PhyloMap.R will maybe be more generally useful if you use your own data. It takes the coordinate information scraped in step 8 and some trees generates in steps 6 and 7 to make figures where tips of a phylogeny are connected to GPS points on a map. This is sort of a qualitative way to look for geographic signal in the analysis.
 
+10. phylo/7d_clustering.sh uses the module plink to perfor a PCA and MDS of the data. The data here has been subset from the Phased.vcf to just include the two nuclear loci (LFY and WXY), so the code to do that is included in the beginning of that script. 
