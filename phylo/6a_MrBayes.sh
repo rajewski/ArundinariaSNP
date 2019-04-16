@@ -9,4 +9,4 @@
 #SBATCH -o ../history/slurm-%A_%a.out
 
 module load mrbayes/3.2.6
-mpiexec -n $SLURM_NTASKS mb plastid_nomissing.par #Change the par file for whatever analysis you are running
+mpiexec -n $SLURM_NTASKS mb ./MrBayesPars/plastid_nomissing.par #Change the par file for whatever analysis you are running
