@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --ntasks=6
+#SBATCH --ntasks=1
 #SBATCH --nodes=1
 #SBATCH --mem=1G
 #SBATCH --time=02:00:00
@@ -20,6 +20,8 @@ if [ ! -e '../results/PhasedNuclear.vcf' ]; then
     grep -v "#" ../results/Phased.vcf | grep "LFY" >> ../results/PhasedNuclear.vcf
     grep -v "#" ../results/Phased.vcf | grep "WXY" >> ../results.PhasedNuclear.vcf
     echo $(date): "Done"
+else
+    echo $(date): "Found PhasedNuclear.vcf. Dope."
 fi
 
 #load the module for making a PCA or MDS plot from a VCF
@@ -28,12 +30,16 @@ module load plink/1.90b3.38
 #Do a PCA
 if [ ! -e './Nuclear.eigenvec' ]; then
     echo $(date): "Running PCA"
-    plink --allow-extra-chr --threads $SLURM_NTASKS --memory $SLURM_MEM_PER_NODE --vcf ../results/PhasedNuclear.vcf --pca -mind 0.5 --out Nuclear
+    plink --allow-extra-chr --vcf ../results/PhasedNuclear.vcf --pca -mind 0.5 --out Nuclear
     echo $(date): "Done"
+else
+    echo $(date): "PCA results found. Dope."
 fi
 
-if [ ! -e './Nuclear.mds' ; then
+if [ ! -e './Nuclear.mds' ]; then
     echo $(date): "Running MDS"
-    plink --allow-extra-chr --threads $SLURM_NTASKS --memory $SLURM_MEM_PER_NODE --vcf ../results/PhasedNuclear.vcf --mds-plot 2 -mind 0.5 --cluster --out Nuclear
+    plink --allow-extra-chr --vcf ../results/PhasedNuclear.vcf --mds-plot 2 -mind 0.5 --cluster --out Nuclear
     echo $(date): "Done"
+else
+    echo $(date): "MDS results found. Dope."
 fi
