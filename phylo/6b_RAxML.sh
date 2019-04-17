@@ -8,4 +8,4 @@
 #SBATCH -o ../history/slurm-%A.out
 
 module load RAxML/8.2.11
-raxmlHPC-PTHREADS-SSE3 -f a -m GTRGAMMAI -p 121787 -x 92191 -N 1000 -T $SLURM_NTASKS -s plastid/Plastid_NoMissingrenamedJimmy.phy -w ~/bigdata/Arundinaria/phylo/plastid/GTRGI -n Plastid_NoMissingrenamedJimmy.RAxML 
+raxmlHPC-PTHREADS-SSE3 -f a -m GTRGAMMAI -p 121787 -x 92191 -N 1000 -T $SLURM_NTASKS -s concatenated/TESTJimmyConcatenated.phy -w ~/bigdata/Arundinaria/phylo/concatenated/GTRGI -n TESTJimmyConcatenated.RAxML 

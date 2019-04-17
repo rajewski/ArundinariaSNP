@@ -1,5 +1,5 @@
 results/*
 download.sh
-**.~
+**/*~
 phylo/jModelTest/*.out
 phylo/jModelTest/*.console
