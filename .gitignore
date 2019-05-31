@@ -4,3 +4,9 @@ download.sh
 **/*~
 phylo/jModelTest/*.out
 phylo/jModelTest/*.console
+phylo/LFY/*
+phylo/WXY/*
+phylo/plastid/*
+phylo/matK/*
+phylo/concatenated/*
+phylo/nuclear/*
