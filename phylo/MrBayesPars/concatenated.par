@@ -1,5 +1,5 @@
 set autoclose=yes nowarn=yes;
-execute ../concatenated/TESTconcatenated.nex;
+execute concatenated/TESTconcatenated.nex;
 lset nst=6 rates=invgamma;
-mcmc Relburning=yes BurninFrac=0.25;
+mcmc Relburnin=yes BurninFrac=0.25;
 sumt;

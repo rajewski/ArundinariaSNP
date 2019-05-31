@@ -1,0 +1,1067 @@
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 43
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTconcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 77 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> H_2C
+      Taxon  3 -> H_2D
+      Taxon  4 -> H0B
+      Taxon  5 -> H0C
+      Taxon  6 -> H10B
+      Taxon  7 -> H10C
+      Taxon  8 -> H10D
+      Taxon  9 -> H10E
+      Taxon 10 -> H12D
+      Taxon 11 -> H14C
+      Taxon 12 -> H14D
+      Taxon 13 -> H2A
+      Taxon 14 -> H2B
+      Taxon 15 -> H2C
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 43
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTconcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 77 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> H_2C
+      Taxon  3 -> H_2D
+      Taxon  4 -> H0B
+      Taxon  5 -> H0C
+      Taxon  6 -> H10B
+      Taxon  7 -> H10C
+      Taxon  8 -> H10D
+      Taxon  9 -> H10E
+      Taxon 10 -> H12D
+      Taxon 11 -> H14C
+      Taxon 12 -> H14D
+      Taxon 13 -> H2A
+      Taxon 14 -> H2B
+      Taxon 15 -> H2C
+      Taxon 16 -> H4A
+      Taxon 17 -> H4B
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 43
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTconcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 77 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> H_2C
+      Taxon  3 -> H_2D
+      Taxon  4 -> H0B
+      Taxon  5 -> H0C
+      Taxon  6 -> H10B
+      Taxon  7 -> H10C
+      Taxon  8 -> H10D
+      Taxon  9 -> H10E
+      Taxon 10 -> H12D
+      Taxon 11 -> H14C
+      Taxon 12 -> H14D
+      Taxon 13 -> H2A
+      Taxon 14 -> H2B
+      Taxon 15 -> H2C
+      Taxon 16 -> H4A
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 43
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTconcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 77 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> H_2C
+      Taxon  3 -> H_2D
+      Taxon  4 -> H0B
+      Taxon  5 -> H0C
+      Taxon  6 -> H10B
+      Taxon  7 -> H10C
+      Taxon  8 -> H10D
+      Taxon  9 -> H10E
+      Taxon 10 -> H12D
+      Taxon 11 -> H14C
+      Taxon 12 -> H14D
+      Taxon 13 -> H2A
+      Taxon 14 -> H2B
+      Taxon 15 -> H2C
+      Taxon 16 -> H4A
+      Taxon 17 -> H4B
+      Taxon 18 -> H4C
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 43
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTconcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 77 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> H_2C
+      Taxon  3 -> H_2D
+      Taxon  4 -> H0B
+      Taxon  5 -> H0C
+      Taxon  6 -> H10B
+      Taxon  7 -> H10C
+      Taxon  8 -> H10D
+      Taxon  9 -> H10E
+      Taxon 10 -> H12D
+      Taxon 11 -> H14C
+      Taxon 12 -> H14D
+      Taxon 13 -> H2A
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 43
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTconcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 77 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> H_2C
+      Taxon  3 -> H_2D
+      Taxon  4 -> H0B
+      Taxon  5 -> H0C
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 43
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTconcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 77 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> H_2C
+      Taxon  3 -> H_2D
+      Taxon  4 -> H0B
+      Taxon  5 -> H0C
+      Taxon  6 -> H10B
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 43
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTconcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 77 taxa
+   Exiting taxa block
+   Reading characters block
+      Taxon 16 -> H4A
+      Taxon 17 -> H4B
+      Taxon 18 -> H4C
+      Taxon 19 -> H4D
+      Taxon 20 -> H6A
+      Taxon 21 -> H6B
+      Taxon 22 -> H6C
+      Taxon 23 -> H6D
+      Taxon 24 -> H8A
+      Taxon 25 -> H8B
+      Taxon 18 -> H4C
+      Taxon 19 -> H4D
+      Taxon 20 -> H6A
+      Taxon 21 -> H6B
+      Taxon 22 -> H6C
+      Taxon 23 -> H6D
+      Taxon 24 -> H8A
+      Taxon 25 -> H8B
+      Taxon 26 -> H8C
+      Taxon 27 -> H8D
+      Taxon 28 -> JT108
+      Taxon 17 -> H4B
+      Taxon 18 -> H4C
+      Taxon 19 -> H4D
+      Taxon 20 -> H6A
+      Taxon 21 -> H6B
+      Taxon 22 -> H6C
+      Taxon 23 -> H6D
+      Taxon 24 -> H8A
+      Taxon 25 -> H8B
+      Taxon 26 -> H8C
+      Taxon 19 -> H4D
+      Taxon 20 -> H6A
+      Taxon 21 -> H6B
+      Taxon 22 -> H6C
+      Taxon 23 -> H6D
+      Taxon 24 -> H8A
+      Taxon 25 -> H8B
+      Taxon 26 -> H8C
+      Taxon 27 -> H8D
+      Taxon 28 -> JT108
+      Taxon 29 -> JT112
+      Taxon 14 -> H2B
+      Taxon 15 -> H2C
+      Taxon 16 -> H4A
+      Taxon 17 -> H4B
+      Taxon 18 -> H4C
+      Taxon 19 -> H4D
+      Taxon 20 -> H6A
+      Taxon 21 -> H6B
+      Taxon 22 -> H6C
+      Taxon  6 -> H10B
+      Taxon  7 -> H10C
+      Taxon  8 -> H10D
+      Taxon  9 -> H10E
+      Taxon 10 -> H12D
+      Taxon 11 -> H14C
+      Taxon 12 -> H14D
+      Taxon 13 -> H2A
+      Taxon 14 -> H2B
+      Taxon 15 -> H2C
+      Taxon 16 -> H4A
+      Taxon  7 -> H10C
+      Taxon  8 -> H10D
+      Taxon  9 -> H10E
+      Taxon 10 -> H12D
+      Taxon 11 -> H14C
+      Taxon 12 -> H14D
+      Taxon 13 -> H2A
+      Taxon 14 -> H2B
+      Taxon 15 -> H2C
+      Taxon 16 -> H4A
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> H_2C
+      Taxon  3 -> H_2D
+      Taxon  4 -> H0B
+      Taxon  5 -> H0C
+      Taxon  6 -> H10B
+      Taxon  7 -> H10C
+      Taxon  8 -> H10D
+      Taxon  9 -> H10E
+      Taxon 10 -> H12D
+      Taxon 11 -> H14C
+      Taxon 12 -> H14D
+      Taxon 13 -> H2A
+      Taxon 14 -> H2B
+      Taxon 15 -> H2C
+      Taxon 16 -> H4A
+      Taxon 17 -> H4B
+      Taxon 18 -> H4C
+      Taxon 19 -> H4D
+      Taxon 20 -> H6A
+      Taxon 21 -> H6B
+      Taxon 22 -> H6C
+      Taxon 23 -> H6D
+      Taxon 17 -> H4B
+      Taxon 18 -> H4C
+      Taxon 19 -> H4D
+      Taxon 20 -> H6A
+      Taxon 21 -> H6B
+      Taxon 22 -> H6C
+      Taxon 23 -> H6D
+      Taxon 24 -> H8A
+      Taxon 25 -> H8B
+      Taxon 26 -> H8C
+      Taxon 27 -> H8D
+      Taxon 28 -> JT108
+      Taxon 29 -> JT112
+      Taxon 30 -> JT162
+      Taxon 31 -> JT164
+      Taxon 26 -> H8C
+      Taxon 27 -> H8D
+      Taxon 28 -> JT108
+      Taxon 29 -> JT112
+      Taxon 30 -> JT162
+      Taxon 31 -> JT164
+      Taxon 32 -> JT165
+      Taxon 33 -> JT166
+      Taxon 34 -> JT167
+      Taxon 35 -> JT168
+      Taxon 36 -> JT170
+      Taxon 37 -> JT171
+      Taxon 38 -> JT172
+      Taxon 39 -> JT173
+      Taxon 40 -> JT174
+      Taxon 29 -> JT112
+      Taxon 30 -> JT162
+      Taxon 31 -> JT164
+      Taxon 32 -> JT165
+      Taxon 33 -> JT166
+      Taxon 34 -> JT167
+      Taxon 35 -> JT168
+      Taxon 36 -> JT170
+      Taxon 37 -> JT171
+      Taxon 38 -> JT172
+      Taxon 39 -> JT173
+      Taxon 40 -> JT174
+      Taxon 41 -> JT175
+      Taxon 42 -> JT177
+      Taxon 43 -> JT178
+      Taxon 44 -> JT179
+      Taxon 27 -> H8D
+      Taxon 28 -> JT108
+      Taxon 29 -> JT112
+      Taxon 30 -> JT162
+      Taxon 31 -> JT164
+      Taxon 32 -> JT165
+      Taxon 33 -> JT166
+      Taxon 34 -> JT167
+      Taxon 35 -> JT168
+      Taxon 36 -> JT170
+      Taxon 37 -> JT171
+      Taxon 38 -> JT172
+      Taxon 39 -> JT173
+      Taxon 40 -> JT174
+      Taxon 41 -> JT175
+      Taxon 30 -> JT162
+      Taxon 31 -> JT164
+      Taxon 32 -> JT165
+      Taxon 33 -> JT166
+      Taxon 34 -> JT167
+      Taxon 35 -> JT168
+      Taxon 36 -> JT170
+      Taxon 37 -> JT171
+      Taxon 38 -> JT172
+      Taxon 39 -> JT173
+      Taxon 40 -> JT174
+      Taxon 41 -> JT175
+      Taxon 42 -> JT177
+      Taxon 43 -> JT178
+      Taxon 44 -> JT179
+      Taxon 45 -> JT80
+      Taxon 23 -> H6D
+      Taxon 24 -> H8A
+      Taxon 25 -> H8B
+      Taxon 26 -> H8C
+      Taxon 27 -> H8D
+      Taxon 28 -> JT108
+      Taxon 29 -> JT112
+      Taxon 30 -> JT162
+      Taxon 31 -> JT164
+      Taxon 32 -> JT165
+      Taxon 33 -> JT166
+      Taxon 34 -> JT167
+      Taxon 35 -> JT168
+      Taxon 36 -> JT170
+      Taxon 37 -> JT171
+      Taxon 38 -> JT172
+      Taxon 17 -> H4B
+      Taxon 18 -> H4C
+      Taxon 19 -> H4D
+      Taxon 20 -> H6A
+      Taxon 21 -> H6B
+      Taxon 22 -> H6C
+      Taxon 23 -> H6D
+      Taxon 24 -> H8A
+      Taxon 25 -> H8B
+      Taxon 26 -> H8C
+      Taxon 27 -> H8D
+      Taxon 28 -> JT108
+      Taxon 29 -> JT112
+      Taxon 30 -> JT162
+      Taxon 31 -> JT164
+      Taxon 32 -> JT165
+      Taxon 24 -> H8A
+      Taxon 25 -> H8B
+      Taxon 26 -> H8C
+      Taxon 27 -> H8D
+      Taxon 28 -> JT108
+      Taxon 29 -> JT112
+      Taxon 30 -> JT162
+      Taxon 31 -> JT164
+      Taxon 32 -> JT165
+      Taxon 33 -> JT166
+      Taxon 34 -> JT167
+      Taxon 35 -> JT168
+      Taxon 36 -> JT170
+      Taxon 32 -> JT165
+      Taxon 33 -> JT166
+      Taxon 34 -> JT167
+      Taxon 35 -> JT168
+      Taxon 36 -> JT170
+      Taxon 37 -> JT171
+      Taxon 38 -> JT172
+      Taxon 39 -> JT173
+      Taxon 40 -> JT174
+      Taxon 41 -> JT175
+      Taxon 42 -> JT177
+      Taxon 41 -> JT175
+      Taxon 42 -> JT177
+      Taxon 43 -> JT178
+      Taxon 44 -> JT179
+      Taxon 45 -> JT80
+      Taxon 46 -> JT182
+      Taxon 47 -> JT183
+      Taxon 48 -> JT184
+      Taxon 49 -> JT185
+      Taxon 50 -> JT188
+      Taxon 51 -> JT19
+      Taxon 45 -> JT80
+      Taxon 46 -> JT182
+      Taxon 47 -> JT183
+      Taxon 48 -> JT184
+      Taxon 49 -> JT185
+      Taxon 50 -> JT188
+      Taxon 51 -> JT19
+      Taxon 52 -> JT20
+      Taxon 53 -> JT21
+      Taxon 54 -> JT23
+      Taxon 55 -> JT25
+      Taxon 56 -> JT27
+      Taxon 57 -> JT6
+      Taxon 42 -> JT177
+      Taxon 43 -> JT178
+      Taxon 44 -> JT179
+      Taxon 45 -> JT80
+      Taxon 46 -> JT182
+      Taxon 47 -> JT183
+      Taxon 48 -> JT184
+      Taxon 49 -> JT185
+      Taxon 50 -> JT188
+      Taxon 51 -> JT19
+      Taxon 52 -> JT20
+      Taxon 53 -> JT21
+      Taxon 46 -> JT182
+      Taxon 47 -> JT183
+      Taxon 48 -> JT184
+      Taxon 49 -> JT185
+      Taxon 50 -> JT188
+      Taxon 51 -> JT19
+      Taxon 52 -> JT20
+      Taxon 53 -> JT21
+      Taxon 54 -> JT23
+      Taxon 55 -> JT25
+      Taxon 56 -> JT27
+      Taxon 57 -> JT6
+      Taxon 58 -> JT8
+      Taxon 39 -> JT173
+      Taxon 40 -> JT174
+      Taxon 41 -> JT175
+      Taxon 42 -> JT177
+      Taxon 43 -> JT178
+      Taxon 44 -> JT179
+      Taxon 45 -> JT80
+      Taxon 46 -> JT182
+      Taxon 47 -> JT183
+      Taxon 48 -> JT184
+      Taxon 49 -> JT185
+      Taxon 33 -> JT166
+      Taxon 34 -> JT167
+      Taxon 35 -> JT168
+      Taxon 36 -> JT170
+      Taxon 37 -> JT171
+      Taxon 38 -> JT172
+      Taxon 39 -> JT173
+      Taxon 40 -> JT174
+      Taxon 41 -> JT175
+      Taxon 42 -> JT177
+      Taxon 43 -> JT178
+      Taxon 44 -> JT179
+      Taxon 45 -> JT80
+      Taxon 50 -> JT188
+      Taxon 51 -> JT19
+      Taxon 52 -> JT20
+      Taxon 53 -> JT21
+      Taxon 54 -> JT23
+      Taxon 55 -> JT25
+      Taxon 56 -> JT27
+      Taxon 37 -> JT171
+      Taxon 38 -> JT172
+      Taxon 39 -> JT173
+      Taxon 40 -> JT174
+      Taxon 41 -> JT175
+      Taxon 42 -> JT177
+      Taxon 43 -> JT178
+      Taxon 44 -> JT179
+      Taxon 45 -> JT80
+      Taxon 46 -> JT182
+      Taxon 47 -> JT183
+      Taxon 48 -> JT184
+      Taxon 49 -> JT185
+      Taxon 50 -> JT188
+      Taxon 43 -> JT178
+      Taxon 44 -> JT179
+      Taxon 45 -> JT80
+      Taxon 46 -> JT182
+      Taxon 47 -> JT183
+      Taxon 48 -> JT184
+      Taxon 49 -> JT185
+      Taxon 50 -> JT188
+      Taxon 51 -> JT19
+      Taxon 52 -> JT20
+      Taxon 53 -> JT21
+      Taxon 54 -> JT23
+      Taxon 52 -> JT20
+      Taxon 53 -> JT21
+      Taxon 54 -> JT23
+      Taxon 55 -> JT25
+      Taxon 56 -> JT27
+      Taxon 57 -> JT6
+      Taxon 58 -> JT8
+      Taxon 59 -> JT85
+      Taxon 60 -> JT87
+      Taxon 61 -> JT89
+      Taxon 62 -> JT90
+      Taxon 58 -> JT8
+      Taxon 59 -> JT85
+      Taxon 60 -> JT87
+      Taxon 61 -> JT89
+      Taxon 62 -> JT90
+      Taxon 63 -> JT97
+      Taxon 64 -> JT98
+      Taxon 65 -> L5
+      Taxon 66 -> L62
+      Taxon 67 -> L65
+      Taxon 68 -> L93
+      Taxon 54 -> JT23
+      Taxon 55 -> JT25
+      Taxon 56 -> JT27
+      Taxon 57 -> JT6
+      Taxon 58 -> JT8
+      Taxon 59 -> JT85
+      Taxon 60 -> JT87
+      Taxon 61 -> JT89
+      Taxon 59 -> JT85
+      Taxon 60 -> JT87
+      Taxon 61 -> JT89
+      Taxon 62 -> JT90
+      Taxon 63 -> JT97
+      Taxon 64 -> JT98
+      Taxon 65 -> L5
+      Taxon 66 -> L62
+      Taxon 67 -> L65
+      Taxon 46 -> JT182
+      Taxon 47 -> JT183
+      Taxon 48 -> JT184
+      Taxon 49 -> JT185
+      Taxon 50 -> JT188
+      Taxon 51 -> JT19
+      Taxon 52 -> JT20
+      Taxon 53 -> JT21
+      Taxon 54 -> JT23
+      Taxon 68 -> L93
+      Taxon 69 -> Lo16
+      Taxon 70 -> Lo28
+      Taxon 71 -> Lo43
+      Taxon 72 -> Lo9
+      Taxon 73 -> Tec
+      Taxon 57 -> JT6
+      Taxon 58 -> JT8
+      Taxon 59 -> JT85
+      Taxon 60 -> JT87
+      Taxon 61 -> JT89
+      Taxon 62 -> JT90
+      Taxon 63 -> JT97
+      Taxon 51 -> JT19
+      Taxon 52 -> JT20
+      Taxon 53 -> JT21
+      Taxon 54 -> JT23
+      Taxon 55 -> JT25
+      Taxon 56 -> JT27
+      Taxon 57 -> JT6
+      Taxon 58 -> JT8
+      Taxon 59 -> JT85
+      Taxon 55 -> JT25
+      Taxon 56 -> JT27
+      Taxon 57 -> JT6
+      Taxon 58 -> JT8
+      Taxon 59 -> JT85
+      Taxon 60 -> JT87
+      Taxon 61 -> JT89
+      Taxon 63 -> JT97
+      Taxon 64 -> JT98
+      Taxon 65 -> L5
+      Taxon 66 -> L62
+      Taxon 67 -> L65
+      Taxon 68 -> L93
+      Taxon 69 -> Lo16
+      Taxon 70 -> Lo28
+      Taxon 71 -> Lo43
+      Taxon 72 -> Lo9
+      Taxon 73 -> Tec
+      Taxon 74 -> P._edulis
+      Taxon 75 -> A._appalachiana
+      Taxon 76 -> A._gigantea
+      Taxon 62 -> JT90
+      Taxon 63 -> JT97
+      Taxon 64 -> JT98
+      Taxon 65 -> L5
+      Taxon 66 -> L62
+      Taxon 67 -> L65
+      Taxon 68 -> L93
+      Taxon 69 -> Lo16
+      Taxon 70 -> Lo28
+      Taxon 71 -> Lo43
+      Taxon 55 -> JT25
+      Taxon 56 -> JT27
+      Taxon 57 -> JT6
+      Taxon 58 -> JT8
+      Taxon 59 -> JT85
+      Taxon 60 -> JT87
+      Taxon 61 -> JT89
+      Taxon 62 -> JT90
+      Taxon 63 -> JT97
+      Taxon 74 -> P._edulis
+      Taxon 75 -> A._appalachiana
+      Taxon 76 -> A._gigantea
+      Taxon 77 -> A._tecta
+      Taxon 64 -> JT98
+      Taxon 65 -> L5
+      Taxon 66 -> L62
+      Taxon 67 -> L65
+      Taxon 68 -> L93
+      Taxon 60 -> JT87
+      Taxon 61 -> JT89
+      Taxon 62 -> JT90
+      Taxon 63 -> JT97
+      Taxon 64 -> JT98
+      Taxon 65 -> L5
+      Taxon 62 -> JT90
+      Taxon 63 -> JT97
+      Taxon 64 -> JT98
+      Taxon 65 -> L5
+      Taxon 66 -> L62
+      Taxon 67 -> L65
+      Taxon 69 -> Lo16
+      Taxon 70 -> Lo28
+      Taxon 71 -> Lo43
+      Taxon 72 -> Lo9
+      Taxon 73 -> Tec
+      Taxon 77 -> A._tecta
+      Taxon 64 -> JT98
+      Taxon 65 -> L5
+      Taxon 66 -> L62
+      Taxon 67 -> L65
+      Taxon 72 -> Lo9
+      Taxon 73 -> Tec
+      Taxon 74 -> P._edulis
+      Taxon 75 -> A._appalachiana
+      Taxon 76 -> A._gigantea
+      Taxon 69 -> Lo16
+      Taxon 70 -> Lo28
+      Taxon 71 -> Lo43
+      Taxon 72 -> Lo9
+      Taxon 73 -> Tec
+      Taxon 66 -> L62
+      Taxon 67 -> L65
+      Taxon 68 -> L93
+      Taxon 69 -> Lo16
+      Taxon 70 -> Lo28
+      Taxon 71 -> Lo43
+      Taxon 68 -> L93
+      Taxon 69 -> Lo16
+      Taxon 70 -> Lo28
+      Taxon 71 -> Lo43
+      Taxon 72 -> Lo9
+      Taxon 73 -> Tec
+      Taxon 74 -> P._edulis
+      Taxon 75 -> A._appalachiana
+      Taxon 76 -> A._gigantea
+      Taxon 77 -> A._tecta
+      Taxon 68 -> L93
+      Taxon 69 -> Lo16
+      Taxon 70 -> Lo28
+      Taxon 71 -> Lo43
+      Taxon 72 -> Lo9
+      Taxon 73 -> Tec
+      Taxon 74 -> P._edulis
+      Taxon 75 -> A._appalachiana
+      Taxon 76 -> A._gigantea
+      Taxon 77 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1555533552
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1555533552
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1555533552
+      Taxon 77 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1555533552
+      Taxon 74 -> P._edulis
+      Taxon 75 -> A._appalachiana
+      Taxon 76 -> A._gigantea
+      Taxon 77 -> A._tecta
+      Taxon 72 -> Lo9
+      Taxon 73 -> Tec
+      Taxon 74 -> P._edulis
+      Taxon 75 -> A._appalachiana
+      Taxon 76 -> A._gigantea
+      Taxon 77 -> A._tecta
+      Taxon 74 -> P._edulis
+      Taxon 75 -> A._appalachiana
+      Taxon 76 -> A._gigantea
+      Taxon 77 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1555533552
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1555533552
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1555533552
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1555533552
+      Setting output file names to "concatenated/TESTconcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTconcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTconcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTconcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTconcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTconcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTconcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTconcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Could not find parameter "Relburning"
+      The error occurred when reading char. 6 on line 4
+         in the file 'MrBayesPars/concatenated.par'
+   Error in command "Execute"
+   Will exit with signal 1 (error) because quitonerror is set to yes
+   If you want control to be returned to the command line on error,
+   use 'mb -i <filename>' (i is for interactive) or use 'set quitonerror=no'
+
+      Could not find parameter "Relburning"
+      The error occurred when reading char. 6 on line 4
+         in the file 'MrBayesPars/concatenated.par'
+   Error in command "Execute"
+   Will exit with signal 1 (error) because quitonerror is set to yes
+   If you want control to be returned to the command line on error,
+   use 'mb -i <filename>' (i is for interactive) or use 'set quitonerror=no'
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[16707,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
