@@ -43,3 +43,21 @@ if [ ! -e './Nuclear.mds' ]; then
 else
     echo $(date): "MDS results found. Dope."
 fi
+
+#Try using fastSTRUCUTRE on this dataset. It hella violates the assumptions, but it's just a test
+
+#convert the vcf to structure input format
+if [ ! -e '../results/PhasedNuclear.bed' ]; then
+    echo $(date): "Recording VCF to structure format with plink."
+    plink --allow-extra-chr --vcf ../results/PhasedNuclear.vcf --make-bed --out ../results/PhasedNuclear
+    echo $(date): "Done"
+else
+    echo $(date: "proper input files detected."
+fi
+
+module load  faststructure/1.0_e47212f
+structure.py -K 2 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
+structure.py -K 3 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
+structure.py -K 4 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
+structure.py -K 5 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
+structure.py -K 6 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
