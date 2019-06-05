@@ -21,6 +21,19 @@ pdf("NuclearPC1vPC3.pdf", width=11, height=9)
   #text(nucpca$V3,nucpca$V5, as.character(nucpca$V1))
 dev.off()
 
+#PC2 v PC3
+pdf("NuclearPC2vPC3.pdf", width=11, height=9)
+plot(nucpca$V4,nucpca$V5, xlab="PC2", ylab="PC3", main="Nuclear SNP PCA", col=as.factor(nucpca$Species), pch=16)
+legend("topright",levels(as.factor(nucpca$Species)),col=1:length(nucpca$Species),pch=16, bty="n")
+#text(nucpca$V3,nucpca$V5, as.character(nucpca$V1))
+dev.off()
+
+#PC2 v PC5
+pdf("NuclearPC2vPC5.pdf", width=11, height=9)
+plot(nucpca$V4,nucpca$V7, xlab="PC2", ylab="PC5", main="Nuclear SNP PCA", col=as.factor(nucpca$Species), pch=16)
+legend("topright",levels(as.factor(nucpca$Species)),col=1:length(nucpca$Species),pch=16, bty="n")
+#text(nucpca$V3,nucpca$V5, as.character(nucpca$V1))
+dev.off()
 
 #read MDS data
 nucmds <- read.table("~/bigdata/Arundinaria/phylo/nuclear/Nuclear.mds", header=T)

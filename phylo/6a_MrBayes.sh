@@ -2,7 +2,7 @@
 #SBATCH --ntasks=8
 #SBATCH --nodes=1
 #SBATCH --mem=6G
-#SBATCH --time=10:00:00
+#SBATCH --time=2-00:00:00
 #SBATCH --mail-user=araje002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH -p batch
