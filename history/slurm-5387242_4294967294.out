@@ -1,0 +1,3432 @@
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 48
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTJimmyConcatenated.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 48
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTJimmyConcatenated.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 48
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTJimmyConcatenated.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 48
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTJimmyConcatenated.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 48
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTJimmyConcatenated.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 48
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTJimmyConcatenated.nex"...
+
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 48
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTJimmyConcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 43 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> JT108
+      Taxon  3 -> JT112
+      Taxon  4 -> JT162
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 43 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> JT108
+      Taxon  3 -> JT112
+      Taxon  4 -> JT162
+      Taxon  5 -> JT164
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 43 taxa
+   Exiting taxa block
+   Reading characters block
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 43 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> JT108
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 43 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> JT108
+      Taxon  3 -> JT112
+      Taxon  4 -> JT162
+      Taxon  5 -> JT164
+      Taxon  6 -> JT165
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 43 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> JT108
+      Taxon  3 -> JT112
+      Taxon  4 -> JT162
+      Taxon  5 -> JT164
+      Taxon  6 -> JT165
+
+
+                            MrBayes v3.2.6 x64
+
+                      (Bayesian Analysis of Phylogeny)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+
+   Executing file "MrBayesPars/concatenated.par"
+   UNIX line termination
+   Longest line length = 48
+   Parsing file
+   Setting autoclose to yes
+   Setting nowarnings to yes
+
+   Executing file "concatenated/TESTJimmyConcatenated.nex"...
+
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 43 taxa
+   Exiting taxa block
+   Reading characters block
+   UNIX line termination
+   Longest line length = 5072
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading taxa block
+      Allocated taxon set
+      Defining new set of 43 taxa
+   Exiting taxa block
+   Reading characters block
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> JT108
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> JT108
+      Taxon  3 -> JT112
+      Taxon  4 -> JT162
+      Taxon  5 -> JT164
+      Taxon  6 -> JT165
+      Taxon  7 -> JT166
+      Taxon  5 -> JT164
+      Taxon  6 -> JT165
+      Taxon  7 -> JT166
+      Taxon  8 -> JT167
+      Taxon  9 -> JT168
+      Taxon 10 -> JT170
+      Taxon 11 -> JT171
+      Taxon 12 -> JT172
+      Taxon 13 -> JT173
+      Taxon 14 -> JT174
+      Taxon 15 -> JT175
+      Taxon 16 -> JT177
+      Taxon 17 -> JT178
+      Taxon 18 -> JT179
+      Taxon  6 -> JT165
+      Taxon  7 -> JT166
+      Taxon  8 -> JT167
+      Taxon  9 -> JT168
+      Taxon 10 -> JT170
+      Taxon 11 -> JT171
+      Taxon 12 -> JT172
+      Taxon 13 -> JT173
+      Taxon 14 -> JT174
+      Taxon 15 -> JT175
+      Taxon 16 -> JT177
+      Taxon 17 -> JT178
+      Taxon 18 -> JT179
+      Allocated matrix
+      Defining new character matrix with 5054 characters
+      Data is Dna
+      Missing data coded as ?
+      Gaps coded as -
+      Taxon  1 -> Gig
+      Taxon  2 -> JT108
+      Taxon  3 -> JT112
+      Taxon  4 -> JT162
+      Taxon  5 -> JT164
+      Taxon  6 -> JT165
+      Taxon  7 -> JT166
+      Taxon  8 -> JT167
+      Taxon  9 -> JT168
+      Taxon 10 -> JT170
+      Taxon 11 -> JT171
+      Taxon  3 -> JT112
+      Taxon  4 -> JT162
+      Taxon  5 -> JT164
+      Taxon  6 -> JT165
+      Taxon  7 -> JT166
+      Taxon  8 -> JT167
+      Taxon  9 -> JT168
+      Taxon 10 -> JT170
+      Taxon 11 -> JT171
+      Taxon 12 -> JT172
+      Taxon 13 -> JT173
+      Taxon 14 -> JT174
+      Taxon 15 -> JT175
+      Taxon  7 -> JT166
+      Taxon  8 -> JT167
+      Taxon  9 -> JT168
+      Taxon 10 -> JT170
+      Taxon 11 -> JT171
+      Taxon 12 -> JT172
+      Taxon 13 -> JT173
+      Taxon 14 -> JT174
+      Taxon 15 -> JT175
+      Taxon 16 -> JT177
+      Taxon 17 -> JT178
+      Taxon  7 -> JT166
+      Taxon  8 -> JT167
+      Taxon  9 -> JT168
+      Taxon 10 -> JT170
+      Taxon 11 -> JT171
+      Taxon 12 -> JT172
+      Taxon 13 -> JT173
+      Taxon 14 -> JT174
+      Taxon 15 -> JT175
+      Taxon 16 -> JT177
+      Taxon 17 -> JT178
+      Taxon 18 -> JT179
+      Taxon  3 -> JT112
+      Taxon  4 -> JT162
+      Taxon  5 -> JT164
+      Taxon  6 -> JT165
+      Taxon  7 -> JT166
+      Taxon  8 -> JT167
+      Taxon  9 -> JT168
+      Taxon 10 -> JT170
+      Taxon 11 -> JT171
+      Taxon  8 -> JT167
+      Taxon  9 -> JT168
+      Taxon 19 -> JT80
+      Taxon 20 -> JT182
+      Taxon 21 -> JT183
+      Taxon 19 -> JT80
+      Taxon 20 -> JT182
+      Taxon 21 -> JT183
+      Taxon 12 -> JT172
+      Taxon 13 -> JT173
+      Taxon 14 -> JT174
+      Taxon 16 -> JT177
+      Taxon 17 -> JT178
+      Taxon 18 -> JT179
+      Taxon 18 -> JT179
+      Taxon 19 -> JT80
+      Taxon 20 -> JT182
+      Taxon 21 -> JT183
+      Taxon 12 -> JT172
+      Taxon 13 -> JT173
+      Taxon 14 -> JT174
+      Taxon 15 -> JT175
+      Taxon 16 -> JT177
+      Taxon 19 -> JT80
+      Taxon 20 -> JT182
+      Taxon 21 -> JT183
+      Taxon 22 -> JT184
+      Taxon 23 -> JT185
+      Taxon 24 -> JT188
+      Taxon 25 -> JT19
+      Taxon 26 -> JT20
+      Taxon 27 -> JT21
+      Taxon 28 -> JT23
+      Taxon 22 -> JT184
+      Taxon 23 -> JT185
+      Taxon 24 -> JT188
+      Taxon 25 -> JT19
+      Taxon 26 -> JT20
+      Taxon 27 -> JT21
+      Taxon 28 -> JT23
+      Taxon 10 -> JT170
+      Taxon 11 -> JT171
+      Taxon 12 -> JT172
+      Taxon 13 -> JT173
+      Taxon 14 -> JT174
+      Taxon 15 -> JT175
+      Taxon 16 -> JT177
+      Taxon 17 -> JT178
+      Taxon 18 -> JT179
+      Taxon 19 -> JT80
+      Taxon 22 -> JT184
+      Taxon 23 -> JT185
+      Taxon 24 -> JT188
+      Taxon 25 -> JT19
+      Taxon 26 -> JT20
+      Taxon 27 -> JT21
+      Taxon 28 -> JT23
+      Taxon 29 -> JT25
+      Taxon 30 -> JT27
+      Taxon 31 -> JT6
+      Taxon 32 -> JT8
+      Taxon 22 -> JT184
+      Taxon 23 -> JT185
+      Taxon 24 -> JT188
+      Taxon 25 -> JT19
+      Taxon 26 -> JT20
+      Taxon 27 -> JT21
+      Taxon 28 -> JT23
+      Taxon 29 -> JT25
+      Taxon 30 -> JT27
+      Taxon 31 -> JT6
+      Taxon 32 -> JT8
+      Taxon 15 -> JT175
+      Taxon 16 -> JT177
+      Taxon 17 -> JT178
+      Taxon 18 -> JT179
+      Taxon 19 -> JT80
+      Taxon 20 -> JT182
+      Taxon 21 -> JT183
+      Taxon 22 -> JT184
+      Taxon 23 -> JT185
+      Taxon 24 -> JT188
+      Taxon 25 -> JT19
+      Taxon 26 -> JT20
+      Taxon 19 -> JT80
+      Taxon 20 -> JT182
+      Taxon 21 -> JT183
+      Taxon 22 -> JT184
+      Taxon 23 -> JT185
+      Taxon 24 -> JT188
+      Taxon 25 -> JT19
+      Taxon 26 -> JT20
+      Taxon 27 -> JT21
+      Taxon 28 -> JT23
+      Taxon 29 -> JT25
+      Taxon 30 -> JT27
+      Taxon 17 -> JT178
+      Taxon 18 -> JT179
+      Taxon 19 -> JT80
+      Taxon 20 -> JT182
+      Taxon 21 -> JT183
+      Taxon 22 -> JT184
+      Taxon 23 -> JT185
+      Taxon 24 -> JT188
+      Taxon 25 -> JT19
+      Taxon 26 -> JT20
+      Taxon 27 -> JT21
+      Taxon 31 -> JT6
+      Taxon 32 -> JT8
+      Taxon 33 -> JT85
+      Taxon 29 -> JT25
+      Taxon 30 -> JT27
+      Taxon 31 -> JT6
+      Taxon 32 -> JT8
+      Taxon 33 -> JT85
+      Taxon 34 -> JT87
+      Taxon 35 -> JT89
+      Taxon 36 -> JT90
+      Taxon 29 -> JT25
+      Taxon 30 -> JT27
+      Taxon 31 -> JT6
+      Taxon 32 -> JT8
+      Taxon 33 -> JT85
+      Taxon 34 -> JT87
+      Taxon 35 -> JT89
+      Taxon 36 -> JT90
+      Taxon 20 -> JT182
+      Taxon 21 -> JT183
+      Taxon 22 -> JT184
+      Taxon 23 -> JT185
+      Taxon 24 -> JT188
+      Taxon 25 -> JT19
+      Taxon 26 -> JT20
+      Taxon 27 -> JT21
+      Taxon 28 -> JT23
+      Taxon 33 -> JT85
+      Taxon 34 -> JT87
+      Taxon 35 -> JT89
+      Taxon 36 -> JT90
+      Taxon 37 -> JT97
+      Taxon 38 -> JT98
+      Taxon 39 -> Tec
+      Taxon 40 -> P._edulis
+      Taxon 33 -> JT85
+      Taxon 34 -> JT87
+      Taxon 35 -> JT89
+      Taxon 36 -> JT90
+      Taxon 37 -> JT97
+      Taxon 38 -> JT98
+      Taxon 39 -> Tec
+      Taxon 27 -> JT21
+      Taxon 28 -> JT23
+      Taxon 29 -> JT25
+      Taxon 30 -> JT27
+      Taxon 31 -> JT6
+      Taxon 28 -> JT23
+      Taxon 29 -> JT25
+      Taxon 30 -> JT27
+      Taxon 31 -> JT6
+      Taxon 32 -> JT8
+      Taxon 33 -> JT85
+      Taxon 34 -> JT87
+      Taxon 35 -> JT89
+      Taxon 36 -> JT90
+      Taxon 34 -> JT87
+      Taxon 35 -> JT89
+      Taxon 36 -> JT90
+      Taxon 37 -> JT97
+      Taxon 38 -> JT98
+      Taxon 39 -> Tec
+      Taxon 40 -> P._edulis
+      Taxon 37 -> JT97
+      Taxon 38 -> JT98
+      Taxon 39 -> Tec
+      Taxon 40 -> P._edulis
+      Taxon 41 -> A._appalachiana
+      Taxon 42 -> A._gigantea
+      Taxon 37 -> JT97
+      Taxon 38 -> JT98
+      Taxon 39 -> Tec
+      Taxon 40 -> P._edulis
+      Taxon 41 -> A._appalachiana
+      Taxon 29 -> JT25
+      Taxon 30 -> JT27
+      Taxon 31 -> JT6
+      Taxon 32 -> JT8
+      Taxon 33 -> JT85
+      Taxon 41 -> A._appalachiana
+      Taxon 42 -> A._gigantea
+      Taxon 43 -> A._tecta
+      Taxon 40 -> P._edulis
+      Taxon 41 -> A._appalachiana
+      Taxon 42 -> A._gigantea
+      Taxon 43 -> A._tecta
+      Taxon 32 -> JT8
+      Taxon 33 -> JT85
+      Taxon 34 -> JT87
+      Taxon 35 -> JT89
+      Taxon 36 -> JT90
+      Taxon 37 -> JT97
+      Taxon 37 -> JT97
+      Taxon 38 -> JT98
+      Taxon 39 -> Tec
+      Taxon 40 -> P._edulis
+      Taxon 41 -> A._appalachiana
+      Taxon 42 -> A._gigantea
+      Taxon 43 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1559775869
+      Taxon 41 -> A._appalachiana
+      Taxon 42 -> A._gigantea
+      Taxon 43 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1559775869
+      Taxon 43 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1559775869
+      Taxon 42 -> A._gigantea
+      Taxon 43 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1559775869
+      Taxon 34 -> JT87
+      Taxon 35 -> JT89
+      Taxon 36 -> JT90
+      Taxon 37 -> JT97
+      Taxon 38 -> JT98
+      Taxon 39 -> Tec
+      Taxon 40 -> P._edulis
+      Taxon 41 -> A._appalachiana
+      Taxon 42 -> A._gigantea
+      Taxon 43 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1559775869
+      Taxon 38 -> JT98
+      Taxon 39 -> Tec
+      Taxon 40 -> P._edulis
+      Taxon 41 -> A._appalachiana
+      Taxon 42 -> A._gigantea
+      Taxon 43 -> A._tecta
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1559775869
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1559775869
+      Setting output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1559775869
+      Setting output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p|t>"
+   Exiting characters block
+   Reached end of file
+
+   Returning execution to calling file ...
+
+      Setting Nst to 6
+      Setting Rates to Invgamma
+      Successfully set likelihood model parameters
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Successfully set chain parameters
+      Setting number of runs to 2
+      Using stopping rule.
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting burnin fraction to 0.25
+      Setting minimum partition frequency to 0.05
+      Successfully set chain parameters
+      Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+      Setting diagnosing frequency to 1000
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 3800711670
+      Seed = 1377470778
+      Swapseed = 1559775869
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Successfully set chain parameters
+      Setting number of runs to 2
+      Using stopping rule.
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting burnin fraction to 0.25
+      Setting minimum partition frequency to 0.05
+      Successfully set chain parameters
+      Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+      Setting diagnosing frequency to 1000
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 3800711670
+      Seed = 1377470778
+      Swapseed = 1559775869
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Successfully set chain parameters
+      Setting number of runs to 2
+      Using stopping rule.
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting burnin fraction to 0.25
+      Setting minimum partition frequency to 0.05
+      Successfully set chain parameters
+      Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+      Setting diagnosing frequency to 1000
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 3800711670
+      Seed = 1377470778
+      Swapseed = 1559775869
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 325 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Successfully set chain parameters
+      Setting number of runs to 2
+      Using stopping rule.
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting burnin fraction to 0.25
+      Setting minimum partition frequency to 0.05
+      Successfully set chain parameters
+      Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+      Setting diagnosing frequency to 1000
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 3800711670
+      Seed = 1377470778
+      Swapseed = 1559775869
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 325 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Division 1 has 325 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Division 1 has 325 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Successfully set chain parameters
+      Setting number of runs to 2
+      Using stopping rule.
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting burnin fraction to 0.25
+      Setting minimum partition frequency to 0.05
+      Successfully set chain parameters
+      Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+      Setting diagnosing frequency to 1000
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 3800711670
+      Seed = 1377470778
+      Swapseed = 1559775869
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 325 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Successfully set chain parameters
+      Setting number of runs to 2
+      Using stopping rule.
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting burnin fraction to 0.25
+      Setting minimum partition frequency to 0.05
+      Successfully set chain parameters
+      Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+      Setting diagnosing frequency to 1000
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 3800711670
+      Seed = 1377470778
+      Swapseed = 1559775869
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Successfully set chain parameters
+      Setting number of runs to 2
+      Using stopping rule.
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting burnin fraction to 0.25
+      Setting minimum partition frequency to 0.05
+      Successfully set chain parameters
+      Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+      Setting diagnosing frequency to 1000
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 3800711670
+      Seed = 1377470778
+      Swapseed = 1559775869
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 325 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Division 1 has 325 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -14222.259033 -- 104.004869
+         Chain 2 -- -14418.950501 -- 104.004869
+         Chain 3 -- -14342.870619 -- 104.004869
+         Chain 4 -- -14267.370612 -- 104.004869
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -14376.031717 -- 104.004869
+         Chain 2 -- -14402.647011 -- 104.004869
+         Chain 3 -- -14197.485425 -- 104.004869
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -14222.259033 -- 104.004869
+         Chain 2 -- -14418.950501 -- 104.004869
+         Chain 3 -- -14342.870619 -- 104.004869
+         Chain 4 -- -14267.370612 -- 104.004869
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -14376.031717 -- 104.004869
+         Chain 2 -- -14402.647011 -- 104.004869
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -14222.259033 -- 104.004869
+         Chain 2 -- -14418.950501 -- 104.004869
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -14222.259033 -- 104.004869
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -14222.259033 -- 104.004869
+         Chain 2 -- -14418.950501 -- 104.004869
+         Chain 3 -- -14342.870619 -- 104.004869
+      Setting sample frequency to 1000
+      Setting print frequency to 1000
+      Successfully set chain parameters
+      Setting number of runs to 2
+      Using stopping rule.
+      Setting burnin fraction to 0.25
+      Setting chain output file names to "concatenated/TESTJimmyConcatenated.nex.run<i>.<p/t>"
+      Successfully set chain parameters
+      Setting burnin fraction to 0.25
+      Setting minimum partition frequency to 0.05
+      Successfully set chain parameters
+      Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+      Setting diagnosing frequency to 1000
+      Successfully set chain parameters
+      Running Markov chain
+      MCMC stamp = 3800711670
+      Seed = 1377470778
+      Swapseed = 1559775869
+      Model settings:
+
+         Data not partitioned --
+            Datatype  = DNA
+            Nucmodel  = 4by4
+            Nst       = 6
+                        Substitution rates, expressed as proportions
+                        of the rate sum, have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00,1.00,1.00)
+            Covarion  = No
+            # States  = 4
+                        State frequencies have a Dirichlet prior
+                        (1.00,1.00,1.00,1.00)
+            Rates     = Invgamma
+                        The distribution is approximated using 4 categories.
+                        Likelihood summarized over all rate categories in each generation.
+                        Shape parameter is exponentially
+                        distributed with parameter (1.00).
+                        Proportion of invariable sites is uniformly dist-
+                        ributed on the interval (0.00,1.00).
+
+      Active parameters: 
+
+         Parameters
+         ---------------------
+         Revmat              1
+         Statefreq           2
+         Shape               3
+         Pinvar              4
+         Ratemultiplier      5
+         Topology            6
+         Brlens              7
+         ---------------------
+
+         1 --  Parameter  = Revmat
+               Type       = Rates of reversible rate matrix
+               Prior      = Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+
+         2 --  Parameter  = Pi
+               Type       = Stationary state frequencies
+               Prior      = Dirichlet
+
+         3 --  Parameter  = Alpha
+               Type       = Shape of scaled gamma distribution of site rates
+               Prior      = Exponential(1.00)
+
+         4 --  Parameter  = Pinvar
+               Type       = Proportion of invariable sites
+               Prior      = Uniform(0.00,1.00)
+
+         5 --  Parameter  = Ratemultiplier
+               Type       = Partition-specific rate multiplier
+               Prior      = Fixed(1.0)
+
+         6 --  Parameter  = Tau
+               Type       = Topology
+               Prior      = All topologies equally probable a priori
+               Subparam.  = V
+
+         7 --  Parameter  = V
+               Type       = Branch lengths
+               Prior      = Unconstrained:GammaDir(1.0,0.1000,1.0,1.0)
+
+
+
+      The MCMC sampler will use the following moves:
+         With prob.  Chain will use move
+            0.93 %   Dirichlet(Revmat)
+            0.93 %   Slider(Revmat)
+            0.93 %   Dirichlet(Pi)
+            0.93 %   Slider(Pi)
+            1.85 %   Multiplier(Alpha)
+            1.85 %   Slider(Pinvar)
+            9.26 %   ExtSPR(Tau,V)
+            9.26 %   ExtTBR(Tau,V)
+            9.26 %   NNI(Tau,V)
+            9.26 %   ParsSPR(Tau,V)
+           37.04 %   Multiplier(V)
+           12.96 %   Nodeslider(V)
+            5.56 %   TLMultiplier(V)
+
+      Division 1 has 325 unique site patterns
+      Initializing conditional likelihoods
+      Using standard SSE likelihood calculator for division 1 (single-precision)
+      Initializing invariable-site conditional likelihoods
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -14222.259033 -- 104.004869
+         Chain 2 -- -14418.950501 -- 104.004869
+         Chain 3 -- -14342.870619 -- 104.004869
+         Chain 4 -- -14267.370612 -- 104.004869
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -14376.031717 -- 104.004869
+         Chain 2 -- -14402.647011 -- 104.004869
+         Chain 3 -- -14197.485425 -- 104.004869
+      Initializing invariable-site conditional likelihoods
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 1 -- -14222.259033 -- 104.004869
+         Chain 2 -- -14418.950501 -- 104.004869
+         Chain 3 -- -14342.870619 -- 104.004869
+         Chain 4 -- -14267.370612 -- 104.004869
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -14376.031717 -- 104.004869
+         Chain 2 -- -14402.647011 -- 104.004869
+         Chain 3 -- -14197.485425 -- 104.004869
+         Chain 4 -- -14315.846765 -- 104.004869
+
+         Chain 3 -- -14197.485425 -- 104.004869
+         Chain 4 -- -14315.846765 -- 104.004869
+
+         Chain 4 -- -14315.846765 -- 104.004869
+
+         Chain 3 -- -14342.870619 -- 104.004869
+         Chain 4 -- -14267.370612 -- 104.004869
+
+      Initial log likelihoods and log prior probs for run 2:
+
+      Initial log likelihoods and log prior probs for run 1:
+         Chain 4 -- -14315.846765 -- 104.004869
+
+         Chain 1 -- -14376.031717 -- 104.004869
+         Chain 2 -- -14402.647011 -- 104.004869
+         Chain 2 -- -14418.950501 -- 104.004869
+         Chain 3 -- -14342.870619 -- 104.004869
+         Chain 4 -- -14267.370612 -- 104.004869
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -14376.031717 -- 104.004869
+         Chain 2 -- -14402.647011 -- 104.004869
+         Chain 3 -- -14197.485425 -- 104.004869
+         Chain 1 -- -14222.259033 -- 104.004869
+         Chain 2 -- -14418.950501 -- 104.004869
+         Chain 3 -- -14197.485425 -- 104.004869
+         Chain 4 -- -14315.846765 -- 104.004869
+
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.mcmc"
+         Chain 3 -- -14342.870619 -- 104.004869
+         Chain 4 -- -14267.370612 -- 104.004869
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 1 -- -14376.031717 -- 104.004869
+         Chain 4 -- -14315.846765 -- 104.004869
+
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.mcmc"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run1.p"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run1.p"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run1.t"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run1.t"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run2.p"
+         Chain 4 -- -14267.370612 -- 104.004869
+
+      Initial log likelihoods and log prior probs for run 2:
+         Chain 2 -- -14402.647011 -- 104.004869
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run2.p"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-14222.259] (-14418.951) (-14342.871) (-14267.371) * [-14376.032] (-14402.647) (-14197.485) (-14315.847) 
+         Chain 1 -- -14376.031717 -- 104.004869
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-14222.259] (-14418.951) (-14342.871) (-14267.371) * [-14376.032] (-14402.647) (-14197.485) (-14315.847) 
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-14222.259] (-14418.951) (-14342.871) (-14267.371) * [-14376.032] (-14402.647) (-14197.485) (-14315.847) 
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-14222.259] (-14418.951) (-14342.871) (-14267.371) * [-14376.032] (-14402.647) (-14197.485) (-14315.847) 
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-14222.259] (-14418.951) (-14342.871) (-14267.371) * [-14376.032] (-14402.647) (-14197.485) (-14315.847) 
+         Chain 3 -- -14197.485425 -- 104.004869
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-14222.259] (-14418.951) (-14342.871) (-14267.371) * [-14376.032] (-14402.647) (-14197.485) (-14315.847) 
+         Chain 4 -- -14315.846765 -- 104.004869
+
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.mcmc"
+         Chain 2 -- -14402.647011 -- 104.004869
+         Chain 3 -- -14197.485425 -- 104.004869
+         Chain 4 -- -14315.846765 -- 104.004869
+
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run1.p"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.mcmc"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run1.t"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run2.p"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-14222.259] (-14418.951) (-14342.871) (-14267.371) * [-14376.032] (-14402.647) (-14197.485) (-14315.847) 
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run1.p"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run1.t"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run2.p"
+      Overwriting file "concatenated/TESTJimmyConcatenated.nex.run2.t"
+
+      Using a relative burnin of 25.0 % for diagnostics
+
+      Chain results (1000000 generations requested):
+
+          0 -- [-14222.259] (-14418.951) (-14342.871) (-14267.371) * [-14376.032] (-14402.647) (-14197.485) (-14315.847) 
+       1000 -- (-9273.804) (-9251.247) [-9079.555] (-9170.006) * (-9226.441) (-9235.099) [-9167.549] (-9249.756) -- 1:39:54
+
+      Average standard deviation of split frequencies: 0.344488
+
+       1000 -- (-9273.804) (-9251.247) [-9079.555] (-9170.006) * (-9226.441) (-9235.099) [-9167.549] (-9249.756) -- 1:39:54
+
+      Average standard deviation of split frequencies: 0.344488
+
+       1000 -- (-9273.804) (-9251.247) [-9079.555] (-9170.006) * (-9226.441) (-9235.099) [-9167.549] (-9249.756) -- 1:39:54
+
+      Average standard deviation of split frequencies: 0.344488
+
+       1000 -- (-9273.804) (-9251.247) [-9079.555] (-9170.006) * (-9226.441) (-9235.099) [-9167.549] (-9249.756) -- 1:39:54
+
+      Average standard deviation of split frequencies: 0.344488
+
+       1000 -- (-9273.804) (-9251.247) [-9079.555] (-9170.006) * (-9226.441) (-9235.099) [-9167.549] (-9249.756) -- 1:39:54
+
+      Average standard deviation of split frequencies: 0.344488
+
+       1000 -- (-9273.804) (-9251.247) [-9079.555] (-9170.006) * (-9226.441) (-9235.099) [-9167.549] (-9249.756) -- 1:39:54
+
+      Average standard deviation of split frequencies: 0.344488
+
+       1000 -- (-9273.804) (-9251.247) [-9079.555] (-9170.006) * (-9226.441) (-9235.099) [-9167.549] (-9249.756) -- 1:39:54
+
+      Average standard deviation of split frequencies: 0.344488
+
+       1000 -- (-9273.804) (-9251.247) [-9079.555] (-9170.006) * (-9226.441) (-9235.099) [-9167.549] (-9249.756) -- 1:56:33
+
+      Average standard deviation of split frequencies: 0.344488
+
+       2000 -- (-8892.544) (-8868.958) [-8838.264] (-8869.751) * (-8918.025) [-8864.346] (-8958.184) (-8943.064) -- 1:56:26
+
+      Average standard deviation of split frequencies: 0.240027
+
+       2000 -- (-8892.544) (-8868.958) [-8838.264] (-8869.751) * (-8918.025) [-8864.346] (-8958.184) (-8943.064) -- 1:56:26
+
+      Average standard deviation of split frequencies: 0.240027
+
+       2000 -- (-8892.544) (-8868.958) [-8838.264] (-8869.751) * (-8918.025) [-8864.346] (-8958.184) (-8943.064) -- 1:56:26
+
+      Average standard deviation of split frequencies: 0.240027
+
+       2000 -- (-8892.544) (-8868.958) [-8838.264] (-8869.751) * (-8918.025) [-8864.346] (-8958.184) (-8943.064) -- 1:56:26
+
+      Average standard deviation of split frequencies: 0.240027
+
+       2000 -- (-8892.544) (-8868.958) [-8838.264] (-8869.751) * (-8918.025) [-8864.346] (-8958.184) (-8943.064) -- 1:56:26
+
+      Average standard deviation of split frequencies: 0.240027
+
+       2000 -- (-8892.544) (-8868.958) [-8838.264] (-8869.751) * (-8918.025) [-8864.346] (-8958.184) (-8943.064) -- 1:56:26
+
+      Average standard deviation of split frequencies: 0.240027
+
+       2000 -- (-8892.544) (-8868.958) [-8838.264] (-8869.751) * (-8918.025) [-8864.346] (-8958.184) (-8943.064) -- 1:56:26
+
+      Average standard deviation of split frequencies: 0.240027
+
+       2000 -- (-8892.544) (-8868.958) [-8838.264] (-8869.751) * (-8918.025) [-8864.346] (-8958.184) (-8943.064) -- 1:56:26
+
+      Average standard deviation of split frequencies: 0.240027
+
+       3000 -- (-8729.032) (-8731.139) (-8695.604) [-8685.930] * (-8821.649) (-8738.393) (-8800.933) [-8744.913] -- 2:01:51
+
+      Average standard deviation of split frequencies: 0.230988
+
+       3000 -- (-8729.032) (-8731.139) (-8695.604) [-8685.930] * (-8821.649) (-8738.393) (-8800.933) [-8744.913] -- 2:01:51
+
+      Average standard deviation of split frequencies: 0.230988
+
+       3000 -- (-8729.032) (-8731.139) (-8695.604) [-8685.930] * (-8821.649) (-8738.393) (-8800.933) [-8744.913] -- 2:01:51
+
+      Average standard deviation of split frequencies: 0.230988
+
+       3000 -- (-8729.032) (-8731.139) (-8695.604) [-8685.930] * (-8821.649) (-8738.393) (-8800.933) [-8744.913] -- 2:01:51
+
+       3000 -- (-8729.032) (-8731.139) (-8695.604) [-8685.930] * (-8821.649) (-8738.393) (-8800.933) [-8744.913] -- 2:01:51
+
+      Average standard deviation of split frequencies: 0.230988
+
+      Average standard deviation of split frequencies: 0.230988
+
+       3000 -- (-8729.032) (-8731.139) (-8695.604) [-8685.930] * (-8821.649) (-8738.393) (-8800.933) [-8744.913] -- 2:01:51
+
+      Average standard deviation of split frequencies: 0.230988
+
+       3000 -- (-8729.032) (-8731.139) (-8695.604) [-8685.930] * (-8821.649) (-8738.393) (-8800.933) [-8744.913] -- 2:01:51
+
+      Average standard deviation of split frequencies: 0.230988
+
+       3000 -- (-8729.032) (-8731.139) (-8695.604) [-8685.930] * (-8821.649) (-8738.393) (-8800.933) [-8744.913] -- 2:01:51
+
+      Average standard deviation of split frequencies: 0.230988
+
+       4000 -- (-8646.320) [-8622.077] (-8634.999) (-8650.970) * (-8758.007) (-8661.941) [-8621.274] (-8648.579) -- 2:00:21
+
+      Average standard deviation of split frequencies: 0.178202
+
+       4000 -- (-8646.320) [-8622.077] (-8634.999) (-8650.970) * (-8758.007) (-8661.941) [-8621.274] (-8648.579) -- 2:00:21
+
+      Average standard deviation of split frequencies: 0.178202
+
+       4000 -- (-8646.320) [-8622.077] (-8634.999) (-8650.970) * (-8758.007) (-8661.941) [-8621.274] (-8648.579) -- 2:00:21
+
+      Average standard deviation of split frequencies: 0.178202
+
+       4000 -- (-8646.320) [-8622.077] (-8634.999) (-8650.970) * (-8758.007) (-8661.941) [-8621.274] (-8648.579) -- 2:00:21
+
+      Average standard deviation of split frequencies: 0.178202
+
+       4000 -- (-8646.320) [-8622.077] (-8634.999) (-8650.970) * (-8758.007) (-8661.941) [-8621.274] (-8648.579) -- 2:00:21
+
+      Average standard deviation of split frequencies: 0.178202
+
+       4000 -- (-8646.320) [-8622.077] (-8634.999) (-8650.970) * (-8758.007) (-8661.941) [-8621.274] (-8648.579) -- 2:00:21
+
+      Average standard deviation of split frequencies: 0.178202
+
+       4000 -- (-8646.320) [-8622.077] (-8634.999) (-8650.970) * (-8758.007) (-8661.941) [-8621.274] (-8648.579) -- 2:04:30
+
+      Average standard deviation of split frequencies: 0.178202
+
+       4000 -- (-8646.320) [-8622.077] (-8634.999) (-8650.970) * (-8758.007) (-8661.941) [-8621.274] (-8648.579) -- 2:04:30
+
+      Average standard deviation of split frequencies: 0.178202
+
+       5000 -- (-8619.981) (-8614.860) [-8602.478] (-8649.632) * (-8640.718) (-8644.209) (-8628.742) [-8605.339] -- 1:56:05
+
+      Average standard deviation of split frequencies: 0.153630
+
+       5000 -- (-8619.981) (-8614.860) [-8602.478] (-8649.632) * (-8640.718) (-8644.209) (-8628.742) [-8605.339] -- 1:59:24
+
+      Average standard deviation of split frequencies: 0.153630
+
+       5000 -- (-8619.981) (-8614.860) [-8602.478] (-8649.632) * (-8640.718) (-8644.209) (-8628.742) [-8605.339] -- 1:59:24
+
+      Average standard deviation of split frequencies: 0.153630
+
+       5000 -- (-8619.981) (-8614.860) [-8602.478] (-8649.632) * (-8640.718) (-8644.209) (-8628.742) [-8605.339] -- 1:59:24
+
+      Average standard deviation of split frequencies: 0.153630
+
+       5000 -- (-8619.981) (-8614.860) [-8602.478] (-8649.632) * (-8640.718) (-8644.209) (-8628.742) [-8605.339] -- 1:59:24
+       5000 -- (-8619.981) (-8614.860) [-8602.478] (-8649.632) * (-8640.718) (-8644.209) (-8628.742) [-8605.339] -- 1:59:24
+
+      Average standard deviation of split frequencies: 0.153630
+
+
+      Average standard deviation of split frequencies: 0.153630
+
+       5000 -- (-8619.981) (-8614.860) [-8602.478] (-8649.632) * (-8640.718) (-8644.209) (-8628.742) [-8605.339] -- 1:59:24
+
+      Average standard deviation of split frequencies: 0.153630
+
+       5000 -- (-8619.981) (-8614.860) [-8602.478] (-8649.632) * (-8640.718) (-8644.209) (-8628.742) [-8605.339] -- 1:59:24
+
+      Average standard deviation of split frequencies: 0.153630
+
+       6000 -- (-8627.337) [-8614.294] (-8605.685) (-8639.378) * (-8624.810) [-8617.997] (-8630.964) (-8614.548) -- 1:55:58
+
+      Average standard deviation of split frequencies: 0.132391
+
+       6000 -- (-8627.337) [-8614.294] (-8605.685) (-8639.378) * (-8624.810) [-8617.997] (-8630.964) (-8614.548) -- 1:55:58
+
+      Average standard deviation of split frequencies: 0.132391
+
+       6000 -- (-8627.337) [-8614.294] (-8605.685) (-8639.378) * (-8624.810) [-8617.997] (-8630.964) (-8614.548) -- 1:55:58
+
+      Average standard deviation of split frequencies: 0.132391
+
+       6000 -- (-8627.337) [-8614.294] (-8605.685) (-8639.378) * (-8624.810) [-8617.997] (-8630.964) (-8614.548) -- 1:55:58
+
+      Average standard deviation of split frequencies: 0.132391
+
+       6000 -- (-8627.337) [-8614.294] (-8605.685) (-8639.378) * (-8624.810) [-8617.997] (-8630.964) (-8614.548) -- 1:55:58
+
+      Average standard deviation of split frequencies: 0.132391
+
+       6000 -- (-8627.337) [-8614.294] (-8605.685) (-8639.378) * (-8624.810) [-8617.997] (-8630.964) (-8614.548) -- 1:58:43
+
+      Average standard deviation of split frequencies: 0.132391
+
+       6000 -- (-8627.337) [-8614.294] (-8605.685) (-8639.378) * (-8624.810) [-8617.997] (-8630.964) (-8614.548) -- 1:58:43
+
+      Average standard deviation of split frequencies: 0.132391
+
+       6000 -- (-8627.337) [-8614.294] (-8605.685) (-8639.378) * (-8624.810) [-8617.997] (-8630.964) (-8614.548) -- 2:01:29
+
+      Average standard deviation of split frequencies: 0.132391
+
+       7000 -- (-8607.862) [-8597.745] (-8620.777) (-8632.559) * (-8630.846) (-8618.450) (-8633.274) [-8616.482] -- 1:53:29
+
+      Average standard deviation of split frequencies: 0.144134
+
+       7000 -- (-8607.862) [-8597.745] (-8620.777) (-8632.559) * (-8630.846) (-8618.450) (-8633.274) [-8616.482] -- 1:55:51
+
+      Average standard deviation of split frequencies: 0.144134
+
+       7000 -- (-8607.862) [-8597.745] (-8620.777) (-8632.559) * (-8630.846) (-8618.450) (-8633.274) [-8616.482] -- 1:55:51
+
+      Average standard deviation of split frequencies: 0.144134
+
+       7000 -- (-8607.862) [-8597.745] (-8620.777) (-8632.559) * (-8630.846) (-8618.450) (-8633.274) [-8616.482] -- 1:55:51
+
+      Average standard deviation of split frequencies: 0.144134
+
+       7000 -- (-8607.862) [-8597.745] (-8620.777) (-8632.559) * (-8630.846) (-8618.450) (-8633.274) [-8616.482] -- 1:55:51
+
+      Average standard deviation of split frequencies: 0.144134
+
+       7000 -- (-8607.862) [-8597.745] (-8620.777) (-8632.559) * (-8630.846) (-8618.450) (-8633.274) [-8616.482] -- 1:55:51
+
+      Average standard deviation of split frequencies: 0.144134
+
+       7000 -- (-8607.862) [-8597.745] (-8620.777) (-8632.559) * (-8630.846) (-8618.450) (-8633.274) [-8616.482] -- 1:55:51
+
+      Average standard deviation of split frequencies: 0.144134
+
+       7000 -- (-8607.862) [-8597.745] (-8620.777) (-8632.559) * (-8630.846) (-8618.450) (-8633.274) [-8616.482] -- 1:58:12
+
+      Average standard deviation of split frequencies: 0.144134
+
+       8000 -- (-8613.364) [-8593.659] (-8629.401) (-8643.735) * [-8628.157] (-8618.813) (-8632.849) (-8629.065) -- 1:51:36
+
+      Average standard deviation of split frequencies: 0.130726
+
+       8000 -- (-8613.364) [-8593.659] (-8629.401) (-8643.735) * [-8628.157] (-8618.813) (-8632.849) (-8629.065) -- 1:51:36
+
+      Average standard deviation of split frequencies: 0.130726
+
+       8000 -- (-8613.364) [-8593.659] (-8629.401) (-8643.735) * [-8628.157] (-8618.813) (-8632.849) (-8629.065) -- 1:51:36
+
+      Average standard deviation of split frequencies: 0.130726
+
+       8000 -- (-8613.364) [-8593.659] (-8629.401) (-8643.735) * [-8628.157] (-8618.813) (-8632.849) (-8629.065) -- 1:51:36
+
+      Average standard deviation of split frequencies: 0.130726
+
+       8000 -- (-8613.364) [-8593.659] (-8629.401) (-8643.735) * [-8628.157] (-8618.813) (-8632.849) (-8629.065) -- 1:51:36
+
+      Average standard deviation of split frequencies: 0.130726
+
+       8000 -- (-8613.364) [-8593.659] (-8629.401) (-8643.735) * [-8628.157] (-8618.813) (-8632.849) (-8629.065) -- 1:53:40
+
+      Average standard deviation of split frequencies: 0.130726
+
+       8000 -- (-8613.364) [-8593.659] (-8629.401) (-8643.735) * [-8628.157] (-8618.813) (-8632.849) (-8629.065) -- 1:53:40
+
+      Average standard deviation of split frequencies: 0.130726
+
+       8000 -- (-8613.364) [-8593.659] (-8629.401) (-8643.735) * [-8628.157] (-8618.813) (-8632.849) (-8629.065) -- 1:55:44
+
+      Average standard deviation of split frequencies: 0.130726
+
+       9000 -- (-8615.781) [-8588.835] (-8616.734) (-8650.156) * [-8610.245] (-8602.458) (-8617.054) (-8632.132) -- 1:50:06
+
+      Average standard deviation of split frequencies: 0.123045
+
+       9000 -- (-8615.781) [-8588.835] (-8616.734) (-8650.156) * [-8610.245] (-8602.458) (-8617.054) (-8632.132) -- 1:50:06
+
+      Average standard deviation of split frequencies: 0.123045
+
+       9000 -- (-8615.781) [-8588.835] (-8616.734) (-8650.156) * [-8610.245] (-8602.458) (-8617.054) (-8632.132) -- 1:50:06
+
+      Average standard deviation of split frequencies: 0.123045
+
+       9000 -- (-8615.781) [-8588.835] (-8616.734) (-8650.156) * [-8610.245] (-8602.458) (-8617.054) (-8632.132) -- 1:50:06
+
+      Average standard deviation of split frequencies: 0.123045
+
+       9000 -- (-8615.781) [-8588.835] (-8616.734) (-8650.156) * [-8610.245] (-8602.458) (-8617.054) (-8632.132) -- 1:50:06
+
+      Average standard deviation of split frequencies: 0.123045
+
+       9000 -- (-8615.781) [-8588.835] (-8616.734) (-8650.156) * [-8610.245] (-8602.458) (-8617.054) (-8632.132) -- 1:50:06
+
+      Average standard deviation of split frequencies: 0.123045
+
+       9000 -- (-8615.781) [-8588.835] (-8616.734) (-8650.156) * [-8610.245] (-8602.458) (-8617.054) (-8632.132) -- 1:51:56
+
+      Average standard deviation of split frequencies: 0.123045
+
+       9000 -- (-8615.781) [-8588.835] (-8616.734) (-8650.156) * [-8610.245] (-8602.458) (-8617.054) (-8632.132) -- 1:51:56
+
+      Average standard deviation of split frequencies: 0.123045
+
+      10000 -- (-8631.862) [-8588.160] (-8600.673) (-8643.820) * (-8642.142) (-8605.256) (-8626.134) [-8614.428] -- 1:47:15
+
+      Average standard deviation of split frequencies: 0.115593
+
+      10000 -- (-8631.862) [-8588.160] (-8600.673) (-8643.820) * (-8642.142) (-8605.256) (-8626.134) [-8614.428] -- 1:47:15
+
+      Average standard deviation of split frequencies: 0.115593
+
+      10000 -- (-8631.862) [-8588.160] (-8600.673) (-8643.820) * (-8642.142) (-8605.256) (-8626.134) [-8614.428] -- 1:48:54
+
+      Average standard deviation of split frequencies: 0.115593
+
+      10000 -- (-8631.862) [-8588.160] (-8600.673) (-8643.820) * (-8642.142) (-8605.256) (-8626.134) [-8614.428] -- 1:48:54
+
+      Average standard deviation of split frequencies: 0.115593
+
+      10000 -- (-8631.862) [-8588.160] (-8600.673) (-8643.820) * (-8642.142) (-8605.256) (-8626.134) [-8614.428] -- 1:48:54
+
+      Average standard deviation of split frequencies: 0.115593
+
+      10000 -- (-8631.862) [-8588.160] (-8600.673) (-8643.820) * (-8642.142) (-8605.256) (-8626.134) [-8614.428] -- 1:48:54
+
+      Average standard deviation of split frequencies: 0.115593
+
+      10000 -- (-8631.862) [-8588.160] (-8600.673) (-8643.820) * (-8642.142) (-8605.256) (-8626.134) [-8614.428] -- 1:50:33
+
+      Average standard deviation of split frequencies: 0.115593
+
+      10000 -- (-8631.862) [-8588.160] (-8600.673) (-8643.820) * (-8642.142) (-8605.256) (-8626.134) [-8614.428] -- 1:50:33
+
+      Average standard deviation of split frequencies: 0.115593
+
+      11000 -- (-8620.030) (-8615.079) [-8595.825] (-8633.322) * (-8621.061) [-8605.967] (-8656.808) (-8602.555) -- 1:46:23
+
+      Average standard deviation of split frequencies: 0.120797
+
+      11000 -- (-8620.030) (-8615.079) [-8595.825] (-8633.322) * (-8621.061) [-8605.967] (-8656.808) (-8602.555) -- 1:46:23
+
+      Average standard deviation of split frequencies: 0.120797
+
+      11000 -- (-8620.030) (-8615.079) [-8595.825] (-8633.322) * (-8621.061) [-8605.967] (-8656.808) (-8602.555) -- 1:46:23
+
+      Average standard deviation of split frequencies: 0.120797
+
+      11000 -- (-8620.030) (-8615.079) [-8595.825] (-8633.322) * (-8621.061) [-8605.967] (-8656.808) (-8602.555) -- 1:46:23
+
+      Average standard deviation of split frequencies: 0.120797
+
+      11000 -- (-8620.030) (-8615.079) [-8595.825] (-8633.322) * (-8621.061) [-8605.967] (-8656.808) (-8602.555) -- 1:47:53
+
+      Average standard deviation of split frequencies: 0.120797
+
+      11000 -- (-8620.030) (-8615.079) [-8595.825] (-8633.322) * (-8621.061) [-8605.967] (-8656.808) (-8602.555) -- 1:47:53
+
+      Average standard deviation of split frequencies: 0.120797
+
+      11000 -- (-8620.030) (-8615.079) [-8595.825] (-8633.322) * (-8621.061) [-8605.967] (-8656.808) (-8602.555) -- 1:47:53
+
+      Average standard deviation of split frequencies: 0.120797
+
+      11000 -- (-8620.030) (-8615.079) [-8595.825] (-8633.322) * (-8621.061) [-8605.967] (-8656.808) (-8602.555) -- 1:49:23
+
+      Average standard deviation of split frequencies: 0.120797
+
+      12000 -- (-8626.233) [-8589.993] (-8602.640) (-8647.772) * (-8619.477) [-8604.002] (-8616.634) (-8631.005) -- 1:44:17
+
+      Average standard deviation of split frequencies: 0.115593
+
+      12000 -- (-8626.233) [-8589.993] (-8602.640) (-8647.772) * (-8619.477) [-8604.002] (-8616.634) (-8631.005) -- 1:44:17
+
+      Average standard deviation of split frequencies: 0.115593
+
+      12000 -- (-8626.233) [-8589.993] (-8602.640) (-8647.772) * (-8619.477) [-8604.002] (-8616.634) (-8631.005) -- 1:45:39
+
+      Average standard deviation of split frequencies: 0.115593
+
+      12000 -- (-8626.233) [-8589.993] (-8602.640) (-8647.772) * (-8619.477) [-8604.002] (-8616.634) (-8631.005) -- 1:45:39
+
+      Average standard deviation of split frequencies: 0.115593
+
+      12000 -- (-8626.233) [-8589.993] (-8602.640) (-8647.772) * (-8619.477) [-8604.002] (-8616.634) (-8631.005) -- 1:45:39
+
+      Average standard deviation of split frequencies: 0.115593
+
+      12000 -- (-8626.233) [-8589.993] (-8602.640) (-8647.772) * (-8619.477) [-8604.002] (-8616.634) (-8631.005) -- 1:45:39
+
+      Average standard deviation of split frequencies: 0.115593
+
+      12000 -- (-8626.233) [-8589.993] (-8602.640) (-8647.772) * (-8619.477) [-8604.002] (-8616.634) (-8631.005) -- 1:47:02
+
+      Average standard deviation of split frequencies: 0.115593
+
+      12000 -- (-8626.233) [-8589.993] (-8602.640) (-8647.772) * (-8619.477) [-8604.002] (-8616.634) (-8631.005) -- 1:47:02
+
+      Average standard deviation of split frequencies: 0.115593
+
+      13000 -- (-8608.081) [-8598.139] (-8625.392) (-8636.827) * (-8608.501) (-8632.422) (-8616.902) [-8614.820] -- 1:43:45
+
+      Average standard deviation of split frequencies: 0.111201
+
+      13000 -- (-8608.081) [-8598.139] (-8625.392) (-8636.827) * (-8608.501) (-8632.422) (-8616.902) [-8614.820] -- 1:43:45
+
+      Average standard deviation of split frequencies: 0.111201
+
+      13000 -- (-8608.081) [-8598.139] (-8625.392) (-8636.827) * (-8608.501) (-8632.422) (-8616.902) [-8614.820] -- 1:43:45
+
+      Average standard deviation of split frequencies: 0.111201
+
+      13000 -- (-8608.081) [-8598.139] (-8625.392) (-8636.827) * (-8608.501) (-8632.422) (-8616.902) [-8614.820] -- 1:43:45
+
+      Average standard deviation of split frequencies: 0.111201
+
+      13000 -- (-8608.081) [-8598.139] (-8625.392) (-8636.827) * (-8608.501) (-8632.422) (-8616.902) [-8614.820] -- 1:45:01
+
+      Average standard deviation of split frequencies: 0.111201
+
+      13000 -- (-8608.081) [-8598.139] (-8625.392) (-8636.827) * (-8608.501) (-8632.422) (-8616.902) [-8614.820] -- 1:45:01
+
+      Average standard deviation of split frequencies: 0.111201
+
+      13000 -- (-8608.081) [-8598.139] (-8625.392) (-8636.827) * (-8608.501) (-8632.422) (-8616.902) [-8614.820] -- 1:45:01
+
+      Average standard deviation of split frequencies: 0.111201
+
+      13000 -- (-8608.081) [-8598.139] (-8625.392) (-8636.827) * (-8608.501) (-8632.422) (-8616.902) [-8614.820] -- 1:46:17
+
+      Average standard deviation of split frequencies: 0.111201
+
+      14000 -- (-8611.099) [-8600.500] (-8613.390) (-8649.867) * (-8611.865) (-8622.304) (-8629.171) [-8602.003] -- 1:43:17
+
+      Average standard deviation of split frequencies: 0.104936
+
+      14000 -- (-8611.099) [-8600.500] (-8613.390) (-8649.867) * (-8611.865) (-8622.304) (-8629.171) [-8602.003] -- 1:43:17
+
+      Average standard deviation of split frequencies: 0.104936
+
+      14000 -- (-8611.099) [-8600.500] (-8613.390) (-8649.867) * (-8611.865) (-8622.304) (-8629.171) [-8602.003] -- 1:43:17
+
+      Average standard deviation of split frequencies: 0.104936
+
+      14000 -- (-8611.099) [-8600.500] (-8613.390) (-8649.867) * (-8611.865) (-8622.304) (-8629.171) [-8602.003] -- 1:43:17
+
+      Average standard deviation of split frequencies: 0.104936
+
+      14000 -- (-8611.099) [-8600.500] (-8613.390) (-8649.867) * (-8611.865) (-8622.304) (-8629.171) [-8602.003] -- 1:43:17
+
+      Average standard deviation of split frequencies: 0.104936
+
+      14000 -- (-8611.099) [-8600.500] (-8613.390) (-8649.867) * (-8611.865) (-8622.304) (-8629.171) [-8602.003] -- 1:43:17
+
+      Average standard deviation of split frequencies: 0.104936
+
+      14000 -- (-8611.099) [-8600.500] (-8613.390) (-8649.867) * (-8611.865) (-8622.304) (-8629.171) [-8602.003] -- 1:44:28
+
+      Average standard deviation of split frequencies: 0.104936
+
+      14000 -- (-8611.099) [-8600.500] (-8613.390) (-8649.867) * (-8611.865) (-8622.304) (-8629.171) [-8602.003] -- 1:44:28
+
+      Average standard deviation of split frequencies: 0.104936
+
+      15000 -- (-8623.269) [-8592.895] (-8623.073) (-8629.865) * (-8599.541) (-8634.202) (-8634.645) [-8587.289] -- 1:41:47
+
+      Average standard deviation of split frequencies: 0.113397
+
+      15000 -- (-8623.269) [-8592.895] (-8623.073) (-8629.865) * (-8599.541) (-8634.202) (-8634.645) [-8587.289] -- 1:41:47
+
+      Average standard deviation of split frequencies: 0.113397
+
+      15000 -- (-8623.269) [-8592.895] (-8623.073) (-8629.865) * (-8599.541) (-8634.202) (-8634.645) [-8587.289] -- 1:41:47
+
+      Average standard deviation of split frequencies: 0.113397
+
+      15000 -- (-8623.269) [-8592.895] (-8623.073) (-8629.865) * (-8599.541) (-8634.202) (-8634.645) [-8587.289] -- 1:42:52
+
+      Average standard deviation of split frequencies: 0.113397
+
+      15000 -- (-8623.269) [-8592.895] (-8623.073) (-8629.865) * (-8599.541) (-8634.202) (-8634.645) [-8587.289] -- 1:42:52
+
+      Average standard deviation of split frequencies: 0.113397
+
+      15000 -- (-8623.269) [-8592.895] (-8623.073) (-8629.865) * (-8599.541) (-8634.202) (-8634.645) [-8587.289] -- 1:42:52
+
+      Average standard deviation of split frequencies: 0.113397
+
+      15000 -- (-8623.269) [-8592.895] (-8623.073) (-8629.865) * (-8599.541) (-8634.202) (-8634.645) [-8587.289] -- 1:43:58
+
+      Average standard deviation of split frequencies: 0.113397
+
+      15000 -- (-8623.269) [-8592.895] (-8623.073) (-8629.865) * (-8599.541) (-8634.202) (-8634.645) [-8587.289] -- 1:43:58
+
+      Average standard deviation of split frequencies: 0.113397
+
+      16000 -- (-8640.660) [-8586.074] (-8614.981) (-8606.420) * (-8616.326) (-8624.993) [-8601.278] (-8596.882) -- 1:40:27
+
+      Average standard deviation of split frequencies: 0.106688
+
+      16000 -- (-8640.660) [-8586.074] (-8614.981) (-8606.420) * (-8616.326) (-8624.993) [-8601.278] (-8596.882) -- 1:41:28
+
+      Average standard deviation of split frequencies: 0.106688
+
+      16000 -- (-8640.660) [-8586.074] (-8614.981) (-8606.420) * (-8616.326) (-8624.993) [-8601.278] (-8596.882) -- 1:41:28
+
+      Average standard deviation of split frequencies: 0.106688
+
+      16000 -- (-8640.660) [-8586.074] (-8614.981) (-8606.420) * (-8616.326) (-8624.993) [-8601.278] (-8596.882) -- 1:41:28
+
+      Average standard deviation of split frequencies: 0.106688
+
+      16000 -- (-8640.660) [-8586.074] (-8614.981) (-8606.420) * (-8616.326) (-8624.993) [-8601.278] (-8596.882) -- 1:41:28
+
+      Average standard deviation of split frequencies: 0.106688
+
+      16000 -- (-8640.660) [-8586.074] (-8614.981) (-8606.420) * (-8616.326) (-8624.993) [-8601.278] (-8596.882) -- 1:41:28
+
+      Average standard deviation of split frequencies: 0.106688
+
+      16000 -- (-8640.660) [-8586.074] (-8614.981) (-8606.420) * (-8616.326) (-8624.993) [-8601.278] (-8596.882) -- 1:42:30
+
+      Average standard deviation of split frequencies: 0.106688
+
+      16000 -- (-8640.660) [-8586.074] (-8614.981) (-8606.420) * (-8616.326) (-8624.993) [-8601.278] (-8596.882) -- 1:42:30
+
+      Average standard deviation of split frequencies: 0.106688
+
+      17000 -- (-8653.720) [-8596.190] (-8614.838) (-8609.233) * (-8605.441) (-8626.191) (-8596.831) [-8596.666] -- 1:40:13
+
+      Average standard deviation of split frequencies: 0.102348
+
+      17000 -- (-8653.720) [-8596.190] (-8614.838) (-8609.233) * (-8605.441) (-8626.191) (-8596.831) [-8596.666] -- 1:40:13
+
+      Average standard deviation of split frequencies: 0.102348
+
+      17000 -- (-8653.720) [-8596.190] (-8614.838) (-8609.233) * (-8605.441) (-8626.191) (-8596.831) [-8596.666] -- 1:40:13
+
+      Average standard deviation of split frequencies: 0.102348
+
+      17000 -- (-8653.720) [-8596.190] (-8614.838) (-8609.233) * (-8605.441) (-8626.191) (-8596.831) [-8596.666] -- 1:40:13
+
+      Average standard deviation of split frequencies: 0.102348
+
+      17000 -- (-8653.720) [-8596.190] (-8614.838) (-8609.233) * (-8605.441) (-8626.191) (-8596.831) [-8596.666] -- 1:41:11
+
+      Average standard deviation of split frequencies: 0.102348
+
+      17000 -- (-8653.720) [-8596.190] (-8614.838) (-8609.233) * (-8605.441) (-8626.191) (-8596.831) [-8596.666] -- 1:41:11
+
+      Average standard deviation of split frequencies: 0.102348
+
+      17000 -- (-8653.720) [-8596.190] (-8614.838) (-8609.233) * (-8605.441) (-8626.191) (-8596.831) [-8596.666] -- 1:42:09
+
+      Average standard deviation of split frequencies: 0.102348
+
+      17000 -- (-8653.720) [-8596.190] (-8614.838) (-8609.233) * (-8605.441) (-8626.191) (-8596.831) [-8596.666] -- 1:42:09
+
+      Average standard deviation of split frequencies: 0.102348
+
+      18000 -- (-8627.795) (-8612.721) [-8607.020] (-8628.089) * (-8610.674) (-8611.877) (-8609.661) [-8602.829] -- 1:40:01
+
+      Average standard deviation of split frequencies: 0.094517
+
+      18000 -- (-8627.795) (-8612.721) [-8607.020] (-8628.089) * (-8610.674) (-8611.877) (-8609.661) [-8602.829] -- 1:40:01
+
+      Average standard deviation of split frequencies: 0.094517
+
+      18000 -- (-8627.795) (-8612.721) [-8607.020] (-8628.089) * (-8610.674) (-8611.877) (-8609.661) [-8602.829] -- 1:40:01
+
+      Average standard deviation of split frequencies: 0.094517
+
+      18000 -- (-8627.795) (-8612.721) [-8607.020] (-8628.089) * (-8610.674) (-8611.877) (-8609.661) [-8602.829] -- 1:40:01
+
+      Average standard deviation of split frequencies: 0.094517
+
+      18000 -- (-8627.795) (-8612.721) [-8607.020] (-8628.089) * (-8610.674) (-8611.877) (-8609.661) [-8602.829] -- 1:40:01
+
+      Average standard deviation of split frequencies: 0.094517
+
+      18000 -- (-8627.795) (-8612.721) [-8607.020] (-8628.089) * (-8610.674) (-8611.877) (-8609.661) [-8602.829] -- 1:40:55
+
+      Average standard deviation of split frequencies: 0.094517
+
+      18000 -- (-8627.795) (-8612.721) [-8607.020] (-8628.089) * (-8610.674) (-8611.877) (-8609.661) [-8602.829] -- 1:40:55
+
+      Average standard deviation of split frequencies: 0.094517
+
+      18000 -- (-8627.795) (-8612.721) [-8607.020] (-8628.089) * (-8610.674) (-8611.877) (-8609.661) [-8602.829] -- 1:41:50
+
+      Average standard deviation of split frequencies: 0.094517
+
+      19000 -- (-8610.388) [-8602.598] (-8596.481) (-8635.010) * (-8602.220) (-8625.162) (-8616.448) [-8602.892] -- 1:38:57
+
+      Average standard deviation of split frequencies: 0.095735
+
+      19000 -- (-8610.388) [-8602.598] (-8596.481) (-8635.010) * (-8602.220) (-8625.162) (-8616.448) [-8602.892] -- 1:38:57
+
+      Average standard deviation of split frequencies: 0.095735
+
+      19000 -- (-8610.388) [-8602.598] (-8596.481) (-8635.010) * (-8602.220) (-8625.162) (-8616.448) [-8602.892] -- 1:38:57
+
+      Average standard deviation of split frequencies: 0.095735
+
+      19000 -- (-8610.388) [-8602.598] (-8596.481) (-8635.010) * (-8602.220) (-8625.162) (-8616.448) [-8602.892] -- 1:39:49
+
+      Average standard deviation of split frequencies: 0.095735
+
+      19000 -- (-8610.388) [-8602.598] (-8596.481) (-8635.010) * (-8602.220) (-8625.162) (-8616.448) [-8602.892] -- 1:39:49
+
+      Average standard deviation of split frequencies: 0.095735
+
+      19000 -- (-8610.388) [-8602.598] (-8596.481) (-8635.010) * (-8602.220) (-8625.162) (-8616.448) [-8602.892] -- 1:39:49
+
+      Average standard deviation of split frequencies: 0.095735
+
+      19000 -- (-8610.388) [-8602.598] (-8596.481) (-8635.010) * (-8602.220) (-8625.162) (-8616.448) [-8602.892] -- 1:40:40
+
+      Average standard deviation of split frequencies: 0.095735
+
+      19000 -- (-8610.388) [-8602.598] (-8596.481) (-8635.010) * (-8602.220) (-8625.162) (-8616.448) [-8602.892] -- 1:40:40
+
+      Average standard deviation of split frequencies: 0.095735
+
+      20000 -- (-8620.712) (-8598.738) [-8586.503] (-8615.830) * (-8601.974) (-8601.253) (-8614.131) [-8596.998] -- 1:38:49
+
+      Average standard deviation of split frequencies: 0.089691
+
+      20000 -- (-8620.712) (-8598.738) [-8586.503] (-8615.830) * (-8601.974) (-8601.253) (-8614.131) [-8596.998] -- 1:38:49
+
+      Average standard deviation of split frequencies: 0.089691
+
+      20000 -- (-8620.712) (-8598.738) [-8586.503] (-8615.830) * (-8601.974) (-8601.253) (-8614.131) [-8596.998] -- 1:38:49
+
+      Average standard deviation of split frequencies: 0.089691
+
+      20000 -- (-8620.712) (-8598.738) [-8586.503] (-8615.830) * (-8601.974) (-8601.253) (-8614.131) [-8596.998] -- 1:39:38
+
+      Average standard deviation of split frequencies: 0.089691
+
+      20000 -- (-8620.712) (-8598.738) [-8586.503] (-8615.830) * (-8601.974) (-8601.253) (-8614.131) [-8596.998] -- 1:39:38
+
+      Average standard deviation of split frequencies: 0.089691
+
+      20000 -- (-8620.712) (-8598.738) [-8586.503] (-8615.830) * (-8601.974) (-8601.253) (-8614.131) [-8596.998] -- 1:39:38
+
+      Average standard deviation of split frequencies: 0.089691
+
+      20000 -- (-8620.712) (-8598.738) [-8586.503] (-8615.830) * (-8601.974) (-8601.253) (-8614.131) [-8596.998] -- 1:40:27
+
+      Average standard deviation of split frequencies: 0.089691
+
+      20000 -- (-8620.712) (-8598.738) [-8586.503] (-8615.830) * (-8601.974) (-8601.253) (-8614.131) [-8596.998] -- 1:40:27
+
+      Average standard deviation of split frequencies: 0.089691
+
+      21000 -- (-8618.687) (-8592.467) [-8583.933] (-8621.838) * [-8598.353] (-8618.261) (-8604.996) (-8612.763) -- 1:38:40
+
+      Average standard deviation of split frequencies: 0.085752
+
+      21000 -- (-8618.687) (-8592.467) [-8583.933] (-8621.838) * [-8598.353] (-8618.261) (-8604.996) (-8612.763) -- 1:38:40
+
+      Average standard deviation of split frequencies: 0.085752
+
+      21000 -- (-8618.687) (-8592.467) [-8583.933] (-8621.838) * [-8598.353] (-8618.261) (-8604.996) (-8612.763) -- 1:38:40
+
+      Average standard deviation of split frequencies: 0.085752
+
+      21000 -- (-8618.687) (-8592.467) [-8583.933] (-8621.838) * [-8598.353] (-8618.261) (-8604.996) (-8612.763) -- 1:38:40
+
+      Average standard deviation of split frequencies: 0.085752
+
+      21000 -- (-8618.687) (-8592.467) [-8583.933] (-8621.838) * [-8598.353] (-8618.261) (-8604.996) (-8612.763) -- 1:39:27
+
+      Average standard deviation of split frequencies: 0.085752
+
+      21000 -- (-8618.687) (-8592.467) [-8583.933] (-8621.838) * [-8598.353] (-8618.261) (-8604.996) (-8612.763) -- 1:39:27
+
+      Average standard deviation of split frequencies: 0.085752
+
+      21000 -- (-8618.687) (-8592.467) [-8583.933] (-8621.838) * [-8598.353] (-8618.261) (-8604.996) (-8612.763) -- 1:40:13
+
+      Average standard deviation of split frequencies: 0.085752
+
+      21000 -- (-8618.687) (-8592.467) [-8583.933] (-8621.838) * [-8598.353] (-8618.261) (-8604.996) (-8612.763) -- 1:40:13
+
+      Average standard deviation of split frequencies: 0.085752
+
+      22000 -- (-8612.852) (-8600.389) [-8586.254] (-8635.140) * (-8600.505) (-8617.400) [-8603.976] (-8610.706) -- 1:37:48
+
+      Average standard deviation of split frequencies: 0.080349
+
+      22000 -- (-8612.852) (-8600.389) [-8586.254] (-8635.140) * (-8600.505) (-8617.400) [-8603.976] (-8610.706) -- 1:37:48
+
+      Average standard deviation of split frequencies: 0.080349
+
+      22000 -- (-8612.852) (-8600.389) [-8586.254] (-8635.140) * (-8600.505) (-8617.400) [-8603.976] (-8610.706) -- 1:37:48
+
+      Average standard deviation of split frequencies: 0.080349
+
+      22000 -- (-8612.852) (-8600.389) [-8586.254] (-8635.140) * (-8600.505) (-8617.400) [-8603.976] (-8610.706) -- 1:38:32
+
+      Average standard deviation of split frequencies: 0.080349
+
+      22000 -- (-8612.852) (-8600.389) [-8586.254] (-8635.140) * (-8600.505) (-8617.400) [-8603.976] (-8610.706) -- 1:38:32
+
+      Average standard deviation of split frequencies: 0.080349
+
+      22000 -- (-8612.852) (-8600.389) [-8586.254] (-8635.140) * (-8600.505) (-8617.400) [-8603.976] (-8610.706) -- 1:39:16
+
+      Average standard deviation of split frequencies: 0.080349
+
+      22000 -- (-8612.852) (-8600.389) [-8586.254] (-8635.140) * (-8600.505) (-8617.400) [-8603.976] (-8610.706) -- 1:39:16
+
+      Average standard deviation of split frequencies: 0.080349
+
+      22000 -- (-8612.852) (-8600.389) [-8586.254] (-8635.140) * (-8600.505) (-8617.400) [-8603.976] (-8610.706) -- 1:39:16
+
+      Average standard deviation of split frequencies: 0.080349
+
+      23000 -- (-8633.793) (-8603.449) [-8585.874] (-8637.803) * [-8597.577] (-8621.587) (-8615.727) (-8612.720) -- 1:37:42
+
+      Average standard deviation of split frequencies: 0.080710
+
+      23000 -- (-8633.793) (-8603.449) [-8585.874] (-8637.803) * [-8597.577] (-8621.587) (-8615.727) (-8612.720) -- 1:37:42
+
+      Average standard deviation of split frequencies: 0.080710
+
+      23000 -- (-8633.793) (-8603.449) [-8585.874] (-8637.803) * [-8597.577] (-8621.587) (-8615.727) (-8612.720) -- 1:37:42
+
+      Average standard deviation of split frequencies: 0.080710
+
+      23000 -- (-8633.793) (-8603.449) [-8585.874] (-8637.803) * [-8597.577] (-8621.587) (-8615.727) (-8612.720) -- 1:37:42
+
+      Average standard deviation of split frequencies: 0.080710
+
+      23000 -- (-8633.793) (-8603.449) [-8585.874] (-8637.803) * [-8597.577] (-8621.587) (-8615.727) (-8612.720) -- 1:38:24
+
+      Average standard deviation of split frequencies: 0.080710
+
+      23000 -- (-8633.793) (-8603.449) [-8585.874] (-8637.803) * [-8597.577] (-8621.587) (-8615.727) (-8612.720) -- 1:38:24
+
+      Average standard deviation of split frequencies: 0.080710
+
+      23000 -- (-8633.793) (-8603.449) [-8585.874] (-8637.803) * [-8597.577] (-8621.587) (-8615.727) (-8612.720) -- 1:39:06
+
+      Average standard deviation of split frequencies: 0.080710
+
+      23000 -- (-8633.793) (-8603.449) [-8585.874] (-8637.803) * [-8597.577] (-8621.587) (-8615.727) (-8612.720) -- 1:39:06
+
+      Average standard deviation of split frequencies: 0.080710
+
+      24000 -- (-8609.678) (-8595.729) [-8589.577] (-8651.412) * [-8596.759] (-8623.133) (-8602.001) (-8609.704) -- 1:36:55
+
+      Average standard deviation of split frequencies: 0.078723
+
+      24000 -- (-8609.678) (-8595.729) [-8589.577] (-8651.412) * [-8596.759] (-8623.133) (-8602.001) (-8609.704) -- 1:36:55
+
+      Average standard deviation of split frequencies: 0.078723
+
+      24000 -- (-8609.678) (-8595.729) [-8589.577] (-8651.412) * [-8596.759] (-8623.133) (-8602.001) (-8609.704) -- 1:36:55
+
+      Average standard deviation of split frequencies: 0.078723
+
+      24000 -- (-8609.678) (-8595.729) [-8589.577] (-8651.412) * [-8596.759] (-8623.133) (-8602.001) (-8609.704) -- 1:37:36
+
+      Average standard deviation of split frequencies: 0.078723
+
+      24000 -- (-8609.678) (-8595.729) [-8589.577] (-8651.412) * [-8596.759] (-8623.133) (-8602.001) (-8609.704) -- 1:37:36
+
+      Average standard deviation of split frequencies: 0.078723
+
+      24000 -- (-8609.678) (-8595.729) [-8589.577] (-8651.412) * [-8596.759] (-8623.133) (-8602.001) (-8609.704) -- 1:38:16
+
+      Average standard deviation of split frequencies: 0.078723
+
+      24000 -- (-8609.678) (-8595.729) [-8589.577] (-8651.412) * [-8596.759] (-8623.133) (-8602.001) (-8609.704) -- 1:38:16
+
+      Average standard deviation of split frequencies: 0.078723
+
+      24000 -- (-8609.678) (-8595.729) [-8589.577] (-8651.412) * [-8596.759] (-8623.133) (-8602.001) (-8609.704) -- 1:38:16
+
+      Average standard deviation of split frequencies: 0.078723
+
+      25000 -- (-8621.087) (-8607.427) [-8597.683] (-8621.730) * (-8610.679) (-8611.067) (-8613.792) [-8606.748] -- 1:36:12
+
+      Average standard deviation of split frequencies: 0.074978
+
+      25000 -- (-8621.087) (-8607.427) [-8597.683] (-8621.730) * (-8610.679) (-8611.067) (-8613.792) [-8606.748] -- 1:36:51
+
+      Average standard deviation of split frequencies: 0.074978
+
+      25000 -- (-8621.087) (-8607.427) [-8597.683] (-8621.730) * (-8610.679) (-8611.067) (-8613.792) [-8606.748] -- 1:36:51
+
+      Average standard deviation of split frequencies: 0.074978
+
+      25000 -- (-8621.087) (-8607.427) [-8597.683] (-8621.730) * (-8610.679) (-8611.067) (-8613.792) [-8606.748] -- 1:36:51
+
+      Average standard deviation of split frequencies: 0.074978
+
+      25000 -- (-8621.087) (-8607.427) [-8597.683] (-8621.730) * (-8610.679) (-8611.067) (-8613.792) [-8606.748] -- 1:37:30
+
+      Average standard deviation of split frequencies: 0.074978
+
+      25000 -- (-8621.087) (-8607.427) [-8597.683] (-8621.730) * (-8610.679) (-8611.067) (-8613.792) [-8606.748] -- 1:37:30
+
+      Average standard deviation of split frequencies: 0.074978
+
+      25000 -- (-8621.087) (-8607.427) [-8597.683] (-8621.730) * (-8610.679) (-8611.067) (-8613.792) [-8606.748] -- 1:38:09
+
+      Average standard deviation of split frequencies: 0.074978
+
+      25000 -- (-8621.087) (-8607.427) [-8597.683] (-8621.730) * (-8610.679) (-8611.067) (-8613.792) [-8606.748] -- 1:38:09
+
+      Average standard deviation of split frequencies: 0.074978
+
+      26000 -- (-8590.590) [-8588.492] (-8608.875) (-8633.084) * (-8615.846) (-8601.667) (-8605.877) [-8588.104] -- 1:36:09
+
+      Average standard deviation of split frequencies: 0.130736
+
+      26000 -- (-8590.590) [-8588.492] (-8608.875) (-8633.084) * (-8615.846) (-8601.667) (-8605.877) [-8588.104] -- 1:36:09
+
+      Average standard deviation of split frequencies: 0.130736
+
+      26000 -- (-8590.590) [-8588.492] (-8608.875) (-8633.084) * (-8615.846) (-8601.667) (-8605.877) [-8588.104] -- 1:36:09
+
+      Average standard deviation of split frequencies: 0.130736
+
+      26000 -- (-8590.590) [-8588.492] (-8608.875) (-8633.084) * (-8615.846) (-8601.667) (-8605.877) [-8588.104] -- 1:36:09
+
+      Average standard deviation of split frequencies: 0.130736
+
+      26000 -- (-8590.590) [-8588.492] (-8608.875) (-8633.084) * (-8615.846) (-8601.667) (-8605.877) [-8588.104] -- 1:36:46
+
+      Average standard deviation of split frequencies: 0.130736
+
+      26000 -- (-8590.590) [-8588.492] (-8608.875) (-8633.084) * (-8615.846) (-8601.667) (-8605.877) [-8588.104] -- 1:37:24
+
+      Average standard deviation of split frequencies: 0.130736
+
+      26000 -- (-8590.590) [-8588.492] (-8608.875) (-8633.084) * (-8615.846) (-8601.667) (-8605.877) [-8588.104] -- 1:37:24
+
+      Average standard deviation of split frequencies: 0.130736
+
+      26000 -- (-8590.590) [-8588.492] (-8608.875) (-8633.084) * (-8615.846) (-8601.667) (-8605.877) [-8588.104] -- 1:37:24
+
+      Average standard deviation of split frequencies: 0.130736
+
+      27000 -- [-8596.247] (-8607.218) (-8607.400) (-8648.849) * (-8621.986) (-8607.724) [-8598.429] (-8621.310) -- 1:35:29
+
+      Average standard deviation of split frequencies: 0.124585
+
+      27000 -- [-8596.247] (-8607.218) (-8607.400) (-8648.849) * (-8621.986) (-8607.724) [-8598.429] (-8621.310) -- 1:35:29
+
+      Average standard deviation of split frequencies: 0.124585
+
+      27000 -- [-8596.247] (-8607.218) (-8607.400) (-8648.849) * (-8621.986) (-8607.724) [-8598.429] (-8621.310) -- 1:36:05
+
+      Average standard deviation of split frequencies: 0.124585
+
+      27000 -- [-8596.247] (-8607.218) (-8607.400) (-8648.849) * (-8621.986) (-8607.724) [-8598.429] (-8621.310) -- 1:36:05
+
+      Average standard deviation of split frequencies: 0.124585
+
+      27000 -- [-8596.247] (-8607.218) (-8607.400) (-8648.849) * (-8621.986) (-8607.724) [-8598.429] (-8621.310) -- 1:36:41
+
+      Average standard deviation of split frequencies: 0.124585
+
+      27000 -- [-8596.247] (-8607.218) (-8607.400) (-8648.849) * (-8621.986) (-8607.724) [-8598.429] (-8621.310) -- 1:36:41
+
+      Average standard deviation of split frequencies: 0.124585
+
+      27000 -- [-8596.247] (-8607.218) (-8607.400) (-8648.849) * (-8621.986) (-8607.724) [-8598.429] (-8621.310) -- 1:37:18
+
+      Average standard deviation of split frequencies: 0.124585
+
+      27000 -- [-8596.247] (-8607.218) (-8607.400) (-8648.849) * (-8621.986) (-8607.724) [-8598.429] (-8621.310) -- 1:37:18
+
+      Average standard deviation of split frequencies: 0.124585
+
+      28000 -- [-8599.809] (-8603.643) (-8622.519) (-8637.807) * (-8614.675) [-8596.046] (-8604.033) (-8597.501) -- 1:35:27
+
+      Average standard deviation of split frequencies: 0.113309
+
+      28000 -- [-8599.809] (-8603.643) (-8622.519) (-8637.807) * (-8614.675) [-8596.046] (-8604.033) (-8597.501) -- 1:35:27
+
+      Average standard deviation of split frequencies: 0.113309
+
+      28000 -- [-8599.809] (-8603.643) (-8622.519) (-8637.807) * (-8614.675) [-8596.046] (-8604.033) (-8597.501) -- 1:35:27
+
+      Average standard deviation of split frequencies: 0.113309
+
+      28000 -- [-8599.809] (-8603.643) (-8622.519) (-8637.807) * (-8614.675) [-8596.046] (-8604.033) (-8597.501) -- 1:35:27
+
+      Average standard deviation of split frequencies: 0.113309
+
+      28000 -- [-8599.809] (-8603.643) (-8622.519) (-8637.807) * (-8614.675) [-8596.046] (-8604.033) (-8597.501) -- 1:36:02
+
+      Average standard deviation of split frequencies: 0.113309
+
+      28000 -- [-8599.809] (-8603.643) (-8622.519) (-8637.807) * (-8614.675) [-8596.046] (-8604.033) (-8597.501) -- 1:36:37
+
+      Average standard deviation of split frequencies: 0.113309
+
+      28000 -- [-8599.809] (-8603.643) (-8622.519) (-8637.807) * (-8614.675) [-8596.046] (-8604.033) (-8597.501) -- 1:36:37
+
+      Average standard deviation of split frequencies: 0.113309
+
+      28000 -- [-8599.809] (-8603.643) (-8622.519) (-8637.807) * (-8614.675) [-8596.046] (-8604.033) (-8597.501) -- 1:36:37
+
+      Average standard deviation of split frequencies: 0.113309
+
+      29000 -- (-8601.663) [-8593.693] (-8620.878) (-8641.527) * (-8606.135) (-8594.403) (-8606.131) [-8594.626] -- 1:34:52
+
+      Average standard deviation of split frequencies: 0.112270
+
+      29000 -- (-8601.663) [-8593.693] (-8620.878) (-8641.527) * (-8606.135) (-8594.403) (-8606.131) [-8594.626] -- 1:35:25
+
+      Average standard deviation of split frequencies: 0.112270
+
+      29000 -- (-8601.663) [-8593.693] (-8620.878) (-8641.527) * (-8606.135) (-8594.403) (-8606.131) [-8594.626] -- 1:35:25
+
+      Average standard deviation of split frequencies: 0.112270
+
+      29000 -- (-8601.663) [-8593.693] (-8620.878) (-8641.527) * (-8606.135) (-8594.403) (-8606.131) [-8594.626] -- 1:35:25
+
+      Average standard deviation of split frequencies: 0.112270
+
+      29000 -- (-8601.663) [-8593.693] (-8620.878) (-8641.527) * (-8606.135) (-8594.403) (-8606.131) [-8594.626] -- 1:35:59
+
+      Average standard deviation of split frequencies: 0.112270
+
+      29000 -- (-8601.663) [-8593.693] (-8620.878) (-8641.527) * (-8606.135) (-8594.403) (-8606.131) [-8594.626] -- 1:36:32
+
+      Average standard deviation of split frequencies: 0.112270
+
+      29000 -- (-8601.663) [-8593.693] (-8620.878) (-8641.527) * (-8606.135) (-8594.403) (-8606.131) [-8594.626] -- 1:36:32
+
+      Average standard deviation of split frequencies: 0.112270
+
+      29000 -- (-8601.663) [-8593.693] (-8620.878) (-8641.527) * (-8606.135) (-8594.403) (-8606.131) [-8594.626] -- 1:36:32
+
+      Average standard deviation of split frequencies: 0.112270
+
+      30000 -- (-8629.878) [-8600.912] (-8617.542) (-8605.575) * (-8613.570) [-8589.043] (-8603.968) (-8606.619) -- 1:34:50
+
+      Average standard deviation of split frequencies: 0.109561
+
+      30000 -- (-8629.878) [-8600.912] (-8617.542) (-8605.575) * (-8613.570) [-8589.043] (-8603.968) (-8606.619) -- 1:34:50
+
+      Average standard deviation of split frequencies: 0.109561
+
+      30000 -- (-8629.878) [-8600.912] (-8617.542) (-8605.575) * (-8613.570) [-8589.043] (-8603.968) (-8606.619) -- 1:34:50
+
+      Average standard deviation of split frequencies: 0.109561
+
+      30000 -- (-8629.878) [-8600.912] (-8617.542) (-8605.575) * (-8613.570) [-8589.043] (-8603.968) (-8606.619) -- 1:35:23
+
+      Average standard deviation of split frequencies: 0.109561
+
+      30000 -- (-8629.878) [-8600.912] (-8617.542) (-8605.575) * (-8613.570) [-8589.043] (-8603.968) (-8606.619) -- 1:35:23
+
+      Average standard deviation of split frequencies: 0.109561
+
+      30000 -- (-8629.878) [-8600.912] (-8617.542) (-8605.575) * (-8613.570) [-8589.043] (-8603.968) (-8606.619) -- 1:35:55
+
+      Average standard deviation of split frequencies: 0.109561
+
+      30000 -- (-8629.878) [-8600.912] (-8617.542) (-8605.575) * (-8613.570) [-8589.043] (-8603.968) (-8606.619) -- 1:36:27
+
+      Average standard deviation of split frequencies: 0.109561
+
+      30000 -- (-8629.878) [-8600.912] (-8617.542) (-8605.575) * (-8613.570) [-8589.043] (-8603.968) (-8606.619) -- 1:36:27
+
+      Average standard deviation of split frequencies: 0.109561
+
+      31000 -- [-8599.571] (-8599.270) (-8608.759) (-8623.537) * (-8612.346) (-8594.644) [-8604.721] (-8612.940) -- 1:34:48
+
+      Average standard deviation of split frequencies: 0.105890
+
+      31000 -- [-8599.571] (-8599.270) (-8608.759) (-8623.537) * (-8612.346) (-8594.644) [-8604.721] (-8612.940) -- 1:34:48
+
+      Average standard deviation of split frequencies: 0.105890
+
+      31000 -- [-8599.571] (-8599.270) (-8608.759) (-8623.537) * (-8612.346) (-8594.644) [-8604.721] (-8612.940) -- 1:34:48
+
+      Average standard deviation of split frequencies: 0.105890
+
+      31000 -- [-8599.571] (-8599.270) (-8608.759) (-8623.537) * (-8612.346) (-8594.644) [-8604.721] (-8612.940) -- 1:34:48
+
+      Average standard deviation of split frequencies: 0.105890
+
+      31000 -- [-8599.571] (-8599.270) (-8608.759) (-8623.537) * (-8612.346) (-8594.644) [-8604.721] (-8612.940) -- 1:35:20
+
+      Average standard deviation of split frequencies: 0.105890
+
+      31000 -- [-8599.571] (-8599.270) (-8608.759) (-8623.537) * (-8612.346) (-8594.644) [-8604.721] (-8612.940) -- 1:35:51
+
+      Average standard deviation of split frequencies: 0.105890
+
+      31000 -- [-8599.571] (-8599.270) (-8608.759) (-8623.537) * (-8612.346) (-8594.644) [-8604.721] (-8612.940) -- 1:35:51
+
+      Average standard deviation of split frequencies: 0.105890
+
+      31000 -- [-8599.571] (-8599.270) (-8608.759) (-8623.537) * (-8612.346) (-8594.644) [-8604.721] (-8612.940) -- 1:35:51
+
+      Average standard deviation of split frequencies: 0.105890
+
+      32000 -- (-8613.384) [-8593.670] (-8607.036) (-8611.616) * (-8613.541) [-8603.237] (-8618.367) (-8607.508) -- 1:34:16
+
+      Average standard deviation of split frequencies: 0.104853
+
+      32000 -- (-8613.384) [-8593.670] (-8607.036) (-8611.616) * (-8613.541) [-8603.237] (-8618.367) (-8607.508) -- 1:34:16
+
+      Average standard deviation of split frequencies: 0.104853
+
+      32000 -- (-8613.384) [-8593.670] (-8607.036) (-8611.616) * (-8613.541) [-8603.237] (-8618.367) (-8607.508) -- 1:34:47
+
+      Average standard deviation of split frequencies: 0.104853
+
+      32000 -- (-8613.384) [-8593.670] (-8607.036) (-8611.616) * (-8613.541) [-8603.237] (-8618.367) (-8607.508) -- 1:34:47
+
+      Average standard deviation of split frequencies: 0.104853
+
+      32000 -- (-8613.384) [-8593.670] (-8607.036) (-8611.616) * (-8613.541) [-8603.237] (-8618.367) (-8607.508) -- 1:34:47
+
+      Average standard deviation of split frequencies: 0.104853
+
+      32000 -- (-8613.384) [-8593.670] (-8607.036) (-8611.616) * (-8613.541) [-8603.237] (-8618.367) (-8607.508) -- 1:35:47
+
+      Average standard deviation of split frequencies: 0.104853
+
+      32000 -- (-8613.384) [-8593.670] (-8607.036) (-8611.616) * (-8613.541) [-8603.237] (-8618.367) (-8607.508) -- 1:36:17
+
+      Average standard deviation of split frequencies: 0.104853
+
+      33000 -- (-8620.538) (-8605.805) [-8590.276] (-8617.750) * (-8621.453) (-8610.210) [-8591.082] (-8614.637) -- 1:33:46
+
+      Average standard deviation of split frequencies: 0.102767
+
+      33000 -- (-8620.538) (-8605.805) [-8590.276] (-8617.750) * (-8621.453) (-8610.210) [-8591.082] (-8614.637) -- 1:33:46
+
+      Average standard deviation of split frequencies: 0.102767
+
+      32000 -- (-8613.384) [-8593.670] (-8607.036) (-8611.616) * (-8613.541) [-8603.237] (-8618.367) (-8607.508) -- 1:36:48
+
+      Average standard deviation of split frequencies: 0.104853
+
+      33000 -- (-8620.538) (-8605.805) [-8590.276] (-8617.750) * (-8621.453) (-8610.210) [-8591.082] (-8614.637) -- 1:34:44
+
+      Average standard deviation of split frequencies: 0.102767
+
+      33000 -- (-8620.538) (-8605.805) [-8590.276] (-8617.750) * (-8621.453) (-8610.210) [-8591.082] (-8614.637) -- 1:35:14
+
+      Average standard deviation of split frequencies: 0.102767
+
+      33000 -- (-8620.538) (-8605.805) [-8590.276] (-8617.750) * (-8621.453) (-8610.210) [-8591.082] (-8614.637) -- 1:35:14
+
+      Average standard deviation of split frequencies: 0.102767
+
+      33000 -- (-8620.538) (-8605.805) [-8590.276] (-8617.750) * (-8621.453) (-8610.210) [-8591.082] (-8614.637) -- 1:35:43
+
+      Average standard deviation of split frequencies: 0.102767
+
+      34000 -- (-8595.406) (-8616.166) [-8592.765] (-8606.719) * (-8622.989) (-8614.005) (-8591.795) [-8602.177] -- 1:33:17
+
+      Average standard deviation of split frequencies: 0.100515
+
+      33000 -- (-8620.538) (-8605.805) [-8590.276] (-8617.750) * (-8621.453) (-8610.210) [-8591.082] (-8614.637) -- 1:36:12
+
+      Average standard deviation of split frequencies: 0.102767
+
+      34000 -- (-8595.406) (-8616.166) [-8592.765] (-8606.719) * (-8622.989) (-8614.005) (-8591.795) [-8602.177] -- 1:33:17
+
+      Average standard deviation of split frequencies: 0.100515
+
+      33000 -- (-8620.538) (-8605.805) [-8590.276] (-8617.750) * (-8621.453) (-8610.210) [-8591.082] (-8614.637) -- 1:36:42
+
+      Average standard deviation of split frequencies: 0.102767
+
+      34000 -- (-8595.406) (-8616.166) [-8592.765] (-8606.719) * (-8622.989) (-8614.005) (-8591.795) [-8602.177] -- 1:34:13
+
+      Average standard deviation of split frequencies: 0.100515
+
+      34000 -- (-8595.406) (-8616.166) [-8592.765] (-8606.719) * (-8622.989) (-8614.005) (-8591.795) [-8602.177] -- 1:34:42
+
+      Average standard deviation of split frequencies: 0.100515
+
+      34000 -- (-8595.406) (-8616.166) [-8592.765] (-8606.719) * (-8622.989) (-8614.005) (-8591.795) [-8602.177] -- 1:35:10
+
+      Average standard deviation of split frequencies: 0.100515
+
+      35000 -- (-8622.470) (-8611.303) (-8610.326) [-8584.655] * (-8631.873) (-8610.664) (-8605.032) [-8603.192] -- 1:32:49
+
+      Average standard deviation of split frequencies: 0.098104
+
+      35000 -- (-8622.470) (-8611.303) (-8610.326) [-8584.655] * (-8631.873) (-8610.664) (-8605.032) [-8603.192] -- 1:32:49
+
+      Average standard deviation of split frequencies: 0.098104
+
+      34000 -- (-8595.406) (-8616.166) [-8592.765] (-8606.719) * (-8622.989) (-8614.005) (-8591.795) [-8602.177] -- 1:35:39
+
+      Average standard deviation of split frequencies: 0.100515
+
+      34000 -- (-8595.406) (-8616.166) [-8592.765] (-8606.719) * (-8622.989) (-8614.005) (-8591.795) [-8602.177] -- 1:36:07
+
+      Average standard deviation of split frequencies: 0.100515
+
+      34000 -- (-8595.406) (-8616.166) [-8592.765] (-8606.719) * (-8622.989) (-8614.005) (-8591.795) [-8602.177] -- 1:36:36
+
+      Average standard deviation of split frequencies: 0.100515
+
+      35000 -- (-8622.470) (-8611.303) (-8610.326) [-8584.655] * (-8631.873) (-8610.664) (-8605.032) [-8603.192] -- 1:34:12
+
+      Average standard deviation of split frequencies: 0.098104
+
+      35000 -- (-8622.470) (-8611.303) (-8610.326) [-8584.655] * (-8631.873) (-8610.664) (-8605.032) [-8603.192] -- 1:35:07
+
+      Average standard deviation of split frequencies: 0.098104
+
+      35000 -- (-8622.470) (-8611.303) (-8610.326) [-8584.655] * (-8631.873) (-8610.664) (-8605.032) [-8603.192] -- 1:35:07
+
+      Average standard deviation of split frequencies: 0.098104
+
+      36000 -- (-8600.543) (-8634.860) [-8603.695] (-8591.803) * (-8636.309) (-8608.200) (-8618.423) [-8592.864] -- 1:32:49
+
+      Average standard deviation of split frequencies: 0.095746
+
+      36000 -- (-8600.543) (-8634.860) [-8603.695] (-8591.803) * (-8636.309) (-8608.200) (-8618.423) [-8592.864] -- 1:32:49
+
+      Average standard deviation of split frequencies: 0.095746
+
+      35000 -- (-8622.470) (-8611.303) (-8610.326) [-8584.655] * (-8631.873) (-8610.664) (-8605.032) [-8603.192] -- 1:35:34
+
+      Average standard deviation of split frequencies: 0.098104
+
+      35000 -- (-8622.470) (-8611.303) (-8610.326) [-8584.655] * (-8631.873) (-8610.664) (-8605.032) [-8603.192] -- 1:35:34
+
+      Average standard deviation of split frequencies: 0.098104
+
+      35000 -- (-8622.470) (-8611.303) (-8610.326) [-8584.655] * (-8631.873) (-8610.664) (-8605.032) [-8603.192] -- 1:36:30
+
+      Average standard deviation of split frequencies: 0.098104
+
+      36000 -- (-8600.543) (-8634.860) [-8603.695] (-8591.803) * (-8636.309) (-8608.200) (-8618.423) [-8592.864] -- 1:34:10
+
+      Average standard deviation of split frequencies: 0.095746
+
+      36000 -- (-8600.543) (-8634.860) [-8603.695] (-8591.803) * (-8636.309) (-8608.200) (-8618.423) [-8592.864] -- 1:34:36
+
+      Average standard deviation of split frequencies: 0.095746
+
+      36000 -- (-8600.543) (-8634.860) [-8603.695] (-8591.803) * (-8636.309) (-8608.200) (-8618.423) [-8592.864] -- 1:34:36
+
+      Average standard deviation of split frequencies: 0.095746
+
+      36000 -- (-8600.543) (-8634.860) [-8603.695] (-8591.803) * (-8636.309) (-8608.200) (-8618.423) [-8592.864] -- 1:35:30
+
+      Average standard deviation of split frequencies: 0.095746
+
+      37000 -- (-8615.988) (-8624.862) (-8601.257) [-8588.300] * (-8624.443) (-8600.382) (-8590.779) [-8609.088] -- 1:32:49
+
+      Average standard deviation of split frequencies: 0.092020
+
+      37000 -- (-8615.988) (-8624.862) (-8601.257) [-8588.300] * (-8624.443) (-8600.382) (-8590.779) [-8609.088] -- 1:32:49
+
+      Average standard deviation of split frequencies: 0.092020
+
+      36000 -- (-8600.543) (-8634.860) [-8603.695] (-8591.803) * (-8636.309) (-8608.200) (-8618.423) [-8592.864] -- 1:35:30
+
+      Average standard deviation of split frequencies: 0.095746
+
+      36000 -- (-8600.543) (-8634.860) [-8603.695] (-8591.803) * (-8636.309) (-8608.200) (-8618.423) [-8592.864] -- 1:35:57
+
+      Average standard deviation of split frequencies: 0.095746
+
+      37000 -- (-8615.988) (-8624.862) (-8601.257) [-8588.300] * (-8624.443) (-8600.382) (-8590.779) [-8609.088] -- 1:33:41
+
+      Average standard deviation of split frequencies: 0.092020
+
+      37000 -- (-8615.988) (-8624.862) (-8601.257) [-8588.300] * (-8624.443) (-8600.382) (-8590.779) [-8609.088] -- 1:34:33
+
+      Average standard deviation of split frequencies: 0.092020
+
+      37000 -- (-8615.988) (-8624.862) (-8601.257) [-8588.300] * (-8624.443) (-8600.382) (-8590.779) [-8609.088] -- 1:34:33
+
+      Average standard deviation of split frequencies: 0.092020
+
+      37000 -- (-8615.988) (-8624.862) (-8601.257) [-8588.300] * (-8624.443) (-8600.382) (-8590.779) [-8609.088] -- 1:34:59
+
+      Average standard deviation of split frequencies: 0.092020
+
+      38000 -- (-8620.985) (-8603.820) (-8617.971) [-8592.338] * (-8636.295) (-8613.643) (-8590.891) [-8590.556] -- 1:32:49
+
+      Average standard deviation of split frequencies: 0.089230
+
+      38000 -- (-8620.985) (-8603.820) (-8617.971) [-8592.338] * (-8636.295) (-8613.643) (-8590.891) [-8590.556] -- 1:32:49
+
+      Average standard deviation of split frequencies: 0.089230
+
+      37000 -- (-8615.988) (-8624.862) (-8601.257) [-8588.300] * (-8624.443) (-8600.382) (-8590.779) [-8609.088] -- 1:35:25
+
+      Average standard deviation of split frequencies: 0.092020
+
+      37000 -- (-8615.988) (-8624.862) (-8601.257) [-8588.300] * (-8624.443) (-8600.382) (-8590.779) [-8609.088] -- 1:35:51
+
+      Average standard deviation of split frequencies: 0.092020
+
+      38000 -- (-8620.985) (-8603.820) (-8617.971) [-8592.338] * (-8636.295) (-8613.643) (-8590.891) [-8590.556] -- 1:33:40
+
+      Average standard deviation of split frequencies: 0.089230
+
+      38000 -- (-8620.985) (-8603.820) (-8617.971) [-8592.338] * (-8636.295) (-8613.643) (-8590.891) [-8590.556] -- 1:34:30
+
+      Average standard deviation of split frequencies: 0.089230
+
+      38000 -- (-8620.985) (-8603.820) (-8617.971) [-8592.338] * (-8636.295) (-8613.643) (-8590.891) [-8590.556] -- 1:34:30
+
+      Average standard deviation of split frequencies: 0.089230
+
+      39000 -- (-8614.469) (-8609.238) (-8599.127) [-8580.331] * (-8612.839) [-8599.348] (-8605.902) (-8606.333) -- 1:32:24
+
+      Average standard deviation of split frequencies: 0.089173
+
+      38000 -- (-8620.985) (-8603.820) (-8617.971) [-8592.338] * (-8636.295) (-8613.643) (-8590.891) [-8590.556] -- 1:34:56
+
+      Average standard deviation of split frequencies: 0.089230
+
+      39000 -- (-8614.469) (-8609.238) (-8599.127) [-8580.331] * (-8612.839) [-8599.348] (-8605.902) (-8606.333) -- 1:32:24
+
+      Average standard deviation of split frequencies: 0.089173
+
+      38000 -- (-8620.985) (-8603.820) (-8617.971) [-8592.338] * (-8636.295) (-8613.643) (-8590.891) [-8590.556] -- 1:35:21
+
+      Average standard deviation of split frequencies: 0.089230
+
+      38000 -- (-8620.985) (-8603.820) (-8617.971) [-8592.338] * (-8636.295) (-8613.643) (-8590.891) [-8590.556] -- 1:35:46
+
+      Average standard deviation of split frequencies: 0.089230
+
+      39000 -- (-8614.469) (-8609.238) (-8599.127) [-8580.331] * (-8612.839) [-8599.348] (-8605.902) (-8606.333) -- 1:33:38
+
+      Average standard deviation of split frequencies: 0.089173
+
+      39000 -- (-8614.469) (-8609.238) (-8599.127) [-8580.331] * (-8612.839) [-8599.348] (-8605.902) (-8606.333) -- 1:34:27
+
+      Average standard deviation of split frequencies: 0.089173
+
+      39000 -- (-8614.469) (-8609.238) (-8599.127) [-8580.331] * (-8612.839) [-8599.348] (-8605.902) (-8606.333) -- 1:34:27
+
+      Average standard deviation of split frequencies: 0.089173
+
+      40000 -- (-8606.857) (-8631.461) [-8594.958] (-8602.572) * (-8625.435) [-8587.843] (-8608.156) (-8594.493) -- 1:32:24
+
+      Average standard deviation of split frequencies: 0.088227
+
+      40000 -- (-8606.857) (-8631.461) [-8594.958] (-8602.572) * (-8625.435) [-8587.843] (-8608.156) (-8594.493) -- 1:32:24
+
+      Average standard deviation of split frequencies: 0.088227
+
+      39000 -- (-8614.469) (-8609.238) (-8599.127) [-8580.331] * (-8612.839) [-8599.348] (-8605.902) (-8606.333) -- 1:34:52
+
+      Average standard deviation of split frequencies: 0.089173
+
+      39000 -- (-8614.469) (-8609.238) (-8599.127) [-8580.331] * (-8612.839) [-8599.348] (-8605.902) (-8606.333) -- 1:34:52
+
+      Average standard deviation of split frequencies: 0.089173
+
+      39000 -- (-8614.469) (-8609.238) (-8599.127) [-8580.331] * (-8612.839) [-8599.348] (-8605.902) (-8606.333) -- 1:35:41
+
+      Average standard deviation of split frequencies: 0.089173
+
+      40000 -- (-8606.857) (-8631.461) [-8594.958] (-8602.572) * (-8625.435) [-8587.843] (-8608.156) (-8594.493) -- 1:33:12
+
+      Average standard deviation of split frequencies: 0.088227
+
+      40000 -- (-8606.857) (-8631.461) [-8594.958] (-8602.572) * (-8625.435) [-8587.843] (-8608.156) (-8594.493) -- 1:34:00
+
+      Average standard deviation of split frequencies: 0.088227
+
+      40000 -- (-8606.857) (-8631.461) [-8594.958] (-8602.572) * (-8625.435) [-8587.843] (-8608.156) (-8594.493) -- 1:34:24
+
+      Average standard deviation of split frequencies: 0.088227
+
+      41000 -- (-8606.919) (-8619.207) [-8584.584] (-8594.508) * (-8622.328) [-8594.645] (-8590.693) (-8622.342) -- 1:32:00
+
+      Average standard deviation of split frequencies: 0.088141
+
+      41000 -- (-8606.919) (-8619.207) [-8584.584] (-8594.508) * (-8622.328) [-8594.645] (-8590.693) (-8622.342) -- 1:32:00
+
+      Average standard deviation of split frequencies: 0.088141
+
+      40000 -- (-8606.857) (-8631.461) [-8594.958] (-8602.572) * (-8625.435) [-8587.843] (-8608.156) (-8594.493) -- 1:34:24
+
+      Average standard deviation of split frequencies: 0.088227
+
+      40000 -- (-8606.857) (-8631.461) [-8594.958] (-8602.572) * (-8625.435) [-8587.843] (-8608.156) (-8594.493) -- 1:34:48
+
+      Average standard deviation of split frequencies: 0.088227
+
+      41000 -- (-8606.919) (-8619.207) [-8584.584] (-8594.508) * (-8622.328) [-8594.645] (-8590.693) (-8622.342) -- 1:33:10
+
+      Average standard deviation of split frequencies: 0.088141
+
+      40000 -- (-8606.857) (-8631.461) [-8594.958] (-8602.572) * (-8625.435) [-8587.843] (-8608.156) (-8594.493) -- 1:36:00
+
+      Average standard deviation of split frequencies: 0.088227
+
+      41000 -- (-8606.919) (-8619.207) [-8584.584] (-8594.508) * (-8622.328) [-8594.645] (-8590.693) (-8622.342) -- 1:33:33
+
+      Average standard deviation of split frequencies: 0.088141
+
+      41000 -- (-8606.919) (-8619.207) [-8584.584] (-8594.508) * (-8622.328) [-8594.645] (-8590.693) (-8622.342) -- 1:33:57
+
+      Average standard deviation of split frequencies: 0.088141
+
+      41000 -- (-8606.919) (-8619.207) [-8584.584] (-8594.508) * (-8622.328) [-8594.645] (-8590.693) (-8622.342) -- 1:34:20
+
+      Average standard deviation of split frequencies: 0.088141
+
+      42000 -- (-8611.552) (-8603.096) (-8599.768) [-8585.665] * (-8605.592) (-8595.315) [-8589.409] (-8617.221) -- 1:31:59
+
+      Average standard deviation of split frequencies: 0.085554
+
+      42000 -- (-8611.552) (-8603.096) (-8599.768) [-8585.665] * (-8605.592) (-8595.315) [-8589.409] (-8617.221) -- 1:32:22
+
+      Average standard deviation of split frequencies: 0.085554
+
+      41000 -- (-8606.919) (-8619.207) [-8584.584] (-8594.508) * (-8622.328) [-8594.645] (-8590.693) (-8622.342) -- 1:34:43
+
+      Average standard deviation of split frequencies: 0.088141
+
+      42000 -- (-8611.552) (-8603.096) (-8599.768) [-8585.665] * (-8605.592) (-8595.315) [-8589.409] (-8617.221) -- 1:33:08
+
+      Average standard deviation of split frequencies: 0.085554
+
+      41000 -- (-8606.919) (-8619.207) [-8584.584] (-8594.508) * (-8622.328) [-8594.645] (-8590.693) (-8622.342) -- 1:35:30
+
+      Average standard deviation of split frequencies: 0.088141
+
+      42000 -- (-8611.552) (-8603.096) (-8599.768) [-8585.665] * (-8605.592) (-8595.315) [-8589.409] (-8617.221) -- 1:33:08
+
+      Average standard deviation of split frequencies: 0.085554
+
+      42000 -- (-8611.552) (-8603.096) (-8599.768) [-8585.665] * (-8605.592) (-8595.315) [-8589.409] (-8617.221) -- 1:33:53
+
+      Average standard deviation of split frequencies: 0.085554
+
+      42000 -- (-8611.552) (-8603.096) (-8599.768) [-8585.665] * (-8605.592) (-8595.315) [-8589.409] (-8617.221) -- 1:33:53
+
+      Average standard deviation of split frequencies: 0.085554
+
+      43000 -- [-8599.454] (-8609.375) (-8594.889) (-8634.075) * (-8607.060) (-8595.214) [-8580.093] (-8644.088) -- 1:31:37
+
+      Average standard deviation of split frequencies: 0.082715
+
+      43000 -- [-8599.454] (-8609.375) (-8594.889) (-8634.075) * (-8607.060) (-8595.214) [-8580.093] (-8644.088) -- 1:31:59
+
+      Average standard deviation of split frequencies: 0.082715
+
+      42000 -- (-8611.552) (-8603.096) (-8599.768) [-8585.665] * (-8605.592) (-8595.315) [-8589.409] (-8617.221) -- 1:34:39
+
+      Average standard deviation of split frequencies: 0.085554
+
+      43000 -- [-8599.454] (-8609.375) (-8594.889) (-8634.075) * (-8607.060) (-8595.214) [-8580.093] (-8644.088) -- 1:32:43
+
+      Average standard deviation of split frequencies: 0.082715
+
+      42000 -- (-8611.552) (-8603.096) (-8599.768) [-8585.665] * (-8605.592) (-8595.315) [-8589.409] (-8617.221) -- 1:35:25
+
+      Average standard deviation of split frequencies: 0.085554
+
+      43000 -- [-8599.454] (-8609.375) (-8594.889) (-8634.075) * (-8607.060) (-8595.214) [-8580.093] (-8644.088) -- 1:33:06
+
+      Average standard deviation of split frequencies: 0.082715
+
+      43000 -- [-8599.454] (-8609.375) (-8594.889) (-8634.075) * (-8607.060) (-8595.214) [-8580.093] (-8644.088) -- 1:33:28
+
+      Average standard deviation of split frequencies: 0.082715
+
+      43000 -- [-8599.454] (-8609.375) (-8594.889) (-8634.075) * (-8607.060) (-8595.214) [-8580.093] (-8644.088) -- 1:33:50
+
+      Average standard deviation of split frequencies: 0.082715
+
+      44000 -- (-8631.049) [-8602.011] (-8590.549) (-8604.196) * [-8589.731] (-8617.359) (-8588.513) (-8609.309) -- 1:31:37
+
+      Average standard deviation of split frequencies: 0.081219
+
+      44000 -- (-8631.049) [-8602.011] (-8590.549) (-8604.196) * [-8589.731] (-8617.359) (-8588.513) (-8609.309) -- 1:31:58
+
+      Average standard deviation of split frequencies: 0.081219
+
+      43000 -- [-8599.454] (-8609.375) (-8594.889) (-8634.075) * (-8607.060) (-8595.214) [-8580.093] (-8644.088) -- 1:34:12
+
+      Average standard deviation of split frequencies: 0.082715
+
+      44000 -- (-8631.049) [-8602.011] (-8590.549) (-8604.196) * [-8589.731] (-8617.359) (-8588.513) (-8609.309) -- 1:32:42
+
+      Average standard deviation of split frequencies: 0.081219
+
+      43000 -- [-8599.454] (-8609.375) (-8594.889) (-8634.075) * (-8607.060) (-8595.214) [-8580.093] (-8644.088) -- 1:34:57
+
+      Average standard deviation of split frequencies: 0.082715
+
+      44000 -- (-8631.049) [-8602.011] (-8590.549) (-8604.196) * [-8589.731] (-8617.359) (-8588.513) (-8609.309) -- 1:32:42
+
+      Average standard deviation of split frequencies: 0.081219
+
+      44000 -- (-8631.049) [-8602.011] (-8590.549) (-8604.196) * [-8589.731] (-8617.359) (-8588.513) (-8609.309) -- 1:33:25
+
+      Average standard deviation of split frequencies: 0.081219
+
+      44000 -- (-8631.049) [-8602.011] (-8590.549) (-8604.196) * [-8589.731] (-8617.359) (-8588.513) (-8609.309) -- 1:33:25
+
+      Average standard deviation of split frequencies: 0.081219
+
+      45000 -- (-8623.096) (-8605.913) [-8597.192] (-8621.239) * (-8603.794) (-8591.424) [-8592.467] (-8625.716) -- 1:31:15
+
+      Average standard deviation of split frequencies: 0.080671
+
+      45000 -- (-8623.096) (-8605.913) [-8597.192] (-8621.239) * (-8603.794) (-8591.424) [-8592.467] (-8625.716) -- 1:31:36
+
+      Average standard deviation of split frequencies: 0.080671
+
+      44000 -- (-8631.049) [-8602.011] (-8590.549) (-8604.196) * [-8589.731] (-8617.359) (-8588.513) (-8609.309) -- 1:34:09
+
+      Average standard deviation of split frequencies: 0.081219
+
+      45000 -- (-8623.096) (-8605.913) [-8597.192] (-8621.239) * (-8603.794) (-8591.424) [-8592.467] (-8625.716) -- 1:32:19
+
+      Average standard deviation of split frequencies: 0.080671
+
+      44000 -- (-8631.049) [-8602.011] (-8590.549) (-8604.196) * [-8589.731] (-8617.359) (-8588.513) (-8609.309) -- 1:34:52
+
+      Average standard deviation of split frequencies: 0.081219
+
+      45000 -- (-8623.096) (-8605.913) [-8597.192] (-8621.239) * (-8603.794) (-8591.424) [-8592.467] (-8625.716) -- 1:32:40
+
+      Average standard deviation of split frequencies: 0.080671
+
+      45000 -- (-8623.096) (-8605.913) [-8597.192] (-8621.239) * (-8603.794) (-8591.424) [-8592.467] (-8625.716) -- 1:33:01
+
+      Average standard deviation of split frequencies: 0.080671
+
+      45000 -- (-8623.096) (-8605.913) [-8597.192] (-8621.239) * (-8603.794) (-8591.424) [-8592.467] (-8625.716) -- 1:33:22
+
+      Average standard deviation of split frequencies: 0.080671
+
+      46000 -- (-8608.255) (-8617.851) [-8591.470] (-8600.357) * [-8604.518] (-8603.444) (-8603.938) (-8636.486) -- 1:31:15
+
+      Average standard deviation of split frequencies: 0.079715
+
+      46000 -- (-8608.255) (-8617.851) [-8591.470] (-8600.357) * [-8604.518] (-8603.444) (-8603.938) (-8636.486) -- 1:31:35
+
+      Average standard deviation of split frequencies: 0.079715
+
+      45000 -- (-8623.096) (-8605.913) [-8597.192] (-8621.239) * (-8603.794) (-8591.424) [-8592.467] (-8625.716) -- 1:33:43
+
+      Average standard deviation of split frequencies: 0.080671
+
+      46000 -- (-8608.255) (-8617.851) [-8591.470] (-8600.357) * [-8604.518] (-8603.444) (-8603.938) (-8636.486) -- 1:32:17
+
+      Average standard deviation of split frequencies: 0.079715
+
+      45000 -- (-8623.096) (-8605.913) [-8597.192] (-8621.239) * (-8603.794) (-8591.424) [-8592.467] (-8625.716) -- 1:34:26
+
+      Average standard deviation of split frequencies: 0.080671
+
+      46000 -- (-8608.255) (-8617.851) [-8591.470] (-8600.357) * [-8604.518] (-8603.444) (-8603.938) (-8636.486) -- 1:32:38
+
+      Average standard deviation of split frequencies: 0.079715
+
+      46000 -- (-8608.255) (-8617.851) [-8591.470] (-8600.357) * [-8604.518] (-8603.444) (-8603.938) (-8636.486) -- 1:32:58
+
+      Average standard deviation of split frequencies: 0.079715
+
+      46000 -- (-8608.255) (-8617.851) [-8591.470] (-8600.357) * [-8604.518] (-8603.444) (-8603.938) (-8636.486) -- 1:32:58
+
+      Average standard deviation of split frequencies: 0.079715
+
+      47000 -- (-8621.751) (-8619.396) [-8592.065] (-8589.344) * (-8606.971) (-8586.020) [-8601.939] (-8621.194) -- 1:30:54
+
+      Average standard deviation of split frequencies: 0.079640
+
+      47000 -- (-8621.751) (-8619.396) [-8592.065] (-8589.344) * (-8606.971) (-8586.020) [-8601.939] (-8621.194) -- 1:31:14
+
+      Average standard deviation of split frequencies: 0.079640
+
+      46000 -- (-8608.255) (-8617.851) [-8591.470] (-8600.357) * [-8604.518] (-8603.444) (-8603.938) (-8636.486) -- 1:33:40
+
+      Average standard deviation of split frequencies: 0.079715
+
+      47000 -- (-8621.751) (-8619.396) [-8592.065] (-8589.344) * (-8606.971) (-8586.020) [-8601.939] (-8621.194) -- 1:31:55
+
+      Average standard deviation of split frequencies: 0.079640
+
+      46000 -- (-8608.255) (-8617.851) [-8591.470] (-8600.357) * [-8604.518] (-8603.444) (-8603.938) (-8636.486) -- 1:34:21
+
+      Average standard deviation of split frequencies: 0.079715
+
+      47000 -- (-8621.751) (-8619.396) [-8592.065] (-8589.344) * (-8606.971) (-8586.020) [-8601.939] (-8621.194) -- 1:32:15
+
+      Average standard deviation of split frequencies: 0.079640
+
+      47000 -- (-8621.751) (-8619.396) [-8592.065] (-8589.344) * (-8606.971) (-8586.020) [-8601.939] (-8621.194) -- 1:32:35
+
+      Average standard deviation of split frequencies: 0.079640
+
+      47000 -- (-8621.751) (-8619.396) [-8592.065] (-8589.344) * (-8606.971) (-8586.020) [-8601.939] (-8621.194) -- 1:32:56
+
+      Average standard deviation of split frequencies: 0.079640
+
+      48000 -- (-8616.696) [-8603.333] (-8612.627) (-8611.444) * (-8616.934) (-8589.438) [-8593.161] (-8628.177) -- 1:30:54
+
+      Average standard deviation of split frequencies: 0.077919
+
+      48000 -- (-8616.696) [-8603.333] (-8612.627) (-8611.444) * (-8616.934) (-8589.438) [-8593.161] (-8628.177) -- 1:31:14
+
+      Average standard deviation of split frequencies: 0.077919
+
+      47000 -- (-8621.751) (-8619.396) [-8592.065] (-8589.344) * (-8606.971) (-8586.020) [-8601.939] (-8621.194) -- 1:33:16
+
+      Average standard deviation of split frequencies: 0.079640
+
+      48000 -- (-8616.696) [-8603.333] (-8612.627) (-8611.444) * (-8616.934) (-8589.438) [-8593.161] (-8628.177) -- 1:31:53
+
+      Average standard deviation of split frequencies: 0.077919
+
+      47000 -- (-8621.751) (-8619.396) [-8592.065] (-8589.344) * (-8606.971) (-8586.020) [-8601.939] (-8621.194) -- 1:33:56
+
+      Average standard deviation of split frequencies: 0.079640
+
+      48000 -- (-8616.696) [-8603.333] (-8612.627) (-8611.444) * (-8616.934) (-8589.438) [-8593.161] (-8628.177) -- 1:32:13
+
+      Average standard deviation of split frequencies: 0.077919
+
+      48000 -- (-8616.696) [-8603.333] (-8612.627) (-8611.444) * (-8616.934) (-8589.438) [-8593.161] (-8628.177) -- 1:32:33
+
+      Average standard deviation of split frequencies: 0.077919
+
+      48000 -- (-8616.696) [-8603.333] (-8612.627) (-8611.444) * (-8616.934) (-8589.438) [-8593.161] (-8628.177) -- 1:32:33
+
+      Average standard deviation of split frequencies: 0.077919
+
+      49000 -- (-8618.925) [-8597.115] (-8604.418) (-8611.999) * (-8608.286) [-8590.991] (-8598.564) (-8615.119) -- 1:30:34
+
+      Average standard deviation of split frequencies: 0.076269
+
+      49000 -- (-8618.925) [-8597.115] (-8604.418) (-8611.999) * (-8608.286) [-8590.991] (-8598.564) (-8615.119) -- 1:30:53
+
+      Average standard deviation of split frequencies: 0.076269
+
+      48000 -- (-8616.696) [-8603.333] (-8612.627) (-8611.444) * (-8616.934) (-8589.438) [-8593.161] (-8628.177) -- 1:33:13
+
+      Average standard deviation of split frequencies: 0.077919
+
+      49000 -- (-8618.925) [-8597.115] (-8604.418) (-8611.999) * (-8608.286) [-8590.991] (-8598.564) (-8615.119) -- 1:31:32
+
+      Average standard deviation of split frequencies: 0.076269
+
+      48000 -- (-8616.696) [-8603.333] (-8612.627) (-8611.444) * (-8616.934) (-8589.438) [-8593.161] (-8628.177) -- 1:33:52
+
+      Average standard deviation of split frequencies: 0.077919
+
+      49000 -- (-8618.925) [-8597.115] (-8604.418) (-8611.999) * (-8608.286) [-8590.991] (-8598.564) (-8615.119) -- 1:31:51
+
+      Average standard deviation of split frequencies: 0.076269
+
+      49000 -- (-8618.925) [-8597.115] (-8604.418) (-8611.999) * (-8608.286) [-8590.991] (-8598.564) (-8615.119) -- 1:32:30
+
+      Average standard deviation of split frequencies: 0.076269
+
+      50000 -- (-8610.782) [-8607.681] (-8606.777) (-8603.373) * (-8596.113) [-8593.200] (-8609.100) (-8627.329) -- 1:30:34
+
+      Average standard deviation of split frequencies: 0.074337
+
+      49000 -- (-8618.925) [-8597.115] (-8604.418) (-8611.999) * (-8608.286) [-8590.991] (-8598.564) (-8615.119) -- 1:32:30
+
+      Average standard deviation of split frequencies: 0.076269
+
+      50000 -- (-8610.782) [-8607.681] (-8606.777) (-8603.373) * (-8596.113) [-8593.200] (-8609.100) (-8627.329) -- 1:30:53
+
+      Average standard deviation of split frequencies: 0.074337
+
+      49000 -- (-8618.925) [-8597.115] (-8604.418) (-8611.999) * (-8608.286) [-8590.991] (-8598.564) (-8615.119) -- 1:32:50
+
+      Average standard deviation of split frequencies: 0.076269
+
+      50000 -- (-8610.782) [-8607.681] (-8606.777) (-8603.373) * (-8596.113) [-8593.200] (-8609.100) (-8627.329) -- 1:31:31
+
+      Average standard deviation of split frequencies: 0.074337
+
+      49000 -- (-8618.925) [-8597.115] (-8604.418) (-8611.999) * (-8608.286) [-8590.991] (-8598.564) (-8615.119) -- 1:33:28
+
+      Average standard deviation of split frequencies: 0.076269
+
+      50000 -- (-8610.782) [-8607.681] (-8606.777) (-8603.373) * (-8596.113) [-8593.200] (-8609.100) (-8627.329) -- 1:31:50
+
+      Average standard deviation of split frequencies: 0.074337
+
+      50000 -- (-8610.782) [-8607.681] (-8606.777) (-8603.373) * (-8596.113) [-8593.200] (-8609.100) (-8627.329) -- 1:32:09
+
+      Average standard deviation of split frequencies: 0.074337
+
+      50000 -- (-8610.782) [-8607.681] (-8606.777) (-8603.373) * (-8596.113) [-8593.200] (-8609.100) (-8627.329) -- 1:32:09
+
+      Average standard deviation of split frequencies: 0.074337
+
+      51000 -- [-8604.080] (-8622.939) (-8625.090) (-8599.385) * (-8599.506) (-8596.206) [-8592.550] (-8599.828) -- 1:30:14
+
+      Average standard deviation of split frequencies: 0.073155
+
+      51000 -- [-8604.080] (-8622.939) (-8625.090) (-8599.385) * (-8599.506) (-8596.206) [-8592.550] (-8599.828) -- 1:30:33
+
+      Average standard deviation of split frequencies: 0.073155
+
+      50000 -- (-8610.782) [-8607.681] (-8606.777) (-8603.373) * (-8596.113) [-8593.200] (-8609.100) (-8627.329) -- 1:32:47
+
+      Average standard deviation of split frequencies: 0.074337
+
+      51000 -- [-8604.080] (-8622.939) (-8625.090) (-8599.385) * (-8599.506) (-8596.206) [-8592.550] (-8599.828) -- 1:31:10
+
+      Average standard deviation of split frequencies: 0.073155
+
+      50000 -- (-8610.782) [-8607.681] (-8606.777) (-8603.373) * (-8596.113) [-8593.200] (-8609.100) (-8627.329) -- 1:33:25
+
+      Average standard deviation of split frequencies: 0.074337
+
+      51000 -- [-8604.080] (-8622.939) (-8625.090) (-8599.385) * (-8599.506) (-8596.206) [-8592.550] (-8599.828) -- 1:31:29
+
+      Average standard deviation of split frequencies: 0.073155
+
+      51000 -- [-8604.080] (-8622.939) (-8625.090) (-8599.385) * (-8599.506) (-8596.206) [-8592.550] (-8599.828) -- 1:32:06
+
+      Average standard deviation of split frequencies: 0.073155
+
+      52000 -- [-8606.969] (-8636.231) (-8607.436) (-8593.128) * (-8611.136) (-8610.632) [-8596.938] (-8627.299) -- 1:30:14
+
+      Average standard deviation of split frequencies: 0.071260
+
+      51000 -- [-8604.080] (-8622.939) (-8625.090) (-8599.385) * (-8599.506) (-8596.206) [-8592.550] (-8599.828) -- 1:32:06
+
+      Average standard deviation of split frequencies: 0.073155
+
+      52000 -- [-8606.969] (-8636.231) (-8607.436) (-8593.128) * (-8611.136) (-8610.632) [-8596.938] (-8627.299) -- 1:30:32
+
+      Average standard deviation of split frequencies: 0.071260
+
+      51000 -- [-8604.080] (-8622.939) (-8625.090) (-8599.385) * (-8599.506) (-8596.206) [-8592.550] (-8599.828) -- 1:32:43
+
+      Average standard deviation of split frequencies: 0.073155
+
+      52000 -- [-8606.969] (-8636.231) (-8607.436) (-8593.128) * (-8611.136) (-8610.632) [-8596.938] (-8627.299) -- 1:31:09
+
+      Average standard deviation of split frequencies: 0.071260
+
+      51000 -- [-8604.080] (-8622.939) (-8625.090) (-8599.385) * (-8599.506) (-8596.206) [-8592.550] (-8599.828) -- 1:33:20
+
+      Average standard deviation of split frequencies: 0.073155
+
+      52000 -- [-8606.969] (-8636.231) (-8607.436) (-8593.128) * (-8611.136) (-8610.632) [-8596.938] (-8627.299) -- 1:31:27
+
+      Average standard deviation of split frequencies: 0.071260
+
+      53000 -- (-8630.103) (-8617.238) (-8603.559) [-8590.148] * (-8611.520) (-8607.787) [-8602.485] (-8607.882) -- 1:30:13
+
+      Average standard deviation of split frequencies: 0.086916
+
+      52000 -- [-8606.969] (-8636.231) (-8607.436) (-8593.128) * (-8611.136) (-8610.632) [-8596.938] (-8627.299) -- 1:32:03
+
+      Average standard deviation of split frequencies: 0.071260
+
+      52000 -- [-8606.969] (-8636.231) (-8607.436) (-8593.128) * (-8611.136) (-8610.632) [-8596.938] (-8627.299) -- 1:32:03
+
+      Average standard deviation of split frequencies: 0.071260
+
+      53000 -- (-8630.103) (-8617.238) (-8603.559) [-8590.148] * (-8611.520) (-8607.787) [-8602.485] (-8607.882) -- 1:30:31
+
+      Average standard deviation of split frequencies: 0.086916
+
+      52000 -- [-8606.969] (-8636.231) (-8607.436) (-8593.128) * (-8611.136) (-8610.632) [-8596.938] (-8627.299) -- 1:32:22
+
+      Average standard deviation of split frequencies: 0.071260
+
+slurmstepd-c34: error: *** JOB 5387242 ON c34 CANCELLED AT 2019-06-05T16:09:34 ***
