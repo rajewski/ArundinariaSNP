@@ -24,6 +24,17 @@ else
     echo $(date): "Found PhasedNuclear.vcf. Dope."
 fi
 
+#make a handful of subset vcf files with only one sample per population (only necessary for Hull Rd)
+if [ ! -e '../results/PhasedNuclearH-2C.vcf' ]; then
+    echo $(date): "subsetting the VCF to exclude all but H-2C or H8D from Hull"
+    touch ../results/PhasedNuclearH-2C.vcf
+    module load bcftools
+    bcftools view -s ^H-2D,H0B,H0C,H10B,H10C,H10D,H10E,H12D,H14C,H14D,H2A,H2B,H2C,H4A,H4B,H4C,H4D,H6A,H6B,H6C,H6D,H8A,H8B,H8C,H8D ../results/PhasedNuclear.vcf > ../results/PhasedNuclearH-2C.vcf 
+    bcftools view -s ^H-2C,H-2D,H0B,H0C,H10B,H10C,H10D,H10E,H12D,H14C,H14D,H2A,H2B,H2C,H4A,H4B,H4C,H4D,H6A,H6B,H6C,H6D,H8A,H8B,H8C ../results/PhasedNuclear.vcf > ../results/PhasedNuclearH8D.vcf
+    echo $(date): "Done for H-2C and H8D"
+else
+    echo $(date): "VCF already subset"
+fi
 #load the module for making a PCA or MDS plot from a VCF
 module load plink/1.90b3.38
 
@@ -31,6 +42,8 @@ module load plink/1.90b3.38
 if [ ! -e './Nuclear.eigenvec' ]; then
     echo $(date): "Running PCA"
     plink --allow-extra-chr --vcf ../results/PhasedNuclear.vcf --pca -mind 0.5 --out Nuclear
+    plink --allow-extra-chr --vcf ../results/PhasedNuclearH-2C.vcf --pca -mind 0.5 --out NuclearH-2C
+    plink --allow-extra-chr --vcf ../results/PhasedNuclearH8D.vcf --pca -mind 0.5 --out NuclearH8D
     echo $(date): "Done"
 else
     echo $(date): "PCA results found. Dope."
@@ -39,6 +52,8 @@ fi
 if [ ! -e './Nuclear.mds' ]; then
     echo $(date): "Running MDS"
     plink --allow-extra-chr --vcf ../results/PhasedNuclear.vcf --mds-plot 2 -mind 0.5 --cluster --out Nuclear
+    plink --allow-extra-chr --vcf ../results/PhasedNuclearH-2C.vcf --mds-plot 2 -mind 0.5 --cluster --out NuclearH-2C
+    plink --allow-extra-chr --vcf ../results/PhasedNuclearH8D.vcf --mds-plot 2 -mind 0.5 --cluster --out NuclearH8D
     echo $(date): "Done"
 else
     echo $(date): "MDS results found. Dope."
