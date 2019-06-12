@@ -1,5 +1,11 @@
 set autoclose=yes nowarn=yes;
-execute LFY/LFYrenamedJimmy.nex;
+execute LFY/LFYrenamed.nex;
 lset applyto=(all) nst=2 rates=propinv;
-mcmc Relburning=yes BurninFrac=0.25;
+outgroup LFY_Pedulis;
+mcmcp ngen=100000000 samplefreq=5000 printfreq=10000;
+mcmcp nruns=2 stoprule=YES burninfrac=.25 ;
+mcmcp stopval=0.01 minpartfreq=0.05;
+mcmcp mcmcdiagn=YES diagnfreq=5000;
+mcmc;
 sumt;
+[sump;]
