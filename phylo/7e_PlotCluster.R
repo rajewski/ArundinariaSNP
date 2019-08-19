@@ -81,6 +81,20 @@ pdf("NuclearMDS.pdf", width=11, height=9)
   #text(nucmds$C1,nucmds$C2, as.character(nucmds$FID))
 dev.off()
 
+#Make MDS plot with ggplot for better labels
+library(ggplot2)
+library(ggrepel)
+library(cowplot)
+pdf("NuclearMDSLabeled.pdf", width=11, height=9)
+  ggplot(data = nucmds, aes(x = C1, y = C2, col=Species)) + 
+    theme_bw() + 
+    labs(title="Nuclear SNP MDS", x="Dim1", y="Dim2") +
+    geom_point(size = 3) +
+    geom_text_repel(aes(label = FID)) +
+    scale_color_manual(breaks = c("A hybrid", "Aappalachiana", "Agigantea", "Atecta", "Unknown"), 
+                       values = c("black", "red", "green", "blue", "cyan"))
+dev.off()
+
 #Plot MDS against lat, long, and alt
 mod10 <- lm(C1~Latitude, data=nucmds)
 mod11 <- lm(C2~Latitude, data=nucmds)

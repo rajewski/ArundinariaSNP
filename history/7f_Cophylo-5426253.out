@@ -1,0 +1,198 @@
+
+Rscript 7f_Cophylo.R
+Registered S3 method overwritten by 'treeio':
+  method     from
+  root.phylo ape 
+
+Attaching package: 'treeio'
+
+The following object is masked from 'package:ape':
+
+    drop.tip
+
+Warning message:
+In max(vapply(x, length, numeric(1))) :
+  no non-missing arguments to max; returning -Inf
+Warning message:
+In max(vapply(x, length, numeric(1))) :
+  no non-missing arguments to max; returning -Inf
+Loading required package: maps
+
+Attaching package: 'phytools'
+
+The following object is masked from 'package:treeio':
+
+    read.newick
+
+Rotating nodes to optimize matching...
+objective: 2962.52777777778
+objective: 2962.52777777778
+objective: 2962.52777777778
+objective: 2962.52777777778
+objective: 2962.52777777778
+objective: 2962.52777777778
+objective: 2935.52777777778
+objective: 2935.52777777778
+objective: 2935.52777777778
+objective: 2935.52777777778
+objective: 2913.52777777778
+objective: 2913.52777777778
+objective: 2913.52777777778
+objective: 2889.86111111111
+objective: 2889.86111111111
+objective: 2889.86111111111
+objective: 2889.86111111111
+objective: 2889.86111111111
+objective: 2889.86111111111
+objective: 2882.19444444444
+objective: 2882.19444444444
+objective: 2882.19444444444
+objective: 2882.19444444444
+objective: 2882.19444444444
+objective: 2881.75
+objective: 2869.86111111111
+objective: 2866.41666666667
+objective: 2866.41666666667
+objective: 2866.41666666667
+objective: 2866.41666666667
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 966.408949011446
+objective: 955.95733610822
+objective: 955.95733610822
+objective: 955.95733610822
+objective: 955.95733610822
+objective: 2835.41666666667
+objective: 2835.41666666667
+objective: 2835.41666666667
+objective: 2835.41666666667
+objective: 2835.41666666667
+objective: 2835.41666666667
+objective: 2822.41666666667
+objective: 2822.41666666667
+objective: 2822.41666666667
+objective: 2822.41666666667
+objective: 2822.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2818.41666666667
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 2816.86111111111
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+objective: 949.701352757544
+Done.
+Rotating nodes to optimize matching...
+objective: 2962.52777777778
+objective: 2962.52777777778
+/var/spool/slurmd/job5426253/slurm_script: line 12: 29405 Killed                  Rscript 7f_Cophylo.R
+slurmstepd-c07: error: Exceeded step memory limit at some point.

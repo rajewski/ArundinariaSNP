@@ -1,0 +1,132 @@
+
+Rscript 7f_Cophylo.R
+Registered S3 method overwritten by 'treeio':
+  method     from
+  root.phylo ape 
+
+Attaching package: 'treeio'
+
+The following object is masked from 'package:ape':
+
+    drop.tip
+
+Loading required package: maps
+
+Attaching package: 'phytools'
+
+The following object is masked from 'package:treeio':
+
+    read.newick
+
+Rotating nodes to optimize matching...
+objective: 1829
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 204.384615384615
+objective: 176.229591836735
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 32.0769230769231
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+objective: 27.6581632653061
+Done.
+Rotating nodes to optimize matching...
+objective: 36.6031746031746
+objective: 36.6031746031746
+objective: 36.6031746031746
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 27.4603174603175
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+objective: 17.9142011834319
+Done.
+Rotating nodes to optimize matching...
+objective: 2962.52777777778
+objective: 2962.52777777778
+objective: 2854.86111111111
+Error in vector("list", gamma(n + 1)) : 
+  vector size specified is too large
+Calls: cophylo -> tipRotate -> rotate.multi -> permn
+In addition: Warning messages:
+1: In max(vapply(x, length, numeric(1))) :
+  no non-missing arguments to max; returning -Inf
+2: In max(vapply(x, length, numeric(1))) :
+  no non-missing arguments to max; returning -Inf
+Execution halted
