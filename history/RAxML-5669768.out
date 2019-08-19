@@ -1,0 +1,162 @@
+Mon Aug 19 13:55:46 PDT 2019: Estimating time to completion.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 19-Aug-2019 13:55:47 as follows:
+
+raxml-ng --parse --msa ../Concatenated_ambig.afa --model GTR+G+I
+
+Analysis options:
+  run mode: Alignment parsing and compression
+  start tree(s): 
+  random seed: 1566248147
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (32 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: ../Concatenated_ambig.afa
+[00:00:00] Loaded alignment with 74 taxa and 4903 sites
+
+WARNING: Sequences L5 and L62 are exactly identical!
+WARNING: Sequences L5 and L65 are exactly identical!
+WARNING: Sequences L5 and L93 are exactly identical!
+WARNING: Sequences L5 and Lo28 are exactly identical!
+WARNING: Sequences L5 and Lo43 are exactly identical!
+WARNING: Sequences Lo16 and Lo9 are exactly identical!
+WARNING: Sequences JT164 and JT177 are exactly identical!
+WARNING: Sequences JT167 and JT174 are exactly identical!
+WARNING: Sequences JT167 and JT85 are exactly identical!
+WARNING: Sequences JT167 and JT87 are exactly identical!
+WARNING: Sequences JT172 and JT180 are exactly identical!
+WARNING: Sequences JT172 and JT90 are exactly identical!
+WARNING: Sequences JT19 and JT21 are exactly identical!
+WARNING: Sequences H-2C and H0B are exactly identical!
+WARNING: Sequences H-2C and H10B are exactly identical!
+WARNING: Sequences H-2C and H10C are exactly identical!
+WARNING: Sequences H-2C and H10E are exactly identical!
+WARNING: Sequences H-2C and H14D are exactly identical!
+WARNING: Sequences H-2C and H6B are exactly identical!
+WARNING: Sequences H-2C and H8B are exactly identical!
+WARNING: Sequences H0C and H6A are exactly identical!
+WARNING: Sequences H0C and H6D are exactly identical!
+WARNING: Sequences H2C and H4A are exactly identical!
+WARNING: Sequences H2C and H4B are exactly identical!
+WARNING: Sequences H2B and H4D are exactly identical!
+WARNING: Duplicate sequences found: 25
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /bigdata/littlab/arajewski/Arundinaria/phylo/concatenated/Concatenated_ambig.afa.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 40 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+G4m
+Alignment sites / patterns: 4903 / 40
+Gaps: 0.00 %
+Invariant sites: 99.20 %
+
+
+NOTE: Binary MSA file created: ../Concatenated_ambig.afa.raxml.rba
+
+* Estimated memory requirements                : 1 MB
+
+* Recommended number of threads / MPI processes: 1
+
+Please note that numbers given above are rough estimates only. 
+Actual memory consumption and parallel performance on your system may differ!
+
+Alignment can be successfully read by RAxML-NG.
+
+
+Execution log saved to: /bigdata/littlab/arajewski/Arundinaria/phylo/concatenated/Concatenated_ambig.afa.raxml.log
+
+Analysis started: 19-Aug-2019 13:55:47 / finished: 19-Aug-2019 13:55:47
+
+Elapsed time: 0.082 seconds
+
+Mon Aug 19 13:55:47 PDT 2019: Done.
+Mon Aug 19 13:55:47 PDT 2019: Beginning RAxML estimation.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 19-Aug-2019 13:55:47 as follows:
+
+raxml-ng --all --msa Concatenated_ambig.afa.raxml.rba --model GTR+G+I --bs-trees autoMRE --seed 121787 --threads 7
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (10) + parsimony (10)
+  bootstrap replicates: max: 1000 + bootstopping (autoMRE, cutoff: 0.030000)
+  random seed: 121787
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (7 threads), thread pinning: OFF
+
+WARNING: The model you specified on the command line (GTR+G+I) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: Concatenated_ambig.afa.raxml.rba
+[00:00:00] Alignment comprises 74 taxa, 1 partitions and 40 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+G4m
+Alignment sites / patterns: 4903 / 40
+Gaps: 0.00 %
+Invariant sites: 99.20 %
+
+
+
+WARNING: You might be using too many threads (7) for your alignment with 40 unique patterns.
+NOTE:    For the optimal throughput, please consider using fewer threads 
+NOTE:    and parallelize across starting trees/bootstrap replicates.
+NOTE:    As a general rule-of-thumb, please assign at least 200-1000 alignment patterns per thread.
+
+
+ERROR: Too few patterns per thread! RAxML-NG will terminate now to avoid wasting resources.
+NOTE:  Please reduce the number of threads (see guidelines above).
+NOTE:  This check can be disabled with the '--force' option.
+
+JobId=5669768 JobName=6b_RAxML.sh
+   UserId=arajewski(3080) GroupId=littlab(1144) MCS_label=N/A
+   Priority=2211812 Nice=0 Account=littlab QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:02 TimeLimit=10:00:00 TimeMin=N/A
+   SubmitTime=2019-08-19T13:55:40 EligibleTime=2019-08-19T13:55:40
+   StartTime=2019-08-19T13:55:45 EndTime=2019-08-19T23:55:45 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   Partition=intel AllocNode:Sid=globus:22838
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=i19
+   BatchHost=i19
+   NumNodes=1 NumCPUs=8 NumTasks=7 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=8,mem=32G,node=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=4G MinTmpDiskNode=0
+   Features=(null) Gres=(null) Reservation=(null)
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/bigdata/littlab/arajewski/Arundinaria/phylo/6b_RAxML.sh
+   WorkDir=/bigdata/littlab/arajewski/Arundinaria/phylo
+   StdErr=/bigdata/littlab/arajewski/Arundinaria/phylo/../history/RAxML-5669768.out
+   StdIn=/dev/null
+   StdOut=/bigdata/littlab/arajewski/Arundinaria/phylo/../history/RAxML-5669768.out
+   Power=
+

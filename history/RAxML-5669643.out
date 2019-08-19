@@ -1,0 +1,10 @@
+Warning, you specified a working directory via "-w"
+Keep in mind that RAxML only accepts absolute path names, not relative ones!
+ERROR: Sequences out of alignment
+53 (instead of 60) residues read in sequence 8 CCAAAAAGAA
+Printing error context:
+
+CTGC TCTTAGGAAG CAG
+L5         CGTACCGTG
+
+Problem reading alignment file 

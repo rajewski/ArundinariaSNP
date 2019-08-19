@@ -1,0 +1,216 @@
+Mon Aug 19 13:57:09 PDT 2019: Estimating time to completion.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 19-Aug-2019 13:57:09 as follows:
+
+raxml-ng --parse --msa ../Concatenated_ambig.afa --model GTR+G+I
+
+Analysis options:
+  run mode: Alignment parsing and compression
+  start tree(s): 
+  random seed: 1566248229
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (32 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: ../Concatenated_ambig.afa
+[00:00:00] Loaded alignment with 74 taxa and 4903 sites
+
+WARNING: Sequences L5 and L62 are exactly identical!
+WARNING: Sequences L5 and L65 are exactly identical!
+WARNING: Sequences L5 and L93 are exactly identical!
+WARNING: Sequences L5 and Lo28 are exactly identical!
+WARNING: Sequences L5 and Lo43 are exactly identical!
+WARNING: Sequences Lo16 and Lo9 are exactly identical!
+WARNING: Sequences JT164 and JT177 are exactly identical!
+WARNING: Sequences JT167 and JT174 are exactly identical!
+WARNING: Sequences JT167 and JT85 are exactly identical!
+WARNING: Sequences JT167 and JT87 are exactly identical!
+WARNING: Sequences JT172 and JT180 are exactly identical!
+WARNING: Sequences JT172 and JT90 are exactly identical!
+WARNING: Sequences JT19 and JT21 are exactly identical!
+WARNING: Sequences H-2C and H0B are exactly identical!
+WARNING: Sequences H-2C and H10B are exactly identical!
+WARNING: Sequences H-2C and H10C are exactly identical!
+WARNING: Sequences H-2C and H10E are exactly identical!
+WARNING: Sequences H-2C and H14D are exactly identical!
+WARNING: Sequences H-2C and H6B are exactly identical!
+WARNING: Sequences H-2C and H8B are exactly identical!
+WARNING: Sequences H0C and H6A are exactly identical!
+WARNING: Sequences H0C and H6D are exactly identical!
+WARNING: Sequences H2C and H4A are exactly identical!
+WARNING: Sequences H2C and H4B are exactly identical!
+WARNING: Sequences H2B and H4D are exactly identical!
+WARNING: Duplicate sequences found: 25
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /bigdata/littlab/arajewski/Arundinaria/phylo/concatenated/Concatenated_ambig.afa.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 40 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+G4m
+Alignment sites / patterns: 4903 / 40
+Gaps: 0.00 %
+Invariant sites: 99.20 %
+
+
+NOTE: Binary MSA file created: ../Concatenated_ambig.afa.raxml.rba
+
+* Estimated memory requirements                : 1 MB
+
+* Recommended number of threads / MPI processes: 1
+
+Please note that numbers given above are rough estimates only. 
+Actual memory consumption and parallel performance on your system may differ!
+
+Alignment can be successfully read by RAxML-NG.
+
+
+Execution log saved to: /bigdata/littlab/arajewski/Arundinaria/phylo/concatenated/Concatenated_ambig.afa.raxml.log
+
+Analysis started: 19-Aug-2019 13:57:09 / finished: 19-Aug-2019 13:57:09
+
+Elapsed time: 0.053 seconds
+
+Mon Aug 19 13:57:09 PDT 2019: Done.
+Mon Aug 19 13:57:09 PDT 2019: Beginning RAxML estimation.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 19-Aug-2019 13:57:09 as follows:
+
+raxml-ng --all --msa Concatenated_ambig.afa.raxml.rba --model GTR+G+I --bs-trees autoMRE --seed 121787 --threads 1
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (10) + parsimony (10)
+  bootstrap replicates: max: 1000 + bootstopping (autoMRE, cutoff: 0.030000)
+  random seed: 121787
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: NONE/sequential
+
+WARNING: The model you specified on the command line (GTR+G+I) will be ignored 
+         since the binary MSA file already contains a model definition.
+         If you want to change the model, please re-run RAxML-NG 
+         with the original PHYLIP/FASTA alignment and --redo option.
+
+[00:00:00] Loading binary alignment from file: Concatenated_ambig.afa.raxml.rba
+[00:00:00] Alignment comprises 74 taxa, 1 partitions and 40 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+G4m
+Alignment sites / patterns: 4903 / 40
+Gaps: 0.00 %
+Invariant sites: 99.20 %
+
+
+[00:00:00] Generating 10 random starting tree(s) with 74 taxa
+[00:00:00] Generating 10 parsimony starting tree(s) with 74 taxa
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 40 / 640
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:02] ML tree search #1, logLikelihood: -7133.086005
+[00:00:06] ML tree search #2, logLikelihood: -7120.530094
+[00:00:09] ML tree search #3, logLikelihood: -7133.224976
+[00:00:11] ML tree search #4, logLikelihood: -7120.892962
+[00:00:14] ML tree search #5, logLikelihood: -7120.531963
+[00:00:18] ML tree search #6, logLikelihood: -7120.938198
+[00:00:21] ML tree search #7, logLikelihood: -7120.958471
+[00:00:22] ML tree search #8, logLikelihood: -7120.885610
+[00:00:26] ML tree search #9, logLikelihood: -7120.516365
+[00:00:29] ML tree search #10, logLikelihood: -7120.897964
+[00:00:31] ML tree search #11, logLikelihood: -7120.559450
+[00:00:33] ML tree search #12, logLikelihood: -7120.549593
+[00:00:36] ML tree search #13, logLikelihood: -7120.551712
+[00:00:38] ML tree search #14, logLikelihood: -7120.552246
+[00:00:42] ML tree search #15, logLikelihood: -7120.582778
+[00:00:45] ML tree search #16, logLikelihood: -7120.588474
+[00:00:49] ML tree search #17, logLikelihood: -7122.324433
+[00:00:52] ML tree search #18, logLikelihood: -7120.538425
+[00:00:56] ML tree search #19, logLikelihood: -7120.584820
+[00:00:59] ML tree search #20, logLikelihood: -7123.000823
+
+[00:00:59] ML tree search completed, best tree logLH: -7120.516365
+
+[00:00:59] Starting bootstrapping analysis with 1000 replicates.
+
+[00:01:01] Bootstrap tree #1, logLikelihood: -7163.050437
+[00:01:02] Bootstrap tree #2, logLikelihood: -7117.394313
+[00:01:04] Bootstrap tree #3, logLikelihood: -7081.954438
+[00:01:07] Bootstrap tree #4, logLikelihood: -7185.422358
+[00:01:09] Bootstrap tree #5, logLikelihood: -7183.971146
+[00:01:10] Bootstrap tree #6, logLikelihood: -7060.681143
+[00:01:12] Bootstrap tree #7, logLikelihood: -7114.688052
+[00:01:15] Bootstrap tree #8, logLikelihood: -7061.495371
+[00:01:16] Bootstrap tree #9, logLikelihood: -7110.873711
+[00:01:18] Bootstrap tree #10, logLikelihood: -7117.688282
+[00:01:20] Bootstrap tree #11, logLikelihood: -7170.077134
+[00:01:24] Bootstrap tree #12, logLikelihood: -7170.514478
+[00:01:25] Bootstrap tree #13, logLikelihood: -7052.257336
+[00:01:28] Bootstrap tree #14, logLikelihood: -7120.874329
+[00:01:30] Bootstrap tree #15, logLikelihood: -7138.338319
+[00:01:31] Bootstrap tree #16, logLikelihood: -7012.369590
+[00:01:32] Bootstrap tree #17, logLikelihood: -7043.442427
+[00:01:35] Bootstrap tree #18, logLikelihood: -7317.715262
+[00:01:37] Bootstrap tree #19, logLikelihood: -7059.072030
+[00:01:39] Bootstrap tree #20, logLikelihood: -7094.929870
+[00:01:40] Bootstrap tree #21, logLikelihood: -7041.966730
+[00:01:43] Bootstrap tree #22, logLikelihood: -7136.901234
+[00:01:45] Bootstrap tree #23, logLikelihood: -7126.629105
+[00:01:48] Bootstrap tree #24, logLikelihood: -7154.734184
+[00:01:51] Bootstrap tree #25, logLikelihood: -7224.972481
+[00:01:54] Bootstrap tree #26, logLikelihood: -7214.475289
+[00:01:56] Bootstrap tree #27, logLikelihood: -7094.831594
+[00:01:58] Bootstrap tree #28, logLikelihood: -7089.582967
+[00:02:00] Bootstrap tree #29, logLikelihood: -7077.671406
+[00:02:02] Bootstrap tree #30, logLikelihood: -7142.750807
+[00:02:04] Bootstrap tree #31, logLikelihood: -7051.790863
+[00:02:07] Bootstrap tree #32, logLikelihood: -7159.220570
+[00:02:09] Bootstrap tree #33, logLikelihood: -7069.062963
+[00:02:12] Bootstrap tree #34, logLikelihood: -7062.399160
+[00:02:14] Bootstrap tree #35, logLikelihood: -7087.553921
+[00:02:17] Bootstrap tree #36, logLikelihood: -7084.518607
+[00:02:19] Bootstrap tree #37, logLikelihood: -7209.119950
+[00:02:21] Bootstrap tree #38, logLikelihood: -7069.058762
+[00:02:22] Bootstrap tree #39, logLikelihood: -7186.757584
+[00:02:24] Bootstrap tree #40, logLikelihood: -7143.280930
+[00:02:26] Bootstrap tree #41, logLikelihood: -7175.310390
+[00:02:28] Bootstrap tree #42, logLikelihood: -7053.322151
+[00:02:29] Bootstrap tree #43, logLikelihood: -7133.785438
+[00:02:31] Bootstrap tree #44, logLikelihood: -7148.497020
+[00:02:33] Bootstrap tree #45, logLikelihood: -7099.478867
+[00:02:35] Bootstrap tree #46, logLikelihood: -7188.400515
+[00:02:36] Bootstrap tree #47, logLikelihood: -7055.666855
+[00:02:38] Bootstrap tree #48, logLikelihood: -7147.860561
+[00:02:41] Bootstrap tree #49, logLikelihood: -7099.928819
+[00:02:42] Bootstrap tree #50, logLikelihood: -7144.367863
+[00:02:45] Bootstrap tree #51, logLikelihood: -7090.086414
+[00:02:47] Bootstrap tree #52, logLikelihood: -7020.940272
+[00:02:50] Bootstrap tree #53, logLikelihood: -7049.488128
+[00:02:53] Bootstrap tree #54, logLikelihood: -7083.790172
+[00:02:54] Bootstrap tree #55, logLikelihood: -7065.297797
+[00:02:56] Bootstrap tree #56, logLikelihood: -7132.138746
+[00:02:58] Bootstrap tree #57, logLikelihood: -7038.006451
+[00:02:59] Bootstrap tree #58, logLikelihood: -7022.612568
+[00:03:01] Bootstrap tree #59, logLikelihood: -7108.045351
+[00:03:03] Bootstrap tree #60, logLikelihood: -7063.054036
