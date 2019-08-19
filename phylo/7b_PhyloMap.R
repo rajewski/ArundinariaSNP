@@ -1,6 +1,6 @@
 #With help from http://blog.phytools.org/2013/07/new-phytools-version-with-some.html
-library(devtools)
-install_github("liamrevell/phytools")
+#library(devtools)
+#install_github("liamrevell/phytools")
 library(phytools)
 setwd("~/bigdata/Arundinaria/phylo")
 
@@ -49,12 +49,15 @@ WXYCols <- setNames(WXYCols[,2], WXYCols[,1])
 
 
 # Read in trees and drop tips without coordinate information
-Plastid <- read.nexus("plastid/F81I/Plastid_NoMissingrenamed.nex.con.rot.tre")
+Plastid <- read.nexus("plastid/F81I/Plastid_NoMissingrenamed.nex.con.collapsed.tre")
 Plastid <- drop.tip(Plastid,Plastid$tip.label[-match(Coords$Haplo, Plastid$tip.label, nomatch = 0)])
 LFY <- read.nexus("LFY/HKYI/LFYrenamed.nex.con.collapsed.rot.tre")
 LFY <- drop.tip(LFY, LFY$tip.label[-match(Coords$Haplo, LFY$tip.label, nomatch = 0)])
 WXY <- read.nexus("WXY/SYMI/WXYrenamed.nex.con.collapsed.tre")
+WXY <- root(WXY, outgroup="WXY_Pedulis", resolve.root=T)
 WXY <- drop.tip(WXY, WXY$tip.label[-match(Coords$Haplo, WXY$tip.label, nomatch = 0)])
+PlastidJimmy <- read.nexus("plastid/F81I/Plastid_NoMissingrenamedJimmy.nex.con.collapsed.tre")
+PlastidJimmy <- drop.tip(PlastidJimmy,PlastidJimmy$tip.label[-match(Coords$Haplo, PlastidJimmy$tip.label, nomatch = 0)])
 
 # Plot Plastid Tree
 pdf(file="plastid/F81I/Plastid Bayesian Map.pdf", width=15, height=7)
@@ -63,6 +66,15 @@ pdf(file="plastid/F81I/Plastid Bayesian Map.pdf", width=15, height=7)
   legend(x="bottomright", legend = c("A. gigantea", "A. tecta/appal.", "Putative Hybrid", "Unknown"), text.font=c(3,3,1,1), pch=21, pt.cex=1.7, pt.bg = c("green", "blue", "violet", "grey"), box.col = "transparent", bg="transparent", cex=1)
   title(main="Collapsed Chloroplast Bayesian Phylogeny")
 dev.off()
+
+# Plot Plastid Jimmy Tree
+pdf(file="plastid/F81I/Plastid Jimmy Bayesian Map.pdf", width=15, height=7)
+  PlastidMap <- phylo.to.map(PlastidJimmy, cbind(lat, long), pts=FALSE, database="state", regions=ArunRange, fsize=.6, psize=0.5, pch=16, from.tip=TRUE, ftype="off", mar=c(0.1, 0.1, 1.5, 0.1), rotate=T)
+  # legend(x="bottomright", legend = c("A. gigantea", "A. tecta", "A. appalachiana", "Putative Hybrid", "Unknown"), text.font=c(3,3,3,1,1), pch=21, pt.cex=1.7, pt.bg = c("green", "blue", "red", "violet", "grey"), box.col = "transparent", bg="transparent", cex=1)
+  legend(x="bottomright", legend = c("A. gigantea", "A. tecta/appal.", "Putative Hybrid", "Unknown"), text.font=c(3,3,1,1), pch=21, pt.cex=1.7, pt.bg = c("green", "blue", "violet", "grey"), box.col = "transparent", bg="transparent", cex=1)
+  title(main="Collapsed Chloroplast Bayesian Phylogeny")
+dev.off()
+
 
 # Plot LFY Tree
 pdf(file="LFY/HKYI/LFY Bayesian Map.pdf", width=10, height=7)
