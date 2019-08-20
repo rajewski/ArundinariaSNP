@@ -9,6 +9,9 @@
 #SBATCH -o ../history/align-%A.out
 set -eu
 
-module load muscle/3.8.425
+#add in refs and outgroup to concatenated fasta
+cat ~/bigdata/Arundinaria/phylo/concatenated/Refs.fasta ~/bigdata/Arundinaria/results/Concatenated_ambig.fasta > ./Concatenated_ambig.tmp
 
-muscle -in ~/bigdata/Arundinaria/results/Concatenated_ambig.fasta  > ~/bigdata/Arundinaria/phylo/concatenated/Concatenated_ambig.afa
+module load muscle/3.8.425
+muscle -in Concatenated_ambig.tmp > ~/bigdata/Arundinaria/phylo/concatenated/Concatenated_ambig.afa
+rm Concatenated_ambig.tmp
