@@ -91,6 +91,11 @@ lfysamplesa <- lfysamplesa[order(lfysamplesa)]
 LFYsa <- LFYsa[names(LFYsa)[names(LFYsa) %in% lfysamplesa]]
 writeXStringSet(LFYsa,"LFY_ambig.fasta")
 
+#write nuclear ambiguous
+Nuclearsa <- xscat(LFYsa, WXYsa)
+names(Nuclearsa) <- substr(names(LFYsa),5, length(names(LFYsa)))
+writeXStringSet(Nuclearsa, "Nuclear_ambig.fasta")
+
 # Write matK Loci
 matKs <- rep(refs["matK"], 148)
 names(matKs) <- paste0("matK_", colnames(g.both))

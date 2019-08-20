@@ -1,0 +1,59 @@
+Mon Aug 19 17:52:13 PDT 2019: Parsing already complete
+Mon Aug 19 17:52:13 PDT 2019: Beginning RAxML estimation.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 19-Aug-2019 17:52:13 as follows:
+
+raxml-ng --all --tree pars{25},rand{25} --msa ../Concatenated_ambig.afa --prefix ./Concatenated_ambig.afa.partitioned --model ../partition.txt --seed 121787 --threads 1
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (25) + parsimony (25)
+  bootstrap replicates: max: 1000 + bootstopping (autoMRE, cutoff: 0.030000)
+  random seed: 121787
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: NONE/sequential
+
+[00:00:00] Reading alignment from file: ../Concatenated_ambig.afa
+[00:00:00] Loaded alignment with 74 taxa and 4903 sites
+
+ERROR: Found 54 alignment site(s) which are not assigned to any partition:
+3106 3107 3108 3109 3110 3111 3112 3113 3114 3115 3116 3117 3118 3119 3120 3121 3122 3123 3124 3125 3126 3127 3128 3129 3130 3131 3132 3133 3134 3135 3136 3137 3138 3139 3140 3141 3142 3143 3144 3145 3146 3147 3148 3149 3150 3151 3152 3153 3154 3155 3156 3157 3158 3159 
+Please fix your data!
+
+JobId=5673618 JobName=6b_RAxML.sh
+   UserId=arajewski(3080) GroupId=littlab(1144) MCS_label=N/A
+   Priority=2538318 Nice=0 Account=littlab QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:01 TimeLimit=10:00:00 TimeMin=N/A
+   SubmitTime=2019-08-19T17:52:09 EligibleTime=2019-08-19T17:52:09
+   StartTime=2019-08-19T17:52:12 EndTime=2019-08-20T03:52:12 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   Partition=intel AllocNode:Sid=pigeon:21121
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=i20
+   BatchHost=i20
+   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=2,mem=8G,node=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=4G MinTmpDiskNode=0
+   Features=(null) Gres=(null) Reservation=(null)
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/bigdata/littlab/arajewski/Arundinaria/phylo/6b_RAxML.sh
+   WorkDir=/bigdata/littlab/arajewski/Arundinaria/phylo
+   StdErr=/bigdata/littlab/arajewski/Arundinaria/phylo/../history/RAxML-5673618.out
+   StdIn=/dev/null
+   StdOut=/bigdata/littlab/arajewski/Arundinaria/phylo/../history/RAxML-5673618.out
+   Power=
+

@@ -1,0 +1,191 @@
+Mon Aug 19 18:40:04 PDT 2019: Estimating time to completion.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 19-Aug-2019 18:40:04 as follows:
+
+raxml-ng --parse --msa ../Concatenated_ambig.afa --model GTR+G+I --prefix ./Concatenated_ambig.afa
+
+Analysis options:
+  run mode: Alignment parsing and compression
+  start tree(s): 
+  random seed: 1566265204
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (32 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: ../Concatenated_ambig.afa
+[00:00:00] Loaded alignment with 78 taxa and 5116 sites
+
+WARNING: Sequences JT172 and JT180 are exactly identical!
+WARNING: Sequences JT172 and JT90 are exactly identical!
+WARNING: Sequences JT19 and JT21 are exactly identical!
+WARNING: Sequences L5 and L62 are exactly identical!
+WARNING: Sequences L5 and L65 are exactly identical!
+WARNING: Sequences L5 and L93 are exactly identical!
+WARNING: Sequences L5 and Lo28 are exactly identical!
+WARNING: Sequences L5 and Lo43 are exactly identical!
+WARNING: Sequences Lo16 and Lo9 are exactly identical!
+WARNING: Sequences JT164 and JT177 are exactly identical!
+WARNING: Sequences JT167 and JT174 are exactly identical!
+WARNING: Sequences JT167 and JT85 are exactly identical!
+WARNING: Sequences JT167 and JT87 are exactly identical!
+WARNING: Sequences H-2C and H0B are exactly identical!
+WARNING: Sequences H-2C and H10B are exactly identical!
+WARNING: Sequences H-2C and H10C are exactly identical!
+WARNING: Sequences H-2C and H10E are exactly identical!
+WARNING: Sequences H-2C and H14D are exactly identical!
+WARNING: Sequences H-2C and H6B are exactly identical!
+WARNING: Sequences H-2C and H8B are exactly identical!
+WARNING: Sequences H0C and H6A are exactly identical!
+WARNING: Sequences H0C and H6D are exactly identical!
+WARNING: Sequences H2C and H4A are exactly identical!
+WARNING: Sequences H2C and H4B are exactly identical!
+WARNING: Sequences H2B and H4D are exactly identical!
+WARNING: Duplicate sequences found: 25
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /bigdata/littlab/arajewski/Arundinaria/phylo/concatenated/GTRGI/Concatenated_ambig.afa.raxml.reduced.phy
+
+Alignment comprises 1 partitions and 115 patterns
+
+Partition 0: noname
+Model: GTR+FO+I+G4m
+Alignment sites / patterns: 5116 / 115
+Gaps: 4.85 %
+Invariant sites: 92.67 %
+
+
+NOTE: Binary MSA file created: ./Concatenated_ambig.afa.raxml.rba
+
+* Estimated memory requirements                : 3 MB
+
+* Recommended number of threads / MPI processes: 1
+
+Please note that numbers given above are rough estimates only. 
+Actual memory consumption and parallel performance on your system may differ!
+
+Alignment can be successfully read by RAxML-NG.
+
+
+Execution log saved to: /bigdata/littlab/arajewski/Arundinaria/phylo/concatenated/GTRGI/Concatenated_ambig.afa.raxml.log
+
+Analysis started: 19-Aug-2019 18:40:04 / finished: 19-Aug-2019 18:40:04
+
+Elapsed time: 0.465 seconds
+
+Mon Aug 19 18:40:04 PDT 2019: Done.
+Mon Aug 19 18:40:05 PDT 2019: Beginning RAxML estimation.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 19-Aug-2019 18:40:05 as follows:
+
+raxml-ng --all --tree pars{25},rand{25} --msa ../Concatenated_ambig.afa --prefix ./Concatenated_ambig.afa.partitioned --model ../partition.txt --outgroup Pedulis --seed 121787 --threads 1
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (25) + parsimony (25)
+  bootstrap replicates: max: 1000 + bootstopping (autoMRE, cutoff: 0.030000)
+  random seed: 121787
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: NONE/sequential
+
+[00:00:00] Reading alignment from file: ../Concatenated_ambig.afa
+[00:00:00] Loaded alignment with 78 taxa and 5116 sites
+
+WARNING: Sequences JT172 and JT180 are exactly identical!
+WARNING: Sequences JT172 and JT90 are exactly identical!
+WARNING: Sequences JT19 and JT21 are exactly identical!
+WARNING: Sequences L5 and L62 are exactly identical!
+WARNING: Sequences L5 and L65 are exactly identical!
+WARNING: Sequences L5 and L93 are exactly identical!
+WARNING: Sequences L5 and Lo28 are exactly identical!
+WARNING: Sequences L5 and Lo43 are exactly identical!
+WARNING: Sequences Lo16 and Lo9 are exactly identical!
+WARNING: Sequences JT164 and JT177 are exactly identical!
+WARNING: Sequences JT167 and JT174 are exactly identical!
+WARNING: Sequences JT167 and JT85 are exactly identical!
+WARNING: Sequences JT167 and JT87 are exactly identical!
+WARNING: Sequences H-2C and H0B are exactly identical!
+WARNING: Sequences H-2C and H10B are exactly identical!
+WARNING: Sequences H-2C and H10C are exactly identical!
+WARNING: Sequences H-2C and H10E are exactly identical!
+WARNING: Sequences H-2C and H14D are exactly identical!
+WARNING: Sequences H-2C and H6B are exactly identical!
+WARNING: Sequences H-2C and H8B are exactly identical!
+WARNING: Sequences H0C and H6A are exactly identical!
+WARNING: Sequences H0C and H6D are exactly identical!
+WARNING: Sequences H2C and H4A are exactly identical!
+WARNING: Sequences H2C and H4B are exactly identical!
+WARNING: Sequences H2B and H4D are exactly identical!
+WARNING: Duplicate sequences found: 25
+
+NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
+NOTE: was saved to: /bigdata/littlab/arajewski/Arundinaria/phylo/concatenated/GTRGI/Concatenated_ambig.afa.partitioned.raxml.reduced.phy
+
+NOTE: The corresponding reduced partition file was saved to:
+/bigdata/littlab/arajewski/Arundinaria/phylo/concatenated/GTRGI/Concatenated_ambig.afa.partitioned.raxml.reduced.partition
+
+Alignment comprises 5 partitions and 156 patterns
+
+Partition 0: matK
+Model: GTR+FO+I+G4m+B
+Alignment sites / patterns: 899 / 14
+Gaps: 0.11 %
+Invariant sites: 99.11 %
+
+Partition 1: WXY
+Model: GTR+FO+I+G4m+B
+Alignment sites / patterns: 1319 / 49
+Gaps: 7.89 %
+Invariant sites: 97.27 %
+
+Partition 2: psaA
+Model: GTR+FO+I+G4m+B
+Alignment sites / patterns: 1005 / 25
+Gaps: 1.19 %
+Invariant sites: 98.91 %
+
+Partition 3: LFY
+Model: GTR+FO+I+G4m+B
+Alignment sites / patterns: 824 / 15
+Gaps: 3.96 %
+Invariant sites: 98.79 %
+
+Partition 4: rp32
+Model: GTR+FO+I+G4m+B
+Alignment sites / patterns: 1069 / 53
+Gaps: 9.18 %
+Invariant sites: 71.00 %
+
+
+NOTE: Binary MSA file created: ./Concatenated_ambig.afa.partitioned.raxml.rba
+
+[00:00:00] Generating 25 random starting tree(s) with 78 taxa
+[00:00:00] Generating 25 parsimony starting tree(s) with 78 taxa
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 5 / 156 / 2496
+
+Starting ML tree search with 50 distinct starting trees
+
+[00:00:27] ML tree search #1, logLikelihood: -8354.594000
+[00:01:02] ML tree search #2, logLikelihood: -8350.162019
+[00:01:37] ML tree search #3, logLikelihood: -8349.444194
+slurmstepd-i01: error: *** JOB 5673660 ON i01 CANCELLED AT 2019-08-19T18:42:03 ***
