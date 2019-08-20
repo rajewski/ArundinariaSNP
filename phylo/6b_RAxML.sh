@@ -15,16 +15,29 @@ module load RAxML_NG/0.9.0
 cd /rhome/arajewski/bigdata/Arundinaria/phylo/concatenated/GTRGI
 ALIGNIN=Concatenated_ambig.afa
 
-if [ ! -e '$ALIGNIN.raxml.rba' ];then
+if [ ! -e "$ALIGNIN.raxml.rba" ]; then
     #command to parse the alignment and estimate the mem and CPU reqs.
     echo $(date): Estimating time to completion.
-    raxml-ng --parse --msa ../$ALIGNIN --model GTR+G+I 
+    raxml-ng --parse \
+	--msa ../$ALIGNIN \
+	--model ../partition.txt \
+	--prefix ./$ALIGNIN
     echo $(date): Done.
+else
+    echo $(date): Parsing already complete
 fi
 
 #actualy run the analysis
 echo $(date): Beginning RAxML estimation.
-raxml-ng --all --msa $ALIGNIN --model GTR+G+I --bs-trees autoMRE --seed 121787 --threads $SLURM_NTASKS
+raxml-ng --all \
+    --tree pars{25},rand{25} \
+    --msa ../$ALIGNIN \
+    --prefix ./$ALIGNIN.partitioned \
+    --model ../partition.txt \
+    --outgroup Pedulis \
+    --seed 121787 \
+    --threads $SLURM_NTASKS \
+    --blopt nr_safe
 
 #print job information for later reference
 scontrol show job $SLURM_JOB_ID
