@@ -9,15 +9,21 @@ Each script used for processing is numbered in sequential order, and as of right
 
 Scripts:
 
-1. 1_indiv_variants.sh is designed to run as an array job on a cluster computer such that each array job number corresponds to an individual sample to be analyzed. Array job numbers are matched to FASTQ files from the names.txt file via the $Sample and $Indiv variables in the script. Speedseq is used to align the reads, and it needs a speedseq.config file to properly run. This config file mostly tells the program where to find other programs for alignment. Read groups are also assigned in this step. This becomes terribly important later, so don't ignore it.
+1. `1_indiv_variants.sh` is designed to run as an array job on a cluster computer such that each array job number corresponds to an individual sample to be analyzed. Array job numbers are matched to FASTQ files from the `names.txt` file via the `$Sample` and `$Indiv` variables in the script. Speedseq is used to align the reads, and it needs a `speedseq.config` file to properly run. This config file mostly tells the program where to find other programs for alignment. Read groups are also assigned in this step. This becomes terribly important later, so don't ignore it.
 
-2. 2_combine.sh takes the individual g.vcf files for each sample and combines them into a single Joint.vcf file, recalling variants in the entire cohort.
+2. `2_combine.sh` takes the individual g.vcf files for each sample and combines them into a single `Joint.vcf` file, recalling variants in the entire cohort.
 
-3. 3_phase.sh uses WhatsHap to phase the samples in the Joint.vcf file. This requires Python 3, which I don't understand well. Likely this could be streamlined, but it works. Sorry. It will output a single Phased.vcf file, which might be enough for you, but it wasn't for me. so I had to continue
+3. `3_phase.sh` uses WhatsHap to phase the samples in the `Joint.vcf` file. This requires Python 3, which I don't understand well. Likely this could be streamlined, but it works. Sorry. It will output a single Phased.vcf file, which might be enough for you, but it wasn't for me. so I had to continue
 
-4. 4_split_phased.sh iterates through Phased.vcf file and produces a single vcf file for each sample.
+4. `4_split_phased.sh` iterates through Phased.vcf file and produces a single vcf file for each sample.
 
-5. 5_CombinePhaseAmbig.R switches into R. It takes the vcf information for each sample/locus and substitutes the SNPs for that sample in a reference sequence. This step ignores indels because alignment around them is sort of a bear. (Ignoring indels is not a minor thing. I could get much more phylogenetic information by including them, but I could also introduce larger systematic errors, which I felt was a bigger danger.) This script will output a separate FASTA file for each locus with all of the phased samples. This information can be used however you like it for phylogenetic analysis.
+5. `5_CombinePhaseAmbig.R` switches into R. It takes the vcf information for each sample/locus and substitutes the SNPs for that sample in a reference sequence. This step ignores indels because alignment around them is sort of a bear. (Ignoring indels is not a minor thing. I could get much more phylogenetic information by including them, but I could also introduce larger systematic errors, which I felt was a bigger danger.) This script will output the following things:
+
+* a FASTA file for each locus with all of the haplotypes phased (e.g. `WXY_Phased.fasta`). This information can be used however you like it for phylogenetic analysis. Each haplotype for an individual is suffixed with _0 or _1, but remember that there is no correspondence between these numbers between samples or between loci. That is the _0 haplotype is not consistently the paternal haplotype in all samples.
+
+* a FASTA file for each locus with a single ambiguous sequence for each individual (e.g. `WXY_ambig.fasta`). This file can be used directly for a concatenated analysis.
+
+* for the nuclear loci only (_WXY_ and _LFY_), a FASTA file is output with the two ambiguous sequences for each individual concatenated into a single sequence (e.g. `Nuclear_ambig.fasta`). A similar concatenation is NOT done with the plastid loci included because in my case, some of my plastid loci were sanger sequenced, and this introduces a missing data problem and an indel problem.
 
 6. phylo/6a_MrBayes.sh is my standard script to run a Bayesian analysis of the alignments. It references a parameter file (currently Plastid_NoMissing.par), which is also included in this directory. This parameter file tells MrBayes what sort of analysis to run and on which alignment to run. It takes a NEXUS file as input, so I used another tool (not included) to convert the FASTA file from step 5 into a NEXUS file. You can change this script to point to other parameter files in order to modify your analysis. I have to run this script for each locus because concatenation of the phased samples across loci is impossible.
 
