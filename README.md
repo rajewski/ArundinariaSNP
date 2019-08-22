@@ -35,7 +35,7 @@ Scripts:
 
 10. `phylo/7c_BarchartPhylo.R` is an exploratory analysis to plot a phylogeny alongside a stacked barchart. I had planned to see if this was a better way to display the grouping of haplotypes by species. It is mostly just messy.
 
-11. `phylo/7d_clustering.sh` uses the module plink to perform a PCA and MDS of the data. The data here has been subset from the Phased.vcf to just include the two nuclear loci (LFY and WXY), so the code to do that is included in the beginning of that script. A related script `phylo/7e_PlotCluster.R` takes the data and makes a nicer looking plot of it.
+11. `phylo/7d_clustering.sh` uses the module plink to perform a PCA and MDS of the data. The data here has been subset from the Phased.vcf to just include the two nuclear loci (_LFY_ and _WXY_), so the code to do that is included in the beginning of that script. A related script `phylo/7e_PlotCluster.R` takes the data and makes a nicer looking plot of it.
 
 12. `phylo/7e_Cophlyo.R` uses the R package phytools to plot two face-to-face phylogenies and connect identical tips. This allows you to see how the structure changes with the removal of certain tips. The rotation of the tips to minimize crossing of connectors is rather computationally intensive, so you can often do it by hand faster. I made a submission script to do this rotation as a non-interactive job (`phylo/7f_submit.sh`) and another script to actually plot the results of this (`phylo/7g_PlotCophylo.R`). Regardless, the results were not stunning, so I haven't prettied up this script like I would if I intended to use the analysis.
 
