@@ -2,6 +2,7 @@
 #read in species data
 species <- read.csv("~/bigdata/Arundinaria/phylo/JTCoords.csv", header=T)
 species$Species <- gsub(pattern = "\\.", "", species$Species)
+species$Species <- gsub(pattern = " ", "", species$Species)
 #manually download altitude of each GPS coordinate
 species$Altitude <- rep(c(633,700,681,516,503,546,313,515,601,604,543,445,46,46,20,40,43,94,611,198,118,149,84,69,76,121,21,7,92,78,77,112,54,40,176,307,131,95,110,163,119,237,202,196,130,172,643,602,528,350,261,385,233,230,282,281,228,117,199,40,1,5,6,6,3,142,84,140,56,46,171,140,42,21,171,172,286,84,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,196,185,185,185,185,185,185,185,185,185,185,84),3)
 
@@ -85,14 +86,18 @@ dev.off()
 library(ggplot2)
 library(ggrepel)
 library(cowplot)
+#make a color blind friendly palette
+aruncol <- scale_color_manual(breaks = c("Ahybrid", "Aappalachiana", "Agigantea", "Atecta", "Unknown"), 
+                              values = c("#440154FF", "#3B528BFF", "#21908CFF", "#5DC863FF", "#FDE725FF"))
 pdf("NuclearMDSLabeled.pdf", width=11, height=9)
   ggplot(data = nucmds, aes(x = C1, y = C2, col=Species)) + 
-    theme_bw() + 
-    labs(title="Nuclear SNP MDS", x="Dim1", y="Dim2") +
+    labs(title="Nuclear SNP MDS", x="Dimension 1", y="Dimension 2") +
+    theme(axis.text.x = element_blank(),
+          axis.text.y = element_blank(),
+          axis.ticks = element_blank()) +
     geom_point(size = 3) +
     geom_text_repel(aes(label = FID)) +
-    scale_color_manual(breaks = c("A hybrid", "Aappalachiana", "Agigantea", "Atecta", "Unknown"), 
-                       values = c("black", "red", "green", "blue", "cyan"))
+    aruncol
 dev.off()
 
 #Plot MDS against lat, long, and alt
