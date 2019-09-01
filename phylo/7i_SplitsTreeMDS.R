@@ -2,9 +2,8 @@ library(phangorn)
 library(ggplot2)
 library(ggrepel)
 library(cowplot)
-setwd("/bigdata/littlab/arajewski/Arundinaria/phylo/")
+setwd("phylo/")
 x <- read.nexus.dist(file="nuclear/nuclear_ambig.dist")
-#x <- read.nexus.dist(file="concatenated/TESTconatenated.dist")
 fit <- cmdscale(x, eig=T, k=2)
 eigenvec <- cbind(rownames(fit$points), fit$points[,1:2])
 
@@ -28,7 +27,7 @@ mdsdata$Species <- as.factor(mdsdata$Species)
 pdf("nuclear/NuclearMDSSplitsLabeled.pdf", width=11, height=9)
 ggplot(data = mdsdata, aes(x = V3, y = V2, color=Species)) + 
   #labs(title="Nuclear and Plastid SNP MDS (SplitsTree)", x="Dimension 1", y="Dimension 2") +
-  labs(title="Nuclear SNP MDS (SplitsTree)", x="Dimension 1", y="Dimension 2") +
+  labs(title="WXY SNP MDS (SplitsTree)", x="Dimension 1", y="Dimension 2") +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks = element_blank()) +
