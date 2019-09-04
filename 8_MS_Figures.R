@@ -28,7 +28,7 @@ aruncol <- scale_color_manual(breaks = c("Ahyb",
                                          expression(paste(italic("A. appalachiana"))),
                                          expression(paste(italic("A. gigantea"))), 
                                          expression(paste(italic("A. tecta"))), 
-                                         "Unknown"))
+                                         "Hull Road"))
 
 
 # MDS Plots ---------------------------------------------------------------
@@ -37,7 +37,7 @@ nucmds <- read.table("phylo/nuclear/Nuclear.mds", header=T)
 nucmds <- merge(nucmds, species, by.x="FID", by.y="Sample")
 
 NucplotLegend <- ggplot(data = nucmds, aes(x = C1, y = C2, col=Species)) + 
-  labs(title="Nuclear Loci", x="Dimension 1", y="Dimension 2") +
+  labs(title="Nuclear Loci \n(Ambiguous)", x="Dimension 1", y="Dimension 2") +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks = element_blank(),
@@ -47,16 +47,8 @@ NucplotLegend <- ggplot(data = nucmds, aes(x = C1, y = C2, col=Species)) +
   #geom_text_repel(aes(label = FID)) +
   aruncol
 
-Nucplot <- ggplot(data = nucmds, aes(x = C1, y = C2, col=Species)) + 
-  labs(title="Nuclear Loci", x="Dimension 1", y="Dimension 2") +
-  theme(axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
-        axis.ticks = element_blank(),
-        plot.title = element_text(hjust = 0.5),
-        legend.position = "none") +
-  geom_point(size = 3) +
-  #geom_text_repel(aes(label = FID)) +
-  aruncol
+Nucplot <- NucplotLegend + 
+  theme(legend.position = "none")
 
 # Read in the phased WXY, LFY, and plastid distance matrices from SplitsTree4
 #consider whether you want to use Hamming distance (like Plink) or a phylogenetic distance
@@ -72,7 +64,7 @@ WXYvec$V2 <- as.numeric(as.character(WXYvec$V2)) #change col types
 WXYvec$V3 <- as.numeric(as.character(WXYvec$V3)) #change col types
 WXYvec$Species <- as.factor(WXYvec$Species) #change col types
 WXYplot <- ggplot(data = WXYvec, aes(x = V2, y = V3, color=Species)) + 
-labs(title="WXY SNPs", x="Dimension 1", y="Dimension 2") +
+labs(title="WXY SNPs \n(Phased)", x="Dimension 1", y="Dimension 2") +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks = element_blank(),
@@ -90,7 +82,7 @@ LFYvec$V2 <- as.numeric(as.character(LFYvec$V2)) #change col types
 LFYvec$V3 <- as.numeric(as.character(LFYvec$V3)) #change col types
 LFYvec$Species <- as.factor(LFYvec$Species) #change col types
 LFYplot <- ggplot(data = LFYvec, aes(x = V2, y = V3, color=Species)) + 
-  labs(title="LFY SNPs", x="Dimension 1", y="Dimension 2") +
+  labs(title="LFY SNPs \n(Phased)", x="Dimension 1", y="Dimension 2") +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks = element_blank(),
@@ -108,7 +100,7 @@ Plasvec$V2 <- as.numeric(as.character(Plasvec$V2)) #change col types
 Plasvec$V3 <- as.numeric(as.character(Plasvec$V3)) #change col types
 Plasvec$Species <- as.factor(Plasvec$Species) #change col types
 PlasPlot <- ggplot(data = Plasvec, aes(x = V2, y = V3, color=Species)) + 
-  labs(title="Plastid SNPs", x="Dimension 1", y="Dimension 2") +
+  labs(title="Plastid SNPs \n(Phased)", x="Dimension 1", y="Dimension 2") +
   theme(axis.text.x = element_blank(),
         axis.text.y = element_blank(),
         axis.ticks = element_blank(),
@@ -121,14 +113,10 @@ PlasPlot <- ggplot(data = Plasvec, aes(x = V2, y = V3, color=Species)) +
 #Make Final Plot
 legend <- get_legend(NucplotLegend + 
                        theme(legend.position = "bottom",
-                             legend.justification="center"))
+                             legend.justification="center",
+                             legend.title = element_blank()))
 right_side <- plot_grid(PlasPlot, WXYplot,nrow=2, labels=c("B", "C"))
 main <- plot_grid(Nucplot, right_side, ncol=2, labels=c("A"))
 plot_grid(main, legend, nrow=2, rel_heights = c(1,0.1))
 
 
-
-title <- ggdraw() + draw_label("Conditions for site 05430175", fontface='bold')
-bottom_row <- plot_grid(nutrient_boxplot, tss_flow_plot, ncol = 2, labels = "AUTO")
-plot_grid(title, bottom_row, flow_timeseries, nrow = 3, labels = c("", "", "C"),
-          rel_heights = c(0.2, 1, 1))
