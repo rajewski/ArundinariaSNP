@@ -146,6 +146,24 @@ SplitsPlas$tip.label <- gsub(pattern="H_", "H-", SplitsPlas$tip.label)
 SplitsLFY <- read.nexus.networx("phylo/splitstree/LFY.splits.nex")
 SplitsLFY$tip.label <- gsub(pattern="H_", "H-", SplitsLFY$tip.label)
 
+#WXY data
+SplitsWXY <- read.nexus.networx("phylo/splitstree/WXY.splits.nex")
+SplitsWXY$tip.label <- gsub(pattern="igantea", "A.gigantea", SplitsWXY$tip.label)
+SplitsWXY$tip.label <- gsub(pattern="ecta", "A.tecta", SplitsWXY$tip.label)
+SplitsWXY$tip.label <- gsub(pattern="ppalachiana", "A.appalachiana", SplitsWXY$tip.label)
+SplitsWXY$tip.label <- gsub(pattern="H_", "H-", SplitsWXY$tip.label)
+
+#Nuclear Ambiguous data
+SplitsNuclear <- read.nexus.networx("phylo/splitstree/Nuclear_ambig.fasta.splits.nex")
+
+#All Ambiguous Data
+SplitsAll <- read.nexus.networx("phylo/splitstree/TESTconcatented.splits.nex")
+SplitsAll$tip.label <- gsub(pattern="H_", "H-", SplitsAll$tip.label)
+SplitsAll$tip.label <- gsub(pattern="Gig", "Gig9", SplitsAll$tip.label)
+SplitsAll$tip.label <- gsub(pattern="Tec", "Tec7", SplitsAll$tip.label)
+SplitsAll$tip.label <- gsub(pattern="A._gigantea", "A.gigantea", SplitsAll$tip.label)
+SplitsAll$tip.label <- gsub(pattern="A._tecta", "A.tecta", SplitsAll$tip.label)
+SplitsAll$tip.label <- gsub(pattern="A._appalachiana", "A.appalachiana", SplitsAll$tip.label)
 
 #Plot Plastid
 par(mar = c(0,0,1,0))
@@ -169,3 +187,36 @@ title(main = "LFY SNP SplitsTree")
 legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
 dev.off()
 
+#Plot WXY
+par(mar = c(0,0,1,0))
+plot(SplitsWXY, "2D",
+     tip.col = species[match(SplitsWXY$tip.label, species$Sample),"color"],
+     edge.width = 1.5, 
+     cex = 1, 
+     font = 3)
+title(main = "WXY SNP SplitsTree")
+legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
+dev.off()
+
+#Plot All
+par(mar = c(0,0,1,0))
+plot(SplitsNuclear, "2D",
+     tip.col = species[match(SplitsNuclear$tip.label, species$Sample),"color"],
+     tip.label = "",
+     edge.width = 1.5, 
+     cex = 1, 
+     font = 3)
+title(main = "All SNP SplitsTree")
+legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
+dev.off()
+
+#Plot All
+par(mar = c(0,0,1,0))
+plot(SplitsAll, "2D",
+     tip.col = species[match(SplitsAll$tip.label, species$Sample),"color"],
+     edge.width = 1.5, 
+     cex = 1, 
+     font = 3)
+title(main = "All SNP SplitsTree")
+legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
+dev.off()
