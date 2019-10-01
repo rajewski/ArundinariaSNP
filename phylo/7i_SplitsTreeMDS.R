@@ -5,6 +5,7 @@ library(cowplot)
 setwd("/bigdata/littlab/arajewski/Arundinaria/phylo/")
 x <- read.nexus.dist(file="nuclear/nuclear_ambig.dist")
 #x <- read.nexus.dist(file="concatenated/TESTconatenated.dist")
+x <- read.nexus.dist(file="LFY/LFY.dist")
 fit <- cmdscale(x, eig=T, k=2)
 eigenvec <- cbind(rownames(fit$points), fit$points[,1:2])
 
