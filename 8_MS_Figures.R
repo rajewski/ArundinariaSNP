@@ -9,32 +9,34 @@ library(cowplot)
 theme_set(theme_cowplot())
 
 #Read in the species assignment data
-species <- read.csv("phylo/JTCoords.csv", header=T)
+species <- read.csv("phylo/JTCoords.csv", header=T, stringsAsFactors = F)
 species$Species <- gsub(pattern = "\\.| " , "", species$Species)
 species$Species <- substr(species$Species,1,4)
 species$Species <- factor(species$Species, levels=c("Aapp", "Agig", "Atec", "Ahyb", "Unkn"))
 
 # make a color blind friendly palette
+#make it from several lists so that I can call it with base plotting and ggplot
+speciescolors <- c("#000000FF", 
+                   "#2A788EFF",
+                   "#FFCC00FF", 
+                   "#000000FF", 
+                   "#7AD151FF")
+speciesnames <- c(expression(paste(italic("A. appalachiana"))),
+                  expression(paste(italic("A. gigantea"))), 
+                  expression(paste(italic("A. tecta"))), 
+                  "Hybrid",
+                  "Hull Road")
 aruncol <- scale_color_manual(breaks = levels(species$Species),
-                              values = c("#000000FF", 
-                                         "#2A788EFF",
-                                         "#FFCC00FF", 
-                                         "#000000FF", 
-                                         "#7AD151FF"),
-                              labels = c(expression(paste(italic("A. appalachiana"))),
-                                         expression(paste(italic("A. gigantea"))), 
-                                         expression(paste(italic("A. tecta"))), 
-                                         "Hybrid",
-                                         "Hull Road"))
+                              values = speciescolors,
+                              labels = speciesnames)
+
+#add the colors to the species table
+species$color <- setNames(speciescolors, levels(species$Species))[species$Species]
 
 # shape hybrid sampels differently
 arunshape <- scale_shape_manual(breaks = levels(species$Species),
                                 values = c(16, 16, 16, 4, 16),
-                                labels = c(expression(paste(italic("A. appalachiana"))),
-                                           expression(paste(italic("A. gigantea"))), 
-                                           expression(paste(italic("A. tecta"))), 
-                                           "Hybrid",
-                                           "Hull Road"))
+                                labels = speciesnames)
 
 
 # MDS Plots ---------------------------------------------------------------
@@ -130,34 +132,40 @@ ggsave2(filename = "Figure 1.pdf", height = 6,width=9)
 
 # SplitsTrees -------------------------------------------------------------
 # Make color-coded splitstree plots of the datasets
-library(phangorn)
+#These are imported from SplitsTree4
+#P edulis has been removed to ease plotting
+# HKY distances have been used
+
+#plastid data
 SplitsPlas <- read.nexus.networx("phylo/splitstree/Plastid_NoMissing.splits.nex")
+SplitsPlas$tip.label <- gsub(pattern="Gig", "Gig9", SplitsPlas$tip.label)
+SplitsPlas$tip.label <- gsub(pattern="Tec", "Tec7", SplitsPlas$tip.label)
+SplitsPlas$tip.label <- gsub(pattern="H_", "H-", SplitsPlas$tip.label)
 
-## I need to find a way to create a vector of species names/colors for plotting that is indexed to the tip labels of each network.
+#LFY data
+SplitsLFY <- read.nexus.networx("phylo/splitstree/LFY.splits.nex")
+SplitsLFY$tip.label <- gsub(pattern="H_", "H-", SplitsLFY$tip.label)
 
 
-#Scratch for plot
-# Write a plot with colored names showing phylo placement.
-pdf(file = "concatenated/ConcatenatedSNPSplits.pdf", width=7, height=6)
-par(mar = c(0,0,2,0))
-plot(splits, "2D",
-     tip.col = species2,
+#Plot Plastid
+par(mar = c(0,0,1,0))
+plot(SplitsPlas, "2D",
+     tip.col = species[match(SplitsPlas$tip.label, species$Sample),"color"],
      edge.width = 1.5, 
      cex = 1, 
      font = 3)
-title(main = "Nuclear and Plastid SNP SplitsTree")
-legend("topleft",legend=c("Hybrid", "A. appalachiana", "A. gigantea", "A. tecta", "Unknown"),col=colmap, pch=16, bty="n")
+title(main = "Plastid SNP SplitsTree")
+legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
 dev.off()
 
-#plot nuclear only snps splitstree
-pdf(file = "nuclear/NuclearSNPSplits.pdf", width = 7, height = 5)
+#Plot LFY #### HOW DO I ROATE THIS???
 par(mar = c(0,0,1,0))
-plot(splits, "2D",
-     tip.col = species2,
+plot(SplitsLFY, "2D",
+     tip.col = species[match(SplitsLFY$tip.label, species$Sample),"color"],
      edge.width = 1.5, 
      cex = 1, 
      font = 3)
-title(main = "Nuclear SNP SplitsTree")
-legend("bottomleft",legend=c("Hybrid", "A. appalachiana", "A. gigantea", "A. tecta", "Unknown"),col=colmap, pch=16, bty="n")
+title(main = "LFY SNP SplitsTree")
+legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
 dev.off()
 
