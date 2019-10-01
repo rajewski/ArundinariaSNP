@@ -206,7 +206,7 @@ plot(SplitsNuclear, "2D",
      edge.width = 1.5, 
      cex = 1, 
      font = 3)
-title(main = "All SNP SplitsTree")
+title(main = "Nuclear SNP SplitsTree")
 legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
 dev.off()
 
@@ -220,3 +220,13 @@ plot(SplitsAll, "2D",
 title(main = "All SNP SplitsTree")
 legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
 dev.off()
+
+
+#make the figure?
+layout(matrix(c(1,1,2,1,1,2,1,1,3,1,1,3,4,4,4), nrow=5, ncol=3, byrow = T))
+par(oma=c(0,1,3,0))
+#insert the three plots you want, then:
+mtext("SplitsTree Networks", outer=T, cex=2)
+plot.new()
+legend("center",legend=speciesnames,col=speciescolors, pch=16, bty="n", horiz=T, cex=1.1, x.intersp=0.5)
+
