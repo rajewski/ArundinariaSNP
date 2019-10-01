@@ -1,0 +1,88 @@
+Thu Aug 22 15:54:29 PDT 2019: Estimating time to completion.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 22-Aug-2019 15:54:29 as follows:
+
+raxml-ng --parse --msa ../TESTJimmyConcatenated.phy --model ../partition.txt --prefix ./TESTJimmyConcatenated.phy
+
+Analysis options:
+  run mode: Alignment parsing and compression
+  start tree(s): 
+  random seed: 1566514469
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: PTHREADS (32 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: ../TESTJimmyConcatenated.phy
+[00:00:00] Loaded alignment with 43 taxa and 5054 sites
+
+ERROR: Invalid range in partition rp32: 4048-5116
+
+Thu Aug 22 15:54:29 PDT 2019: Done.
+Thu Aug 22 15:54:29 PDT 2019: Beginning RAxML estimation.
+
+RAxML-NG v. 0.9.0 released on 20.05.2019 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+RAxML-NG was called at 22-Aug-2019 15:54:29 as follows:
+
+raxml-ng --all --tree pars{25},rand{25} --msa ../TESTJimmyConcatenated.phy --prefix ./TESTJimmyConcatenated.phy.partitioned --model ../partition.TESTJimmyConcatenated.txt --outgroup P._edulis --seed 121787 --threads 1 --blopt nr_safe
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (25) + parsimony (25)
+  bootstrap replicates: max: 1000 + bootstopping (autoMRE, cutoff: 0.030000)
+  random seed: 121787
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-SAFE)
+  SIMD kernels: AVX2
+  parallelization: NONE/sequential
+
+[00:00:00] Reading alignment from file: ../TESTJimmyConcatenated.phy
+[00:00:00] Loaded alignment with 43 taxa and 5054 sites
+
+ERROR: Found 14 alignment site(s) which are not assigned to any partition:
+5041 5042 5043 5044 5045 5046 5047 5048 5049 5050 5051 5052 5053 5054 
+Please fix your data!
+
+JobId=5684030 JobName=6b_RAxML.sh
+   UserId=arajewski(3080) GroupId=littlab(1144) MCS_label=N/A
+   Priority=11606002 Nice=0 Account=littlab QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:02 TimeLimit=06:00:00 TimeMin=N/A
+   SubmitTime=2019-08-22T15:54:27 EligibleTime=2019-08-22T15:54:27
+   StartTime=2019-08-22T15:54:27 EndTime=2019-08-22T21:54:28 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   Partition=intel AllocNode:Sid=pigeon:7459
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=i20
+   BatchHost=i20
+   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=2,mem=8G,node=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=4G MinTmpDiskNode=0
+   Features=(null) Gres=(null) Reservation=(null)
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/bigdata/littlab/arajewski/Arundinaria/phylo/6b_RAxML.sh
+   WorkDir=/bigdata/littlab/arajewski/Arundinaria/phylo
+   StdErr=/bigdata/littlab/arajewski/Arundinaria/phylo/../history/RAxML-5684030.out
+   StdIn=/dev/null
+   StdOut=/bigdata/littlab/arajewski/Arundinaria/phylo/../history/RAxML-5684030.out
+   Power=
+
