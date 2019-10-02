@@ -5,6 +5,7 @@
 library(phangorn)
 library(ggplot2)
 library(ggrepel)
+library(pryr)
 library(cowplot)
 theme_set(theme_cowplot())
 
@@ -138,12 +139,13 @@ ggsave2(filename = "Figure 1.pdf", height = 6,width=9)
 
 #Define function to clean the tip labels
 TipClean <- function(network, acronym=FALSE){
-  network$tip.label <- gsub(pattern="$Gig", "Gig9", network$tip.label, perl=T)
-  network$tip.label <- gsub(pattern="$Tec", "Tec7", network$tip.label, perl=T)
+  network$tip.label <- gsub(pattern="Gig$", "Gig9", network$tip.label, perl=T)
+  network$tip.label <- gsub(pattern="Tec$", "Tec7", network$tip.label, perl=T)
   network$tip.label <- gsub(pattern="H_", "H-", network$tip.label)
   network$tip.label <- gsub(pattern="^igantea", "A.gigantea", network$tip.label, perl=T)
   network$tip.label <- gsub(pattern="^ecta", "A.tecta", network$tip.label, perl=T)
   network$tip.label <- gsub(pattern="^ppalachiana", "A.appalachiana", network$tip.label, perl=T)
+  network$tip.label <- gsub(pattern="^A._", "A.", network$tip.label)
   if (acronym) {
     #make all hull samples "H"
     network$tip.label <- gsub(pattern="^H\\-?\\d+\\w\\_?\\d?", "H", network$tip.label, perl=T) 
@@ -160,8 +162,8 @@ SplitsPlasAcro <- TipClean(SplitsPlas, acronym = T)
 
 #LFY data
 SplitsLFY <- read.nexus.networx("phylo/splitstree/LFY.splits.nex")
-SplitsLFY$.plot$vertices <- cbind(-SplitsLFY$.plot$vertices[,"y"],
-                                  SplitsLFY$.plot$vertices[,"x"]) # Rotate 90ºCCW
+SplitsLFY$.plot$vertices <- cbind(SplitsLFY$.plot$vertices[,"y"],
+                                  -SplitsLFY$.plot$vertices[,"x"]) # Rotate 90ºCCW
 SplitsLFY <- TipClean(SplitsLFY)
 SplitsLFYAcro <- TipClean(SplitsLFY, acronym = T)
 
@@ -178,69 +180,79 @@ SplitsAll <- read.nexus.networx("phylo/splitstree/TESTconcatented.splits.nex")
 SplitsAll <- TipClean(SplitsAll)
 SplitsAllAcro <- TipClean(SplitsAll, acronym = T)
 
-#Plot Plastid
-par(mar = c(0,0,1,0))
-plot(SplitsPlasDots, "2D",
-     tip.col = species[match(SplitsPlas$tip.label, species$Sample),"color"],
-     edge.width = 1.5, 
-     cex = 1, 
-     font = 1)
-title(main = "Plastid SNP SplitsTree")
-legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
-dev.off()
+####Make Plots
+#Plastid
+splits.plas %<a-% {
+  plot(SplitsPlasAcro, "2D",
+       tip.col = species[match(SplitsPlas$tip.label, species$Sample),"color"],
+       edge.width = 1.5, 
+       cex = 1, 
+       font = 1)
+  mtext("Plastid", side=3, cex=1.7, line=-1)
+}
 
 #Plot LFY 
-par(mar = c(0,0,1,0))
-plot(SplitsLFYRotate, "2D",
-     tip.col = species[match(SplitsLFY$tip.label, species$Sample),"color"],
-     edge.width = 1.5, 
-     cex = 1, 
-     font = 3)
-#there is a gap btw Tec and Gig that separates each Hull Haplotype
-title(main = "LFY SNP SplitsTree")
-legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
-dev.off()
+splits.LFY %<a-% {
+  plot(SplitsLFYAcro, "2D",
+       tip.col = species[match(SplitsLFY$tip.label, species$Sample),"color"],
+       edge.width = .7, 
+       cex = 1, 
+       font = 3)
+  #there is a gap btw Tec and Gig that separates each Hull Haplotype
+  mtext("LFY", side=3, cex=1.7, line=-1)
+}
 
 #Plot WXY
-par(mar = c(0,0,1,0))
-plot(SplitsWXY, "2D",
+splits.WXY %<a-% {
+  plot(SplitsWXYAcro, "2D",
      tip.col = species[match(SplitsWXY$tip.label, species$Sample),"color"],
-     edge.width = 1.5, 
+     edge.width = 1, 
      cex = 1, 
      font = 3)
-title(main = "WXY SNP SplitsTree")
-legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
-dev.off()
+  mtext("WXY", side=3, cex=1.7, line=-1)
+}
 
 #Plot Nuclear
-par(mar = c(0,0,1,0))
-plot(SplitsNuclear, "2D",
+splits.Nuclear %<a-% {
+  plot(SplitsNuclearAcro, "2D",
      tip.col = species[match(SplitsNuclear$tip.label, species$Sample),"color"],
-     tip.label = "",
      edge.width = 1.5, 
      cex = 1, 
      font = 3)
-title(main = "Nuclear SNP SplitsTree")
-legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
-dev.off()
+  mtext("Nuclear", side=3, cex=1.7, line=-1)
+}
 
 #Plot All
-par(mar = c(0,0,1,0))
-plot(SplitsAll, "2D",
+splits.All %<a-% {
+  plot(SplitsAllAcro, "2D",
      tip.col = species[match(SplitsAll$tip.label, species$Sample),"color"],
      edge.width = 1.5, 
      cex = 1, 
-     font = 3)
-title(main = "All SNP SplitsTree")
-legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
+     font = 1)
+  mtext("All Loci", side=3, cex=1.7, line=-1)
+}
+
+#Figure 2
+Figure2 %<a-% {
+  par(mar=c(1,0,1,0))
+  split.screen(c(1,2))
+  par(oma=c(0,0,2,0))
+  split.screen(c(3,1), screen=2)
+  #split.screen(c(1,2), screen=4)
+  screen(1)
+  splits.All
+  legend("bottomright",legend=speciesnames,col=speciescolors, pch=c(rep("X",4),"H"), bty="n", cex=1.3)
+  screen(3)
+  splits.LFY
+  screen(4)
+  splits.WXY
+  screen(5)
+  splits.plas
+  mtext("SplitsTree", side=3, outer=T, line=, cex=3)
+  close.screen(all=T)
+}
+
+cairo_pdf(file="Figure 2.pdf", height=11, width=15)
+  Figure2
 dev.off()
-
-
-#make the figure?
-layout(matrix(c(1,1,2,1,1,2,1,1,3,1,1,3,4,4,4), nrow=5, ncol=3, byrow = T))
-par(oma=c(0,1,3,0))
-#insert the three plots you want, then:
-mtext("SplitsTree Networks", outer=T, cex=2)
-plot.new()
-legend("center",legend=speciesnames,col=speciescolors, pch=16, bty="n", horiz=T, cex=1.1, x.intersp=0.5)
 
