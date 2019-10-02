@@ -19,7 +19,7 @@ species$Species <- factor(species$Species, levels=c("Aapp", "Agig", "Atec", "Ahy
 speciescolors <- c("#000000FF", 
                    "#2A788EFF",
                    "#FFCC00FF", 
-                   "#000000FF", 
+                   "#808080FF", 
                    "#7AD151FF")
 speciesnames <- c(expression(paste(italic("A. appalachiana"))),
                   expression(paste(italic("A. gigantea"))), 
@@ -136,53 +136,67 @@ ggsave2(filename = "Figure 1.pdf", height = 6,width=9)
 #P edulis has been removed to ease plotting
 # HKY distances have been used
 
+#Define function to clean the tip labels
+TipClean <- function(network, acronym=FALSE){
+  network$tip.label <- gsub(pattern="$Gig", "Gig9", network$tip.label, perl=T)
+  network$tip.label <- gsub(pattern="$Tec", "Tec7", network$tip.label, perl=T)
+  network$tip.label <- gsub(pattern="H_", "H-", network$tip.label)
+  network$tip.label <- gsub(pattern="^igantea", "A.gigantea", network$tip.label, perl=T)
+  network$tip.label <- gsub(pattern="^ecta", "A.tecta", network$tip.label, perl=T)
+  network$tip.label <- gsub(pattern="^ppalachiana", "A.appalachiana", network$tip.label, perl=T)
+  if (acronym) {
+    #make all hull samples "H"
+    network$tip.label <- gsub(pattern="^H\\-?\\d+\\w\\_?\\d?", "H", network$tip.label, perl=T) 
+    #make everything else except known samples "X"
+    network$tip.label <- gsub(pattern="(^L|^Lo|^JT)\\d+\\_?\\d?", "X", network$tip.label, perl=T)
+  }
+  return(network)
+}
+
 #plastid data
 SplitsPlas <- read.nexus.networx("phylo/splitstree/Plastid_NoMissing.splits.nex")
-SplitsPlas$tip.label <- gsub(pattern="Gig", "Gig9", SplitsPlas$tip.label)
-SplitsPlas$tip.label <- gsub(pattern="Tec", "Tec7", SplitsPlas$tip.label)
-SplitsPlas$tip.label <- gsub(pattern="H_", "H-", SplitsPlas$tip.label)
+SplitsPlas <- TipClean(SplitsPlas)
+SplitsPlasAcro <- TipClean(SplitsPlas, acronym = T)
 
 #LFY data
 SplitsLFY <- read.nexus.networx("phylo/splitstree/LFY.splits.nex")
-SplitsLFY$tip.label <- gsub(pattern="H_", "H-", SplitsLFY$tip.label)
+SplitsLFY$.plot$vertices <- cbind(-SplitsLFY$.plot$vertices[,"y"],
+                                  SplitsLFY$.plot$vertices[,"x"]) # Rotate 90ºCCW
+SplitsLFY <- TipClean(SplitsLFY)
+SplitsLFYAcro <- TipClean(SplitsLFY, acronym = T)
 
 #WXY data
 SplitsWXY <- read.nexus.networx("phylo/splitstree/WXY.splits.nex")
-SplitsWXY$tip.label <- gsub(pattern="igantea", "A.gigantea", SplitsWXY$tip.label)
-SplitsWXY$tip.label <- gsub(pattern="ecta", "A.tecta", SplitsWXY$tip.label)
-SplitsWXY$tip.label <- gsub(pattern="ppalachiana", "A.appalachiana", SplitsWXY$tip.label)
-SplitsWXY$tip.label <- gsub(pattern="H_", "H-", SplitsWXY$tip.label)
+SplitsWXY <- TipClean(SplitsWXY)
+SplitsWXYAcro <- TipClean(SplitsWXY, acronym = T)
 
 #Nuclear Ambiguous data
 SplitsNuclear <- read.nexus.networx("phylo/splitstree/Nuclear_ambig.fasta.splits.nex")
 
 #All Ambiguous Data
 SplitsAll <- read.nexus.networx("phylo/splitstree/TESTconcatented.splits.nex")
-SplitsAll$tip.label <- gsub(pattern="H_", "H-", SplitsAll$tip.label)
-SplitsAll$tip.label <- gsub(pattern="Gig", "Gig9", SplitsAll$tip.label)
-SplitsAll$tip.label <- gsub(pattern="Tec", "Tec7", SplitsAll$tip.label)
-SplitsAll$tip.label <- gsub(pattern="A._gigantea", "A.gigantea", SplitsAll$tip.label)
-SplitsAll$tip.label <- gsub(pattern="A._tecta", "A.tecta", SplitsAll$tip.label)
-SplitsAll$tip.label <- gsub(pattern="A._appalachiana", "A.appalachiana", SplitsAll$tip.label)
+SplitsAll <- TipClean(SplitsAll)
+SplitsAllAcro <- TipClean(SplitsAll, acronym = T)
 
 #Plot Plastid
 par(mar = c(0,0,1,0))
-plot(SplitsPlas, "2D",
+plot(SplitsPlasDots, "2D",
      tip.col = species[match(SplitsPlas$tip.label, species$Sample),"color"],
      edge.width = 1.5, 
      cex = 1, 
-     font = 3)
+     font = 1)
 title(main = "Plastid SNP SplitsTree")
 legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
 dev.off()
 
-#Plot LFY #### HOW DO I ROATE THIS???
+#Plot LFY 
 par(mar = c(0,0,1,0))
-plot(SplitsLFY, "2D",
+plot(SplitsLFYRotate, "2D",
      tip.col = species[match(SplitsLFY$tip.label, species$Sample),"color"],
      edge.width = 1.5, 
      cex = 1, 
      font = 3)
+#there is a gap btw Tec and Gig that separates each Hull Haplotype
 title(main = "LFY SNP SplitsTree")
 legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
 dev.off()
@@ -198,7 +212,7 @@ title(main = "WXY SNP SplitsTree")
 legend("topleft",legend=speciesnames,col=speciescolors, pch=16, bty="n")
 dev.off()
 
-#Plot All
+#Plot Nuclear
 par(mar = c(0,0,1,0))
 plot(SplitsNuclear, "2D",
      tip.col = species[match(SplitsNuclear$tip.label, species$Sample),"color"],
