@@ -1,0 +1,37 @@
+PLINK v1.90b3.38 64-bit (7 Jun 2016)
+Options in effect:
+  --allow-extra-chr
+  --cluster
+  --mds-plot 2
+  --mind 0.5
+  --out NuclearH8D
+  --vcf ../results/PhasedNuclearH8D.vcf
+
+Hostname: pigeon
+Working directory: /bigdata/littlab/arajewski/Arundinaria/phylo
+Start time: Mon Jun 10 20:06:21 2019
+
+Random number seed: 1560222381
+128754 MB RAM detected; reserving 64377 MB for main workspace.
+--vcf: NuclearH8D-temporary.bed + NuclearH8D-temporary.bim +
+NuclearH8D-temporary.fam written.
+89 variants loaded from .bim file.
+49 people (0 males, 0 females, 49 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to NuclearH8D.nosex .
+3 people removed due to missing genotype data (--mind).
+IDs written to NuclearH8D.irem .
+Using up to 15 threads (change this with --threads).
+Before main variant filters, 46 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate in remaining samples is 0.970445.
+89 variants and 46 people pass filters and QC.
+Note: No phenotypes present.
+Distance matrix calculation complete.
+Clustering... done.
+Cluster solution written to NuclearH8D.cluster1 , NuclearH8D.cluster2 , and
+NuclearH8D.cluster3 .
+Performing multidimensional scaling analysis (SVD algorithm, 2
+dimensions)... done.
+MDS solution written to NuclearH8D.mds .
+
+End time: Mon Jun 10 20:06:21 2019
