@@ -61,12 +61,12 @@ Nucplot <- NucplotLegend +
 
 # Read in the phased WXY, LFY, and plastid distance matrices from SplitsTree4
 #consider whether you want to use Hamming distance (like Plink) or a phylogenetic distance
-WXYmds <- read.nexus.dist(file="phylo/WXY/WXY.dist.nex")
-LFYmds <- read.nexus.dist(file="phylo/LFY/LFY.dist.nex")
-Plasmds <- read.nexus.dist(file="phylo/plastid/Plastid_NoMissing.dist.nex")
+WXYmds <- read.nexus.dist(file="phylo/splitstree/WXY.dist.nex")
+LFYmds <- read.nexus.dist(file="phylo/splitstree/LFY.dist.nex")
+Plasmds <- read.nexus.dist(file="phylo/splitstree/Plastid_NoMissing.dist.nex")
 
 #Function to process distance data into MDS
-Dist2MDS <- function(dist, Species=species, PlotTitle="", labels=FALSE, shapevec=arunshape, colorvec=aruncol) {
+Dist2MDS <- function(dist, Species=species, PlotTitle="", labels=FALSE, shapevec=arunshape, colorvec=aruncol, SizeByCount=FALSE) {
   #Yo, this has no error control, so don't go crazy
   fit <- cmdscale(dist, eig=T, k=2)
   vec <- cbind(rownames(fit$points),fit$points[,1:2])
@@ -80,7 +80,8 @@ Dist2MDS <- function(dist, Species=species, PlotTitle="", labels=FALSE, shapevec
           axis.ticks = element_blank(),
           plot.title = element_text(hjust = 0.5),
           legend.position = "none") +
-    geom_point(size = 3) +
+    {if(SizeByCount)geom_count()} + 
+    {if(!SizeByCount)geom_point(size = 3)} +
     colorvec + 
     shapevec +
     if (labels) {
@@ -90,9 +91,9 @@ Dist2MDS <- function(dist, Species=species, PlotTitle="", labels=FALSE, shapevec
 }
 
 #Process WXY, LFY, and Plastid Data
-WXYplot <- Dist2MDS(WXYmds, PlotTitle="WXY SNPs \n(Phased)")
-LFYplot <- Dist2MDS(LFYmds, PlotTitle ="LFY SNPs \n(Phased)")
-PlasPlot <- Dist2MDS(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)")
+WXYplot <- Dist2MDS(WXYmds, PlotTitle="WXY SNPs \n(Phased)", SizeByCount = T)
+LFYplot <- Dist2MDS(LFYmds, PlotTitle ="LFY SNPs \n(Phased)", SizeByCount = T)
+PlasPlot <- Dist2MDS(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)", SizeByCount = T)
 
 #Make Final Plot
 legend <- get_legend(NucplotLegend + 
