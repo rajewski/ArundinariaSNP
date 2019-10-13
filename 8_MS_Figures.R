@@ -34,7 +34,7 @@ aruncol <- scale_color_manual(breaks = levels(species$Species),
 #add the colors to the species table
 species$color <- setNames(speciescolors, levels(species$Species))[species$Species]
 
-# shape hybrid sampels differently
+# shape hybrid samples differently
 arunshape <- scale_shape_manual(breaks = levels(species$Species),
                                 values = c(16, 16, 16, 4, 16),
                                 labels = speciesnames)
