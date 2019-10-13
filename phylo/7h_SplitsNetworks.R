@@ -18,10 +18,6 @@ label_ref$Species <- as.factor(gsub(pattern = "\\.| ", "", label_ref$Species))
 # Create species vector by getting IDs from a named vector
 species <- setNames(label_ref$Species, label_ref$Sample)[splits$tip.label]
 
-# Rename tips as species
-splits2 <- splits
-splits2$tip.label <- as.character(species)
-
 #set tip colors
 colmap <- setNames(c("#440154FF", "#3B528BFF", "#21908CFF", "#5DC863FF", "#FDE725FF"),
                 c("Ahybrid", "Aappalachiana", "Agigantea", "Atecta", "Unknown")
