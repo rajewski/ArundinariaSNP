@@ -66,7 +66,15 @@ LFYmds <- read.nexus.dist(file="phylo/splitstree/LFY.dist.nex")
 Plasmds <- read.nexus.dist(file="phylo/splitstree/Plastid_NoMissing.dist.nex")
 
 #Function to process distance data into MDS
-Dist2MDS <- function(dist, Species=species, PlotTitle="", labels=FALSE, shapevec=arunshape, colorvec=aruncol, SizeByCount=FALSE) {
+Dist2MDS <- function(dist,
+                     Species=species, 
+                     PlotTitle="", 
+                     labels=FALSE, 
+                     shapevec=arunshape, 
+                     colorvec=aruncol, 
+                     SizeByCount=FALSE, 
+                     gridded=FALSE, 
+                     facet.by=~Species) {
   #Yo, this has no error control, so don't go crazy
   fit <- cmdscale(dist, eig=T, k=2)
   vec <- cbind(rownames(fit$points),fit$points[,1:2])
@@ -80,6 +88,7 @@ Dist2MDS <- function(dist, Species=species, PlotTitle="", labels=FALSE, shapevec
           axis.ticks = element_blank(),
           plot.title = element_text(hjust = 0.5),
           legend.position = "none") +
+    {if(gridded)facet_wrap(facets=facet.by, ncol=1)} +
     {if(SizeByCount)geom_count()} + 
     {if(!SizeByCount)geom_point(size = 3)} +
     colorvec + 
@@ -105,6 +114,47 @@ main <- plot_grid(Nucplot, right_side, ncol=2, labels=c("A"))
 plot_grid(main, legend, nrow=2, rel_heights = c(1,0.1))
 
 ggsave2(filename = "Figure 1.pdf", height = 6,width=9)
+
+#Section of experimental visualizations
+Dist2MDSOrder <- function(dist,
+                     Species=species, 
+                     PlotTitle="", 
+                     labels=FALSE, 
+                     SizeByCount=TRUE,
+                     gridded=F,
+                     facet.by=~Species) {
+  #Yo, this has no error control, so don't go crazy
+  fit <- cmdscale(dist, eig=T, k=2)
+  vec <- cbind(rownames(fit$points),fit$points[,1:2])
+  vec <- merge(vec, species, by.x="V1", by.y="Sample") #merge with species name
+  vec$V2 <- as.numeric(as.character(vec$V2)) #change col types
+  vec$V3 <- as.numeric(as.character(vec$V3)) #change col types
+  plot <- ggplot(data=vec, aes(x = V2, y = V3)) + 
+    labs(title=PlotTitle, x="Dimension 1", y="Dimension 2") +
+    theme(axis.text.x = element_blank(),
+          axis.text.y = element_blank(),
+          axis.ticks = element_blank(),
+          plot.title = element_text(hjust = 0.5),
+          legend.position = "none") +
+    #Plot the species in an order to minimize hidden points
+    geom_count(data=subset(vec, Species==levels(Species)[2]), 
+               aes(size = stat(prop)), color=speciescolors[2]) + 
+    geom_count(data=subset(vec, Species==levels(Species)[1]), 
+               aes(size = stat(prop)), color=speciescolors[1]) + 
+    geom_count(data=subset(vec, Species==levels(Species)[3]), 
+               aes(size = stat(prop)), color=speciescolors[3]) + 
+    geom_count(data=subset(vec, Species==levels(Species)[5]), 
+               aes(size = stat(prop)), color=speciescolors[5]) + 
+    geom_count(data=subset(vec, Species==levels(Species)[4]), 
+               aes(size = stat(prop)), color=speciescolors[4], shape=4) + 
+    {if(gridded)facet_wrap(facets=facet.by)} +
+    {if (labels)geom_text_repel(aes(label = V1))}
+  return(plot)
+}
+
+Dist2MDSOrder(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)", siz)
+Dist2MDSOrder(LFYmds, PlotTitle = "LFY SNPs \n(Phased)", gridded=T)
+Dist2MDSOrder(WXYmds, PlotTitle = "WXY SNPs \n(Phased)", gridded=T)
 
 
 # SplitsTrees -------------------------------------------------------------
@@ -150,6 +200,7 @@ SplitsWXYAcro <- TipClean(SplitsWXY, acronym = T)
 
 #Nuclear Ambiguous data
 SplitsNuclear <- read.nexus.networx("phylo/splitstree/Nuclear_ambig.fasta.splits.nex")
+SplitsNuclearAcro <- TipClean(SplitsNuclear, acronym=T)
 
 #All Ambiguous Data
 SplitsAll <- read.nexus.networx("phylo/splitstree/TESTconcatented.splits.nex")
@@ -165,7 +216,7 @@ splits.plas %<a-% {
        edge.width = 1.5, 
        cex = 1, 
        font = 1)
-  mtext("Plastid", side=3, cex=1.7, line=-1)
+  #mtext("Plastid", side=3, cex=1.7, line=-1)
 }
 
 #Plot LFY 
@@ -177,7 +228,8 @@ splits.LFY %<a-% {
        font = 3)
   #there is a gap btw Tec and Gig that separates each Hull Haplotype
   mtext("LFY", side=3, cex=1.7, line=-1)
-  arrows(0.00625,-0.003125,-0.001,-0.001, lwd=3, col="red", angle=15)
+  arrows(0.00625,-0.003125,-0.001,-0.001, lwd=3, col="red", angle=15) #for upright plot
+  #arrows(-0.0045,-0.0035,-0.001,0.001, lwd=3, col="red", angle=15) #for flat plot
 }
 
 #Plot WXY
