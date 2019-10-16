@@ -54,7 +54,7 @@ points(Coords$Long, Coords$Lat, col=Coords$V1, pch=16)
 legend(x="bottomright",
        legend = c("A. gigantea", "A. tecta", "A. appalachiana", "Hybrid", "Hull Rd"), 
        text.font=c(3,3,3,1,1), 
-       pch=21, 
+       pch=c(21,21,21,4,21), 
        pt.cex=1.7, 
        pt.bg = c("#2A788EFF", "#FFCC00FF", "#000000FF", "#808080FF", "#7AD151FF"), 
        box.col = "transparent", 
