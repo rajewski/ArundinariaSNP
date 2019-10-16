@@ -64,6 +64,7 @@ Nucplot <- NucplotLegend +
 WXYmds <- read.nexus.dist(file="phylo/splitstree/WXY.dist.nex")
 LFYmds <- read.nexus.dist(file="phylo/splitstree/LFY.dist.nex")
 Plasmds <- read.nexus.dist(file="phylo/splitstree/Plastid_NoMissing.dist.nex")
+Allmds <- read.nexus.dist(file="phylo/concatenated/TESTconatenated.dist")
 
 #Function to process distance data into MDS
 Dist2MDS <- function(dist,
@@ -103,6 +104,7 @@ Dist2MDS <- function(dist,
 WXYplot <- Dist2MDS(WXYmds, PlotTitle="WXY SNPs \n(Phased)", SizeByCount = T)
 LFYplot <- Dist2MDS(LFYmds, PlotTitle ="LFY SNPs \n(Phased)", SizeByCount = T)
 PlasPlot <- Dist2MDS(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)", SizeByCount = T)
+AllPlot <- Dist2MDS(Allmds, PlotTitle = "All SNPs \n(Ambiguous)", SizeByCount = T)
 
 #Make Final Plot
 legend <- get_legend(NucplotLegend + 
@@ -147,7 +149,7 @@ Dist2MDSOrder <- function(dist,
                aes(size = stat(prop)), color=speciescolors[5]) + 
     geom_count(data=subset(vec, Species==levels(Species)[4]), 
                aes(size = stat(prop)), color=speciescolors[4], shape=4) + 
-    {if(gridded)facet_wrap(facets=facet.by)} +
+    {if(gridded)facet_wrap(facets=facet.by, nrow=1)} +
     {if (labels)geom_text_repel(aes(label = V1))}
   return(plot)
 }
