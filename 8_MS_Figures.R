@@ -139,6 +139,7 @@ Dist2MDSOrder <- function(dist,
           plot.title = element_text(hjust = 0.5),
           legend.position = "none") +
     #Plot the species in an order to minimize hidden points
+    #use Geom_blank to remove points but preserve axis
     geom_count(data=subset(vec, Species==levels(Species)[2]), 
                aes(size = stat(prop)), color=speciescolors[2]) + 
     geom_count(data=subset(vec, Species==levels(Species)[1]), 
@@ -146,7 +147,7 @@ Dist2MDSOrder <- function(dist,
     geom_count(data=subset(vec, Species==levels(Species)[3]), 
                aes(size = stat(prop)), color=speciescolors[3]) + 
     geom_count(data=subset(vec, Species==levels(Species)[5]), 
-               aes(size = stat(prop)), color=speciescolors[5]) + 
+              aes(size = stat(prop)), color=speciescolors[5]) + 
     geom_count(data=subset(vec, Species==levels(Species)[4]), 
                aes(size = stat(prop)), color=speciescolors[4], shape=4) + 
     {if(gridded)facet_wrap(facets=facet.by, nrow=1)} +
@@ -154,9 +155,9 @@ Dist2MDSOrder <- function(dist,
   return(plot)
 }
 
-Dist2MDSOrder(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)", siz)
-Dist2MDSOrder(LFYmds, PlotTitle = "LFY SNPs \n(Phased)", gridded=T)
-Dist2MDSOrder(WXYmds, PlotTitle = "WXY SNPs \n(Phased)", gridded=T)
+Dist2MDSOrder(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)")
+Dist2MDSOrder(LFYmds, PlotTitle = "LFY SNPs \n(Phased)", labels=T)
+Dist2MDSOrder(WXYmds, PlotTitle = "WXY SNPs \n(Phased)", labels=T)
 
 
 # SplitsTrees -------------------------------------------------------------
