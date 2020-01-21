@@ -75,13 +75,16 @@ Dist2MDS <- function(dist,
                      colorvec=aruncol, 
                      SizeByCount=FALSE, 
                      gridded=FALSE, 
-                     facet.by=~Species) {
+                     facet.by=~Species,
+                     jitterFactor=0) {
   #Yo, this has no error control, so don't go crazy
   fit <- cmdscale(dist, eig=T, k=2)
   vec <- cbind(rownames(fit$points),fit$points[,1:2])
   vec <- merge(vec, species, by.x="V1", by.y="Sample") #merge with species name
   vec$V2 <- as.numeric(as.character(vec$V2)) #change col types
   vec$V3 <- as.numeric(as.character(vec$V3)) #change col types
+  vec$V2 <- jitter(vec$V2, factor=jitterFactor)
+  vec$V3 <- jitter(vec$V3, factor=jitterFactor)
   plot <- ggplot(data=vec, aes(x = V2, y = V3, color=Species, shape=Species)) + 
     labs(title=PlotTitle, x="Dimension 1", y="Dimension 2") +
     theme(axis.text.x = element_blank(),
@@ -101,10 +104,10 @@ Dist2MDS <- function(dist,
 }
 
 #Process WXY, LFY, and Plastid Data
-WXYplot <- Dist2MDS(WXYmds, PlotTitle="WXY SNPs \n(Phased)", SizeByCount = T)
-LFYplot <- Dist2MDS(LFYmds, PlotTitle ="LFY SNPs \n(Phased)", SizeByCount = T)
-PlasPlot <- Dist2MDS(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)", SizeByCount = T)
-AllPlot <- Dist2MDS(Allmds, PlotTitle = "All SNPs \n(Ambiguous)", SizeByCount = T)
+WXYplot <- Dist2MDS(WXYmds, PlotTitle="WXY SNPs \n(Phased)", jitterFactor=300)
+LFYplot <- Dist2MDS(LFYmds, PlotTitle ="LFY SNPs \n(Phased)")
+PlasPlot <- Dist2MDS(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)", jitterFactor = 700)
+AllPlot <- Dist2MDS(Allmds, PlotTitle = "All SNPs \n(Ambiguous)", SizeByCount = F)
 
 #Make Final Plot
 legend <- get_legend(NucplotLegend + 
@@ -116,6 +119,7 @@ main <- plot_grid(Nucplot, right_side, ncol=2, labels=c("A"))
 plot_grid(main, legend, nrow=2, rel_heights = c(1,0.1))
 
 ggsave2(filename = "Figure 1.pdf", height = 6,width=9)
+ggsave2(filename = "Figure 1.png", height = 6, width=9)
 
 #Section of experimental visualizations
 Dist2MDSOrder <- function(dist,
@@ -179,7 +183,7 @@ TipClean <- function(network, acronym=FALSE){
     #make all hull samples "H"
     network$tip.label <- gsub(pattern="^H\\-?\\d+\\w\\_?\\d?", "H", network$tip.label, perl=T) 
     #make everything else except known samples "X"
-    network$tip.label <- gsub(pattern="(^L|^Lo|^JT)\\d+\\_?\\d?", "X", network$tip.label, perl=T)
+    network$tip.label <- gsub(pattern="(^L|^Lo|^JT)\\d+\\_?\\d?", "A", network$tip.label, perl=T)
   }
   return(network)
 }
@@ -219,7 +223,7 @@ splits.plas %<a-% {
        edge.width = 1.5, 
        cex = 1, 
        font = 1)
-  #mtext("Plastid", side=3, cex=1.7, line=-1)
+  mtext("Plastid", side=3, cex=1.7, line=-1)
 }
 
 #Plot LFY 
@@ -276,7 +280,7 @@ Figure2 %<a-% {
   splits.All
   screen(1) #aybe switch to screen 3
   splits.LFY
-  legend("bottomright",legend=speciesnames,col=speciescolors, pch=c(rep("X",4),"H"), bty="n", cex=1.3)
+  legend("bottomright",legend=speciesnames,col=speciescolors, pch=c(rep("A",4),"H"), bty="n", cex=1.3)
   screen(4)
   splits.WXY
   screen(5)

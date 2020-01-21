@@ -49,17 +49,20 @@ WXYCols <- setNames(WXYCols[,2], WXYCols[,1])
 
 # Optional section to just plot a map with the points
 library(maps)
-map('state', ArunRange)
-points(Coords$Long, Coords$Lat, col=Coords$V1, pch=16)
-legend(x="bottomright",
-       legend = c("A. gigantea", "A. tecta", "A. appalachiana", "Hybrid", "Hull Rd"), 
+pdf(file="SampleMap.pdf", height=6, width=6)
+#png(file="SampleMap.png", height=6, width=6, units="in", res=600)
+  map('state', ArunRange)
+  points(Coords$Long, Coords$Lat, col=Coords$V1, pch=16)
+  legend("bottomright",
+       legend = c("A. gigantea", "A. tecta", "A. appalachiana", "Hybrid", "Hull Rd"),
        text.font=c(3,3,3,1,1), 
        pch=c(21,21,21,4,21), 
        pt.cex=1.7, 
        pt.bg = c("#2A788EFF", "#FFCC00FF", "#000000FF", "#808080FF", "#7AD151FF"), 
        box.col = "transparent", 
        bg="transparent", 
-       cex=1)
+       cex=.8)
+dev.off()
 
 #plot samples with shared Hull haplos
 PlasHullShare <- c("JT27", "JT170", "JT172", "JT173", "JT178", "H8B")
