@@ -1,6 +1,0 @@
-LOAD TREEFILES='../concatenated/GTRGI/RAxML_bootstrap.TESTconcatenated.RAxML'
-Begin ConsensusNetwork EdgeWeights=mean Threshold=0.33
-SAVE FILE=../splitstree/concatenated.splitstree.nex REPLACE=yes
-EXPORTGRAPHICS format=SVG file=concatenated.splitstree.svg REPLACE=YES
-QUIT
-end;

@@ -12,3 +12,5 @@ phylo/plastid/GTRGI
 phylo/matK/*
 phylo/concatenated/GTRGI
 .Rproj.user
+.Rhistory
+**/.DS_Store
