@@ -1,6 +1,7 @@
 #setwd("~/bigdata/Arundinaria/phylo/nuclear/")
 #read in species data
 species <- read.csv("~/bigdata/Arundinaria/phylo/JTCoords.csv", header=T)
+species <- species[1:345,] #subset out controls
 species$Species <- gsub(pattern = "\\.", "", species$Species)
 species$Species <- gsub(pattern = " ", "", species$Species)
 #manually download altitude of each GPS coordinate
@@ -107,6 +108,23 @@ mod12 <- lm(C1~Longitude, data=nucmds)
 mod13 <- lm(C2~Longitude, data=nucmds)
 mod14 <- lm(C1~Altitude, data=nucmds)
 mod15 <- lm(C2~Altitude, data=nucmds)
+
+#try model selection
+mod16 <- lm(C1~.+.^2+.^3, data=nucmds[,c(4,6,7,9)])
+mod16best <- step(mod16, direction="backward")
+summary(mod16best)
+mod17 <- lm(C1~Longitude*Altitude, data=nucmds)
+summary(mod17)
+
+#try getting climate data?
+install.packages("raster")
+library(raster)
+r <- getData("worldclim",var="bio",res=2.5) #get bioclim data
+values <- extract(r, nucmds[, c("Longitude", "Latitude")])
+df <- cbind.data.frame(nucmds,values)
+mod18 <- lm(C1~., data=df[,c(4,10:28)])
+mod18best <- step(mod18, direction="both")
+summary(mod18best)
 
 pdf(file="~/bigdata/Arundinaria/phylo/nuclear/NuclearMDSvGeo.pdf", width=18, height=27)
   par(mfrow=c(3,2))
