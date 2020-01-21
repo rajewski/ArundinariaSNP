@@ -121,6 +121,10 @@ plot_grid(main, legend, nrow=2, rel_heights = c(1,0.1))
 ggsave2(filename = "Figure 1.pdf", height = 6,width=9)
 ggsave2(filename = "Figure 1.png", height = 6, width=9)
 
+plot_grid(LFYplot, legend, nrow=2, rel_heights = c(1,0.01))
+ggsave2(filename = "Supplemental 2 LFY MDS.pdf", height=6, width=9)
+ggsave2(filename = "Supplemental 2 LFY MDS.png", height=6, width=9)
+
 #Section of experimental visualizations
 Dist2MDSOrder <- function(dist,
                      Species=species, 
