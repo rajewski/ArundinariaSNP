@@ -125,48 +125,6 @@ plot_grid(LFYplot, legend, nrow=2, rel_heights = c(1,0.1))
 ggsave2(filename = "Supplemental 2 LFY MDS.pdf", height=7, width=9)
 ggsave2(filename = "Supplemental 2 LFY MDS.png", height=7, width=9)
 
-#Section of experimental visualizations
-Dist2MDSOrder <- function(dist,
-                     Species=species, 
-                     PlotTitle="", 
-                     labels=FALSE, 
-                     SizeByCount=TRUE,
-                     gridded=F,
-                     facet.by=~Species) {
-  #Yo, this has no error control, so don't go crazy
-  fit <- cmdscale(dist, eig=T, k=2)
-  vec <- cbind(rownames(fit$points),fit$points[,1:2])
-  vec <- merge(vec, species, by.x="V1", by.y="Sample") #merge with species name
-  vec$V2 <- as.numeric(as.character(vec$V2)) #change col types
-  vec$V3 <- as.numeric(as.character(vec$V3)) #change col types
-  plot <- ggplot(data=vec, aes(x = V2, y = V3)) + 
-    labs(title=PlotTitle, x="Dimension 1", y="Dimension 2") +
-    theme(axis.text.x = element_blank(),
-          axis.text.y = element_blank(),
-          axis.ticks = element_blank(),
-          plot.title = element_text(hjust = 0.5),
-          legend.position = "none") +
-    #Plot the species in an order to minimize hidden points
-    #use Geom_blank to remove points but preserve axis
-    geom_count(data=subset(vec, Species==levels(Species)[2]), 
-               aes(size = stat(prop)), color=speciescolors[2]) + 
-    geom_count(data=subset(vec, Species==levels(Species)[1]), 
-               aes(size = stat(prop)), color=speciescolors[1]) + 
-    geom_count(data=subset(vec, Species==levels(Species)[3]), 
-               aes(size = stat(prop)), color=speciescolors[3]) + 
-    geom_count(data=subset(vec, Species==levels(Species)[5]), 
-              aes(size = stat(prop)), color=speciescolors[5]) + 
-    geom_count(data=subset(vec, Species==levels(Species)[4]), 
-               aes(size = stat(prop)), color=speciescolors[4], shape=4) + 
-    {if(gridded)facet_wrap(facets=facet.by, nrow=1)} +
-    {if (labels)geom_text_repel(aes(label = V1))}
-  return(plot)
-}
-
-Dist2MDSOrder(Plasmds, PlotTitle = "Plastid SNPs \n(Phased)")
-Dist2MDSOrder(LFYmds, PlotTitle = "LFY SNPs \n(Phased)", labels=T)
-Dist2MDSOrder(WXYmds, PlotTitle = "WXY SNPs \n(Phased)", labels=T)
-
 
 # SplitsTrees -------------------------------------------------------------
 # Make color-coded splitstree plots of the datasets
@@ -301,7 +259,6 @@ dev.off()
 #consider an alternative where SplitsAll is rotated, SPlitsLFY isnt and the two are swapped in the figure to show the division in LFY better
 
 
-
 # Supplemental Phylogenetic Trees -----------------------------------------
 #read in the ambiguous, unphased, concatenated RAxML tree
 #RAxMLPhylo <- read.newick("concatenated/GTRGI/TESTconcatenated.phy.partitioned.raxml.support")
@@ -323,6 +280,7 @@ RAxMLShapes[RAxMLPhylo$node.label<=25] <- 1
 RAxMLShapes[RAxMLPhylo$node.label>25] <- 16
 
 #and plot it
+#This is currently (21 Jan 20) Supplemental Figure 1
 pdf(file="phylo/concatenated/GTRGI/TESTconcatenated.phy.partitioned.raxml.support.pdf",
     width=10,
     height=22)
