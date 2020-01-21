@@ -64,10 +64,7 @@ Nucplot <- NucplotLegend +
 WXYmds <- read.nexus.dist(file="phylo/splitstree/WXY.dist.nex")
 LFYmds <- read.nexus.dist(file="phylo/splitstree/LFY.dist.nex")
 Plasmds <- read.nexus.dist(file="phylo/splitstree/Plastid_NoMissing.dist.nex")
-<<<<<<< HEAD
-=======
 Allmds <- read.nexus.dist(file="phylo/concatenated/TESTconatenated.dist")
->>>>>>> 1177107ee3a8f1716dede71f7b44de5f9dce863c
 
 #Function to process distance data into MDS
 Dist2MDS <- function(dist,
