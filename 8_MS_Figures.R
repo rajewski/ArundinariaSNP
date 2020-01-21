@@ -61,9 +61,9 @@ Nucplot <- NucplotLegend +
 
 # Read in the phased WXY, LFY, and plastid distance matrices from SplitsTree4
 #consider whether you want to use Hamming distance (like Plink) or a phylogenetic distance
-WXYmds <- read.nexus.dist(file="phylo/WXY/WXY.dist.nex")
-LFYmds <- read.nexus.dist(file="phylo/LFY/LFY.dist.nex")
-Plasmds <- read.nexus.dist(file="phylo/plastid/Plastid_NoMissing.dist.nex")
+WXYmds <- read.nexus.dist(file="phylo/splitstree/WXY.dist.nex")
+LFYmds <- read.nexus.dist(file="phylo/splitstree/LFY.dist.nex")
+Plasmds <- read.nexus.dist(file="phylo/splitstree/Plastid_NoMissing.dist.nex")
 
 #Function to process distance data into MDS
 Dist2MDS <- function(dist, Species=species, PlotTitle="", labels=FALSE, shapevec=arunshape, colorvec=aruncol) {
@@ -236,3 +236,43 @@ dev.off()
 
 #consider an alternative where SplitsAll is rotated, SPlitsLFY isnt and the two are swapped in the figure to show the division in LFY better
 
+
+
+# Supplemental Phylogenetic Trees -----------------------------------------
+#read in the ambiguous, unphased, concatenated RAxML tree
+#RAxMLPhylo <- read.newick("concatenated/GTRGI/TESTconcatenated.phy.partitioned.raxml.support")
+#or read in tree collapsed by <10% bootstrap in Tree Graph
+RAxMLPhylo <- read.newick("phylo/concatenated/GTRGI/TESTconcatenated.phy.partitioned.raxml.collapsed.nwk")
+#clean the labels to match
+RAxMLPhylo$tip.label <- gsub(pattern = "\\_" , " ", RAxMLPhylo$tip.label)
+RAxMLPhylo$tip.label <- gsub(pattern = "Tec" , "Tec7", RAxMLPhylo$tip.label)
+RAxMLPhylo$tip.label <- gsub(pattern = "H 2C" , "H-2C", RAxMLPhylo$tip.label)
+RAxMLPhylo$tip.label <- gsub(pattern = "H 2D" , "H-2D", RAxMLPhylo$tip.label)
+RAxMLPhylo$tip.label <- gsub(pattern = "Gig" , "Gig9", RAxMLPhylo$tip.label)
+RAxMLPhylo$node.label <- gsub(pattern = "\\.\\d+$", "", RAxMLPhylo$node.label)
+
+#snippet to sort the tips' colors vector (repeated below)
+species[match(RAxMLPhylo$tip.label, species$Sample),5]
+#make a vector of shape numbers. open cirle = BS 1-25, closed circle = BS >25
+RAxMLShapes <- RAxMLPhylo$node.label
+RAxMLShapes[RAxMLPhylo$node.label<=25] <- 1
+RAxMLShapes[RAxMLPhylo$node.label>25] <- 16
+
+#and plot it
+pdf(file="phylo/concatenated/GTRGI/TESTconcatenated.phy.partitioned.raxml.support.pdf",
+    width=10,
+    height=22)
+  plot(RAxMLPhylo, 
+       show.node.label = F,
+       tip.color=species[match(RAxMLPhylo$tip.label, species$Sample),5],
+       font=1)
+  nodelabels(pch=as.numeric(RAxMLShapes))
+  legend("bottomright",
+         legend=c(speciesnames, "10-25% Bootstrap", ">25% Bootstrap", "", ""),
+         col=c(speciescolors,"black", "black"), 
+         pch=c(NA, NA, NA, NA, NA, 1, 16),
+         bty="n",
+         cex=0.9,
+         ncol=2,
+         text.col=c(speciescolors,"black", "black"))
+dev.off()
