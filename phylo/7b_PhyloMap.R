@@ -8,11 +8,12 @@ setwd("phylo")
 Coords <- read.csv("HaploCoords.csv")
 Coords$V1 <- NA
 Coords$V2 <- NA
-Coords[Coords$Species=="A.appalachiana",c("V1", "V2")] <- c("#000000FF", "#000000FF")
-Coords[Coords$Species=="A.tecta",c("V1", "V2")] <- c("#FFCC00FF", "#FFCC00FF")
-Coords[Coords$Species=="A.gigantea",c("V1", "V2")] <- c("#2A788EFF", "#2A788EFF")
-Coords[Coords$Species=="A. hybrid",c("V1", "V2")] <- c("#808080FF", "#808080FF")
-Coords[Coords$Species=="Unknown",c("V1", "V2")] <- c("#7AD151FF", "#7AD151FF")
+Coords$V3 <- NA
+Coords[Coords$Species=="A.appalachiana",c("V1", "V2", "V3")] <- list("#000000FF", "#000000FF", 16)
+Coords[Coords$Species=="A.tecta",c("V1", "V2", "V3")] <- list("#FFCC00FF", "#FFCC00FF", 16)
+Coords[Coords$Species=="A.gigantea",c("V1", "V2", "V3")] <- list("#2A788EFF", "#2A788EFF", 16)
+Coords[Coords$Species=="A. hybrid",c("V1", "V2", "V3")] <- list("#808080FF", "#808080FF", 4)
+Coords[Coords$Species=="Unknown",c("V1", "V2", "V3")] <- list("#7AD151FF", "#7AD151FF", 16)
 
 ArunRange <- c("mississippi","alabama","georgia", "tennessee", "kentucky", "north carolina", "south carolina", "louisiana", "arkansas","missouri", "illinois", "virginia")
 lat <- setNames(Coords$Lat, as.character(Coords$Haplo))
@@ -49,10 +50,11 @@ WXYCols <- setNames(WXYCols[,2], WXYCols[,1])
 
 # Optional section to just plot a map with the points
 library(maps)
+library("prettymapr")
 pdf(file="SampleMap.pdf", height=6, width=6)
 #png(file="SampleMap.png", height=6, width=6, units="in", res=600)
   map('state', ArunRange)
-  points(Coords$Long, Coords$Lat, col=Coords$V1, pch=16)
+  points(Coords$Long, Coords$Lat, col=Coords$V1, pch=Coords$V3)
   legend("bottomright",
        legend = c("A. gigantea", "A. tecta", "A. appalachiana", "Hybrid", "Hull Rd"),
        text.font=c(3,3,3,1,1), 
@@ -62,6 +64,8 @@ pdf(file="SampleMap.pdf", height=6, width=6)
        box.col = "transparent", 
        bg="transparent", 
        cex=.8)
+  addscalebar(pos="topright", padin=c(1.3,0.5))
+  addnortharrow()
 dev.off()
 
 #plot samples with shared Hull haplos
