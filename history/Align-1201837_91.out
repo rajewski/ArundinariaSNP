@@ -1,0 +1,32 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening C12.XIvC5UEyQSpl/disc_pipe for write.
+samblaster: Opening C12.XIvC5UEyQSpl/spl_pipe for write.
+[M::process] read 1706 sequences (232633 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 839, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 200, 200)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 358)
+[M::mem_pestat] mean and std.dev: (170.66, 48.45)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 437)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 1706 reads in 0.080 CPU sec, 0.080 real sec
+samblaster: Loaded 12 header sequence entries.
+[main] Version: 0.7.12-r1039
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:C12\tSM:C12\tLB:Lib\ References.fasta ExternalData/Pooled/Stacks/C12.1.fq.gz ExternalData/Pooled/Stacks/C12.2.fq.gz
+[main] Real time: 0.118 sec; CPU: 0.091 sec
+samblaster: Output 0 discordant read pairs to C12.XIvC5UEyQSpl/disc_pipe
+samblaster: Output 2 split reads to C12.XIvC5UEyQSpl/spl_pipe
+samblaster: Marked 818 of 853 (95.90%) read ids as duplicates using 1340k memory in 0.003S CPU seconds and 0S wall time.
+Done
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R References.fasta -I results/C12.bam -O results/C12.g.vcf -ERC GVCF
+Error occurred during initialization of VM
+java.lang.OutOfMemoryError: unable to create new native thread

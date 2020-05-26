@@ -1,0 +1,46 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[E::main_mem] fail to open file `ExternalData/Pooled/Stacks/E112.fq.gz'.
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening E11.sncUM1LEDVLn/disc_pipe for write.
+samblaster: Opening E11.sncUM1LEDVLn/spl_pipe for write.
+samblaster: Missing header on input sam file.  Exiting.
+
+Done
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R References.fasta -I results/E11.bam -O results/E11.g.vcf -ERC GVCF
+15:07:37.440 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+15:07:37.813 INFO  HaplotypeCaller - ------------------------------------------------------------
+15:07:37.814 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.0.8.1
+15:07:37.814 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+15:07:37.815 INFO  HaplotypeCaller - Executing as arajewski@i12 on Linux v3.10.0-957.el7.x86_64 amd64
+15:07:37.815 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+15:07:37.815 INFO  HaplotypeCaller - Start Date/Time: May 26, 2020 3:07:37 PM PDT
+15:07:37.815 INFO  HaplotypeCaller - ------------------------------------------------------------
+15:07:37.815 INFO  HaplotypeCaller - ------------------------------------------------------------
+15:07:37.816 INFO  HaplotypeCaller - HTSJDK Version: 2.16.0
+15:07:37.816 INFO  HaplotypeCaller - Picard Version: 2.18.7
+15:07:37.816 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+15:07:37.816 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+15:07:37.816 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+15:07:37.816 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+15:07:37.816 INFO  HaplotypeCaller - Deflater: IntelDeflater
+15:07:37.816 INFO  HaplotypeCaller - Inflater: IntelInflater
+15:07:37.816 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+15:07:37.816 INFO  HaplotypeCaller - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+15:07:37.816 INFO  HaplotypeCaller - Initializing engine
+15:07:38.803 INFO  HaplotypeCaller - Shutting down engine
+[May 26, 2020 3:07:38 PM PDT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=2368733184
+***********************************************************************
+
+A USER ERROR has occurred: Input files reference and reads have incompatible contigs: No overlapping contigs found.
+  reference contigs = [NoFUL1.1, NoFUL1.2, NoFUL2.1, NoFUL2.2, NoMBP10, NoMBP20.1, NoMBP20.2, SpFUL1, SpFUL2, SpMBP10, SpMBP20.1, SpMBP20.2]
+  reads contigs = []
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.

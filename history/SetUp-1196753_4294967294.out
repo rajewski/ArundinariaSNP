@@ -1,0 +1,14 @@
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.00 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.00 sec
+[main] Version: 0.7.12-r1039
+[main] CMD: bwa index References.fasta
+[main] Real time: 0.047 sec; CPU: 0.008 sec
+10:47:41.397 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/picard/2.18.3/lib/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue May 26 10:47:41 PDT 2020] CreateSequenceDictionary OUTPUT=References.dict REFERENCE=References.fasta    TRUNCATE_NAMES_AT_WHITESPACE=true NUM_SEQUENCES=2147483647 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Tue May 26 10:47:41 PDT 2020] Executing as arajewski@i23 on Linux 3.10.0-957.el7.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_45-b14; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: 2.18.3-SNAPSHOT
+[Tue May 26 10:47:41 PDT 2020] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2058354688

@@ -1,0 +1,20 @@
+Merging and indexing BAM files...
+[bam_merge] File 'results/F8.bam' exists. Please apply '-f' to overwrite. Abort.
+[E::hts_open_format] Failed to open file "results/Merged.bam" : No such file or directory
+samtools index: failed to open "results/Merged.bam": No such file or directory
+Done.
+This is WhatsHap 0.18 running under Python 3.6.10
+Traceback (most recent call last):
+  File "/rhome/arajewski/.conda/envs/whatshapenv/bin/whatshap", line 12, in <module>
+    sys.exit(main())
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/__main__.py", line 83, in main
+    module.main(args)
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/phase.py", line 1114, in main
+    run_whatshap(**vars(args))
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/phase.py", line 539, in run_whatshap
+    phase_input_bam_filenames, phase_input_vcf_filenames = split_input_file_list(phase_input_files)
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/phase.py", line 422, in split_input_file_list
+    file_format = detect_file_format(filename)
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/utils.py", line 37, in detect_file_format
+    raise UnknownFileFormatError()
+whatshap.utils.UnknownFileFormatError

@@ -1,0 +1,154 @@
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar GenomicsDBImport -V results/F12.g.vcf -V results/A4.g.vcf -V results/G7.g.vcf -V results/F6.g.vcf -V results/E5.g.vcf -V results/D4.g.vcf -V results/C3.g.vcf -V results/C10.g.vcf -V results/E9.g.vcf -V results/C1.g.vcf -V results/D8.g.vcf -V results/C7.g.vcf -V results/B6.g.vcf -V results/A5.g.vcf -V results/H3.g.vcf -V results/G2.g.vcf -V results/H9.g.vcf -V results/C11.g.vcf -V results/F1.g.vcf -V results/G8.g.vcf -V results/E11.g.vcf -V results/B10.g.vcf -V results/E10.g.vcf -V results/A3.g.vcf -V results/A10.g.vcf -V results/F11.g.vcf -V results/A9.g.vcf -V results/G6.g.vcf -V results/F5.g.vcf -V results/E4.g.vcf -V results/D11.g.vcf -V results/D3.g.vcf -V results/H11.g.vcf -V results/C2.g.vcf -V results/H10.g.vcf -V results/C12.g.vcf -V results/D10.g.vcf -V results/E8.g.vcf -V results/D7.g.vcf -V results/C6.g.vcf -V results/B5.g.vcf -V results/H2.g.vcf -V results/F10.g.vcf -V results/G1.g.vcf -V results/H8.g.vcf -V results/H12.g.vcf -V results/G12.g.vcf -V results/E12.g.vcf -V results/B3.g.vcf -V results/A2.g.vcf -V results/B9.g.vcf -V results/A8.g.vcf -V results/H6.g.vcf -V results/G5.g.vcf -V results/F4.g.vcf -V results/E3.g.vcf -V results/D2.g.vcf -V results/G10.g.vcf -V results/D12.g.vcf -V results/F8.g.vcf -V results/E7.g.vcf -V results/D6.g.vcf -V results/C5.g.vcf -V results/A11.g.vcf -V results/B4.g.vcf -V results/H1.g.vcf -V results/H7.g.vcf -V results/B2.g.vcf -V results/C9.g.vcf -V results/A1.g.vcf -V results/B8.g.vcf -V results/A7.g.vcf -V results/H5.g.vcf -V results/G4.g.vcf -V results/F3.g.vcf -V results/E2.g.vcf -V results/F9.g.vcf -V results/D1.g.vcf -V results/B12.g.vcf -V results/F7.g.vcf -V results/E6.g.vcf -V results/D5.g.vcf -V results/C4.g.vcf -V results/G11.g.vcf -V results/A12.g.vcf -V results/B11.g.vcf -V results/D9.g.vcf -V results/B1.g.vcf -V results/C8.g.vcf -V results/B7.g.vcf -V results/A6.g.vcf -V results/H4.g.vcf -V results/G3.g.vcf -V results/F2.g.vcf -V results/G9.g.vcf -V results/E1.g.vcf --genomicsdb-workspace-path fruitfull -L NoFUL1.1 -L NoFUL1.2 -L NoFUL2.1 -L NoFUL2.2 -L NoMBP10 -L NoMBP20.1 -L NoMBP20.2 -L SpFUL1 -L SpFUL2 -L SpMBP10 -L SpMBP20.1 -L SpMBP20.2
+11:43:22.164 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+11:43:22.753 INFO  GenomicsDBImport - ------------------------------------------------------------
+11:43:22.753 INFO  GenomicsDBImport - The Genome Analysis Toolkit (GATK) v4.0.8.1
+11:43:22.754 INFO  GenomicsDBImport - For support and documentation go to https://software.broadinstitute.org/gatk/
+11:43:22.754 INFO  GenomicsDBImport - Executing as arajewski@i02 on Linux v3.10.0-957.el7.x86_64 amd64
+11:43:22.755 INFO  GenomicsDBImport - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+11:43:22.755 INFO  GenomicsDBImport - Start Date/Time: May 26, 2020 11:43:22 AM PDT
+11:43:22.755 INFO  GenomicsDBImport - ------------------------------------------------------------
+11:43:22.755 INFO  GenomicsDBImport - ------------------------------------------------------------
+11:43:22.756 INFO  GenomicsDBImport - HTSJDK Version: 2.16.0
+11:43:22.756 INFO  GenomicsDBImport - Picard Version: 2.18.7
+11:43:22.756 INFO  GenomicsDBImport - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+11:43:22.756 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+11:43:22.756 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+11:43:22.756 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+11:43:22.764 INFO  GenomicsDBImport - Deflater: IntelDeflater
+11:43:22.765 INFO  GenomicsDBImport - Inflater: IntelInflater
+11:43:22.765 INFO  GenomicsDBImport - GCS max retries/reopens: 20
+11:43:22.765 INFO  GenomicsDBImport - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+11:43:22.765 INFO  GenomicsDBImport - Initializing engine
+11:43:27.970 INFO  IntervalArgumentCollection - Processing 2976 bp from intervals
+11:43:27.978 INFO  GenomicsDBImport - Done initializing engine
+Created workspace /bigdata/littlab/arajewski/CRISPRSeq/fruitfull
+11:43:28.201 INFO  GenomicsDBImport - Vid Map JSON file will be written to fruitfull/vidmap.json
+11:43:28.202 INFO  GenomicsDBImport - Callset Map JSON file will be written to fruitfull/callset.json
+11:43:28.202 INFO  GenomicsDBImport - Complete VCF Header will be written to fruitfull/vcfheader.vcf
+11:43:28.202 INFO  GenomicsDBImport - Importing to array - fruitfull/genomicsdb_array
+11:43:28.202 INFO  ProgressMeter - Starting traversal
+11:43:28.203 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Batches Processed   Batches/Minute
+11:43:29.060 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:30.280 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:31.220 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:32.724 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:34.079 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:35.393 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:36.811 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:38.313 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:39.318 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:39.965 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:40.976 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:41.763 INFO  GenomicsDBImport - Importing batch 1 with 96 samples
+11:43:42.247 INFO  ProgressMeter -           NoFUL1.1:1              0.2                     1              4.3
+11:43:42.247 INFO  GenomicsDBImport - Done importing batch 1/1
+11:43:42.248 INFO  ProgressMeter -           NoFUL1.1:1              0.2                     1              4.3
+11:43:42.248 INFO  ProgressMeter - Traversal complete. Processed 1 total batches in 0.2 minutes.
+11:43:42.248 INFO  GenomicsDBImport - Import completed!
+11:43:42.248 INFO  GenomicsDBImport - Shutting down engine
+[May 26, 2020 11:43:42 AM PDT] org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport done. Elapsed time: 0.34 minutes.
+Runtime.totalMemory()=2904555520
+Tool returned:
+true
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar GenotypeGVCFs -R References.fasta -V gendb://fruitfull -G StandardAnnotation -O results/Joint.vcf
+11:43:49.878 WARN  GATKAnnotationPluginDescriptor - Redundant enabled annotation group (StandardAnnotation) is enabled for this tool by default
+11:43:50.096 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+11:43:50.693 INFO  GenotypeGVCFs - ------------------------------------------------------------
+11:43:50.694 INFO  GenotypeGVCFs - The Genome Analysis Toolkit (GATK) v4.0.8.1
+11:43:50.695 INFO  GenotypeGVCFs - For support and documentation go to https://software.broadinstitute.org/gatk/
+11:43:50.698 INFO  GenotypeGVCFs - Executing as arajewski@i02 on Linux v3.10.0-957.el7.x86_64 amd64
+11:43:50.700 INFO  GenotypeGVCFs - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+11:43:50.702 INFO  GenotypeGVCFs - Start Date/Time: May 26, 2020 11:43:50 AM PDT
+11:43:50.703 INFO  GenotypeGVCFs - ------------------------------------------------------------
+11:43:50.703 INFO  GenotypeGVCFs - ------------------------------------------------------------
+11:43:50.704 INFO  GenotypeGVCFs - HTSJDK Version: 2.16.0
+11:43:50.704 INFO  GenotypeGVCFs - Picard Version: 2.18.7
+11:43:50.705 INFO  GenotypeGVCFs - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+11:43:50.706 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+11:43:50.706 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+11:43:50.706 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+11:43:50.706 INFO  GenotypeGVCFs - Deflater: IntelDeflater
+11:43:50.706 INFO  GenotypeGVCFs - Inflater: IntelInflater
+11:43:50.706 INFO  GenotypeGVCFs - GCS max retries/reopens: 20
+11:43:50.706 INFO  GenotypeGVCFs - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+11:43:50.706 INFO  GenotypeGVCFs - Initializing engine
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+11:43:52.179 INFO  GenotypeGVCFs - Done initializing engine
+11:43:52.324 INFO  ProgressMeter - Starting traversal
+11:43:52.326 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+11:43:54.465 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+11:43:55.143 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+11:43:55.307 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+11:43:55.341 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+11:43:59.582 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+11:44:00.801 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+11:44:00.827 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+11:44:00.863 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+11:44:00.894 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field DS - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field InbreedingCoeff - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAC - the field will NOT be part of INFO fields in the generated VCF records
+WARNING: No valid combination operation found for INFO field MLEAF - the field will NOT be part of INFO fields in the generated VCF records
+11:44:06.167 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+11:44:06.179 WARN  InbreedingCoeff - Annotation will not be calculated, must provide at least 10 samples
+GENOMICSDB_TIMER,GenomicsDB iterator next() timer,Wall-clock time(s),0.4094721460000003,Cpu time(s),0.12768365199999998
+11:44:06.200 INFO  ProgressMeter -           SpFUL1:134              0.2                  1791           7761.1
+11:44:06.200 INFO  ProgressMeter - Traversal complete. Processed 1791 total variants in 0.2 minutes.
+11:44:06.211 INFO  GenotypeGVCFs - Shutting down engine
+[May 26, 2020 11:44:06 AM PDT] org.broadinstitute.hellbender.tools.walkers.GenotypeGVCFs done. Elapsed time: 0.27 minutes.
+Runtime.totalMemory()=2399141888

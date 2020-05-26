@@ -1,0 +1,6 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+parallel: Warning: Only enough available processes to run 2 jobs in parallel. Raising ulimit -u or /etc/security/limits.conf may help.
+parallel: Warning: No more processes: Decreasing number of running jobs to 1. Raising ulimit -u or /etc/security/limits.conf may help.
+parallel: Warning: No more processes: Decreasing number of running jobs to 1. Raising ulimit -u or /etc/security/limits.conf may help.
+slurmstepd-i11: error: *** JOB 1201930 ON i11 CANCELLED AT 2020-05-26T15:36:45 ***

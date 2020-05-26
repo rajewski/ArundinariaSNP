@@ -1,0 +1,21 @@
+Already trimmed.
+Processing paired-end data.
+Using Phred+33 encoding for quality scores.
+Found 1 paired input file(s).
+Searching for single-end, inlined barcodes.
+Loaded 96 barcodes (4-7bp).
+Will attempt to recover barcodes with at most 1 mismatches.
+Processing file 1 of 1 [Litt_MiSeq_S1_R1_001_val_1.fq.gz]
+  Reading data from:
+  ExternalData/Pooled/Litt_MiSeq_S1_R1_001_val_1.fq.gz and
+  ExternalData/Pooled/Litt_MiSeq_S1_R2_001_val_2.fq.gz
+  Processing RAD-Tags...1M...2M...3M...4M...5M...6M...7M...8M...9M...10M...11M...12M...13M...14M...15M...16M...17M...18M...19M...20M...
+  40903944 total reads; -834586 ambiguous barcodes; -8927835 ambiguous RAD-Tags; +10803376 recovered; -0 low quality reads; 31141523 retained reads.
+Closing files, flushing buffers...
+Outputing details to log: 'ExternalData/Pooled/Stacks/process_radtags.Pooled.log'
+
+40903944 total sequences
+  834586 ambiguous barcode drops (2.0%)
+       0 low quality read drops (0.0%)
+ 8927835 ambiguous RAD-Tag drops (21.8%)
+31141523 retained reads (76.1%)

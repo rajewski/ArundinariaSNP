@@ -1,0 +1,54 @@
+Merging and indexing BAM files...
+samtools merge: You must specify at least one (and usually two or more) input files
+Usage: samtools merge [-nurlf] [-h inh.sam] [-b <bamlist.fofn>] <out.bam> <in1.bam> [<in2.bam> ... <inN.bam>]
+
+Options:
+  -n         Input files are sorted by read name
+  -t TAG     Input files are sorted by TAG value
+  -r         Attach RG tag (inferred from file names)
+  -u         Uncompressed BAM output
+  -f         Overwrite the output BAM if exist
+  -1         Compress level 1
+  -l INT     Compression level, from 0 to 9 [-1]
+  -R STR     Merge file in the specified region STR [all]
+  -h FILE    Copy the header in FILE to <out.bam> [in1.bam]
+  -c         Combine @RG headers with colliding IDs [alter IDs to be distinct]
+  -p         Combine @PG headers with colliding IDs [alter IDs to be distinct]
+  -s VALUE   Override random seed
+  -b FILE    List of input BAM filenames, one per line [null]
+  -X         Use customized index files
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "results/Merged.bam" : No such file or directory
+samtools index: failed to open "results/Merged.bam": No such file or directory
+Done.
+This is WhatsHap 0.18 running under Python 3.6.10
+Traceback (most recent call last):
+  File "/rhome/arajewski/.conda/envs/whatshapenv/bin/whatshap", line 12, in <module>
+    sys.exit(main())
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/__main__.py", line 83, in main
+    module.main(args)
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/phase.py", line 1114, in main
+    run_whatshap(**vars(args))
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/phase.py", line 539, in run_whatshap
+    phase_input_bam_filenames, phase_input_vcf_filenames = split_input_file_list(phase_input_files)
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/phase.py", line 422, in split_input_file_list
+    file_format = detect_file_format(filename)
+  File "/rhome/arajewski/.conda/envs/whatshapenv/lib/python3.6/site-packages/whatshap/utils.py", line 37, in detect_file_format
+    raise UnknownFileFormatError()
+whatshap.utils.UnknownFileFormatError

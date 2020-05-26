@@ -1,0 +1,23 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening E12.HdkX7u3Uxpfk/disc_pipe for write.
+[M::process] read 42 sequences (6102 bp)...
+samblaster: Opening E12.HdkX7u3Uxpfk/spl_pipe for write.
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 7, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 42 reads in 0.005 CPU sec, 0.012 real sec
+samblaster: Loaded 12 header sequence entries.
+[main] Version: 0.7.12-r1039
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:E12\tSM:E12\tLB:Lib\ References.fasta ExternalData/Pooled/Stacks/E12.1.fq.gz ExternalData/Pooled/Stacks/E12.2.fq.gz
+[main] Real time: 0.027 sec; CPU: 0.010 sec
+samblaster: Output 5 discordant read pairs to E12.HdkX7u3Uxpfk/disc_pipe
+samblaster: Output 0 split reads to E12.HdkX7u3Uxpfk/spl_pipe
+samblaster: Marked 2 of 21 (9.52%) read ids as duplicates using 1344k memory in 0.001S CPU seconds and 0S wall time.
+slurmstepd-i11: error: *** JOB 1201929 ON i11 CANCELLED AT 2020-05-26T15:38:38 ***

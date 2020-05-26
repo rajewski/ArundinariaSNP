@@ -1,0 +1,11 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+parallel: Warning: Cannot spawn any jobs. Raising ulimit -u or /etc/security/limits.conf may help.
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R References.fasta -I results/H12.bam -O results/H12.g.vcf -ERC GVCF
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /bigdata/littlab/arajewski/CRISPRSeq/hs_err_pid13498.log

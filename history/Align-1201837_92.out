@@ -1,0 +1,29 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+sambamba-view: Error creating thread
+sambamba-sort: not enough data in stream
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening D12.H358VT24sCyW/disc_pipe for write.
+[M::process] read 90 sequences (12695 bp)...
+samblaster: Opening D12.H358VT24sCyW/spl_pipe for write.
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 43, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 200, 227)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (113, 303)
+[M::mem_pestat] mean and std.dev: (188.10, 38.28)
+[M::mem_pestat] low and high boundaries for proper pairs: (35, 341)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 90 reads in 0.009 CPU sec, 0.021 real sec
+[main] Version: 0.7.12-r1039
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:D12\tSM:D12\tLB:Lib\ References.fasta ExternalData/Pooled/Stacks/D12.1.fq.gz ExternalData/Pooled/Stacks/D12.2.fq.gz
+[main] Real time: 0.030 sec; CPU: 0.013 sec
+samblaster: Loaded 12 header sequence entries.
+samblaster: Output 0 discordant read pairs to D12.H358VT24sCyW/disc_pipe
+samblaster: Output 0 split reads to D12.H358VT24sCyW/spl_pipe
+samblaster: Marked 32 of 45 (71.11%) read ids as duplicates using 1076k memory in 0.000S CPU seconds and 0S wall time.
+slurmstepd-i11: error: *** JOB 1201928 ON i11 CANCELLED AT 2020-05-26T15:38:38 ***

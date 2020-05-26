@@ -1,0 +1,137 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening F4.KrvVPA9oEx6L/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening F4.KrvVPA9oEx6L/spl_pipe for write.
+[M::process] read 67798 sequences (10000205 bp)...
+[M::process] read 67798 sequences (10000205 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (348, 0, 0, 3)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (4, 6, 7)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 13)
+[M::mem_pestat] mean and std.dev: (5.06, 2.40)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 16)
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 67798 reads in 8.169 CPU sec, 8.028 real sec
+samblaster: Loaded 12 header sequence entries.
+[M::process] read 67798 sequences (10000205 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (345, 0, 0, 0)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (3, 5, 7)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 15)
+[M::mem_pestat] mean and std.dev: (4.82, 2.41)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 19)
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 67798 reads in 8.704 CPU sec, 8.485 real sec
+[M::process] read 67798 sequences (10000205 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (295, 0, 0, 2)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (4, 6, 7)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 13)
+[M::mem_pestat] mean and std.dev: (5.24, 2.44)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 16)
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 67798 reads in 8.739 CPU sec, 8.494 real sec
+[M::process] read 67798 sequences (10000205 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (370, 0, 0, 0)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (3, 5, 7)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 15)
+[M::mem_pestat] mean and std.dev: (5.13, 2.97)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 19)
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 67798 reads in 8.593 CPU sec, 8.498 real sec
+[M::process] read 56110 sequences (8276225 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (381, 0, 0, 0)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (3, 5, 7)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 15)
+[M::mem_pestat] mean and std.dev: (5.01, 2.61)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 19)
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 67798 reads in 8.623 CPU sec, 8.401 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (304, 0, 0, 1)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (3, 5, 7)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 15)
+[M::mem_pestat] mean and std.dev: (4.88, 2.58)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 19)
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 56110 reads in 6.817 CPU sec, 6.725 real sec
+samblaster: Output 80 discordant read pairs to F4.KrvVPA9oEx6L/disc_pipe
+[main] Version: 0.7.12-r1039
+samblaster: Output 4 split reads to F4.KrvVPA9oEx6L/spl_pipe
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:F4\tSM:F4\tLB:Lib\ References.fasta ExternalData/F4_pair1.fastqsamblaster: Marked 195306 of 197550 (98.86%) read ids as duplicates ExternalData/F4_pair2.fastq using 1344k memory in 
+[main] Real time: 49.210 sec; CPU: 49.823 sec
+0.799S CPU seconds and 49S wall time.
+Done
+Using GATK jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar HaplotypeCaller -R References.fasta -I results/F4.bam -O results/F4.g.vcf -ERC GVCF
+11:09:47.132 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+11:09:47.425 INFO  HaplotypeCaller - ------------------------------------------------------------
+11:09:47.427 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.0.8.1
+11:09:47.427 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+11:09:47.428 INFO  HaplotypeCaller - Executing as arajewski@i06 on Linux v3.10.0-957.el7.x86_64 amd64
+11:09:47.429 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_45-b14
+11:09:47.429 INFO  HaplotypeCaller - Start Date/Time: May 26, 2020 11:09:47 AM PDT
+11:09:47.429 INFO  HaplotypeCaller - ------------------------------------------------------------
+11:09:47.429 INFO  HaplotypeCaller - ------------------------------------------------------------
+11:09:47.430 INFO  HaplotypeCaller - HTSJDK Version: 2.16.0
+11:09:47.430 INFO  HaplotypeCaller - Picard Version: 2.18.7
+11:09:47.430 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+11:09:47.430 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+11:09:47.430 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+11:09:47.430 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+11:09:47.430 INFO  HaplotypeCaller - Deflater: IntelDeflater
+11:09:47.430 INFO  HaplotypeCaller - Inflater: IntelInflater
+11:09:47.430 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+11:09:47.431 INFO  HaplotypeCaller - Using google-cloud-java fork https://github.com/broadinstitute/google-cloud-java/releases/tag/0.20.5-alpha-GCS-RETRY-FIX
+11:09:47.431 INFO  HaplotypeCaller - Initializing engine
+11:09:48.620 INFO  HaplotypeCaller - Done initializing engine
+11:09:48.626 INFO  HaplotypeCallerEngine - Tool is in reference confidence mode and the annotation, the following changes will be made to any specified annotations: 'StrandBiasBySample' will be enabled. 'ChromosomeCounts', 'FisherStrand', 'StrandOddsRatio' and 'QualByDepth' annotations have been disabled
+11:09:48.632 INFO  HaplotypeCallerEngine - Standard Emitting and Calling confidence set to 0.0 for reference-model confidence output
+11:09:48.632 INFO  HaplotypeCallerEngine - All sites annotated with PLs forced to true for reference-model confidence output
+11:09:48.654 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_utils.so
+11:09:48.657 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/bigdata/operations/pkgadmin/opt/linux/centos/7.x/x86_64/pkgs/gatk/4.0.8.1/gatk-package-4.0.8.1-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+11:09:48.701 WARN  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+11:09:48.701 INFO  IntelPairHmm - Available threads: 2
+11:09:48.701 INFO  IntelPairHmm - Requested threads: 4
+11:09:48.701 WARN  IntelPairHmm - Using 2 available threads, but 4 were requested
+11:09:48.702 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+11:09:48.769 INFO  ProgressMeter - Starting traversal
+11:09:48.770 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+11:09:58.344 INFO  HaplotypeCaller - 390626 read(s) filtered by: ((((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter) AND GoodCigarReadFilter) AND WellformedReadFilter)
+  390626 read(s) filtered by: (((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter) AND GoodCigarReadFilter)
+      390626 read(s) filtered by: ((((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter) AND NonZeroReferenceLengthAlignmentReadFilter)
+          390626 read(s) filtered by: (((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter) AND PassesVendorQualityCheckReadFilter)
+              390626 read(s) filtered by: ((((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter) AND NotDuplicateReadFilter)
+                  312 read(s) filtered by: (((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter) AND NotSecondaryAlignmentReadFilter)
+                      312 read(s) filtered by: ((MappingQualityReadFilter AND MappingQualityAvailableReadFilter) AND MappedReadFilter)
+                          312 read(s) filtered by: (MappingQualityReadFilter AND MappingQualityAvailableReadFilter)
+                              312 read(s) filtered by: MappingQualityReadFilter 
+                  390314 read(s) filtered by: NotDuplicateReadFilter 
+
+11:09:58.349 INFO  ProgressMeter -           SpFUL1:162              0.2                    25            156.7
+11:09:58.350 INFO  ProgressMeter - Traversal complete. Processed 25 total regions in 0.2 minutes.
+11:09:58.387 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.023598165
+11:09:58.387 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 0.760289191
+11:09:58.388 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 1.77 sec
+11:09:58.388 INFO  HaplotypeCaller - Shutting down engine
+[May 26, 2020 11:09:58 AM PDT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.19 minutes.
+Runtime.totalMemory()=2541748224
