@@ -1,6 +1,0 @@
-
-# $((SLURM_MEM_PER_NODE/1000))'G'
-# $SLURM_NTASKS
-
-splitstree4/4.14.6
-/var/spool/slurmd/job5095848/slurm_script: line 15: splitstree4/4.14.6: No such file or directory

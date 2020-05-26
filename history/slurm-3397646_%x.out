@@ -1,4 +1,0 @@
-Warning, you specified a working directory via "-w"
-Keep in mind that RAxML only accepts absolute path names, not relative ones!
-Taxon Name too long at taxon 2, adapt constant nmlngth in
-axml.h, current setting 256

@@ -1,5 +1,0 @@
-slurmstepd-i23: error: task/cgroup: unable to add task[pid=63943] to memory cg '(null)'
-slurmstepd-i23: error: jobacct_gather/cgroup: unable to instanciate user 3080 memory cgroup
-raxmlHPC-PTHREADS-SSE3: axml.c:5521: analyzeRunId: Assertion `0' failed.
-Error character / not allowed in run ID
-/var/spool/slurmd/job3397645/slurm_script: line 11: 63994 Aborted                 raxmlHPC-PTHREADS-SSE3 -f a -m GTRGAMMAI -p 121787 -x 92191 -N 1000 -T $SLURM_NTASKS -s plastid/Plastid_NoMissing.phy -n plastid/Plastid.NoMissing.RAxML
