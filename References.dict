@@ -1,0 +1,13 @@
+@HD	VN:1.5
+@SQ	SN:NoFUL1.1	LN:214	M5:3f875a1383ca2a2ec5012d3a40deab26	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:NoFUL1.2	LN:359	M5:acd7d6e069b54e62d337129275813c27	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:NoFUL2.1	LN:225	M5:a822ec15c441bd5ffdad3f73ffc14eb7	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:NoFUL2.2	LN:221	M5:e19ac22e746d4c2e0203806800e04291	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:NoMBP10	LN:271	M5:04f3656168c72a0c5918cc96846069e1	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:NoMBP20.1	LN:272	M5:00ced1ec60444a2683cab3da323381fb	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:NoMBP20.2	LN:220	M5:a6e362b977ee25de34298c8ade3241f4	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:SpFUL1	LN:242	M5:ddde8595fd85e6b7f70aef16180bfbe9	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:SpFUL2	LN:321	M5:c737e0bc9cb8d2cc80a3b2ace0461957	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:SpMBP10	LN:280	M5:eed7e2c6eb4da7d4d9292261c604b1e5	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:SpMBP20.1	LN:215	M5:7aa321bcab4a7b6fe7f0eee8030551d5	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta
+@SQ	SN:SpMBP20.2	LN:136	M5:4edfb86d35c125643a58f961706b0f8e	UR:file:/bigdata/littlab/arajewski/CRISPRSeq/References.fasta

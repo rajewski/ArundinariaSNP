@@ -17,13 +17,14 @@ Sample=$(awk "NR==$SLURM_ARRAY_TASK_ID" $SampleList)
 #map the reads
 if [ ! -f results/${Sample}.bam ]; then
     module load speedseq/a95704a
+    # Currently this ignores inpaired reads though they are output from the demultiplexing with the suffix *.rem.fq.gz
     speedseq align \
 	-t $SLURM_NTASKS \
 	-K speedseq.config \
 	-o results/$Sample \
 	-R '@RG\tID:'$Sample'\tSM:'$Sample'\tLB:Lib\' \
 	References.fasta \
-	ExternalData/${Sample}_pair1.fastq ExternalData/${Sample}_pair2.fastq
+	ExternalData/Pooled/Stacks/${Sample}.1.fq.gz ExternalData/Pooled/Stacks/${Sample}.2.fq.gz
 fi
 
 #Use GATK to make the VCF
