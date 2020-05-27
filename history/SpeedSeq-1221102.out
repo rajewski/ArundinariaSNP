@@ -1,0 +1,27 @@
+/var/spool/slurmd/job1221102/slurm_script: line 23: Date: command not found
+: Calling SNPs and indels with SpeedSeq var...
+Sourcing executables from speedseq.config ...
+
+usage:   speedseq var [options] <reference.fa> <input1.bam> [input2.bam [...]]
+
+positional args:
+         reference.fa
+                  genome reference fasta file
+         input.bam
+                  BAM file(s) to call variants on. Must have readgroup information,
+                    and the SM readgroup tags will be the VCF column header
+
+options:
+         -o STR   output prefix [input1.bam]
+         -w FILE  BED file of windowed genomic intervals
+         -q FLOAT minimum variant QUAL score to output [1]
+         -t INT   threads [1]
+         -T DIR   temp directory [./output_prefix.XXXXXXXXXXXX]
+         -A       annotate the vcf with VEP
+         -K FILE  path to speedseq.config file (default: same directory as speedseq)
+         -v       verbose
+         -k       keep temporary files
+         -h       show this message
+
+Error: BAM file results/F8.bam,results/G7.bam,results/H6.bam,results/H10.bam,results/Merged.bam,results/E12.bam,results/B12.bam,results/F2.bam,results/G1.bam,results/C10.bam,results/A9.bam,results/B8.bam,results/C7.bam,results/D6.bam,results/E5.bam,results/F4.bam,results/G3.bam,results/H2.bam,results/A3.bam,results/B2.bam,results/F11.bam,results/F9.bam,results/C1.bam,results/G8.bam,results/H7.bam,results/C11.bam,results/H9.bam,results/A11.bam,results/H1.bam,results/B9.bam,results/C8.bam,results/D7.bam,results/E6.bam,results/F5.bam,results/G4.bam,results/G10.bam,results/H3.bam,results/G12.bam,results/D12.bam,results/E10.bam,results/A12.bam,results/A4.bam,results/B3.bam,results/B10.bam,results/C2.bam,results/G9.bam,results/D1.bam,results/H8.bam,results/A6.bam,results/B5.bam,results/H11.bam,results/E11.bam,results/C9.bam,results/D8.bam,results/E7.bam,results/F6.bam,results/G5.bam,results/H4.bam,results/A5.bam,results/B4.bam,results/C3.bam,results/D2.bam,results/E1.bam,results/A7.bam,results/B6.bam,results/F10.bam,results/C5.bam,results/D4.bam,results/E3.bam,results/F12.bam,results/C12.bam,results/D10.bam,results/A10.bam,results/D9.bam,results/A1.bam,results/E8.bam,results/F7.bam,results/G6.bam,results/H5.bam,results/C4.bam,results/D3.bam,results/E2.bam,results/F1.bam,results/G11.bam,results/D11.bam,results/A8.bam,results/B7.bam,results/C6.bam,results/D5.bam,results/E4.bam,results/F3.bam,results/G2.bam,results/B11.bam,results/A2.bam,results/E9.bam,results/B1.bam, not found.
+
