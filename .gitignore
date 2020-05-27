@@ -1,16 +1,5 @@
-results/*
-download.sh
 *~
 **/*~
-phylo/LFY/GTRGI
-phylo/LFY/HKYI
-phylo/LFY/test
-phylo/WXY/GTRGI
-phylo/WXY/SYMI
-phylo/plastid/F81I
-phylo/plastid/GTRGI
-phylo/matK/*
-phylo/concatenated/GTRGI
 .Rproj.user
-.Rhistory
+*.Rhistory
 **/.DS_Store
