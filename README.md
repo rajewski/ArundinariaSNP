@@ -1,46 +1,56 @@
-This repo contains the steps I used to process FASTQ files from Illumina 2x150bp sequencing of pooled PCR products for phylogenetic analysis. Each demultiplexed pool corresponds to a single individual, but the pool contains reads from 3-5 PCR-amplified loci. These loci are not homologous and their reads should easily assemble into separate contigs. Because the loci are also comparatively short (<1200bp), the read lengths *should* be long enough to phase haplotypes for each locus. 
+# CRISPR Amplicon Genotyping
 
-Two notes on this phasing:
-* Proper phasing requires that SNPs are frequent enough for a single read to span at least two SNPs. In some cases this is not possible and only certain regions of the loci can be phased. This causes "phased" sequences with IUPAC ambiguity codes. This problem would still exist with Sanger sequencing though.
+The purpose of these scripts is to process Illumina sequencing data for pools of PCR products. These PCR products correspond to genomic regions that *should* contain a CRISPR-induced mutation of some sort. 
 
-* Even in cases where each locus can properly be phased, there is no correspondence between the first phased copy of one locus and the first phased copy of another locus. That is, we cannot prove that which of these copies is maternal and which is paternal across loci. Therefore concatenation of loci for phylogenetic analysis is impossible.
+## Multiplexing
+This experiment assumes three levels of multiplexing.
 
-Each script used for processing is numbered in sequential order, and as of right now, the raw data files are also included in this repo, so the entire analysis should remain completely reproducible for the foreseeable future.
+- Individula PCR products from different genomic loci are pooled immediately after PCR assuming that the loci are different enough to be assembled unambiguously from short reads. In our case we are pooling up to 12 loci. Five loci across four tomato (*Solanum pimpinellifolium*) genes and seven additional loci across four orthologous genes in tobacco (*Nicotiana obtusifolia*). The regions of the orthologous genes being pooled are different, enabling this multiplexing despite the similarity.
 
-Scripts:
+- Using a series of 96 __inline__ barcodes 4-7 bp in length originally designed for RAD-seq, we are multiplexing the pools of 12 PCR products together.
 
-1. `1_indiv_variants.sh` is designed to run as an array job on a cluster computer such that each array job number corresponds to an individual sample to be analyzed. Array job numbers are matched to FASTQ files from the `names.txt` file via the `$Sample` and `$Indiv` variables in the script. Speedseq is used to align the reads, and it needs a `speedseq.config` file to properly run. This config file mostly tells the program where to find other programs for alignment. Read groups are also assigned in this step. This becomes terribly important later, so don't ignore it.
+- By adding on additional Illumina barcodes, we can combine several groups of 96 inline-barcoded PCR product pools. Currently we depend on our seqeuncing core to conduct this level of demultiplexing, but the scripts here could be modified to include it.
 
-2. `2_combine.sh` takes the individual g.vcf files for each sample and combines them into a single `Joint.vcf` file, recalling variants in the entire cohort.
+Currently we are not exploiting the full level of multiplexing, but I expect that a single MiSeq Nano run could produce data for several thousand loci if multiplex properly to avoid overlap.
 
-3. `3_phase.sh` uses WhatsHap to phase the samples in the `Joint.vcf` file. This requires Python 3, which I don't understand well. Likely this could be streamlined, but it works. Sorry. It will output a single Phased.vcf file, which might be enough for you, but it wasn't for me. so I had to continue
+## Wet Lab Procedures
 
-4. `4_split_phased.sh` iterates through Phased.vcf file and produces a single vcf file for each sample.
+I am working to write up a more detailed protocol on Protocols.io that would explain exactly how this sequencing library is constructed, but I will summarize it briefly here.
 
-5. `5_CombinePhaseAmbig.R` switches into R. It takes the vcf information for each sample/locus and substitutes the SNPs for that sample in a reference sequence. This step ignores indels because alignment around them is sort of a bear. (Ignoring indels is not a minor thing. I could get much more phylogenetic information by including them, but I could also introduce larger systematic errors, which I felt was a bigger danger.) This script will output the following things:
+For every locus to be amplified, we have desinged a primer pair with three regions:
+1. A locus specific sequence roughly 20bp in length that should bind to the genomic target.
+2. For the forward primer, a 6bp PstI recognition and cut site. For the reverse primer, a 4bp MspI recognition and cut site.
+   It is important that the amplicon between the primer pairs not contain cut sites for either enzyme engineered into the primers. Also, the selection of enzymes here has no significance other than that it enabled us to use pre-existing multiplexing barcodes that our lab was using for a separate ddRAD-seq experiment. If you have other RAD-seq barcodes, check to make sure then enzyme cute sites are compatible.
+3. A 6 bp extension that better enables binding of the restriction enzyme. Without this extension, the enzyme is binding to the literal end of a DNA fragment and this can reduce efficiency.
 
- * a FASTA file for each locus with all of the haplotypes phased (e.g. `WXY_Phased.fasta`). This information can be used however you like it for phylogenetic analysis. Each haplotype for an individual is suffixed with _0 or _1, but remember that there is no correspondence between these numbers between samples or between loci. That is the _0 haplotype is not consistently the paternal haplotype in all samples.
+The loci are amplified with the appropriate primer pairs using a cycle number that should give roughly equal PCR product concentrations across all primer pairs. In the case of lower multiplexing (<1000 loci per run), the concentrations can be off by up to 1 order of magnitute before it starts to affect a MiSeq run's output across loci. Assuming you are only using one Illumina barcode, all PCR products that are going to be given the same inline barcode are then pooled together and cleaned up with SPRI beads.
 
- * a FASTA file for each locus with a single ambiguous sequence for each individual (e.g. `WXY_ambig.fasta`). This file can be used directly for a concatenated analysis.
+Each of the 96 groups (again assuming 96 inline barcodes and 1 Illumina barcode) are then individually digested with MspI and PstI, and the inliine barcodes are ligated on to the PCR products. These inline barcodes also contain a binding site for the Illumina barcodes. Following this, the Illumina barcodes, which contain the sequencing adaptors, are added via PCR. Because of stochasticity in PCR, each of the 96 groups is divided into 4 aliquots and the Illumina barcodes are added to each of these 384 aliquots separatetly and later pooled. A final SPRI bead clean up removes any inligated adaptors, PCR buffer, and enzymes. The library can then be sequenced.
 
- * for the nuclear loci only (_WXY_ and _LFY_), a FASTA file is output with the two ambiguous sequences for each individual concatenated into a single sequence (e.g. `Nuclear_ambig.fasta`). A similar concatenation is NOT done with the plastid loci included because in my case, some of my plastid loci were sanger sequenced, and this introduces a missing data problem and an indel problem. Because of this a concatenated FASTA of all loci would have several loci missing for most of the samples.
+## Data Processing
 
-6. `phylo/6a_MrBayes.sh` is my standard script to run a Bayesian analysis of the alignments. It references a parameter file, several of which are included in the `MrBayesPars/` directory. This parameter file tells MrBayes what sort of analysis to run and on which alignment to run. MrBayes takes a NEXUS file as input, so I used another tool (not included) to convert the FASTA file from step 5 into a NEXUS file and to add in the samples that were Sanger sequenced. You can change this script to point to other parameter files in order to modify your analysis. For haplotype-phased samples, I have to run this script for each locus individually because concatenation of the phased samples across loci is impossible. With ambiguous samples, I can concantenate them.
+This git has 5 main scripts that generate the ultimate VCF output. This git also depends on a few external reference files in addition to the sequencing data.
 
-7. `phylo/6b_RAxML.sh` is an atlernative to steps 6 with a maximum likelihood analysis. It's dealer's choice which you think is better but I ran both just to compare. (spoiler alert: with good phylogentic signal, it doesn't matter which you use). This script does not reference a parameter files so everything is hard coded in the call for raxml. The Exelixis lab released a new version of RAxML (RAxML-NG) during my analysis, so I switched over, but kept the older code and just commented it out.
+### External Data
 
-8. `phylo/7a_ArundinariaCoords.R` will likely be totally worthless for you. It scrapes text from a publication that has GPS coordinates of the samples from other publications, and outputs them to a csv file.
+- Output from Illumina sequencer, demultiplexed by Illumina barcode. For paired-end sequencing with only one Illumina barcode, this would be two fastq files. (Litt_MiSeq_S1_R1_001.fastq.gz and /Litt_MiSeq_S1_R2_001.fastq.gz)
+- A fasta file containing the reference sequences of the unmutated PCR products in order to align the short reads. (References.fasta)
+- A tab delimited file containing the sequences of the 96 barcodes and a corresponding sample name. The sample name is arbitrary, but will be the basis for naming fastq, bam, and vcf files later, so make it meaningful. (1266_barcodes.txt)
+- A separate file (although I suppose that I could streamline this) containing just the names of the samples for alignment (Names.txt)
 
-9. `phylo/7b_PhyloMap.R` will maybe be more generally useful if you use your own data. It takes the coordinate information scraped in step 8 and some trees generates in steps 6 and 7 to make figures where tips of a phylogeny are connected to GPS points on a map. This is sort of a qualitative way to look for geographic signal in the analysis.
+### Scripts
 
-10. `phylo/7c_BarchartPhylo.R` is an exploratory analysis to plot a phylogeny alongside a stacked barchart. I had planned to see if this was a better way to display the grouping of haplotypes by species. It is mostly just messy.
+- `1_SetUp.sh` downloads the Illumina output fastq files and creates the various necessary indicies for the References.fasta file.
+- `2_Demultiplex.sh` quality and adaptor trims the Illumina fastq files. It then demultiplexes these two files into individual fastq files based on their inline barcodes. For paired-end data, this produces 4 files per inline barcode. The main files are {SampleName}.1.fq and {SampleName}.2.fq. Any read whose mate did not survive the demultiplexing (because of low quality, disrupted barcode, etc) is written to {SampleName}.1.rem.fq or {SampleName}.2.rem.fq.
+- `3_Align.sh` uses [SpeedSeq](https://github.com/hall-lab/speedseq) to align the short reads to the references and produces 3 bam files for each of the 96 inline barcoded samples. This alignment ignores the unpaired reads because in practice, the coverage is so high that it doesn't make a difference. This script then uses GATK's Haplotype Caller to produce individual VCF files for each inline barcoded sample. This only uses the main bam file output by SpeedSeq.
+- `4_JointGenotype.sh` follows [GATK's best practices](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-) to then do joint haplotype calling on the entire cohort of samples. I suspec that this does not produce dramatically improved results over individualy haplotype calling, but it is so quick that the opportunity cost is basically nothing. The main advantage is that is produces a single VCF for the entire cohort, which is much easier to wrangle, I think.
+- `5_Phase.sh` then merges the individual bam files from `3_Align.sh` into a single bam file, indexes it, and attempts to use these reads to properly phase the individual haplotypes for each PCR producting using [WhatsHap](https://whatshap.readthedocs.io/en/latest/). This depends on two mutations being closer than the read length from your Illumina run. If successful, it will add phase information to the VCF so that you can tell which alleles within a locus are physcially linked. It is not 100% sucessful however.
 
-11. `phylo/7d_clustering.sh` uses the module plink to perform a PCA and MDS of the data. The data here has been subset from the Phased.vcf to just include the two nuclear loci (_LFY_ and _WXY_), so the code to do that is included in the beginning of that script. A related script `phylo/7e_PlotCluster.R` takes the data and makes a nicer looking plot of it.
+### Visualization
 
-12. `phylo/7e_Cophlyo.R` uses the R package phytools to plot two face-to-face phylogenies and connect identical tips. This allows you to see how the structure changes with the removal of certain tips. The rotation of the tips to minimize crossing of connectors is rather computationally intensive, so you can often do it by hand faster. I made a submission script to do this rotation as a non-interactive job (`phylo/7f_submit.sh`) and another script to actually plot the results of this (`phylo/7g_PlotCophylo.R`). Regardless, the results were not stunning, so I haven't prettied up this script like I would if I intended to use the analysis.
+The final Phased.vcf and References.fasta can be loaded into [IGV](http://igv.org) or [Geneious](https://www.geneious.com) in order to see mutations. At this point it is useful to know where exactly your gRNAs should bind in the References.fasta sequences. Some "mutations" may in fact be PCR or (much less ikely) sequencing errors, and you would expect those to occur randomly across the sequences rather than preferentially overlapping your gRNA.
 
-13. Because the phylogenetic analysis was rather fruitless, I switched to SplitsNetworks, as implemented by [SplitsTree4](http://www.splitstree.org/). `phylo/7h_SplitsNetwork.R` takes the nexus file output of SplitsTree. This nexus file is generated by reading an alignment (e.g. `Nuclear_ambig.fasta`) into SplitsTree, calculating a distance matrix with the uncorrected_p method averaging ambiguous sites, and exporting it. The script plots this network and colors the tips of the network by species assignment. Although the alignment includes NCBI reference sequences and an outgroup, these are filtered out to make the plot prettier. (The NCBI references also lack the _LFY_ locus and SplitsTree is bad with missing data.)
+## Notes
 
-14. The SplitsTree distance matrix can also be used for a MDS analysis, similar to the one done with Plink in `phylo/7d_clustering.sh`. The MDS output by `phylo/7i_SplitsTreeMDS.R` is different, and I cannot yet parse out why/how. Theoretically, the MDS by Plink is operating on a VCF and _could_ incorporate information on haplotype phases and indels, which are explicitly ignored by the alignment that is read into SplitsTree. Additionally, Plink using raw Hamming distances to make its distance matrix for the MDS, wherease SplitsTree using uncorrected_p.
-
+I am considering conducting this entire pipeline with SpeedSeq, but at the time that I designed it, GATK was a much more mature pipeline for haplotype calling.
 
