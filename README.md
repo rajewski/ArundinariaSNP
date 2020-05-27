@@ -29,7 +29,7 @@ Each of the 96 groups (again assuming 96 inline barcodes and 1 Illumina barcode)
 
 ## Data Processing
 
-This git has 5 main scripts that generate the ultimate VCF output. This git also depends on a few external reference files in addition to the sequencing data.
+This git has 4 main scripts that generate the ultimate VCF output. This git also depends on a few external reference files in addition to the sequencing data.
 
 ### External Data
 
@@ -43,14 +43,8 @@ This git has 5 main scripts that generate the ultimate VCF output. This git also
 - `1_SetUp.sh` downloads the Illumina output fastq files and creates the various necessary indicies for the References.fasta file.
 - `2_Demultiplex.sh` quality and adaptor trims the Illumina fastq files. It then demultiplexes these two files into individual fastq files based on their inline barcodes. For paired-end data, this produces 4 files per inline barcode. The main files are {SampleName}.1.fq and {SampleName}.2.fq. Any read whose mate did not survive the demultiplexing (because of low quality, disrupted barcode, etc) is written to {SampleName}.1.rem.fq or {SampleName}.2.rem.fq.
 - `3_Align.sh` uses [SpeedSeq](https://github.com/hall-lab/speedseq) to align the short reads to the references and produces 3 bam files for each of the 96 inline barcoded samples. This alignment ignores the unpaired reads because in practice, the coverage is so high that it doesn't make a difference. This script then uses GATK's Haplotype Caller to produce individual VCF files for each inline barcoded sample. This only uses the main bam file output by SpeedSeq.
-- `4_JointGenotype.sh` follows [GATK's best practices](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-) to then do joint haplotype calling on the entire cohort of samples. I suspec that this does not produce dramatically improved results over individualy haplotype calling, but it is so quick that the opportunity cost is basically nothing. The main advantage is that is produces a single VCF for the entire cohort, which is much easier to wrangle, I think.
-- `5_Phase.sh` then merges the individual bam files from `3_Align.sh` into a single bam file, indexes it, and attempts to use these reads to properly phase the individual haplotypes for each PCR producting using [WhatsHap](https://whatshap.readthedocs.io/en/latest/). This depends on two mutations being closer than the read length from your Illumina run. If successful, it will add phase information to the VCF so that you can tell which alleles within a locus are physcially linked. It is not 100% sucessful however.
+- `4_Genotype.sh` uses two other tools from SpeedSeq. The program `speedseq var` is used to call SNPs and indels, and is basically a wrapper for [FreeBayes](https://github.com/ekg/freebayes). This produces the `SpeedSeq.vcf.gz` file in the results folder. There is also a rare case that our mutation could be structural variant. It's unlikely, but I wanted to rule it out. To do this, I used `speedseq sv` that makes use of the *.splitters.bam and *.discordants.bam files to look for reads indicative of SVs. This program produces the `SpeedSeq.sv.vcf.gz` file in the results folder.
 
 ### Visualization
 
-The final Phased.vcf and References.fasta can be loaded into [IGV](http://igv.org) or [Geneious](https://www.geneious.com) in order to see mutations. At this point it is useful to know where exactly your gRNAs should bind in the References.fasta sequences. Some "mutations" may in fact be PCR or (much less ikely) sequencing errors, and you would expect those to occur randomly across the sequences rather than preferentially overlapping your gRNA.
-
-## Notes
-
-I am considering conducting this entire pipeline with SpeedSeq, but at the time that I designed it, GATK was a much more mature pipeline for haplotype calling.
-
+The final SpeedSeq.vcf.gz, SpeedSeq.sv.vcf.gz, and References.fasta can be loaded into [IGV](http://igv.org) or [Geneious](https://www.geneious.com) in order to see mutations. At this point it is useful to know where exactly your gRNAs should bind in the References.fasta sequences. Some "mutations" may in fact be PCR or (much less ikely) sequencing errors, and you would expect those to occur randomly across the sequences rather than preferentially overlapping your gRNAs.
