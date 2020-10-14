@@ -8,6 +8,8 @@ library(ggrepel)
 library(pryr)
 library(cowplot)
 theme_set(theme_cowplot())
+library(gt)
+library(tidyverse)
 
 #Read in the species assignment data
 species <- read.csv("phylo/JTCoords.csv", header=T, stringsAsFactors = F)
@@ -258,6 +260,37 @@ dev.off()
 
 #consider an alternative where SplitsAll is rotated, SPlitsLFY isnt and the two are swapped in the figure to show the division in LFY better
 
+
+
+# Morphological Table -----------------------------------------------------
+morpho <- read.csv2("Morpho.csv", header=T, sep=",")
+system("PATH=/bigdata/littlab/arajewski/Datura/software/phantomjs-2.1.1-linux-x86_64/bin:$PATH")
+morpho %>%
+  gt(
+    rownames_to_stub = T
+  ) %>%
+  tab_header(
+    title = "Morphological Comparison") %>%
+  cols_align(
+    align="right"
+    ) %>%
+  tab_style(
+    style = list(cell_text(style="italic")),
+    locations = cells_stub(rows=c(1:3))) %>%
+  cols_label(
+    Aerenchyma = md("**Aerenchyma</br>in Rhizomes**"),
+    Sulcus = md("**Grooved</br>Internodes**"),
+    Internodes = md("**Internodes</br>at Branch</br>Complement**"),
+    Pubescence = md("**Abaxial Leaf</br>Pubescence**")) %>%
+  tab_footnote(
+    footnote="Triplett et al, 2006",
+    locations = cells_stub(
+      rows = c(1:3))) %>%
+  tab_footnote(
+    footnote="This study",
+    locations = cells_stub(
+      rows = c(4:5))) %>%
+  gtsave(filename = "Manuscript/Mutation_Summary.pdf")
 
 # Supplemental Phylogenetic Trees -----------------------------------------
 #read in the ambiguous, unphased, concatenated RAxML tree
