@@ -264,7 +264,7 @@ dev.off()
 
 # Morphological Table -----------------------------------------------------
 morpho <- read.csv2("Morpho.csv", header=T, sep=",")
-system("PATH=/bigdata/littlab/arajewski/Datura/software/phantomjs-2.1.1-linux-x86_64/bin:$PATH")
+#system("PATH=/bigdata/littlab/arajewski/Datura/software/phantomjs-2.1.1-linux-x86_64/bin:$PATH")
 morpho %>%
   gt(
     rownames_to_stub = T
@@ -290,7 +290,7 @@ morpho %>%
     footnote="This study",
     locations = cells_stub(
       rows = c(4:5))) %>%
-  gtsave(filename = "Manuscript/Mutation_Summary.pdf")
+  gtsave(filename = "Morpho_table.pdf")
 
 # Supplemental Phylogenetic Trees -----------------------------------------
 #read in the ambiguous, unphased, concatenated RAxML tree
