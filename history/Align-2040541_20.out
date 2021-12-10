@@ -1,0 +1,23 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening D3.RmzOrB9Y9Yvi/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening D3.RmzOrB9Y9Yvi/spl_pipe for write.
+[M::process] read 69206 sequences (10000068 bp)...
+[M::process] read 69272 sequences (10000212 bp)...
+sambamba-view: Error creating thread
+sambamba-sort: not enough data in stream
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 30833, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (147, 252)
+[M::mem_pestat] mean and std.dev: (202.02, 13.16)
+[M::mem_pestat] low and high boundaries for proper pairs: (126, 273)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 69206 reads in 4.544 CPU sec, 4.387 real sec
+samblaster: Loaded 12 header sequence entries.

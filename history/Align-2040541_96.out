@@ -1,0 +1,64 @@
+/usr/share/Modules/init/bash: fork: retry: No child processes
+/etc/profile.d/modules.sh: fork: retry: Resource temporarily unavailable
+/etc/profile.d/modules.sh: fork: retry: No child processes
+/etc/profile.d/modules.sh: fork: retry: No child processes
+Sourcing executables from speedseq.config ...
+Aligning...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening H12.LLUgjGK8EsHq/disc_pipe for write.
+samblaster: Opening H12.LLUgjGK8EsHq/spl_pipe for write.
+[M::process] read 75710 sequences (10000092 bp)...
+[M::process] read 75676 sequences (10000237 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 37759, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 121, 193)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 337)
+[M::mem_pestat] mean and std.dev: (150.06, 44.62)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 409)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 75710 reads in 3.207 CPU sec, 3.010 real sec
+samblaster: Loaded 12 header sequence entries.
+[M::process] read 75708 sequences (10000217 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 37779, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 121, 193)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 337)
+[M::mem_pestat] mean and std.dev: (150.40, 44.68)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 409)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 75676 reads in 3.527 CPU sec, 3.318 real sec
+[M::process] read 16456 sequences (2173771 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 37773, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 121, 193)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 337)
+[M::mem_pestat] mean and std.dev: (150.26, 44.72)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 409)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 75708 reads in 3.234 CPU sec, 3.150 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 8204, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 121, 193)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 337)
+[M::mem_pestat] mean and std.dev: (150.46, 45.05)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 409)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 16456 reads in 0.942 CPU sec, 0.892 real sec
+[main] Version: 0.7.12-r1039
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:H12\tSM:H12\tLB:Lib\ References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/H12.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/H12.2.fq.gz
+[main] Real time: 10.669 sec; CPU: 11.088 sec
+samblaster: Output 9 discordant read pairs to H12.LLUgjGK8EsHq/disc_pipe
+samblaster: Output 18 split reads to H12.LLUgjGK8EsHq/spl_pipe
+samblaster: Marked 121638 of 121775 (99.89%) read ids as duplicates using 1344k memory in 0.474S CPU seconds and 11S wall time.
+Done

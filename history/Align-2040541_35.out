@@ -1,0 +1,28 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+sambamba-view: Error creating thread
+sambamba-sort: not enough data in stream
+sambamba-sort: Error creating thread
+sambamba-view: Error creating thread
+/bin/bash: line 1: 149354 Broken pipe             gawk '{ if ($0~"^@") { print; next } else { $10="*"; $11="*"; print } }' OFS="\t" C5.GX0f1GcWfbcJ/disc_pipe
+     149355 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba view -S -f bam /dev/stdin
+     149356 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba sort -t 4 -m 1G --tmpdir=C5.GX0f1GcWfbcJ/disc -o results/Flowcell_1304/C5.discordants.bam /dev/stdin
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening C5.GX0f1GcWfbcJ/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening C5.GX0f1GcWfbcJ/spl_pipe for write.
+[M::process] read 69816 sequences (10000210 bp)...
+[M::process] read 69726 sequences (10000180 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 32552, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 199, 199)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (169, 219)
+[M::mem_pestat] mean and std.dev: (196.61, 7.49)
+[M::mem_pestat] low and high boundaries for proper pairs: (159, 229)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 69816 reads in 4.260 CPU sec, 4.139 real sec
+samblaster: Loaded 12 header sequence entries.

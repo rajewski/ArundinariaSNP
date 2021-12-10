@@ -1,0 +1,569 @@
+Started analysis of AR_Litt_library_S1_R1_001.fastq.gz
+Started analysis of AR_Litt_library_S1_R2_001.fastq.gz
+Approx 5% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 5% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 10% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 10% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 15% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 15% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 20% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 20% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 25% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 25% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 30% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 30% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 35% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 35% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 40% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 40% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 45% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 45% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 50% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 50% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 55% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 55% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 60% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 60% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 65% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 65% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 70% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 70% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 75% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 75% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 80% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 80% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 85% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 85% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 90% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 90% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Approx 95% complete for AR_Litt_library_S1_R2_001.fastq.gz
+Approx 95% complete for AR_Litt_library_S1_R1_001.fastq.gz
+Analysis complete for AR_Litt_library_S1_R2_001.fastq.gz
+Analysis complete for AR_Litt_library_S1_R1_001.fastq.gz
+Running Trim Galore...
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 2.10
+Could not detect version of Python used by Cutadapt from the first line of Cutadapt (but found this: >>>#!/bin/sh<<<)
+Letting the (modified) Cutadapt deal with the Python version instead
+Parallel gzip (pigz) detected. Proceeding with multicore (de)compression using 6 cores
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /bigdata/littlab/arajewski/CRISPRSeq/ExternalData/Flowcell_1304/Pooled/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R1_001.fastq.gz <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Illumina	166966	AGATCGGAAGAGC	1000000	16.70
+Nextera	1	CTGTCTCTTATA	1000000	0.00
+smallRNA	0	TGGAATTCTCGG	1000000	0.00
+Using Illumina adapter for trimming (count: 166966). Second best hit was Nextera (count: 1)
+
+Writing report to '/bigdata/littlab/arajewski/CRISPRSeq/ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.4_dev
+Cutadapt version: 2.10
+Python version: could not detect
+Number of cores used for trimming: 6
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 2.10). Setting -j 6
+Writing final adapter and quality trimmed output to AR_Litt_library_S1_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGC' from file ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R1_001.fastq.gz <<< 
+10000000 sequences processed
+This is cutadapt 2.10 with Python 3.7.6
+Command line parameters: -j 6 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R1_001.fastq.gz
+Processing reads on 6 cores in single-end mode ...
+Finished in 150.38 s (11 us/read; 5.33 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              13,365,282
+Reads with adapters:                 6,145,851 (46.0%)
+Reads written (passing filters):    13,365,282 (100.0%)
+
+Total basepairs processed: 2,018,157,582 bp
+Quality-trimmed:              11,278,077 bp (0.6%)
+Total written (filtered):  1,904,140,802 bp (94.4%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 6145851 times
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 12.4%
+  C: 6.6%
+  G: 42.9%
+  T: 37.7%
+  none/other: 0.3%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	3116588	3341320.5	0	3116588
+2	184173	835330.1	0	184173
+3	105515	208832.5	0	105515
+4	289758	52208.1	0	289758
+5	855	13052.0	0	855
+6	575	3263.0	0	575
+7	521	815.8	0	521
+8	714	203.9	0	714
+9	1537	51.0	0	1534 3
+10	4559	12.7	1	4457 102
+11	84742	3.2	1	84051 691
+12	104195	0.8	1	103396 799
+13	23654	0.2	1	23437 217
+14	20422	0.2	1	20247 175
+15	1862	0.2	1	1828 34
+16	636	0.2	1	623 13
+17	587	0.2	1	562 25
+18	686	0.2	1	657 29
+19	869	0.2	1	821 48
+20	2337	0.2	1	2231 106
+21	21057	0.2	1	20355 702
+22	661207	0.2	1	654557 6650
+23	634935	0.2	1	629875 5060
+24	301175	0.2	1	299237 1938
+25	7589	0.2	1	7536 53
+26	599	0.2	1	590 9
+27	503	0.2	1	496 7
+28	870	0.2	1	864 6
+29	762	0.2	1	759 3
+30	583	0.2	1	577 6
+31	332	0.2	1	325 7
+32	337	0.2	1	333 4
+33	310	0.2	1	306 4
+34	228	0.2	1	224 4
+35	252	0.2	1	249 3
+36	266	0.2	1	259 7
+37	282	0.2	1	273 9
+38	276	0.2	1	269 7
+39	342	0.2	1	329 13
+40	1060	0.2	1	1042 18
+41	1056	0.2	1	1025 31
+42	506	0.2	1	494 12
+43	397	0.2	1	395 2
+44	193	0.2	1	193
+45	208	0.2	1	186 22
+46	183	0.2	1	178 5
+47	177	0.2	1	171 6
+48	192	0.2	1	190 2
+49	214	0.2	1	187 27
+50	228	0.2	1	201 27
+51	155	0.2	1	142 13
+52	323	0.2	1	318 5
+53	186	0.2	1	175 11
+54	176	0.2	1	173 3
+55	194	0.2	1	176 18
+56	621	0.2	1	619 2
+57	203	0.2	1	193 10
+58	185	0.2	1	177 8
+59	672	0.2	1	660 12
+60	629	0.2	1	615 14
+61	604	0.2	1	571 33
+62	420	0.2	1	368 52
+63	440	0.2	1	394 46
+64	381	0.2	1	342 39
+65	270	0.2	1	244 26
+66	326	0.2	1	296 30
+67	346	0.2	1	313 33
+68	603	0.2	1	544 59
+69	3003	0.2	1	2755 248
+70	4482	0.2	1	4247 235
+71	5750	0.2	1	5588 162
+72	6238	0.2	1	5967 271
+73	13018	0.2	1	12521 497
+74	28635	0.2	1	27849 786
+75	40780	0.2	1	39818 962
+76	39111	0.2	1	38334 777
+77	33546	0.2	1	32969 577
+78	19723	0.2	1	19380 343
+79	12145	0.2	1	11911 234
+80	7985	0.2	1	7796 189
+81	5901	0.2	1	5803 98
+82	4295	0.2	1	4181 114
+83	3564	0.2	1	3463 101
+84	3156	0.2	1	3081 75
+85	2574	0.2	1	2501 73
+86	2243	0.2	1	2184 59
+87	2215	0.2	1	2162 53
+88	2294	0.2	1	2235 59
+89	2225	0.2	1	2177 48
+90	2287	0.2	1	2229 58
+91	2578	0.2	1	2508 70
+92	2973	0.2	1	2895 78
+93	3504	0.2	1	3408 96
+94	4723	0.2	1	4590 133
+95	6223	0.2	1	6017 206
+96	11350	0.2	1	10974 376
+97	23710	0.2	1	22765 945
+98	26793	0.2	1	25199 1594
+99	20516	0.2	1	19882 634
+100	17508	0.2	1	17234 274
+101	9730	0.2	1	9528 202
+102	1575	0.2	1	1507 68
+103	1109	0.2	1	1082 27
+104	1233	0.2	1	1197 36
+105	1296	0.2	1	1249 47
+106	1070	0.2	1	1033 37
+107	942	0.2	1	904 38
+108	963	0.2	1	918 45
+109	881	0.2	1	828 53
+110	720	0.2	1	700 20
+111	732	0.2	1	706 26
+112	668	0.2	1	650 18
+113	721	0.2	1	693 28
+114	760	0.2	1	730 30
+115	747	0.2	1	740 7
+116	823	0.2	1	802 21
+117	791	0.2	1	774 17
+118	907	0.2	1	885 22
+119	923	0.2	1	903 20
+120	1125	0.2	1	1096 29
+121	1645	0.2	1	1612 33
+122	1149	0.2	1	1132 17
+123	1083	0.2	1	1058 25
+124	1333	0.2	1	1303 30
+125	1520	0.2	1	1496 24
+126	998	0.2	1	976 22
+127	1136	0.2	1	1108 28
+128	1520	0.2	1	1477 43
+129	3009	0.2	1	2953 56
+130	5173	0.2	1	5072 101
+131	1347	0.2	1	1317 30
+132	1317	0.2	1	1278 39
+133	1530	0.2	1	1493 37
+134	1537	0.2	1	1499 38
+135	1747	0.2	1	1717 30
+136	2057	0.2	1	2023 34
+137	3719	0.2	1	3663 56
+138	7269	0.2	1	7181 88
+139	9453	0.2	1	9340 113
+140	7910	0.2	1	7811 99
+141	5628	0.2	1	5542 86
+142	5517	0.2	1	5444 73
+143	2505	0.2	1	2435 70
+144	2749	0.2	1	2678 71
+145	4761	0.2	1	4634 127
+146	9855	0.2	1	9642 213
+147	17433	0.2	1	17079 354
+148	19039	0.2	1	18593 446
+149	25177	0.2	1	24618 559
+150	11439	0.2	1	10882 557
+151	4694	0.2	1	4180 514
+
+RUN STATISTICS FOR INPUT FILE: ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R1_001.fastq.gz
+=============================================
+13365282 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/bigdata/littlab/arajewski/CRISPRSeq/ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.4_dev
+Cutadapt version: 2.10
+Python version: could not detect
+Number of cores used for trimming: 6
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 2.10). Setting -j -j 6
+Writing final adapter and quality trimmed output to AR_Litt_library_S1_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGC' from file ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R2_001.fastq.gz <<< 
+10000000 sequences processed
+This is cutadapt 2.10 with Python 3.7.6
+Command line parameters: -j 6 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R2_001.fastq.gz
+Processing reads on 6 cores in single-end mode ...
+Finished in 152.72 s (11 us/read; 5.25 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              13,365,282
+Reads with adapters:                 8,933,854 (66.8%)
+Reads written (passing filters):    13,365,282 (100.0%)
+
+Total basepairs processed: 2,018,157,582 bp
+Quality-trimmed:              16,467,827 bp (0.8%)
+Total written (filtered):  1,901,142,697 bp (94.2%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 8933854 times
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 58.8%
+  C: 23.5%
+  G: 7.1%
+  T: 10.4%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5409800	3341320.5	0	5409800
+2	1023138	835330.1	0	1023138
+3	44159	208832.5	0	44159
+4	20532	52208.1	0	20532
+5	3978	13052.0	0	3978
+6	1649	3263.0	0	1649
+7	719	815.8	0	719
+8	1116	203.9	0	1116
+9	1942	51.0	0	1922 20
+10	10430	12.7	1	10168 262
+11	76407	3.2	1	74970 1437
+12	106507	0.8	1	102764 3743
+13	23198	0.2	1	22041 1157
+14	20663	0.2	1	20062 601
+15	1212	0.2	1	1141 71
+16	726	0.2	1	668 58
+17	793	0.2	1	710 83
+18	424	0.2	1	368 56
+19	1030	0.2	1	921 109
+20	3754	0.2	1	2930 824
+21	9349	0.2	1	8198 1151
+22	666995	0.2	1	654215 12780
+23	636245	0.2	1	609659 26586
+24	297729	0.2	1	291314 6415
+25	6800	0.2	1	6639 161
+26	566	0.2	1	558 8
+27	507	0.2	1	492 15
+28	1058	0.2	1	1038 20
+29	546	0.2	1	526 20
+30	732	0.2	1	720 12
+31	167	0.2	1	167
+32	418	0.2	1	410 8
+33	245	0.2	1	240 5
+34	240	0.2	1	227 13
+35	272	0.2	1	261 11
+36	228	0.2	1	224 4
+37	288	0.2	1	273 15
+38	277	0.2	1	263 14
+39	218	0.2	1	209 9
+40	1165	0.2	1	1130 35
+41	1085	0.2	1	1017 68
+42	748	0.2	1	708 40
+43	195	0.2	1	185 10
+44	216	0.2	1	206 10
+45	293	0.2	1	283 10
+46	116	0.2	1	107 9
+47	172	0.2	1	166 6
+48	188	0.2	1	180 8
+49	197	0.2	1	189 8
+50	201	0.2	1	195 6
+51	338	0.2	1	328 10
+52	215	0.2	1	208 7
+53	175	0.2	1	172 3
+54	169	0.2	1	164 5
+55	173	0.2	1	168 5
+56	187	0.2	1	179 8
+57	207	0.2	1	191 16
+58	482	0.2	1	411 71
+59	771	0.2	1	720 51
+60	782	0.2	1	737 45
+61	889	0.2	1	808 81
+62	932	0.2	1	834 98
+63	1096	0.2	1	976 120
+64	1751	0.2	1	1563 188
+65	3988	0.2	1	3492 496
+66	12322	0.2	1	11267 1055
+67	20621	0.2	1	18957 1664
+68	52556	0.2	1	49641 2915
+69	64295	0.2	1	61597 2698
+70	44765	0.2	1	42852 1913
+71	23837	0.2	1	22756 1081
+72	11180	0.2	1	10566 614
+73	7159	0.2	1	6672 487
+74	5379	0.2	1	5014 365
+75	4319	0.2	1	3961 358
+76	4034	0.2	1	3730 304
+77	3468	0.2	1	3235 233
+78	2544	0.2	1	2352 192
+79	2474	0.2	1	2273 201
+80	2517	0.2	1	2342 175
+81	2451	0.2	1	2279 172
+82	2337	0.2	1	2172 165
+83	2303	0.2	1	2106 197
+84	2590	0.2	1	2434 156
+85	1859	0.2	1	1705 154
+86	1785	0.2	1	1644 141
+87	1688	0.2	1	1565 123
+88	1620	0.2	1	1492 128
+89	1615	0.2	1	1504 111
+90	1761	0.2	1	1635 126
+91	2006	0.2	1	1872 134
+92	2334	0.2	1	2193 141
+93	2868	0.2	1	2692 176
+94	3783	0.2	1	3590 193
+95	5431	0.2	1	5177 254
+96	9093	0.2	1	8662 431
+97	18362	0.2	1	17681 681
+98	21011	0.2	1	20080 931
+99	16060	0.2	1	15225 835
+100	13932	0.2	1	13342 590
+101	8085	0.2	1	7702 383
+102	1259	0.2	1	1182 77
+103	829	0.2	1	755 74
+104	957	0.2	1	854 103
+105	1087	0.2	1	995 92
+106	882	0.2	1	799 83
+107	838	0.2	1	753 85
+108	879	0.2	1	801 78
+109	808	0.2	1	727 81
+110	636	0.2	1	557 79
+111	650	0.2	1	585 65
+112	648	0.2	1	561 87
+113	644	0.2	1	561 83
+114	709	0.2	1	626 83
+115	742	0.2	1	655 87
+116	769	0.2	1	647 122
+117	803	0.2	1	686 117
+118	813	0.2	1	707 106
+119	1042	0.2	1	873 169
+120	1201	0.2	1	933 268
+121	1566	0.2	1	1140 426
+122	1338	0.2	1	1101 237
+123	1208	0.2	1	1002 206
+124	1299	0.2	1	972 327
+125	1483	0.2	1	1073 410
+126	990	0.2	1	819 171
+127	1183	0.2	1	1017 166
+128	1634	0.2	1	1375 259
+129	2443	0.2	1	2122 321
+130	4326	0.2	1	3795 531
+131	1385	0.2	1	994 391
+132	1259	0.2	1	987 272
+133	1341	0.2	1	1106 235
+134	1457	0.2	1	1065 392
+135	1609	0.2	1	1230 379
+136	2003	0.2	1	1682 321
+137	3564	0.2	1	2777 787
+138	6350	0.2	1	4777 1573
+139	7701	0.2	1	5115 2586
+140	6840	0.2	1	5026 1814
+141	4599	0.2	1	4324 275
+142	4785	0.2	1	4462 323
+143	2396	0.2	1	2115 281
+144	2924	0.2	1	2770 154
+145	4712	0.2	1	4409 303
+146	8381	0.2	1	8002 379
+147	14811	0.2	1	14145 666
+148	15168	0.2	1	14519 649
+149	20402	0.2	1	19503 899
+150	8756	0.2	1	8246 510
+151	3513	0.2	1	3120 393
+
+RUN STATISTICS FOR INPUT FILE: ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R2_001.fastq.gz
+=============================================
+13365282 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files AR_Litt_library_S1_R1_001_trimmed.fq.gz and AR_Litt_library_S1_R2_001_trimmed.fq.gz
+file_1: AR_Litt_library_S1_R1_001_trimmed.fq.gz, file_2: AR_Litt_library_S1_R2_001_trimmed.fq.gz
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: AR_Litt_library_S1_R1_001_trimmed.fq.gz and AR_Litt_library_S1_R2_001_trimmed.fq.gz <<<<<
+Writing validated paired-end Read 1 reads to AR_Litt_library_S1_R1_001_val_1.fq.gz
+Writing validated paired-end Read 2 reads to AR_Litt_library_S1_R2_001_val_2.fq.gz
+
+Total number of sequences analysed: 13365282
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 263871 (1.97%)
+
+Deleting both intermediate output files AR_Litt_library_S1_R1_001_trimmed.fq.gz and AR_Litt_library_S1_R2_001_trimmed.fq.gz
+
+====================================================================================================
+
+Started analysis of AR_Litt_library_S1_R1_001_val_1.fq.gz
+Started analysis of AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 5% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 5% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 10% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 10% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 15% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 15% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 20% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 20% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 25% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 25% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 30% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 30% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 35% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 35% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 40% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 40% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 45% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 45% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 50% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 50% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 55% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 55% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 60% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 60% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 65% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 65% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 70% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 70% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 75% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 75% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 80% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 80% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 85% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 85% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 90% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 90% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Approx 95% complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Approx 95% complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Analysis complete for AR_Litt_library_S1_R2_001_val_2.fq.gz
+Analysis complete for AR_Litt_library_S1_R1_001_val_1.fq.gz
+Done.
+Processing paired-end data.
+Using Phred+33 encoding for quality scores.
+Found 1 paired input file(s).
+Searching for single-end, inlined barcodes.
+Loaded 96 barcodes (4-7bp).
+Will attempt to recover barcodes with at most 1 mismatches.
+Processing file 1 of 1 [AR_Litt_library_S1_R1_001_val_1.fq.gz]
+  Reading data from:
+  ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R1_001_val_1.fq.gz and
+  ExternalData/Flowcell_1304/Pooled/AR_Litt_library_S1_R2_001_val_2.fq.gz
+  Processing RAD-Tags...1M...2M...3M...4M...5M...6M...7M...8M...9M...10M...11M...12M...13M...
+  26202822 total reads; -1166472 ambiguous barcodes; -2148123 ambiguous RAD-Tags; +2678805 recovered; -1 low quality reads; 22888226 retained reads.
+Closing files, flushing buffers...
+Outputing details to log: 'ExternalData/Flowcell_1304/Pooled/Stacks/process_radtags.Pooled.log'
+
+26202822 total sequences
+ 1166472 ambiguous barcode drops (4.5%)
+       1 low quality read drops (0.0%)
+ 2148123 ambiguous RAD-Tag drops (8.2%)
+22888226 retained reads (87.4%)

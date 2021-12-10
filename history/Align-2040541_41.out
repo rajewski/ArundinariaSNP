@@ -1,0 +1,42 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+sambamba-sort: Error creating thread
+/bin/bash: line 1: 148944 Done                    gawk '{ if ($0~"^@") { print; next } else { $10="*"; $11="*"; print } }' OFS="\t" A6.jmpa9vYyA593/spl_pipe
+     148945 Broken pipe             | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba view -S -f bam -l 0 /dev/stdin
+     148946 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba sort -t 4 -m 1G --tmpdir=A6.jmpa9vYyA593/spl -o results/Flowcell_1304/A6.splitters.bam /dev/stdin
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening A6.jmpa9vYyA593/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening A6.jmpa9vYyA593/spl_pipe for write.
+[M::process] read 73508 sequences (10000105 bp)...
+[M::process] read 13378 sequences (1823761 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 32792, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (199, 210, 227)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (143, 283)
+[M::mem_pestat] mean and std.dev: (213.36, 12.56)
+[M::mem_pestat] low and high boundaries for proper pairs: (115, 311)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 73508 reads in 5.130 CPU sec, 5.103 real sec
+samblaster: Loaded 12 header sequence entries.
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 5952, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (199, 210, 227)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (143, 283)
+[M::mem_pestat] mean and std.dev: (213.40, 12.61)
+[M::mem_pestat] low and high boundaries for proper pairs: (115, 311)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 13378 reads in 1.269 CPU sec, 1.248 real sec
+[main] Version: 0.7.12-r1039
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:A6\tSM:A6\tLB:Lib\ References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/A6.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/A6.2.fq.gz
+[main] Real time: 6.570 sec; CPU: 6.562 sec
+samblaster: Output 61 discordant read pairs to A6.jmpa9vYyA593/disc_pipe
+samblaster: Output 4 split reads to A6.jmpa9vYyA593/spl_pipe
+samblaster: Marked 42632 of 43443 (98.13%) read ids as duplicates using 1340k memory in 0.175S CPU seconds and 7S wall time.
+slurmstepd-i05: error: *** JOB 2040581 ON i05 CANCELLED AT 2020-09-03T15:21:58 ***

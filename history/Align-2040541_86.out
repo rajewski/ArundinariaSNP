@@ -1,0 +1,6 @@
+/opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/speedseq: fork: retry: No child processes
+/opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/speedseq: fork: retry: No child processes
+Sourcing executables from speedseq.config ...
+Aligning...
+parallel: Warning: Only enough available processes to run 1 jobs in parallel. Raising ulimit -u or /etc/security/limits.conf may help.
+slurmstepd-i06: error: *** JOB 2040626 ON i06 CANCELLED AT 2020-09-03T15:21:58 ***

@@ -1,0 +1,31 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+sambamba-sort: Error creating thread
+sambamba-view: Error creating thread
+/bin/bash: line 1: 149318 Broken pipe             gawk '{ if ($0~"^@") { print; next } else { $10="*"; $11="*"; print } }' OFS="\t" C4.vcbjttmctaZU/disc_pipe
+     149319 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba view -S -f bam /dev/stdin
+     149320 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba sort -t 4 -m 1G --tmpdir=C4.vcbjttmctaZU/disc -o results/Flowcell_1304/C4.discordants.bam /dev/stdin
+sambamba-sort: Error creating thread
+sambamba-view: Error creating thread
+/bin/bash: line 1: 149315 Done                    gawk '{ if ($0~"^@") { print; next } else { $10="*"; $11="*"; print } }' OFS="\t" C4.vcbjttmctaZU/spl_pipe
+     149316 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba view -S -f bam -l 0 /dev/stdin
+     149317 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba sort -t 4 -m 1G --tmpdir=C4.vcbjttmctaZU/spl -o results/Flowcell_1304/C4.splitters.bam /dev/stdin
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening C4.vcbjttmctaZU/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening C4.vcbjttmctaZU/spl_pipe for write.
+[M::process] read 74334 sequences (10000022 bp)...
+[M::process] read 21698 sequences (2926349 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 33881, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (147, 252)
+[M::mem_pestat] mean and std.dev: (201.31, 12.89)
+[M::mem_pestat] low and high boundaries for proper pairs: (126, 273)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 74334 reads in 4.206 CPU sec, 4.174 real sec
+samblaster: Loaded 12 header sequence entries.

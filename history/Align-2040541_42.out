@@ -1,0 +1,26 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening B6.GeWOrk9CEktW/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening B6.GeWOrk9CEktW/spl_pipe for write.
+[M::process] read 71834 sequences (10000050 bp)...
+[M::process] read 71560 sequences (10000186 bp)...
+sambamba-sort: Error creating thread
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 34503, 2, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (210, 210, 227)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (176, 261)
+[M::mem_pestat] mean and std.dev: (215.44, 10.38)
+[M::mem_pestat] low and high boundaries for proper pairs: (159, 278)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 71834 reads in 5.203 CPU sec, 5.077 real sec
+samblaster: Loaded 12 header sequence entries.
+/bin/bash: line 1: 149184 Broken pipe             /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R '@RG\tID:B6\tSM:B6\tLB:Lib\' References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/B6.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/B6.2.fq.gz
+     149186                       | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/samblaster --excludeDups --addMateTags --maxSplitCount 2 --minNonOverlap 20 --splitterFile B6.GeWOrk9CEktW/spl_pipe --discordantFile B6.GeWOrk9CEktW/disc_pipe
+     149187                       | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba view -S -f bam -l 0 /dev/stdin
+     149188 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba sort -t 1 -m 18G --tmpdir=B6.GeWOrk9CEktW/full -o results/Flowcell_1304/B6.bam /dev/stdin

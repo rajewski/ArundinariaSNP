@@ -1,0 +1,14 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening Flowcell_1304.FxizxsceosAX/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[E::main_mem] fail to open file `ExternalData/Flowcell_1304/Pooled/Stacks/.1.fq.gz'.
+samblaster: Opening Flowcell_1304.FxizxsceosAX/spl_pipe for write.
+samblaster: Missing header on input sam file.  Exiting.
+
+sambamba-sort: Cannot open or create file 'results/Flowcell_1304/.bam'
+sambamba-sort: Cannot open or create file 'results/Flowcell_1304/.splitters.bam'
+sambamba-sort: Cannot open or create file 'results/Flowcell_1304/.discordants.bam'

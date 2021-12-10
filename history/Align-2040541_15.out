@@ -1,0 +1,38 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening G2.RxgnVCIebjxL/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening G2.RxgnVCIebjxL/spl_pipe for write.
+[M::process] read 68674 sequences (10000238 bp)...
+[M::process] read 37724 sequences (5498770 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 31922, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (147, 252)
+[M::mem_pestat] mean and std.dev: (199.22, 9.19)
+[M::mem_pestat] low and high boundaries for proper pairs: (126, 273)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 68674 reads in 4.062 CPU sec, 3.988 real sec
+samblaster: Loaded 12 header sequence entries.
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 17546, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (147, 252)
+[M::mem_pestat] mean and std.dev: (199.12, 9.13)
+[M::mem_pestat] low and high boundaries for proper pairs: (126, 273)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 37724 reads in 2.486 CPU sec, 2.509 real sec
+[main] Version: 0.7.12-r1039
+samblaster: Output 88 discordant read pairs to G2.RxgnVCIebjxL/disc_pipe
+[main] CMD:samblaster: Output 0 split reads to G2.RxgnVCIebjxL/spl_pipe
+ /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:G2\tSM:G2\tLB:Lib\ References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/G2.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/G2.2.fq.gzsamblaster: Marked 52562 of 53199 (98.80%) read ids as duplicates
+[main] Real time: 6.907 sec; CPU: 6.738 sec
+ using 1340k memory in 0.203S CPU seconds and 7S wall time.
+Done

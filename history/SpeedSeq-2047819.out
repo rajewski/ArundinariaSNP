@@ -1,0 +1,39 @@
+Tue Sep 8 16:54:24 PDT 2020: Calling SNPs and indels with SpeedSeq var...
+Sourcing executables from speedseq.config ...
+Calling variants...
+ERROR(freebayes): Couldn't find read group id (@RG tag) for BAM Alignment 1_1102_20644_16120 at position 7 in sequence AGCATCCTGCAGTCACCTTTTCTTTTAAATCACGGTCAAATGCATTAAATCTTTTACTGATATAAATTTTCAAATCGATGGTCTTATTATTACCCCCTCTTTTTTATTCTGGTATCAGCATGGAAAGGATTCTTGAAAGGTATGAAAGATACTCATATGCCGAGAGGCAGCTTACTGCTACTGATCATGAAACCCCGGTATGCCTAAGTCTCCGGGATGCT EXITING!
+ERROR(freebayes): Couldn't find read group id (@RG tag) for BAM Alignment 1_1113_10727_7655 at position 7 in sequence AGCATCCTGCAGAATGGGAAGAGGAAGGGTGCAGTTGAAGAGAATTGAGAACAAAATTAATAGGCAAGTTACTTTCTCAAAACGTCGATCTGGTTTACTTAAGAAAGCTCATGAGATCTCTGTGCTTTGTGAAGCTGAGGTTGGTTTGATTGTTTTTTCTACAAAAGGCAAACTCTTTGAATATGCCACTGATTCTTGGTACGTCCGGGATGCT EXITING!
+Done
+Tue Sep 8 16:54:53 PDT 2020: Done.
+Tue Sep 8 16:54:53 PDT 2020: Calling structural variants with SpeedSeq sv...
+Sourcing executables from speedseq.config ...
+
+Checking for required python modules (python)...
+
+usage:   speedseq sv [options]
+
+sv options:
+         -B FILE  full BAM file(s) (comma separated) (required)
+         -S FILE  split reads BAM file(s) (comma separated) (required)
+         -D FILE  discordant reads BAM files(s) (comma separated) (required)
+         -R FILE  indexed reference genome fasta file (required)
+         -o STR   output prefix [fullBam.bam]
+         -t INT   threads [1] 
+         -x FILE  BED file to exclude
+         -g       genotype SV breakends with svtyper
+         -d       calculate read-depth with CNVnator
+         -w INT   CNVnator window size [100]
+         -A       annotate the vcf with VEP
+         -P       output LUMPY probability curves in VCF
+         -m INT   minimum sample weight for a call [4]
+         -r FLOAT trim threshold [0]
+         -T DIR   temp directory [./output_prefix.XXXXXXXXXXXX]
+         -k       keep temporary files
+
+global options:
+         -K FILE  path to speedseq.config file (default: same directory as speedseq)
+         -v       verbose
+         -h       show this message
+
+Error: BAM file results/Flowcell_1304/G5.splitters.bam not found.
+

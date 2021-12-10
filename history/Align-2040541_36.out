@@ -1,0 +1,28 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening D5.cgTLXXNKJl5d/disc_pipe for write.
+samblaster: Opening D5.cgTLXXNKJl5d/spl_pipe for write.
+[M::process] read 69370 sequences (10000272 bp)...
+[M::process] read 69332 sequences (10000055 bp)...
+sambamba-sort: Error creating thread
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 31787, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (147, 252)
+[M::mem_pestat] mean and std.dev: (199.47, 11.47)
+[M::mem_pestat] low and high boundaries for proper pairs: (126, 273)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 69370 reads in 4.136 CPU sec, 4.008 real sec
+samblaster: Loaded 12 header sequence entries.
+/bin/bash: line 1: 149241 Broken pipe             /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R '@RG\tID:D5\tSM:D5\tLB:Lib\' References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/D5.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/D5.2.fq.gz
+     149242                       | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/samblaster --excludeDups --addMateTags --maxSplitCount 2 --minNonOverlap 20 --splitterFile D5.cgTLXXNKJl5d/spl_pipe --discordantFile D5.cgTLXXNKJl5d/disc_pipe
+     149243                       | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba view -S -f bam -l 0 /dev/stdin
+     149244 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba sort -t 1 -m 18G --tmpdir=D5.cgTLXXNKJl5d/full -o results/Flowcell_1304/D5.bam /dev/stdin
+sambamba-view: Error creating thread
+sambamba-sort: not enough data in stream

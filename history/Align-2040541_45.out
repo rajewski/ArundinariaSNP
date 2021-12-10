@@ -1,0 +1,38 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening E6.sxsJftBRmonh/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening E6.sxsJftBRmonh/spl_pipe for write.
+[M::process] read 70174 sequences (10000159 bp)...
+[M::process] read 28334 sequences (4036729 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 31202, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (199, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (177, 232)
+[M::mem_pestat] mean and std.dev: (206.92, 11.05)
+[M::mem_pestat] low and high boundaries for proper pairs: (163, 243)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 70174 reads in 5.298 CPU sec, 5.220 real sec
+samblaster: Loaded 12 header sequence entries.
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 12617, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (199, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (177, 232)
+[M::mem_pestat] mean and std.dev: (207.02, 11.14)
+[M::mem_pestat] low and high boundaries for proper pairs: (162, 243)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 28334 reads in 2.404 CPU sec, 2.387 real sec
+[main] Version: 0.7.12-r1039
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:E6\tSM:E6\tLB:Lib\ References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/E6.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/E6.2.fq.gz
+[main] Real time: 7.969 sec; CPU: 7.868 sec
+samblaster: Output 66 discordant read pairs to E6.sxsJftBRmonh/disc_pipe
+samblaster: Output 4 split reads to E6.sxsJftBRmonh/spl_pipe
+samblaster: Marked 48946 of 49254 (99.37%) read ids as duplicates using 1344k memory in 0.189S CPU seconds and 8S wall time.
+Done

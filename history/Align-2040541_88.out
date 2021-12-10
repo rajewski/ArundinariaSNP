@@ -1,0 +1,64 @@
+/etc/profile.d/vim.sh: fork: retry: No child processes
+/etc/profile: fork: retry: No child processes
+/etc/profile: fork: retry: No child processes
+/etc/profile: fork: retry: No child processes
+Sourcing executables from speedseq.config ...
+Aligning...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening H11.IaymO7gac7Bx/disc_pipe for write.
+samblaster: Opening H11.IaymO7gac7Bx/spl_pipe for write.
+[M::process] read 75022 sequences (10000060 bp)...
+[M::process] read 74920 sequences (10000179 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 37421, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 121, 200)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 358)
+[M::mem_pestat] mean and std.dev: (149.66, 38.94)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 437)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 75022 reads in 2.624 CPU sec, 2.421 real sec
+samblaster: Loaded 12 header sequence entries.
+[M::process] read 74992 sequences (10000239 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 37411, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 121, 200)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 358)
+[M::mem_pestat] mean and std.dev: (150.41, 39.14)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 437)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 74920 reads in 2.951 CPU sec, 2.722 real sec
+[M::process] read 47442 sequences (6330878 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 37430, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 121, 200)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 358)
+[M::mem_pestat] mean and std.dev: (149.97, 39.06)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 437)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 74992 reads in 2.875 CPU sec, 2.687 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 23664, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 121, 200)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 358)
+[M::mem_pestat] mean and std.dev: (150.13, 39.05)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 437)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 47442 reads in 1.716 CPU sec, 1.707 real sec
+[main] Version: 0.7.12-r1039
+samblaster: Output 13 discordant read pairs to H11.IaymO7gac7Bx/disc_pipe
+[main] CMD:samblaster: Output 22 split reads to H11.IaymO7gac7Bx/spl_pipe
+ /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:H11\tSM:H11\tLB:Lib\ References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/H11.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/H11.2.fq.gzsamblaster: Marked 135984 of 136188 (99.85%) read ids as duplicates
+[main] Real time: 9.970 sec; CPU: 10.378 sec
+ using 1348k memory in 0.521S CPU seconds and 10S wall time.
+Done

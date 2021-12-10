@@ -1,0 +1,27 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening E4.shoRD5g9frQZ/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening E4.shoRD5g9frQZ/spl_pipe for write.
+[M::process] read 69250 sequences (10000176 bp)...
+[M::process] read 69240 sequences (10000166 bp)...
+sambamba-sort: Error creating thread
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 31241, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (147, 252)
+[M::mem_pestat] mean and std.dev: (202.43, 14.02)
+[M::mem_pestat] low and high boundaries for proper pairs: (126, 273)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 69250 reads in 4.493 CPU sec, 4.336 real sec
+samblaster: Loaded 12 header sequence entries.
+/bin/bash: line 1: 148300 Broken pipe             /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R '@RG\tID:E4\tSM:E4\tLB:Lib\' References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/E4.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/E4.2.fq.gz
+     148301                       | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/samblaster --excludeDups --addMateTags --maxSplitCount 2 --minNonOverlap 20 --splitterFile E4.shoRD5g9frQZ/spl_pipe --discordantFile E4.shoRD5g9frQZ/disc_pipe
+     148303                       | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba view -S -f bam -l 0 /dev/stdin
+     148304 Segmentation fault      | /opt/linux/centos/7.x/x86_64/pkgs/speedseq/a95704a/bin/sambamba sort -t 1 -m 18G --tmpdir=E4.shoRD5g9frQZ/full -o results/Flowcell_1304/E4.bam /dev/stdin
+slurmstepd-i05: error: *** JOB 2040569 ON i05 CANCELLED AT 2020-09-03T15:21:58 ***

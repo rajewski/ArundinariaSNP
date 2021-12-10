@@ -1,0 +1,49 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening B5.M8ihfPCFRnQD/disc_pipe for write.
+samblaster: Opening B5.M8ihfPCFRnQD/spl_pipe for write.
+[M::process] read 69600 sequences (10000052 bp)...
+[M::process] read 69568 sequences (10000101 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 31479, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (199, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (177, 232)
+[M::mem_pestat] mean and std.dev: (203.91, 11.97)
+[M::mem_pestat] low and high boundaries for proper pairs: (156, 243)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 69600 reads in 4.976 CPU sec, 4.830 real sec
+samblaster: Loaded 12 header sequence entries.
+[M::process] read 69092 sequences (9932453 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 31643, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (199, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (177, 232)
+[M::mem_pestat] mean and std.dev: (203.81, 11.95)
+[M::mem_pestat] low and high boundaries for proper pairs: (156, 243)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 69568 reads in 5.171 CPU sec, 5.030 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 31251, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (199, 199, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (177, 232)
+[M::mem_pestat] mean and std.dev: (203.82, 11.92)
+[M::mem_pestat] low and high boundaries for proper pairs: (156, 243)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 69092 reads in 4.937 CPU sec, 4.946 real sec
+samblaster: Output 92 discordant read pairs to B5.M8ihfPCFRnQD/disc_pipe
+[main] Version: 0.7.12-r1039
+samblaster: Output 2 split reads to B5.M8ihfPCFRnQD/spl_pipe
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:B5\tSM:B5\tLB:Lib\ References.fastasamblaster: Marked 103641 of 104130 (99.53%) read ids as duplicates ExternalData/Flowcell_1304/Pooled/Stacks/B5.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/B5.2.fq.gz using 1344k memory in 0.394S
+[main] Real time: 15.268 sec; CPU: 15.301 sec
+ CPU seconds and 15S wall time.
+Done

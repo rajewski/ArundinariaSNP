@@ -1,0 +1,27 @@
+Sourcing executables from speedseq.config ...
+Aligning...
+samblaster: Version 0.1.22
+samblaster: Inputting from stdin
+samblaster: Outputting to stdout
+samblaster: Opening G6.NmrikuvnTyM9/disc_pipe for write.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+samblaster: Opening G6.NmrikuvnTyM9/spl_pipe for write.
+[M::process] read 24 sequences (3288 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 11, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (189, 189, 199)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (169, 219)
+[M::mem_pestat] mean and std.dev: (194.25, 7.46)
+[M::mem_pestat] low and high boundaries for proper pairs: (159, 229)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 24 reads in 0.003 CPU sec, 0.003 real sec
+samblaster: Loaded 12 header sequence entries.
+[main] Version: 0.7.12-r1039
+[main] CMD: /opt/linux/centos/7.x/x86_64/pkgs/bwa/0.7.12/bin/bwa mem -t 1 -R @RG\tID:G6\tSM:G6\tLB:Lib\ References.fasta ExternalData/Flowcell_1304/Pooled/Stacks/G6.1.fq.gz ExternalData/Flowcell_1304/Pooled/Stacks/G6.2.fq.gz
+[main] Real time: 0.089 sec; CPU: 0.008 sec
+samblaster: Output 2 discordant read pairs to G6.NmrikuvnTyM9/disc_pipe
+samblaster: Output 0 split reads to G6.NmrikuvnTyM9/spl_pipe
+samblaster: Marked 4 of 12 (33.33%) read ids as duplicates using 1080k memory in 0.001S CPU seconds and 0S wall time.
+Done
