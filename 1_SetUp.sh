@@ -10,12 +10,11 @@
 #SBATCH -o ./history/SetUp-%A_%a.out
 
 # Copy the MiSeq data
-if [ ! -e ExternalData ]; then
-    cp /rhome/mcollin/bigdata/alitt/1266/200514_M02457_0459_000000000-CYK9B/* ExternalData/
-    #UN=alitt pw=pMgrYEH'NXkb
-fi
+mkdir -p ExternalData/Flowcell_1304
+curl --user alitt:"pMgrYEH'NXkb" http://cluster.hpcc.ucr.edu/~mcollin/alitt/1304/200828_M02457_0476_000000000-JBBRV/AR_Litt_library_S1_R1_001.fastq.gz > ExternalData/Flowcell_1304/AR_Litt_library_S1_R1_001.fastq.gz
+curl --user alitt:"pMgrYEH'NXkb" http://cluster.hpcc.ucr.edu/~mcollin/alitt/1304/200828_M02457_0476_000000000-JBBRV/AR_Litt_library_S1_R2_001.fastq.gz > ExternalData/Flowcell_1304/AR_Litt_library_S1_R2_001.fastq.gz
 
-# Mmake the indices of the references file  
+# Mand indices of the references file  
 if [ ! -f References.fasta.ann ]; then
     module load bwa/0.7.12
     bwa index References.fasta

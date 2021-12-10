@@ -8,32 +8,35 @@
 #SBATCH --mail-type=ALL
 #SBATCH -p short
 #SBATCH -o ./history/SpeedSeq-%A.out
-set -eu
+set -e
 
-# Make list of BAM files
-# rm results/C12* results/D12* results/E12* results/F12* results/G12* results/H12*
-Bams=$(find results/ \( -name "*.bam" -not -name "*splitters*" -not -name "*discordants*" -not -name "E11*" -not -name "Merged.bam" \) )
+FLOW=Flowcell_1304
+# Make list of BAM files and then another with commas
+Bams=$(find results/$FLOW/ \( -name "*.bam" -not -name "*splitters*" -not -name "*discordants*" -not -name "Merged.bam" \) )
 Bamsc=$(echo $Bams | sed 's/bam res/bam,res/g')
-Disc=$(echo $Bamsc | sed 's/\.bam/\.discordants.bam/g')
-Split=$(echo $Bamsc | sed 's/\.bam/\.splitters.bam/g')
+Disc=$(echo $Bamsc | sed 's/.bam/.discordants.bam/g')
+Split=$(echo $Bamsc | sed 's/.bam/.splitters.bam/g')
 
 # Call SNPs and indels
 module load speedseq/a95704a
-conda activate speedseq
+conda activate speedseqEnv
 
-echo $(date): Calling SNPs and indels with SpeedSeq var...
-speedseq var \
-    -o results/SpeedSeq \
-    -t $SLURM_CPUS_PER_TASK \
-    -K speedseq.config \
-    References.fasta \
-    $Bams
-echo $(date): Done.
+if [ ! -e results/$FLOW/SpeedSeq_$FLOW.vcf* ]; then
+    echo $(date): Calling SNPs and indels with SpeedSeq var...
+    speedseq var \
+	-o results/$FLOW/SpeedSeq_$FLOW \
+	-t $SLURM_CPUS_PER_TASK \
+	-K speedseq.config \
+	References.fasta \
+	$Bams
+    echo $(date): Done.
+fi
 
 # Call structural variants
 echo $(date): Calling structural variants with SpeedSeq sv...
+conda activate speedseqEnv
 speedseq sv \
-    -o results/SpeedSeq \
+    -o results/$FLOW/SpeedSeq_$FLOW \
     -t $SLURM_CPUS_PER_TASK \
     -K speedseq.config \
     -B $Bamsc \
