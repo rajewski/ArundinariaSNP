@@ -1,0 +1,11 @@
+This is just a dummy file to track the external data directories. On the HPC this folder contained folders with flowcell names and then the fastqs for each of hte two genotyping experiments. Those data are submitted to NCBI (PRJNA788133).
+
+The association of NCBI SRTA accessions, flowcells, and filenames for this Git is below
+
+| File name                          | Flowcell      | SRA Name | SRA Accession |
+|------------------------------------|---------------|----------|---------------|
+| Litt_MiSeq_S1_R1_001.fastq.gz      | Flowcell_1266 | Pool1    | (Pending)     |
+| Litt_MiSeq_S1_R1_001.fastq.gz      | Flowcell_1266 | Pool1    | (Pending)     |
+| AR_Litt_library_S1_R2_001.fastq.gz | Flowcell_1304 | Pool2    | (Pending)     |
+| AR_Litt_library_S1_R2_001.fastq.gz | Flowcell_1304 | Pool2    | (Pending)     |
+
