@@ -8,6 +8,6 @@ fi
 
 # Download samples
 while read -r link; do
-    curl -O $link
+    curl -O "$link"
 done < ftpLinks.txt
 
