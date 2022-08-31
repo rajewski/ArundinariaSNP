@@ -1,3 +1,13 @@
+
+# Updates
+
+- Considering putting R stuff in its own container
+- Docker container created with all of the command line tools except R, but considering breaking this into several containers and/or using biocontainers
+- updating paths to remove UCR HPCC dependencies
+- organizing folders for more intuitive storage
+
+# Old
+
 This repo contains the steps I used to process FASTQ files from Illumina 2x150bp sequencing of pooled PCR products for phylogenetic analysis. Each demultiplexed pool corresponds to a single individual, but the pool contains reads from 3-5 PCR-amplified loci. These loci are not homologous and their reads should easily assemble into separate contigs. Because the loci are also comparatively short (<1200bp), the read lengths *should* be long enough to phase haplotypes for each locus. 
 
 Two notes on this phasing:
