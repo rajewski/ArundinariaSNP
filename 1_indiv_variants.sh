@@ -1,40 +1,40 @@
-#!/bin/bash -l
-#SBATCH --ntasks=4
-#SBATCH --nodes=1
-#SBATCH --mem=7G
-#SBATCH --time=2:00:00
-#SBATCH --mail-user=araje002@ucr.edu
-#SBATCH --mail-type=ALL
-#SBATCH -p batch
-#SBATCH -o ./history/slurm-%A_%a.out
+#!/bin/bash 
 
-#get sample names for all files to be processed
-SamList=~/bigdata/Arundinaria/names.txt
-Sample=$(awk "NR==$SLURM_ARRAY_TASK_ID" $SamList)
-Indiv=$(echo $Sample | cut -d "_" -f 2)
-
-#optionally make the indices of the references files
-module load bwa/0.7.12
-if [ ! -f "references.fasta.ann" ]; then
-    bwa index references.fasta
+# Make the indices of the references files
+if [ ! -f "References/references.ann" ]; then
+    bwa index -p References/references References/references.fasta
 fi
 
-if [ ! -f "references.fasta.fai" ]; then
+if [ ! -f "References/references.fasta.fai" ]; then
     module load samtools/1.8
-    samtools faidx references.fasta
+    samtools faidx References/references.fasta
 fi
 
-if [ ! -f "references.dict" ]; then
-    module load picard/2.18.3
-    picard CreateSequenceDictionary R=references.fasta O=references.dict
+if [ ! -f "References/references.dict" ]; then
+    picard CreateSequenceDictionary R=References/references.fasta O=References/references.dict
 fi
 
-#map the reads
-if [ ! -f "results/"$Indiv".filtered.bam" ]; then
-    module load speedseq/a95704a
-    speedseq align -t $SLURM_NTASKS -K speedseq.config -o results/$Indiv.filtered -R '@RG\tID:'$Indiv'\tSM:'$Indiv'\tLB:Lib\' references.fasta data/$Sample"_R1_filtered.fastq.gz" data/$Sample"_R2_filtered.fastq.gz"
-fi
-
-#Use GATK to make the VCF
-module load gatk/4.0.8.1
-gatk HaplotypeCaller -R references.fasta -I results/$Indiv.filtered.bam -O results/$Indiv.g.vcf -ERC GVCF
+# Loop over the Accession2Sample.tsv file, mapping each set of FASTQs and calling variants
+source activate speedseq
+while read accession sample; do
+    # Skip if already present
+    if [ ! -e Results/$sample ]; then
+        # Map
+        speedseq align \
+            -t $SLURM_NTASKS \
+            -o Results/BAM/$sample \
+            -R '@RG\tID:'$sample'\tSM:'$sample'\tLB:Lib\' \
+            References/references.fasta \
+            FASTQ/$accession"_1.fastq.gz" \
+            FASTQ/$accession"_2.fastq.gz"
+    fi
+    # Skip if already present
+    if [ ! -e Results/SNP/$sample.g.vcf ]; then
+        # Genotype
+        gatk HaplotypeCaller \
+            -R References/references.fasta \
+            -I Results/BAM/$sample.bam \
+            -O Results/SNP/$sample.g.vcf \
+            -ERC GVCF
+    fi
+done < References/Accession2Sample.tsv
