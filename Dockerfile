@@ -28,18 +28,18 @@ RUN apt-get remove -y --purge man-db \
 
 # Install BWA
 RUN wget -O- --no-check-certificate https://sourceforge.net/projects/bio-bwa/files/bwa-0.7.12.tar.bz2/download  | tar xjf - \
-  && cd bwa-0.7.12 \
+  && cd bwa-0.7.12 || exit \
   && make \
-  && cd /gatk 
+  && cd /gatk || exit
   
 # Install samtools
 RUN wget --no-check-certificate https://github.com/samtools/samtools/releases/download/1.8/samtools-1.8.tar.bz2 \
 	&& tar xfj samtools-1.8.tar.bz2 \
-	&& cd samtools-1.8 \
+	&& cd samtools-1.8 || exit \
 	&& ./configure \
 	&& make \
 	&& make install \
-	&& cd /gatk \
+	&& cd /gatk || exit \
 	&& rm samtools-1.8.tar.bz2
 	
 # Install Picard
@@ -47,11 +47,12 @@ RUN wget https://github.com/broadinstitute/picard/releases/download/2.18.3/picar
 ENV picard='java -jar /gatk/picard.jar'
 
 # Install speedseq
-RUN conda create -n speedseq python=2.7 numpy pysam>=0.8.0 scipy \
-  && source activate speedseq \
+RUN conda create -n speedseq python=2.7 numpy pysam>=0.8.0 scipy
+
+RUN . /opt/miniconda/envs/gatk/bin/activate speedseq \
   && git clone --recursive https://github.com/hall-lab/speedseq \
-  && cd speedseq \
+  && cd speedseq || exit \
   && make align \
-  && cd /gatk \
-  && source deactivate
+  && cd /gatk ||exit \
+  && . /opt/miniconda/envs/gatk/bin/activate gatk
 ENV PATH=/gatk/speedseq/bin:$PATH
