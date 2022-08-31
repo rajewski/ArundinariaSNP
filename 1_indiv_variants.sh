@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/usr/bin/env bash
 
 # Make the indices of the references files
 if [ ! -f "References/references.ann" ]; then
@@ -15,7 +15,6 @@ if [ ! -f "References/references.dict" ]; then
 fi
 
 # Loop over the Accession2Sample.tsv file, mapping each set of FASTQs and calling variants
-source activate speedseq
 while read -r accession sample; do
     # Skip if already present
     if [ ! -e Results/"$sample" ]; then
