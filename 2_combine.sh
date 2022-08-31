@@ -1,25 +1,19 @@
-#!/bin/bash -l
-#SBATCH --ntasks=4
-#SBATCH --nodes=1
-#SBATCH --mem=7G
-#SBATCH --time=2:00:00
-#SBATCH --mail-user=araje002@ucr.edu
-#SBATCH --mail-type=ALL
-#SBATCH -p batch
-#SBATCH -o ./history/slurm-%A_%a.out
+#!/bin/bash 
 
-#get sample names for all files to be processed
-Samps=$(find results/ -name "*.g.vcf" |sed 's/.*/-V &/' | tr "\n" " ")
+# get sample names for all files to be processed
+Samps=$(find Results/SNP/ -name "*.g.vcf" | sed 's/.*/-V &/' | tr "\n" " ")
 
-#Use GATK to make the VCF
-module load gatk/4.0.8.1
+# Create DB of sample SNPs
 if [ ! -d "arundinaria" ]; then
-    gatk GenomicsDBImport "$Samps" --genomicsdb-workspace-path arundinaria -L matK -L psaA -L trnL -L WXY -L LFY
+    gatk GenomicsDBImport "$Samps" \
+        --genomicsdb-workspace-path arundinaria \
+        -L matK -L psaA -L trnL -L WXY -L LFY
 fi
 
+# Genotype them all
 gatk GenotypeGVCFs \
-    -R references.fasta \
+    -R References/references.fasta \
     -V gendb://arundinaria \
     -G StandardAnnotation \
-    -O results/Joint.vcf
+    -O Results/SNP/Joint.vcf
 
