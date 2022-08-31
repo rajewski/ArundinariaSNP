@@ -18,7 +18,7 @@ RUN apt-get remove -y --purge man-db \
   && curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - \
   && apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com \
   && apt-get update \
-  && apt-get -y install build-essential git jq perl pod2pdf python3-dev texinfo \
+  && apt-get -y install bcftools build-essential git jq perl pod2pdf python3-dev texinfo \
   && pip install --upgrade pip \
   && pip uninstall -y enum34 \
   && pip install setuptools_scm \
@@ -47,12 +47,15 @@ RUN wget https://github.com/broadinstitute/picard/releases/download/2.18.3/picar
 ENV picard='java -jar /gatk/picard.jar'
 
 # Install speedseq
-RUN conda create -n speedseq python=2.7 numpy pysam>=0.8.0 scipy
-
-RUN . /opt/miniconda/envs/gatk/bin/activate speedseq \
+# with help from https://github.com/ContinuumIO/docker-images/issues/89#issuecomment-440574150
+RUN conda create -n speedseq python=2.7 numpy pysam>=0.8.0 scipy \
+  && /bin/bash -c ". activate speedseq" \
   && git clone --recursive https://github.com/hall-lab/speedseq \
   && cd speedseq || exit \
   && make align \
   && cd /gatk ||exit \
-  && . /opt/miniconda/envs/gatk/bin/activate gatk
+  && /bin/bash -c ". activate gatk"
 ENV PATH=/gatk/speedseq/bin:$PATH
+
+# Add bcftools v1.8 with apt-get
+# Install R with vcfR biocLite Biostrings phangorn ggplot2 ggrepel pryr cowplot gt tidyverse devtools pythools maps prettymapr raster
