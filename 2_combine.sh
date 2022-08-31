@@ -9,9 +9,6 @@
 #SBATCH -o ./history/slurm-%A_%a.out
 
 #get sample names for all files to be processed
-#SamList=~/bigdata/Arundinaria/names.txt
-#Sample=$(awk "NR==$SLURM_ARRAY_TASK_ID" $SamList)
-#Indiv=$(echo $Sample | cut -d "_" -f 2)
 Samps=$(find results/ -name "*.g.vcf" |sed 's/.*/-V &/' | tr "\n" " ")
 
 #Use GATK to make the VCF
