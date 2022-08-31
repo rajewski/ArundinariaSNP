@@ -1,6 +1,7 @@
 FROM broadinstitute/gatk:4.0.8.1
 
-MAINTAINER Alex Rajewski
+LABEL maintainer="Alex Rajewski"
+LABEL name="Arundinaria"
 LABEL version="0.1.0"
 
 # https://stackoverflow.com/a/49127686/13954432 # whatshap change encoding

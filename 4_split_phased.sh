@@ -14,7 +14,7 @@
 module load bcftools/1.8
 
 for file in results/Phased.vcf.gz; do
-    for sample in `bcftools query -l $file`; do
-	bcftools view -c1 -Oz -s $sample -o ${file/.vcf*/.$sample.vcf.gz} $file
-    done
+  for sample in $(bcftools query -l $file) ; do
+    bcftools view -c1 -Oz -s "$sample" -o ${file/.vcf*/.$sample.vcf.gz} $file
+  done
 done

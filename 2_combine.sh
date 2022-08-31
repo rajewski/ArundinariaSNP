@@ -17,7 +17,7 @@ Samps=$(find results/ -name "*.g.vcf" |sed 's/.*/-V &/' | tr "\n" " ")
 #Use GATK to make the VCF
 module load gatk/4.0.8.1
 if [ ! -d "arundinaria" ]; then
-    gatk GenomicsDBImport $Samps --genomicsdb-workspace-path arundinaria -L matK -L psaA -L trnL -L WXY -L LFY
+    gatk GenomicsDBImport "$Samps" --genomicsdb-workspace-path arundinaria -L matK -L psaA -L trnL -L WXY -L LFY
 fi
 
 gatk GenotypeGVCFs \

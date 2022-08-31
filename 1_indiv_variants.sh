@@ -16,25 +16,25 @@ fi
 
 # Loop over the Accession2Sample.tsv file, mapping each set of FASTQs and calling variants
 source activate speedseq
-while read accession sample; do
+while read -r accession sample; do
     # Skip if already present
-    if [ ! -e Results/$sample ]; then
+    if [ ! -e Results/"$sample" ]; then
         # Map
         speedseq align \
-            -t $SLURM_NTASKS \
-            -o Results/BAM/$sample \
-            -R '@RG\tID:'$sample'\tSM:'$sample'\tLB:Lib\' \
+            -t "$SLURM_NTASKS" \
+            -o Results/BAM/"$sample" \
+            -R '@RG\tID:'"$sample"'\tSM:'"$sample"'\tLB:Lib' \
             References/references.fasta \
-            FASTQ/$accession"_1.fastq.gz" \
-            FASTQ/$accession"_2.fastq.gz"
+            FASTQ/"$accession"_1.fastq.gz \
+            FASTQ/"$accession"_2.fastq.gz
     fi
     # Skip if already present
-    if [ ! -e Results/SNP/$sample.g.vcf ]; then
+    if [ ! -e Results/SNP/"$sample".g.vcf ]; then
         # Genotype
         gatk HaplotypeCaller \
             -R References/references.fasta \
-            -I Results/BAM/$sample.bam \
-            -O Results/SNP/$sample.g.vcf \
+            -I Results/BAM/"$sample".bam \
+            -O Results/SNP/"$sample".g.vcf \
             -ERC GVCF
     fi
 done < References/Accession2Sample.tsv

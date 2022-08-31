@@ -13,4 +13,4 @@
 module load python/2.7.12
 module load PartitionFinder
 
-PartitionFinder.py -p $SLURM_NTASKS ./ 
+PartitionFinder.py -p "$SLURM_NTASKS" ./ 

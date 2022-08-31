@@ -12,23 +12,23 @@
 #raxmlHPC-PTHREADS-SSE3 -f a -m GTRGAMMAI -p 121787 -x 92191 -N 1000 -T $SLURM_NTASKS -s concatenated/Concatenated_ambig.phy -w ~/bigdata/Arundinaria/phylo/concatenated/GTRGI -n Concatenated_amibg.RAxML 
 
 module load RAxML_NG/0.9.0
-cd /rhome/arajewski/bigdata/Arundinaria/phylo/plastid/GTRGI
+cd /rhome/arajewski/bigdata/Arundinaria/phylo/plastid/GTRGI || exit
 ALIGNIN=Plastid_NoMissing_rpl32.phy
 
 if [ ! -e "$ALIGNIN.raxml.rba" ]; then
     #command to parse the alignment and estimate the mem and CPU reqs.
-    echo $(date): Estimating time to completion.
+    echo "$(date): Estimating time to completion."
     raxml-ng --parse \
 	--msa ../$ALIGNIN \
 	--model GTR+G+I \
 	--prefix ./$ALIGNIN
-    echo $(date): Done.
+    echo "$(date): Done."
 else
-    echo $(date): Parsing already complete
+    echo "$(date): Parsing already complete"
 fi
 
 #actualy run the analysis
-echo $(date): Beginning RAxML estimation.
+echo "$(date): Beginning RAxML estimation."
 raxml-ng --all \
     --tree pars{25},rand{25} \
     --msa ../$ALIGNIN \
@@ -37,7 +37,7 @@ raxml-ng --all \
     --outgroup 'P.edulis' \
     --seed 121787 \
     --blopt nr_safe \
-    --threads $SLURM_NTASKS
+    --threads "$SLURM_NTASKS"
 
 #print job information for later reference
-scontrol show job $SLURM_JOB_ID
+scontrol show job "$SLURM_JOB_ID"
