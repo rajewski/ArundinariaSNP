@@ -1,17 +1,20 @@
 #!/bin/bash
 
+# Get vars for running commands
+source 0_Docker_Setup.sh
+
 # Merge individual BAM files
-if [ ! -e Results/BAM/merged.bam ]; then
-  samtools merge Results/BAM/Merged.filtered.bam Results/BAM/*.bam
+if [ ! -e "${path_results_docker}/BAM/Merged.bam" ]; then
+  ${_samtools[@]} merge "${path_results_docker}/BAM/Merged.bam" "${path_results_docker}/BAM/*.bam"
 fi
 
 # Index the merged BAM
-samtools index Results/BAM/Merged.bam
+${_samtools[@]} index "${path_results_docker}/BAM/Merged.bam"
 
 # Phase the indidivual samples in the merged VCF
-whatshap phase \
+${_whatshap[@]} phase \
   --indels \
   --max-coverage 20 \
-  -o Results/SNP/Phased.vcf \
-  Results/SNP/Joint.vcf \
-  Results/BAM/Merged.bam
+  -o "${path_results_docker}/SNP/Phased.vcf" \
+  "${path_results_docker}/SNP/Joint.g.vcf"\
+  "${path_results_docker}/BAM/Merged.bam"
