@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Get vars for running commands
+source 0_Docker_Setup.sh
+
 # Pull docker containers SHA follows comment
 docker pull rajewski/getfq:v1.0.0 # f5ab3815f4ff
 docker pull quay.io/biocontainers/bwa:0.7.17--h7132678_9 # cca65af5ecf2
@@ -12,14 +15,14 @@ docker pull quay.io/biocontainers/whatshap:1.2.1--py37h22450f8_0 # 05fc6374672d
 
 # Get sample list
 # requires both ffq and jq to be installed
-if [ ! -e ftpLinks.txt ]; then
-    ffq --ftp SRP234396 | jq -r '.[] | .url' > References/ftpLinks.txt
+if [ ! -e "${path_ref_local}/ftpLinks.txt" ]; then
+    ffq --ftp SRP234396 | jq -r '.[] | .url' > "${path_ref_local}/ftpLinks.txt"
 fi
 
 # Download samples
 while read -r link; do
     curl -O \
-      --output-dir References \
+      --output-dir "${path_fastq_local}" \
       "$link"
-done < References/ftpLinks.txt
+done < "${path_ref_local}/ftpLinks.txt"
 
