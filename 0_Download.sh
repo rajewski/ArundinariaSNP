@@ -2,6 +2,7 @@
 
 # Get vars for running commands
 source 0_Paths.env
+source 0_Containers.env
 
 # Pull docker containers SHA follows comment
 docker pull rajewski/getfq:v1.0.0 # f5ab3815f4ff
@@ -16,7 +17,7 @@ docker pull quay.io/biocontainers/whatshap:1.2.1--py37h22450f8_0 # 05fc6374672d
 # Get sample list
 # requires both ffq and jq to be installed
 if [ ! -e "${path_ref_local}/ftpLinks.txt" ]; then
-    ffq --ftp SRP234396 | jq -r '.[] | .url' > "${path_ref_local}/ftpLinks.txt"
+    ${_getfq[@]} ffq --ftp SRP234396 | jq -r '.[] | .url' > "${path_ref_local}/ftpLinks.txt"
 fi
 
 # Download samples
