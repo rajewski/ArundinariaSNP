@@ -66,5 +66,5 @@ _bcftools=( docker run --rm
 ## Whatshap
 _whatshap=( docker run --rm
             -v "$MOUNT_RESULTS"
-            #TBD
-            whatshap) # double check this command
+            05fc6374672d
+            whatshap ) 
