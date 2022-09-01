@@ -2,6 +2,7 @@
 
 # Get vars for running commands
 source 0_Paths.env
+source 0_Containers.env
 
 # Merge individual BAM files
 if [ ! -e "${path_results_docker}/BAM/Merged.bam" ]; then
