@@ -5,8 +5,8 @@ LABEL name="arundinaria-r"
 LABEL version="1.0.0"
 
 RUN installr -d \
-  -a "cairo imagemagick imagemagick-dev libcurl libx11 libxml2" \
-  -t "curl-dev libxml2-dev linux-headers gfortran" \
+  -a "cairo imagemagick imagemagick-dev libcurl libx11 libxml2 gdal proj geos sqlite" \
+  -t "curl-dev libxml2-dev linux-headers gfortran gdal-dev proj-dev geos-dev sqlite-dev build-base" \
   Biostrings \
   cowplot \
   magick \
@@ -18,7 +18,7 @@ RUN installr -d \
   prettymapr \
   pryr \
   phytools \
-  raster \
+  raster \ 
   gaborcsardi/readxl@fix/alpine-linux \
   tidyverse \
   vcfR
