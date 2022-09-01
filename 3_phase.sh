@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get vars for running commands
-source 0_Docker_Setup.sh
+source 0_Paths.env
 
 # Merge individual BAM files
 if [ ! -e "${path_results_docker}/BAM/Merged.bam" ]; then
