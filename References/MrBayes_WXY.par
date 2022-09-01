@@ -1,5 +1,5 @@
 set autoclose=yes nowarn=yes;
-execute WXY/WXYrenamedJimmy.nex;
+execute Results/PHYLO/WXY/WXYrenamedJimmy.nex;
 lset applyto=(all) nst=6 rates=propinv;
 prset applyto=(all) statefreqpr=fixed(equal);
 mcmc Relburning=yes BurninFrac=0.25;
