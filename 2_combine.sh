@@ -22,5 +22,5 @@ ${_gatk[@]} GenotypeGVCFs \
     -R "$path_ref_docker/references.fasta" \
     -V gendb://arundinaria \
     -G StandardAnnotation \
-    -O "${path_results_docker}/SNP/Joint.g.vcf"
+    -O "${path_results_docker}/SNP/Joint.vcf"
 
