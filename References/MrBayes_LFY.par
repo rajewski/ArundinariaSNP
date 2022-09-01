@@ -1,5 +1,5 @@
 set autoclose=yes nowarn=yes;
-execute LFY/LFYrenamed.nex;
+execute Results/PHYLO/LFY/LFYrenamed.nex;
 lset applyto=(all) nst=2 rates=propinv;
 outgroup LFY_Pedulis;
 mcmcp ngen=100000000 samplefreq=5000 printfreq=10000;
