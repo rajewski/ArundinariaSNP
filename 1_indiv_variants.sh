@@ -1,39 +1,41 @@
 #!/usr/bin/env bash
 
+# Get vars for running commands
+source 0_Docker_Setup.sh
+
 # Make the indices of the references files
 if [ ! -f "References/references.ann" ]; then
-    bwa index -p References/references References/references.fasta
+    ${_bwa[@]} index -p "$path_ref_docker/references" "$path_ref_docker/references.fasta"
 fi
 
 if [ ! -f "References/references.fasta.fai" ]; then
-    module load samtools/1.8
-    samtools faidx References/references.fasta
+    ${_samtools[@]} faidx "$path_ref_docker/references.fasta"
 fi
 
 if [ ! -f "References/references.dict" ]; then
-    picard CreateSequenceDictionary R=References/references.fasta O=References/references.dict
+    ${_gatk[@]} CreateSequenceDictionary -R "$path_ref_docker/references.fasta" -O "$path_ref_docker/references.dict"
 fi
 
 # Loop over the Accession2Sample.tsv file, mapping each set of FASTQs and calling variants
 while read -r accession sample; do
     # Skip if already present
-    if [ ! -e Results/"$sample" ]; then
+    if [ ! -e "${path_results_docker}/BAM/${sample}" ]; then
         # Map
-        speedseq align \
+        ${_speedseq[@]} align \
             -t "$SLURM_NTASKS" \
-            -o Results/BAM/"$sample" \
+            -o "${path_results_docker}/BAM/${sample}" \
             -R '@RG\tID:'"$sample"'\tSM:'"$sample"'\tLB:Lib' \
-            References/references.fasta \
-            FASTQ/"$accession"_1.fastq.gz \
-            FASTQ/"$accession"_2.fastq.gz
+            "$path_ref_docker/references.fasta" \
+            "${path_fastq_docker}/${accession}_1.fastq.gz" \
+            "${path_fastq_docker}/${accession}_2.fastq.gz" 
     fi
     # Skip if already present
-    if [ ! -e Results/SNP/"$sample".g.vcf ]; then
+    if [ ! -e "${path_results_docker}/SNP/${sample}.g.vcf" ]; then
         # Genotype
-        gatk HaplotypeCaller \
-            -R References/references.fasta \
-            -I Results/BAM/"$sample".bam \
-            -O Results/SNP/"$sample".g.vcf \
+        ${_gatk[@]} HaplotypeCaller \
+            -R "$path_ref_docker/references.fasta" \
+            -I "${path_results_docker}/BAM/${sample}.bam" \
+            -O "${path_results_docker}/SNP/${sample}.g.vcf" \
             -ERC GVCF
     fi
-done < References/Accession2Sample.tsv
+done < "${path_ref_local}/Accession2Sample.tsv"
