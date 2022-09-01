@@ -1,7 +1,7 @@
 # This script should be run via the R docker container (arundinaRia) after you have sourced the
 # container paths in 0_Paths.env and 0_Containers.env. You can either execute it with ${_arundinaRia[@]}
 # followed by the DOCKER path to the script or interactively run the container by replacing the
-# --entrypoint command
+# `--entrypoint` command and adding `-it`
 
 library(vcfR)
 library(Biostrings)
