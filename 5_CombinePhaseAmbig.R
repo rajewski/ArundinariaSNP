@@ -1,12 +1,18 @@
 setwd("~/bigdata/Arundinaria/results")
 library(vcfR)
 g <- read.vcfR("Phased.vcf")
-g.SNP <- extract.indels(g, return.indels = FALSE) # remove all indels to only deal with SNPs
-g.SNP[, -c(75, 76, 89, 90)] # Remove null samples
-g.ambig <- alleles2consensus(extract.gt(g.SNP, return.alleles = TRUE), NA_to_n = FALSE) # make a table of IUPAC ambiguous bases for all heterozygotes
-g.InDel <- extract.indels(g, return.indels = TRUE) # remove all SNPs, unused right now, but maybe later
 
-hapsNA <- extract.haps(g.SNP) # Make table of only the phased variants, with unphased as NA
+# remove all indels to only deal with SNPs
+g.SNP <- extract.indels(g, return.indels = FALSE)
+# Remove null samples
+g.SNP[, -c(75, 76, 89, 90)]
+# make a table of IUPAC ambiguous bases for all heterozygotes
+g.ambig <- alleles2consensus(extract.gt(g.SNP, return.alleles = TRUE), NA_to_n = FALSE)
+# remove all SNPs, unused right now, but maybe later
+g.InDel <- extract.indels(g, return.indels = TRUE)
+
+# Make table of only the phased variants, with unphased as NA
+hapsNA <- extract.haps(g.SNP)
 # extract.gt(g.SNP)
 # hapsnoNA <- extract.haps(g.SNP, unphased_as_NA = FALSE)
 # write.csv(hapsNA, file="HaplotypesNA.csv")
