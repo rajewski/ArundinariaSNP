@@ -1,25 +1,30 @@
-FROM rhub/r-minimal:4.3
+FROM rocker/geospatial:4.2.1-ubuntugis
 
 LABEL maintainer="Alex Rajewski"
 LABEL name="arundinaria-r"
 LABEL version="1.0.0"
 
-RUN installr -d \
-  -a "cairo imagemagick imagemagick-dev libcurl libx11 libxml2 gdal proj geos sqlite" \
-  -t "curl-dev libxml2-dev linux-headers gfortran gdal-dev proj-dev geos-dev sqlite-dev build-base" \
-  Biostrings \
+# Install the one bioconductor package we need 
+# install it first to cache the lengthy build time
+RUN R -e 'BiocManager::install(c("Biostrings"), update=FALSE)'
+  
+# Install CRAN packages
+# do we need magick?
+RUN install2.r --error \
   cowplot \
-  magick \
   ggrepel \
   gt \
-  maps \
   phangorn \
   phytools \
   prettymapr \
   pryr \
-  phytools \
-  raster \ 
-  gaborcsardi/readxl@fix/alpine-linux \
-  tidyverse \
   vcfR
+  
+RUN apt-get update \
+  && apt-get install -y xdg-utils
+  
+# source the docker env variables file
+  
+
+
 
