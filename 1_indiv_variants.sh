@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Get vars for running commands
-source 0_Docker_Setup.sh
+source 0_Paths.env
 
 # Make the indices of the references files
 if [ ! -f "References/references.ann" ]; then

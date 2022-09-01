@@ -1,7 +1,9 @@
 #!/bin/bash 
 
-# Made with help from https://www.biostars.org/p/78929/ (Rotten link)
+# Get vars for running commands
+source 0_Paths.env
 
+# Made with help from https://www.biostars.org/p/78929/ (Rotten link)
 # I think this script is broken, but I need real data to test it
 
 for file in "${path_results_local}/SNP/Phased.vcf.gz"; do

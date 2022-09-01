@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Get vars for running commands
-source 0_Docker_Setup.sh
+source 0_Paths.env
 
 # Pull docker containers SHA follows comment
 docker pull rajewski/getfq:v1.0.0 # f5ab3815f4ff
