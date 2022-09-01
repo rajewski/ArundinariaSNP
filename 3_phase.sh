@@ -17,5 +17,5 @@ ${_whatshap[@]} phase \
   --indels \
   --max-coverage 20 \
   -o "${path_results_docker}/SNP/Phased.vcf" \
-  "${path_results_docker}/SNP/Joint.g.vcf"\
+  "${path_results_docker}/SNP/Joint.vcf"\
   "${path_results_docker}/BAM/Merged.bam"
