@@ -1,65 +1,54 @@
-#!/bin/bash -l
-#SBATCH --ntasks=1
-#SBATCH --nodes=1
-#SBATCH --mem=1G
-#SBATCH --time=02:00:00
-#SBATCH --mail-user=araje002@ucr.edu
-#SBATCH --mail-type=ALL
-#SBATCH -p batch
-#SBATCH -o ../history/slurm-%A.out
-set -euv
+#!/usr/bin/env bash
 
-# $((SLURM_MEM_PER_NODE/1000))'G'
-# $SLURM_NTASKS
+# Get vars for running commands
+source 0_Paths.env
+source 0_Containers.env
 
 #Make a VCF file with just the SNP calls from nuclear loci
-if [ ! -e '../results/PhasedNuclear.vcf' ]; then
+if [ ! -e "${path_results_local}/SNP/PhasedNuclear.vcf" ]; then
     echo "$(date): Creating VCF of nuclear loci"
-    touch ../results/PhasedNuclear.vcf
-    grep "#" ../results/Phased.vcf > ../results/PhasedNuclear.vcf
-    grep -v "#" ../results/Phased.vcf | grep "LFY" >> ../results/PhasedNuclear.vcf
-    grep -v "#" ../results/Phased.vcf | grep "WXY" >> ../results.PhasedNuclear.vcf
+    touch "${path_results_local}/SNP/PhasedNuclear.vcf" 
+    grep "#" "${path_results_local}/SNP/Phased.vcf" > "${path_results_local}/SNP/PhasedNuclear.vcf" 
+    grep -v "#" "${path_results_local}/SNP/Phased.vcf" | grep "LFY" >> "${path_results_local}/SNP/PhasedNuclear.vcf"
+    grep -v "#" "${path_results_local}/SNP/Phased.vcf" | grep "WXY" >> "${path_results_local}/SNP/PhasedNuclear.vcf"
     echo "$(date): Done"
 else
     echo "$(date): Found PhasedNuclear.vcf. Dope."
 fi
 
-#make a handful of subset vcf files with only one sample per population (only necessary for Hull Rd)
-if [ ! -e '../results/PhasedNuclearH-2C.vcf' ]; then
+# make a handful of subset vcf files with only one sample per population (only necessary for Hull Rd)
+if [ ! -e "${path_results_local}/SNP/PhasedNuclearH-2C.vcf" ]; then
     echo "$(date): subsetting the VCF to exclude all but H-2C or H8D from Hull"
-    touch ../results/PhasedNuclearH-2C.vcf
-    module load bcftools
-    bcftools view -s ^H-2D,H0B,H0C,H10B,H10C,H10D,H10E,H12D,H14C,H14D,H2A,H2B,H2C,H4A,H4B,H4C,H4D,H6A,H6B,H6C,H6D,H8A,H8B,H8C,H8D ../results/PhasedNuclear.vcf > ../results/PhasedNuclearH-2C.vcf 
-    bcftools view -s ^H-2C,H-2D,H0B,H0C,H10B,H10C,H10D,H10E,H12D,H14C,H14D,H2A,H2B,H2C,H4A,H4B,H4C,H4D,H6A,H6B,H6C,H6D,H8A,H8B,H8C ../results/PhasedNuclear.vcf > ../results/PhasedNuclearH8D.vcf
+    touch "${path_results_local}/SNP/PhasedNuclearH-2C.vcf"
+    ${_bcftools[@]} view -s ^H-2D,H0B,H0C,H10B,H10C,H10D,H10E,H12D,H14C,H14D,H2A,H2B,H2C,H4A,H4B,H4C,H4D,H6A,H6B,H6C,H6D,H8A,H8B,H8C,H8D  "${path_results_local}/SNP/PhasedNuclear.vcf" > "${path_results_local}/SNP/PhasedNuclearH-2C.vcf"
+    ${_bcftools[@]} view -s ^H-2C,H-2D,H0B,H0C,H10B,H10C,H10D,H10E,H12D,H14C,H14D,H2A,H2B,H2C,H4A,H4B,H4C,H4D,H6A,H6B,H6C,H6D,H8A,H8B,H8C "${path_results_local}/SNP/PhasedNuclear.vcf" > "${path_results_local}/SNP/PhasedNuclearH8D.vcf"
     echo "$(date): Done for H-2C and H8D"
 else
     echo "$(date): VCF already subset"
 fi
-#load the module for making a PCA or MDS plot from a VCF
-module load plink/1.90b3.38
 
-#Do a PCA
-if [ ! -e './Nuclear.eigenvec' ]; then
+# Do a PCA
+if [ ! -e "${path_results_local}/Clustering/Nuclear.eigenvec" ]; then
     echo "$(date): Running PCA"
-    plink --allow-extra-chr --vcf ../results/PhasedNuclear.vcf --pca -mind 0.5 --out Nuclear
-    plink --allow-extra-chr --vcf ../results/PhasedNuclearH-2C.vcf --pca -mind 0.5 --out NuclearH-2C
-    plink --allow-extra-chr --vcf ../results/PhasedNuclearH8D.vcf --pca -mind 0.5 --out NuclearH8D
+    ${_plink[@]} --allow-extra-chr --vcf "${path_results_docker}/SNP/PhasedNuclear.vcf" --pca -mind 0.5 --out "${path_results_docker}/Clustering/Nuclear"
+    ${_plink[@]} --allow-extra-chr --vcf "${path_results_docker}/SNP/PhasedNuclearH-2C.vcf" --pca -mind 0.5 --out "${path_results_docker}/Clustering/NuclearH-2C"
+    ${_plink[@]} --allow-extra-chr --vcf "${path_results_docker}/SNP/PhasedNuclearH8D.vcf" --pca -mind 0.5 --out "${path_results_docker}/Clustering/NuclearH8D"
     echo "$(date): Done"
 else
     echo "$(date): PCA results found. Dope."
 fi
 
-if [ ! -e './Nuclear.mds' ]; then
+if [ ! -e "${path_results_local}/Clustering/Nuclear.mds" ]; then
     echo "$(date): Running MDS"
-    plink --allow-extra-chr --vcf ../results/PhasedNuclear.vcf --mds-plot 2 -mind 0.5 --cluster --out Nuclear
-    plink --allow-extra-chr --vcf ../results/PhasedNuclearH-2C.vcf --mds-plot 2 -mind 0.5 --cluster --out NuclearH-2C
-    plink --allow-extra-chr --vcf ../results/PhasedNuclearH8D.vcf --mds-plot 2 -mind 0.5 --cluster --out NuclearH8D
+    ${_plink[@]} --allow-extra-chr --vcf "${path_results_docker}/SNP/PhasedNuclear.vcf" --mds-plot 2 -mind 0.5 --cluster --out "${path_results_docker}/Clustering/Nuclear"
+    ${_plink[@]} --allow-extra-chr --vcf "${path_results_docker}/SNP/PhasedNuclearH-2C.vcf" --mds-plot 2 -mind 0.5 --cluster --out "${path_results_docker}/Clustering/NuclearH-2C"
+    ${_plink[@]} --allow-extra-chr --vcf "${path_results_docker}/SNP/PhasedNuclearH8D.vcf" --mds-plot 2 -mind 0.5 --cluster --out "${path_results_docker}/Clustering/NuclearH8D"
     echo "$(date): Done"
 else
     echo "$(date): MDS results found. Dope."
 fi
 
-#Try using fastSTRUCUTRE on this dataset. It hella violates the assumptions, but it's just a test
+# Try using fastSTRUCUTRE on this dataset. It hella violates the assumptions, but it's just a test
 
 #convert the vcf to structure input format
 if [ ! -e '../results/PhasedNuclear.bed' ]; then

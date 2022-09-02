@@ -13,6 +13,7 @@ docker pull broadinstitute/gatk:4.0.8.1 # 123712a62f94
 ## R
 docker pull quay.io/biocontainers/bcftools:1.15.1--h0ea216a_0 # 239994ebcd8d
 docker pull quay.io/biocontainers/whatshap:1.2.1--py37h22450f8_0 # 05fc6374672d
+docker pull biocontainers/plink1.9:v1.90b6.6-181012-1-deb_cv1 # 87189de4a191
 
 # Get sample list
 # requires both ffq and jq to be installed

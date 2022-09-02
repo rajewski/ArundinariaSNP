@@ -7,7 +7,7 @@ library(vcfR)
 library(Biostrings)
 
 # Read in VCF
-g <- read.vcfR("/root/Results/SNP/Phased.vcf")
+g <- read.vcfR("/mnt/Results/SNP/Phased.vcf")
 # remove all indels to only deal with SNPs
 g.SNP <- extract.indels(g,
   return.indels = FALSE
@@ -43,10 +43,10 @@ g.both <- ifelse(is.na(hapsNA), g.ambig, hapsNA)
 g.both <- toupper(g.both) # make them uppercase bc...OCD
 
 # Add these SNPs into the ref sequences
-refs <- readDNAStringSet("/root/References/references.fasta")
+refs <- readDNAStringSet("/mnt/References/references.fasta")
 
 # make a list to filter out samples we didnt sequence later
-samples <- read.csv("/root/References/sampleNames.txt", header = TRUE, sep = "\t")[, 1:2]
+samples <- read.csv("/mnt/References/sampleNames.txt", header = TRUE, sep = "\t")[, 1:2]
 samples <- paste0(samples$X.target, "_", samples$sample)
 
 # Write WXY Loci
@@ -68,7 +68,7 @@ wxysamples <- c(
 )
 wxysamples <- wxysamples[order(wxysamples)]
 WXYs <- WXYs[names(WXYs)[names(WXYs) %in% wxysamples]]
-writeXStringSet(WXYs, "/root/Results/PHYLO/WXY_Phased.fasta")
+writeXStringSet(WXYs, "/mnt/Results/PHYLO/WXY_Phased.fasta")
 
 # Write ambiguous WXY Loci
 WXYsa <- rep(refs["WXY"], 74)
@@ -82,7 +82,7 @@ for (i in 1:74) {
 wxysamplesa <- c(samples[grep("^WXY", samples)])
 wxysamplesa <- wxysamplesa[order(wxysamplesa)]
 WXYsa <- WXYsa[names(WXYsa)[names(WXYsa) %in% wxysamplesa]]
-writeXStringSet(WXYsa, "/root/Results/PHYLO/WXY_ambig.fasta")
+writeXStringSet(WXYsa, "/mnt/Results/PHYLO/WXY_ambig.fasta")
 
 # Write LFY Loci
 LFYs <- rep(refs["LFY"], 148)
@@ -98,7 +98,7 @@ for (i in 1:148) {
 lfysamples <- c(paste0(samples[grep("^LFY", samples)], "_0"), paste0(samples[grep("^LFY", samples)], "_1"))
 lfysamples <- lfysamples[order(lfysamples)]
 LFYs <- LFYs[names(LFYs)[names(LFYs) %in% lfysamples]]
-writeXStringSet(LFYs, "/root/Results/PHYLO/LFY_Phased.fasta")
+writeXStringSet(LFYs, "/mnt/Results/PHYLO/LFY_Phased.fasta")
 
 # Write ambiguous LFY Loci
 LFYsa <- rep(refs["LFY"], 74)
@@ -114,12 +114,12 @@ for (i in 1:74) {
 lfysamplesa <- c(samples[grep("^LFY", samples)])
 lfysamplesa <- lfysamplesa[order(lfysamplesa)]
 LFYsa <- LFYsa[names(LFYsa)[names(LFYsa) %in% lfysamplesa]]
-writeXStringSet(LFYsa, "/root/Results/PHYLO/LFY_ambig.fasta")
+writeXStringSet(LFYsa, "/mnt/Results/PHYLO/LFY_ambig.fasta")
 
 # write nuclear ambiguous
 Nuclearsa <- xscat(LFYsa, WXYsa)
 names(Nuclearsa) <- substr(names(LFYsa), 5, length(names(LFYsa)))
-writeXStringSet(Nuclearsa, "/root/Results/PHYLO/Nuclear_ambig.fasta")
+writeXStringSet(Nuclearsa, "/mnt/Results/PHYLO/Nuclear_ambig.fasta")
 
 # Write matK Loci
 matKs <- rep(refs["matK"], 148)
@@ -133,7 +133,7 @@ for (i in 1:148) {
 matksamples <- c(paste0(samples[grep("^matK", samples)], "_0"), paste0(samples[grep("^matK", samples)], "_1"))
 matksamples <- matksamples[order(matksamples)]
 matKs <- matKs[names(matKs)[names(matKs) %in% matksamples]]
-writeXStringSet(matKs, "/root/Results/PHYLO/matK_Phased.fasta")
+writeXStringSet(matKs, "/mnt/Results/PHYLO/matK_Phased.fasta")
 
 # Write ambiguous matK Loci
 matKsa <- rep(refs["matK"], 74)
@@ -147,7 +147,7 @@ for (i in 1:74) {
 matksamplesa <- c(samples[grep("^matK", samples)])
 matksamplesa <- matksamplesa[order(matksamplesa)]
 matKsa <- matKsa[names(matKsa)[names(matKsa) %in% matksamplesa]]
-writeXStringSet(matKsa, "/root/Results/PHYLO/matK_ambig.fasta")
+writeXStringSet(matKsa, "/mnt/Results/PHYLO/matK_ambig.fasta")
 
 # Write the trnL loci
 trnLs <- rep(refs["trnL"], 148)
@@ -161,7 +161,7 @@ for (i in 1:148) {
 trnlsamples <- c(paste0(samples[grep("^trnL", samples)], "_0"), paste0(samples[grep("^trnL", samples)], "_1"))
 trnlsamples <- trnlsamples[order(trnlsamples)]
 trnLs <- trnLs[names(trnLs)[names(trnLs) %in% trnlsamples]]
-writeXStringSet(trnLs, "/root/Results/PHYLO/trnL_Phased.fasta")
+writeXStringSet(trnLs, "/mnt/Results/PHYLO/trnL_Phased.fasta")
 
 # Write the ambiguous trnL loci
 trnLsa <- rep(refs["trnL"], 74)
@@ -175,7 +175,7 @@ for (i in 1:74) {
 trnlsamplesa <- c(samples[grep("^trnL", samples)])
 trnlsamplesa <- trnlsamplesa[order(trnlsamplesa)]
 trnLsa <- trnLsa[names(trnLsa)[names(trnLsa) %in% trnlsamplesa]]
-writeXStringSet(trnLsa, "/root/Results/PHYLO/trnL_ambig.fasta")
+writeXStringSet(trnLsa, "/mnt/Results/PHYLO/trnL_ambig.fasta")
 
 # Write the psaA loci
 psaAs <- rep(refs["psaA"], 148)
@@ -189,7 +189,7 @@ for (i in 1:148) {
 psaasamples <- c(paste0(samples[grep("^psaA", samples)], "_0"), paste0(samples[grep("^psaA", samples)], "_1"))
 psaasamples <- psaasamples[order(psaasamples)]
 psaAs <- psaAs[names(psaAs)[names(psaAs) %in% psaasamples]]
-writeXStringSet(psaAs, "/root/Results/PHYLO/psaA_Phased.fasta")
+writeXStringSet(psaAs, "/mnt/Results/PHYLO/psaA_Phased.fasta")
 
 # Write the ambiguous psaA loci
 psaAsa <- rep(refs["psaA"], 74)
@@ -203,4 +203,4 @@ for (i in 1:74) {
 psaasamplesa <- c(samples[grep("^psaA", samples)])
 psaasamplesa <- psaasamplesa[order(psaasamplesa)]
 psaAsa <- psaAsa[names(psaAsa)[names(psaAsa) %in% psaasamplesa]]
-writeXStringSet(psaAsa, "/root/Results/PHYLO/psaA_ambig.fasta")
+writeXStringSet(psaAsa, "/mnt/Results/PHYLO/psaA_ambig.fasta")
