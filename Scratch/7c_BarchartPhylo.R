@@ -1,3 +1,11 @@
+# This script should be run via the R docker container (arundinaRia) after you have sourced the
+# container paths in 0_Paths.env and 0_Containers.env. You can either execute it with ${_arundinaRia[@]}
+# followed by the DOCKER path to the script or interactively run the container by replacing the
+# `--entrypoint` command and adding `-it`
+
+# Note: I think this script might not be worth converting since none of its plots made it into the
+# final manuscript I won't touch anything below this line, and I'll archive this and other old analyses.
+
 library(phytools)
 setwd("~/bigdata/Arundinaria/phylo/")
 # assign colors for legend
