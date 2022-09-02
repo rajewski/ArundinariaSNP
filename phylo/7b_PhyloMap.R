@@ -82,31 +82,7 @@ WXYHullShareTec <- c("JT27", "H8B")
 WXYHullShareGig <- c("JT85", "JT87", "JT98", "JT108", "JT167", "JT174", "JT183", "H8B")
 LFYHullShare <- c("JT168", "JT171", "H8B")
 
-## Missing the `species` object so this doesnt work
-# map("state", ArunRange)
-# # plastid
-# points(species[species$Sample %in% PlasHullShare, ]$Longitude,
-#   species[species$Sample %in% PlasHullShare, ]$Latitude,
-#   col = species[species$Sample %in% PlasHullShare, ]$color,
-#   pch = 16
-# )
-# # WXY
-# points(species[species$Sample %in% WXYHullShareTec, ]$Longitude,
-#   species[species$Sample %in% WXYHullShareTec, ]$Latitude,
-#   col = species[species$Sample %in% WXYHullShareTec, ]$color,
-#   pch = 16
-# )
-# points(species[species$Sample %in% WXYHullShareGig, ]$Longitude,
-#   species[species$Sample %in% WXYHullShareGig, ]$Latitude,
-#   col = species[species$Sample %in% WXYHullShareGig, ]$color,
-#   pch = 16
-# )
-# # LFY
-# points(species[species$Sample %in% LFYHullShare, ]$Longitude,
-#   species[species$Sample %in% LFYHullShare, ]$Latitude,
-#   col = species[species$Sample %in% LFYHullShare, ]$color,
-#   pch = 16
-# )
+# Connect Tree and Maps ---------------------------------------------------
 
 # Read in trees and drop tips without coordinate information
 Plastid <- read.nexus("/mnt/Results/PHYLO/plastid/F81I/Plastid_NoMissingrenamed.nex.con.collapsed.tre")
@@ -122,8 +98,6 @@ WXY <- drop.tip(WXY, WXY$tip.label[-match(Coords$Haplo, WXY$tip.label, nomatch =
 PlastidJimmy <- read.nexus("/mnt/Results/PHYLO/plastid/F81I/Plastid_NoMissingrenamedJimmy.nex.con.collapsed.tre")
 PlastidJimmy <- drop.tip(PlastidJimmy, PlastidJimmy$tip.label[-match(Coords$Haplo, PlastidJimmy$tip.label, nomatch = 0)])
 
-
-# Connect Tree and Maps ---------------------------------------------------
 # this section plots some (mostly uninformative) maps with phylogenies near them
 # and lines connecting the location of a sample to its placement on the tree
 

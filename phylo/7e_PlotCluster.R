@@ -1,39 +1,47 @@
-# setwd("~/bigdata/Arundinaria/phylo/nuclear/")
+# This script should be run via the R docker container (arundinaRia) after you have sourced the
+# container paths in 0_Paths.env and 0_Containers.env. You can either execute it with ${_arundinaRia[@]}
+# followed by the DOCKER path to the script or interactively run the container by replacing the
+# `--entrypoint` command and adding `-it`
+
 # read in species data
-species <- read.csv("~/bigdata/Arundinaria/phylo/JTCoords.csv", header = T)
+species <- read.csv("/mnt/References/JTCoords.csv", header = T)
 species <- species[1:345, ] # subset out controls
 species$Species <- gsub(pattern = "\\.", "", species$Species)
 species$Species <- gsub(pattern = " ", "", species$Species)
 # manually download altitude of each GPS coordinate
-species$Altitude <- rep(c(633, 700, 681, 516, 503, 546, 313, 515, 601, 604, 543, 445, 46, 46, 20, 40, 43, 94, 611, 198, 118, 149, 84, 69, 76, 121, 21, 7, 92, 78, 77, 112, 54, 40, 176, 307, 131, 95, 110, 163, 119, 237, 202, 196, 130, 172, 643, 602, 528, 350, 261, 385, 233, 230, 282, 281, 228, 117, 199, 40, 1, 5, 6, 6, 3, 142, 84, 140, 56, 46, 171, 140, 42, 21, 171, 172, 286, 84, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 185, 185, 185, 185, 185, 185, 185, 185, 185, 185, 84), 3)
+species$Altitude <- rep(c(
+  633, 700, 681, 516, 503, 546, 313, 515, 601, 604, 543, 445, 46,
+  46, 20, 40, 43, 94, 611, 198, 118, 149, 84, 69, 76, 121, 21, 7,
+  92, 78, 77, 112, 54, 40, 176, 307, 131, 95, 110, 163, 119, 237,
+  202, 196, 130, 172, 643, 602, 528, 350, 261, 385, 233, 230, 282,
+  281, 228, 117, 199, 40, 1, 5, 6, 6, 3, 142, 84, 140, 56, 46, 171,
+  140, 42, 21, 171, 172, 286, 84, 196, 196, 196, 196, 196, 196,
+  196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196, 196,
+  196, 196, 196, 196, 196, 196, 196, 185, 185, 185, 185, 185, 185,
+  185, 185, 185, 185, 84
+), 3)
 
-# read PCA data
-nucpca <- read.table("~/bigdata/Arundinaria/phylo/nuclear/Nuclear.eigenvec")
+# PCA
+nucpca <- read.table("/mnt/Results/Clustering/Nuclear.eigenvec")
 nucpca <- merge(nucpca, species, by.x = "V1", by.y = "Sample")
 
-# PC1 v PC2
-pdf("NuclearPC1vPC2.pdf", width = 11, height = 9)
+# Plot
+pdf("/mnt/Results/Figures/PCA_Nuclear.pdf", width = 11, height = 9)
 plot(nucpca$V3, nucpca$V4, xlab = "PC1", ylab = "PC2", main = "Nuclear SNP PCA", col = as.factor(nucpca$Species), pch = 16)
 # text(nucpca$V3,nucpca$V4, as.character(nucpca$V1))
 legend("topright", legend = levels(as.factor(nucpca$Species)), col = 1:length(nucpca$Species), pch = 16, bty = "n")
-dev.off()
 
-# PC1 v PC3
-pdf("NuclearPC1vPC3.pdf", width = 11, height = 9)
+# PC1 v PC2
 plot(nucpca$V3, nucpca$V5, xlab = "PC1", ylab = "PC3", main = "Nuclear SNP PCA", col = as.factor(nucpca$Species), pch = 16)
 legend("topright", levels(as.factor(nucpca$Species)), col = 1:length(nucpca$Species), pch = 16, bty = "n")
 # text(nucpca$V3,nucpca$V5, as.character(nucpca$V1))
-dev.off()
 
 # PC2 v PC3
-pdf("NuclearPC2vPC3.pdf", width = 11, height = 9)
 plot(nucpca$V4, nucpca$V5, xlab = "PC2", ylab = "PC3", main = "Nuclear SNP PCA", col = as.factor(nucpca$Species), pch = 16)
 legend("topright", levels(as.factor(nucpca$Species)), col = 1:length(nucpca$Species), pch = 16, bty = "n")
 # text(nucpca$V3,nucpca$V5, as.character(nucpca$V1))
-dev.off()
 
 # PC2 v PC5
-pdf("NuclearPC2vPC5.pdf", width = 11, height = 9)
 plot(nucpca$V4, nucpca$V7, xlab = "PC2", ylab = "PC5", main = "Nuclear SNP PCA", col = as.factor(nucpca$Species), pch = 16)
 legend("topright", levels(as.factor(nucpca$Species)), col = 1:length(nucpca$Species), pch = 16, bty = "n")
 # text(nucpca$V3,nucpca$V5, as.character(nucpca$V1))
@@ -50,7 +58,7 @@ mod7 <- lm(V3 ~ Altitude, data = nucpca)
 mod8 <- lm(V4 ~ Altitude, data = nucpca)
 mod9 <- lm(V5 ~ Altitude, data = nucpca)
 
-pdf(file = "~/bigdata/Arundinaria/phylo/nuclear/NuclearPCvGeo.pdf", width = 25, height = 27)
+pdf(file = "/mnt/Results/Figures/Scatter_Nuclear_PCvGeo.pdf", width = 25, height = 27)
 par(mfrow = c(3, 3))
 plot(nucpca$Latitude, nucpca$V3, main = paste("PC1 v Latitude, p=", round(summary(mod1)$coefficients[2, 4], 3)), ylab = "PC1", xlab = "Latitude")
 abline(mod1)
@@ -73,11 +81,11 @@ abline(mod9)
 dev.off()
 
 # read MDS data
-nucmds <- read.table("~/bigdata/Arundinaria/phylo/nuclear/Nuclear.mds", header = T)
+nucmds <- read.table("/mnt/Results/Clustering/Nuclear.mds", header = T)
 nucmds <- merge(nucmds, species, by.x = "FID", by.y = "Sample")
 
 # make the MDS plot
-pdf("NuclearMDS.pdf", width = 11, height = 9)
+pdf("/mnt/Results/Figures/MDS_Nuclear.pdf", width = 11, height = 9)
 plot(nucmds$C1, nucmds$C2, xlab = "Dim1", ylab = "Dim2", main = "Nuclear SNP MDS", col = as.factor(nucmds$Species), pch = 16)
 legend("bottomleft", legend = levels(as.factor(nucmds$Species)), col = 1:length(nucmds$Species), pch = 16, bty = "n")
 # text(nucmds$C1,nucmds$C2, as.character(nucmds$FID))
@@ -92,9 +100,10 @@ aruncol <- scale_color_manual(
   breaks = c("Ahybrid", "Aappalachiana", "Agigantea", "Atecta", "Unknown"),
   values = c("#440154FF", "#3B528BFF", "#21908CFF", "#5DC863FF", "#FDE725FF")
 )
-pdf("NuclearMDSLabeled.pdf", width = 11, height = 9)
+pdf("/mnt/Results/Figures/MDS_Nuclear_Labeled.pdf", width = 11, height = 9)
 ggplot(data = nucmds, aes(x = C1, y = C2, col = Species)) +
   labs(title = "Nuclear SNP MDS", x = "Dimension 1", y = "Dimension 2") +
+  theme_cowplot() +
   theme(
     axis.text.x = element_blank(),
     axis.text.y = element_blank(),
@@ -121,7 +130,6 @@ mod17 <- lm(C1 ~ Longitude * Altitude, data = nucmds)
 summary(mod17)
 
 # try getting climate data?
-install.packages("raster")
 library(raster)
 r <- getData("worldclim", var = "bio", res = 2.5) # get bioclim data
 values <- extract(r, nucmds[, c("Longitude", "Latitude")])
@@ -130,7 +138,7 @@ mod18 <- lm(C1 ~ ., data = df[, c(4, 10:28)])
 mod18best <- step(mod18, direction = "both")
 summary(mod18best)
 
-pdf(file = "~/bigdata/Arundinaria/phylo/nuclear/NuclearMDSvGeo.pdf", width = 18, height = 27)
+pdf(file = "/mnt/Results/Figures/Scatter_Nuclear_MDSvGeo.pdf", width = 18, height = 27)
 par(mfrow = c(3, 2))
 plot(nucmds$Latitude, nucmds$C1, main = paste("C1 v Latitude, p=", round(summary(mod10)$coefficients[2, 4], 3)), ylab = "C1", xlab = "Latitude")
 abline(mod10)
@@ -148,45 +156,45 @@ dev.off()
 
 
 #### Repeat this with the Hull Road samples reduced to one
-nucpcaHULL1 <- read.table("~/bigdata/Arundinaria/phylo/nuclear/NuclearH-2C.eigenvec")
+nucpcaHULL1 <- read.table("/mnt/Results/Clustering/NuclearH-2C.eigenvec")
 nucpcaHULL1 <- merge(nucpcaHULL1, species, by.x = "V1", by.y = "Sample")
-nucmdsHULL1 <- read.table("~/bigdata/Arundinaria/phylo/nuclear/NuclearH-2C.mds", header = T)
+nucmdsHULL1 <- read.table("/mnt/Results/Clustering/NuclearH-2C.mds", header = T)
 nucmdsHULL1 <- merge(nucmdsHULL1, species, by.x = "FID", by.y = "Sample")
-pdf("NuclearHULL1PC1vPC2.pdf", width = 11, height = 9)
+
+pdf("/mnt/Results/Figures/PCA_Nuclear_NoHULL.pdf", width = 11, height = 9)
 plot(nucpcaHULL1$V3, nucpcaHULL1$V4, xlab = "PC1", ylab = "PC2", main = "Nuclear SNP PCA", col = as.factor(nucpcaHULL1$Species), pch = 16)
 legend("topright", legend = levels(as.factor(nucpcaHULL1$Species)), col = 1:length(nucpcaHULL1$Species), pch = 16, bty = "n")
-dev.off()
-pdf("NuclearHULL1PC1vPC3.pdf", width = 11, height = 9)
+
 plot(nucpcaHULL1$V3, nucpcaHULL1$V5, xlab = "PC1", ylab = "PC3", main = "Nuclear SNP PCA", col = as.factor(nucpcaHULL1$Species), pch = 16)
 legend("topright", levels(as.factor(nucpcaHULL1$Species)), col = 1:length(nucpcaHULL1$Species), pch = 16, bty = "n")
-dev.off()
-pdf("NuclearHULL1PC2vPC3.pdf", width = 11, height = 9)
+
 plot(nucpcaHULL1$V4, nucpcaHULL1$V5, xlab = "PC2", ylab = "PC3", main = "Nuclear SNP PCA", col = as.factor(nucpcaHULL1$Species), pch = 16)
 legend("topright", levels(as.factor(nucpcaHULL1$Species)), col = 1:length(nucpcaHULL1$Species), pch = 16, bty = "n")
 dev.off()
-pdf("NuclearHULL1MDS.pdf", width = 11, height = 9)
+
+pdf("/mnt/Results/Figures/MDS_Nuclear_NoHULL.pdf", width = 11, height = 9)
 plot(nucmdsHULL1$C1, nucmdsHULL1$C2, xlab = "Dim1", ylab = "Dim2", main = "Nuclear SNP MDS", col = as.factor(nucmdsHULL1$Species), pch = 16)
 legend("bottomleft", legend = levels(as.factor(nucmdsHULL1$Species)), col = 1:length(nucmdsHULL1$Species), pch = 16, bty = "n")
 dev.off()
 
 #### Repeat this with the Hull Road samples reduced to one
-nucpcaHULL2 <- read.table("~/bigdata/Arundinaria/phylo/nuclear/NuclearH8D.eigenvec")
+nucpcaHULL2 <- read.table("/mnt/Results/Clustering/NuclearH8D.eigenvec")
 nucpcaHULL2 <- merge(nucpcaHULL2, species, by.x = "V1", by.y = "Sample")
-nucmdsHULL2 <- read.table("~/bigdata/Arundinaria/phylo/nuclear/NuclearH8D.mds", header = T)
+nucmdsHULL2 <- read.table("/mnt/Results/Clustering/NuclearH8D.mds", header = T)
 nucmdsHULL2 <- merge(nucmdsHULL2, species, by.x = "FID", by.y = "Sample")
-pdf("NuclearHULL2PC1vPC2.pdf", width = 11, height = 9)
+
+pdf("/mnt/Results/Figures/PCA_Nuclear_OneHULL.pdf", width = 11, height = 9)
 plot(nucpcaHULL2$V3, nucpcaHULL2$V4, xlab = "PC1", ylab = "PC2", main = "Nuclear SNP PCA", col = as.factor(nucpcaHULL2$Species), pch = 16)
 legend("topright", legend = levels(as.factor(nucpcaHULL2$Species)), col = 1:length(nucpcaHULL2$Species), pch = 16, bty = "n")
-dev.off()
-pdf("NuclearHULL2PC1vPC3.pdf", width = 11, height = 9)
+
 plot(nucpcaHULL2$V3, nucpcaHULL2$V5, xlab = "PC1", ylab = "PC3", main = "Nuclear SNP PCA", col = as.factor(nucpcaHULL2$Species), pch = 16)
 legend("topright", levels(as.factor(nucpcaHULL2$Species)), col = 1:length(nucpcaHULL2$Species), pch = 16, bty = "n")
-dev.off()
-pdf("NuclearHULL2PC2vPC3.pdf", width = 11, height = 9)
+
 plot(nucpcaHULL2$V4, nucpcaHULL2$V5, xlab = "PC2", ylab = "PC3", main = "Nuclear SNP PCA", col = as.factor(nucpcaHULL2$Species), pch = 16)
 legend("topright", levels(as.factor(nucpcaHULL2$Species)), col = 1:length(nucpcaHULL2$Species), pch = 16, bty = "n")
 dev.off()
-pdf("NuclearHULL2MDS.pdf", width = 11, height = 9)
+
+pdf("/mnt/Results/Figures/MDS_Nuclear_OneHULL.pdf", width = 11, height = 9)
 plot(nucmdsHULL2$C1, nucmdsHULL2$C2, xlab = "Dim1", ylab = "Dim2", main = "Nuclear SNP MDS", col = as.factor(nucmdsHULL2$Species), pch = 16)
 legend("bottomleft", legend = levels(as.factor(nucmdsHULL2$Species)), col = 1:length(nucmdsHULL2$Species), pch = 16, bty = "n")
 dev.off()
