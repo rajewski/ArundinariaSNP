@@ -50,18 +50,17 @@ fi
 
 # Try using fastSTRUCUTRE on this dataset. It hella violates the assumptions, but it's just a test
 
-#convert the vcf to structure input format
+# convert the vcf to structure input format
 if [ ! -e '../results/PhasedNuclear.bed' ]; then
     echo "$(date): Recording VCF to structure format with plink."
-    plink --allow-extra-chr --vcf ../results/PhasedNuclear.vcf --make-bed --out ../results/PhasedNuclear
+    ${_plink[@]} --allow-extra-chr --vcf "${path_results_docker}/SNP/PhasedNuclear.vcf" --make-bed --out "${path_results_docker}/Clustering/PhasedNuclear"
     echo "$(date): Done"
 else
     echo "$(date): proper input files detected."
 fi
 
-module load  faststructure/1.0_e47212f
-structure.py -K 2 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
-structure.py -K 3 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
-structure.py -K 4 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
-structure.py -K 5 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
-structure.py -K 6 --input=../results/PhasedNuclear --output=../results/PhasedNuclearSTRUCTURE
+${_faststructure[@]} structure.py -K 2 --input="${path_results_docker}/Clustering/PhasedNuclear" --output="${path_results_docker}/Clustering/PhasedNuclearSTRUCTURE"
+${_faststructure[@]} structure.py -K 3 --input="${path_results_docker}/Clustering/PhasedNuclear" --output="${path_results_docker}/Clustering/PhasedNuclearSTRUCTURE"
+${_faststructure[@]} structure.py -K 4 --input="${path_results_docker}/Clustering/PhasedNuclear" --output="${path_results_docker}/Clustering/PhasedNuclearSTRUCTURE"
+${_faststructure[@]} structure.py -K 5 --input="${path_results_docker}/Clustering/PhasedNuclear" --output="${path_results_docker}/Clustering/PhasedNuclearSTRUCTURE"
+${_faststructure[@]} structure.py -K 6 --input="${path_results_docker}/Clustering/PhasedNuclear" --output="${path_results_docker}/Clustering/PhasedNuclearSTRUCTURE"
