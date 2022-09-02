@@ -22,9 +22,5 @@ RUN install2.r --error \
   
 RUN apt-get update \
   && apt-get install -y xdg-utils
-  
-# source the docker env variables file
-  
 
-
-
+# At some point add in either headless chrome or phantomjs to plot gt() objects
