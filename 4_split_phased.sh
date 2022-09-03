@@ -1,20 +1,15 @@
-#!/bin/bash -l
-#SBATCH --ntasks=1
-#SBATCH --nodes=1
-#SBATCH --mem=1G
-#SBATCH --time=2:00:00
-#SBATCH --mail-user=araje002@ucr.edu
-#SBATCH --mail-type=ALL
-#SBATCH -p batch
-#SBATCH -o ./history/slurm-%A_%a.out
+#!/bin/bash 
 
-#Made with help from https://www.biostars.org/p/78929/
+# Get vars for running commands
+source 0_Paths.env
+source 0_Containers.env
 
-
-module load bcftools/1.8
-
-for file in results/Phased.vcf.gz; do
-    for sample in `bcftools query -l $file`; do
-	bcftools view -c1 -Oz -s $sample -o ${file/.vcf*/.$sample.vcf.gz} $file
-    done
+# Split the single phased VCF into once phased vcf per sample
+# Need the input phased file name for substution later
+for file in "${path_results_local}/SNP/Phased.vcf"; do
+  file=$(echo $file |sed "s@${path_results_local}/@${path_results_docker}@g")
+  for sample in $(${_bcftools[@]} query -l ${path_results_docker}/SNP/Phased.vcf) ; do
+    ${_bcftools[@]} view -c1 -Oz -s "$sample" -o ${file/.vcf*/.$sample.vcf} $file
+  done
 done
+
