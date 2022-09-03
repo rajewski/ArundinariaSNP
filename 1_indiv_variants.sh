@@ -1,40 +1,42 @@
-#!/bin/bash -l
-#SBATCH --ntasks=4
-#SBATCH --nodes=1
-#SBATCH --mem=7G
-#SBATCH --time=2:00:00
-#SBATCH --mail-user=araje002@ucr.edu
-#SBATCH --mail-type=ALL
-#SBATCH -p batch
-#SBATCH -o ./history/slurm-%A_%a.out
+#!/usr/bin/env bash
 
-#get sample names for all files to be processed
-SamList=~/bigdata/Arundinaria/names.txt
-Sample=$(awk "NR==$SLURM_ARRAY_TASK_ID" $SamList)
-Indiv=$(echo $Sample | cut -d "_" -f 2)
+# Get vars for running commands
+source 0_Paths.env
+source 0_Containers.env
 
-#optionally make the indices of the references files
-module load bwa/0.7.12
-if [ ! -f "references.fasta.ann" ]; then
-    bwa index references.fasta
+# Make the indices of the references files
+if [ ! -f "References/references.ann" ]; then
+    ${_bwa[@]} index -p "$path_ref_docker/references" "$path_ref_docker/references.fasta"
 fi
 
-if [ ! -f "references.fasta.fai" ]; then
-    module load samtools/1.8
-    samtools faidx references.fasta
+if [ ! -f "References/references.fasta.fai" ]; then
+    ${_samtools[@]} faidx "$path_ref_docker/references.fasta"
 fi
 
-if [ ! -f "references.dict" ]; then
-    module load picard/2.18.3
-    picard CreateSequenceDictionary R=references.fasta O=references.dict
+if [ ! -f "References/references.dict" ]; then
+    ${_gatk[@]} CreateSequenceDictionary -R "$path_ref_docker/references.fasta" -O "$path_ref_docker/references.dict"
 fi
 
-#map the reads
-if [ ! -f "results/"$Indiv".filtered.bam" ]; then
-    module load speedseq/a95704a
-    speedseq align -t $SLURM_NTASKS -K speedseq.config -o results/$Indiv.filtered -R '@RG\tID:'$Indiv'\tSM:'$Indiv'\tLB:Lib\' references.fasta data/$Sample"_R1_filtered.fastq.gz" data/$Sample"_R2_filtered.fastq.gz"
-fi
-
-#Use GATK to make the VCF
-module load gatk/4.0.8.1
-gatk HaplotypeCaller -R references.fasta -I results/$Indiv.filtered.bam -O results/$Indiv.g.vcf -ERC GVCF
+# Loop over the Accession2Sample.tsv file, mapping each set of FASTQs and calling variants
+while read -r accession sample; do
+    # Skip if already present
+    if [ ! -e "${path_results_docker}/BAM/${sample}" ]; then
+        # Map
+        ${_speedseq[@]} align \
+            -t "$SLURM_NTASKS" \
+            -o "${path_results_docker}/BAM/${sample}" \
+            -R '@RG\tID:'"$sample"'\tSM:'"$sample"'\tLB:Lib' \
+            "$path_ref_docker/references.fasta" \
+            "${path_fastq_docker}/${accession}_1.fastq.gz" \
+            "${path_fastq_docker}/${accession}_2.fastq.gz" 
+    fi
+    # Skip if already present
+    if [ ! -e "${path_results_docker}/SNP/${sample}.g.vcf" ]; then
+        # Genotype
+        ${_gatk[@]} HaplotypeCaller \
+            -R "$path_ref_docker/references.fasta" \
+            -I "${path_results_docker}/BAM/${sample}.bam" \
+            -O "${path_results_docker}/SNP/${sample}.g.vcf" \
+            -ERC GVCF
+    fi
+done < "${path_ref_local}/Accession2Sample.tsv"

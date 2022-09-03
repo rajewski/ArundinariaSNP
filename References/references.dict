@@ -1,0 +1,6 @@
+@HD	VN:1.5
+@SQ	SN:WXY	LN:1213	M5:7bc0e406098143fc27094b9beaaed80e	UR:file:/root/References/references.fasta
+@SQ	SN:matK	LN:899	M5:7c63e11f757e09589bff68e2a3f58be3	UR:file:/root/References/references.fasta
+@SQ	SN:psaA	LN:993	M5:7d8fe6653de69f272483fe9b998445af	UR:file:/root/References/references.fasta
+@SQ	SN:trnL	LN:923	M5:37832ff386bb46a7fa457b144bf1fda3	UR:file:/root/References/references.fasta
+@SQ	SN:LFY	LN:875	M5:1631339417fb98fa23ce28b5f5a7c904	UR:file:/root/References/references.fasta

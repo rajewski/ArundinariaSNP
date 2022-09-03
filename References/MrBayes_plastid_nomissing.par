@@ -1,0 +1,5 @@
+set autoclose=yes nowarn=yes;
+execute Results/PHYLO/plastid/Plastid_NoMissingrenamedJimmy.nex;
+lset applyto=(all) nst=1 rates=propinv;
+mcmc Relburning=yes BurninFrac=0.25;
+sumt;
