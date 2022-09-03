@@ -1,4 +1,0 @@
-awk: cmd. line:2: NR==
-awk: cmd. line:2:     ^ unexpected newline or end of string
-This is WhatsHap 0.17 running under Python 3.6.6
-ERROR: No reads could be retrieved from 'results/JT172.filtered.bam'. If this is a CRAM file, possibly the reference could not be found. Try to use --reference=... or check you $REF_PATH/$REF_CACHE settings
