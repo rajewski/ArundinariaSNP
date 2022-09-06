@@ -1,0 +1,39 @@
+PLINK v1.90b6.6 64-bit (12 Oct 2018)
+Options in effect:
+  --allow-extra-chr
+  --cluster
+  --mds-plot 2
+  --mind 0.5
+  --out /mnt/Results/Clustering/NuclearH8D
+  --vcf /mnt/Results/SNP/PhasedNuclearH8D.vcf
+
+Hostname: aad0b7900919
+Working directory: /data
+Start time: Thu Sep  1 23:59:21 2022
+
+Random number seed: 1662076761
+9951 MB RAM detected; reserving 4975 MB for main workspace.
+--vcf: /mnt/Results/Clustering/NuclearH8D-temporary.bed +
+/mnt/Results/Clustering/NuclearH8D-temporary.bim +
+/mnt/Results/Clustering/NuclearH8D-temporary.fam written.
+89 variants loaded from .bim file.
+49 people (0 males, 0 females, 49 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to /mnt/Results/Clustering/NuclearH8D.nosex .
+3 people removed due to missing genotype data (--mind).
+IDs written to /mnt/Results/Clustering/NuclearH8D.irem .
+Using up to 5 threads (change this with --threads).
+Before main variant filters, 46 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate in remaining samples is 0.970445.
+89 variants and 46 people pass filters and QC.
+Note: No phenotypes present.
+Distance matrix calculation complete.
+Clustering... done.
+Cluster solution written to /mnt/Results/Clustering/NuclearH8D.cluster1 ,
+/mnt/Results/Clustering/NuclearH8D.cluster2 , and
+/mnt/Results/Clustering/NuclearH8D.cluster3 .
+Performing multidimensional scaling analysis (SVD algorithm, 2
+dimensions)... done.
+MDS solution written to /mnt/Results/Clustering/NuclearH8D.mds .
+
+End time: Thu Sep  1 23:59:21 2022
