@@ -1,0 +1,250 @@
+##fileformat=VCFv4.2
+##ALT=<ID=NON_REF,Description="Represents any possible alternative allele at this location">
+##FILTER=<ID=LowQual,Description="Low quality">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=MIN_DP,Number=1,Type=Integer,Description="Minimum DP observed within the GVCF block">
+##FORMAT=<ID=PGT,Number=1,Type=String,Description="Physical phasing haplotype information, describing how the alternate alleles are phased in relation to one another">
+##FORMAT=<ID=PID,Number=1,Type=String,Description="Physical phasing ID information, where each unique ID within a given sample (but not across samples) connects records within a phasing group">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=SB,Number=4,Type=Integer,Description="Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.">
+##GATKCommandLine=<ID=HaplotypeCaller,CommandLine="HaplotypeCaller  --emit-ref-confidence GVCF --output results/H8B.g.vcf --input results/H8B.filtered.bam --reference references.fasta  --gvcf-gq-bands 1 --gvcf-gq-bands 2 --gvcf-gq-bands 3 --gvcf-gq-bands 4 --gvcf-gq-bands 5 --gvcf-gq-bands 6 --gvcf-gq-bands 7 --gvcf-gq-bands 8 --gvcf-gq-bands 9 --gvcf-gq-bands 10 --gvcf-gq-bands 11 --gvcf-gq-bands 12 --gvcf-gq-bands 13 --gvcf-gq-bands 14 --gvcf-gq-bands 15 --gvcf-gq-bands 16 --gvcf-gq-bands 17 --gvcf-gq-bands 18 --gvcf-gq-bands 19 --gvcf-gq-bands 20 --gvcf-gq-bands 21 --gvcf-gq-bands 22 --gvcf-gq-bands 23 --gvcf-gq-bands 24 --gvcf-gq-bands 25 --gvcf-gq-bands 26 --gvcf-gq-bands 27 --gvcf-gq-bands 28 --gvcf-gq-bands 29 --gvcf-gq-bands 30 --gvcf-gq-bands 31 --gvcf-gq-bands 32 --gvcf-gq-bands 33 --gvcf-gq-bands 34 --gvcf-gq-bands 35 --gvcf-gq-bands 36 --gvcf-gq-bands 37 --gvcf-gq-bands 38 --gvcf-gq-bands 39 --gvcf-gq-bands 40 --gvcf-gq-bands 41 --gvcf-gq-bands 42 --gvcf-gq-bands 43 --gvcf-gq-bands 44 --gvcf-gq-bands 45 --gvcf-gq-bands 46 --gvcf-gq-bands 47 --gvcf-gq-bands 48 --gvcf-gq-bands 49 --gvcf-gq-bands 50 --gvcf-gq-bands 51 --gvcf-gq-bands 52 --gvcf-gq-bands 53 --gvcf-gq-bands 54 --gvcf-gq-bands 55 --gvcf-gq-bands 56 --gvcf-gq-bands 57 --gvcf-gq-bands 58 --gvcf-gq-bands 59 --gvcf-gq-bands 60 --gvcf-gq-bands 70 --gvcf-gq-bands 80 --gvcf-gq-bands 90 --gvcf-gq-bands 99 --indel-size-to-eliminate-in-ref-model 10 --use-alleles-trigger false --disable-optimizations false --just-determine-active-regions false --dont-genotype false --max-mnp-distance 0 --dont-trim-active-regions false --max-disc-ar-extension 25 --max-gga-ar-extension 300 --padding-around-indels 150 --padding-around-snps 20 --kmer-size 10 --kmer-size 25 --dont-increase-kmer-sizes-for-cycles false --allow-non-unique-kmers-in-ref false --num-pruning-samples 1 --recover-dangling-heads false --do-not-recover-dangling-branches false --min-dangling-branch-length 4 --consensus false --max-num-haplotypes-in-population 128 --error-correct-kmers false --min-pruning 2 --debug-graph-transformations false --kmer-length-for-read-error-correction 25 --min-observations-for-kmer-to-be-solid 20 --likelihood-calculation-engine PairHMM --base-quality-score-threshold 18 --pair-hmm-gap-continuation-penalty 10 --pair-hmm-implementation FASTEST_AVAILABLE --pcr-indel-model CONSERVATIVE --phred-scaled-global-read-mismapping-rate 45 --native-pair-hmm-threads 4 --native-pair-hmm-use-double-precision false --debug false --use-filtered-reads-for-annotations false --bam-writer-type CALLED_HAPLOTYPES --dont-use-soft-clipped-bases false --capture-assembly-failure-bam false --error-correct-reads false --do-not-run-physical-phasing false --min-base-quality-score 10 --smith-waterman JAVA --use-new-qual-calculator false --annotate-with-num-discovered-alleles false --heterozygosity 0.001 --indel-heterozygosity 1.25E-4 --heterozygosity-stdev 0.01 --standard-min-confidence-threshold-for-calling 10.0 --max-alternate-alleles 6 --max-genotype-count 1024 --sample-ploidy 2 --num-reference-samples-if-no-call 0 --genotyping-mode DISCOVERY --genotype-filtered-alleles false --contamination-fraction-to-filter 0.0 --output-mode EMIT_VARIANTS_ONLY --all-site-pls false --min-assembly-region-size 50 --max-assembly-region-size 300 --assembly-region-padding 100 --max-reads-per-alignment-start 50 --active-probability-threshold 0.002 --max-prob-propagation-distance 50 --interval-set-rule UNION --interval-padding 0 --interval-exclusion-padding 0 --interval-merging-rule ALL --read-validation-stringency SILENT --seconds-between-progress-updates 10.0 --disable-sequence-dictionary-validation false --create-output-bam-index true --create-output-bam-md5 false --create-output-variant-index true --create-output-variant-md5 false --lenient false --add-output-sam-program-record true --add-output-vcf-command-line true --cloud-prefetch-buffer 40 --cloud-index-prefetch-buffer -1 --disable-bam-index-caching false --sites-only-vcf-output false --help false --version false --showHidden false --verbosity INFO --QUIET false --use-jdk-deflater false --use-jdk-inflater false --gcs-max-retries 20 --disable-tool-default-read-filters false --minimum-mapping-quality 20 --disable-tool-default-annotations false --enable-all-annotations false",Version=4.0.8.1,Date="September 27, 2018 10:23:52 PM PDT">
+##GVCFBlock0-1=minGQ=0(inclusive),maxGQ=1(exclusive)
+##GVCFBlock1-2=minGQ=1(inclusive),maxGQ=2(exclusive)
+##GVCFBlock10-11=minGQ=10(inclusive),maxGQ=11(exclusive)
+##GVCFBlock11-12=minGQ=11(inclusive),maxGQ=12(exclusive)
+##GVCFBlock12-13=minGQ=12(inclusive),maxGQ=13(exclusive)
+##GVCFBlock13-14=minGQ=13(inclusive),maxGQ=14(exclusive)
+##GVCFBlock14-15=minGQ=14(inclusive),maxGQ=15(exclusive)
+##GVCFBlock15-16=minGQ=15(inclusive),maxGQ=16(exclusive)
+##GVCFBlock16-17=minGQ=16(inclusive),maxGQ=17(exclusive)
+##GVCFBlock17-18=minGQ=17(inclusive),maxGQ=18(exclusive)
+##GVCFBlock18-19=minGQ=18(inclusive),maxGQ=19(exclusive)
+##GVCFBlock19-20=minGQ=19(inclusive),maxGQ=20(exclusive)
+##GVCFBlock2-3=minGQ=2(inclusive),maxGQ=3(exclusive)
+##GVCFBlock20-21=minGQ=20(inclusive),maxGQ=21(exclusive)
+##GVCFBlock21-22=minGQ=21(inclusive),maxGQ=22(exclusive)
+##GVCFBlock22-23=minGQ=22(inclusive),maxGQ=23(exclusive)
+##GVCFBlock23-24=minGQ=23(inclusive),maxGQ=24(exclusive)
+##GVCFBlock24-25=minGQ=24(inclusive),maxGQ=25(exclusive)
+##GVCFBlock25-26=minGQ=25(inclusive),maxGQ=26(exclusive)
+##GVCFBlock26-27=minGQ=26(inclusive),maxGQ=27(exclusive)
+##GVCFBlock27-28=minGQ=27(inclusive),maxGQ=28(exclusive)
+##GVCFBlock28-29=minGQ=28(inclusive),maxGQ=29(exclusive)
+##GVCFBlock29-30=minGQ=29(inclusive),maxGQ=30(exclusive)
+##GVCFBlock3-4=minGQ=3(inclusive),maxGQ=4(exclusive)
+##GVCFBlock30-31=minGQ=30(inclusive),maxGQ=31(exclusive)
+##GVCFBlock31-32=minGQ=31(inclusive),maxGQ=32(exclusive)
+##GVCFBlock32-33=minGQ=32(inclusive),maxGQ=33(exclusive)
+##GVCFBlock33-34=minGQ=33(inclusive),maxGQ=34(exclusive)
+##GVCFBlock34-35=minGQ=34(inclusive),maxGQ=35(exclusive)
+##GVCFBlock35-36=minGQ=35(inclusive),maxGQ=36(exclusive)
+##GVCFBlock36-37=minGQ=36(inclusive),maxGQ=37(exclusive)
+##GVCFBlock37-38=minGQ=37(inclusive),maxGQ=38(exclusive)
+##GVCFBlock38-39=minGQ=38(inclusive),maxGQ=39(exclusive)
+##GVCFBlock39-40=minGQ=39(inclusive),maxGQ=40(exclusive)
+##GVCFBlock4-5=minGQ=4(inclusive),maxGQ=5(exclusive)
+##GVCFBlock40-41=minGQ=40(inclusive),maxGQ=41(exclusive)
+##GVCFBlock41-42=minGQ=41(inclusive),maxGQ=42(exclusive)
+##GVCFBlock42-43=minGQ=42(inclusive),maxGQ=43(exclusive)
+##GVCFBlock43-44=minGQ=43(inclusive),maxGQ=44(exclusive)
+##GVCFBlock44-45=minGQ=44(inclusive),maxGQ=45(exclusive)
+##GVCFBlock45-46=minGQ=45(inclusive),maxGQ=46(exclusive)
+##GVCFBlock46-47=minGQ=46(inclusive),maxGQ=47(exclusive)
+##GVCFBlock47-48=minGQ=47(inclusive),maxGQ=48(exclusive)
+##GVCFBlock48-49=minGQ=48(inclusive),maxGQ=49(exclusive)
+##GVCFBlock49-50=minGQ=49(inclusive),maxGQ=50(exclusive)
+##GVCFBlock5-6=minGQ=5(inclusive),maxGQ=6(exclusive)
+##GVCFBlock50-51=minGQ=50(inclusive),maxGQ=51(exclusive)
+##GVCFBlock51-52=minGQ=51(inclusive),maxGQ=52(exclusive)
+##GVCFBlock52-53=minGQ=52(inclusive),maxGQ=53(exclusive)
+##GVCFBlock53-54=minGQ=53(inclusive),maxGQ=54(exclusive)
+##GVCFBlock54-55=minGQ=54(inclusive),maxGQ=55(exclusive)
+##GVCFBlock55-56=minGQ=55(inclusive),maxGQ=56(exclusive)
+##GVCFBlock56-57=minGQ=56(inclusive),maxGQ=57(exclusive)
+##GVCFBlock57-58=minGQ=57(inclusive),maxGQ=58(exclusive)
+##GVCFBlock58-59=minGQ=58(inclusive),maxGQ=59(exclusive)
+##GVCFBlock59-60=minGQ=59(inclusive),maxGQ=60(exclusive)
+##GVCFBlock6-7=minGQ=6(inclusive),maxGQ=7(exclusive)
+##GVCFBlock60-70=minGQ=60(inclusive),maxGQ=70(exclusive)
+##GVCFBlock7-8=minGQ=7(inclusive),maxGQ=8(exclusive)
+##GVCFBlock70-80=minGQ=70(inclusive),maxGQ=80(exclusive)
+##GVCFBlock8-9=minGQ=8(inclusive),maxGQ=9(exclusive)
+##GVCFBlock80-90=minGQ=80(inclusive),maxGQ=90(exclusive)
+##GVCFBlock9-10=minGQ=9(inclusive),maxGQ=10(exclusive)
+##GVCFBlock90-99=minGQ=90(inclusive),maxGQ=99(exclusive)
+##GVCFBlock99-100=minGQ=99(inclusive),maxGQ=100(exclusive)
+##INFO=<ID=BaseQRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
+##INFO=<ID=DS,Number=0,Type=Flag,Description="Were any of the samples downsampled?">
+##INFO=<ID=END,Number=1,Type=Integer,Description="Stop position of the interval">
+##INFO=<ID=ExcessHet,Number=1,Type=Float,Description="Phred-scaled p-value for exact test of excess heterozygosity">
+##INFO=<ID=InbreedingCoeff,Number=1,Type=Float,Description="Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation">
+##INFO=<ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
+##INFO=<ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
+##INFO=<ID=RAW_MQ,Number=1,Type=Float,Description="Raw data for RMS Mapping Quality">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+##contig=<ID=WXY,length=1213>
+##contig=<ID=matK,length=899>
+##contig=<ID=psaA,length=993>
+##contig=<ID=trnL,length=923>
+##contig=<ID=LFY,length=875>
+##source=HaplotypeCaller
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	H8B
+WXY	1	.	G	<NON_REF>	.	.	END=28	GT:DP:GQ:MIN_DP:PL	0/0:256:99:52:0,120,1800
+WXY	29	.	T	G,C,<NON_REF>	6436.77	.	BaseQRankSum=-0.905;DP=464;ExcessHet=3.0103;MLEAC=1,0,0;MLEAF=0.500,0.00,0.00;MQRankSum=0.000;RAW_MQ=1670400.00;ReadPosRankSum=0.057	GT:AD:DP:GQ:PL:SB	0/1:210,239,2,0:451:99:6465,0,5474,7112,6240,14056,7154,6270,13772,13724:134,76,149,92
+WXY	30	.	C	<NON_REF>	.	.	END=77	GT:DP:GQ:MIN_DP:PL	0/0:775:99:485:0,120,1800
+WXY	78	.	T	G,<NON_REF>	14700.77	.	BaseQRankSum=-2.753;DP=1046;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=3765600.00;ReadPosRankSum=0.518	GT:AD:DP:GQ:PL:SB	0/1:484,562,0:1046:99:14729,0,12674,16196,14374,30570:266,218,308,254
+WXY	79	.	C	<NON_REF>	.	.	END=97	GT:DP:GQ:MIN_DP:PL	0/0:1121:99:1061:0,120,1800
+WXY	98	.	CTT	C,<NON_REF>	24035.73	.	BaseQRankSum=-1.291;DP=1237;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-0.969;RAW_MQ=4451044.00;ReadPosRankSum=1.992	GT:AD:DP:GQ:PL:SB	0/1:587,623,0:1210:99:24073,0,24054,25846,25932,51778:334,253,330,293
+WXY	101	.	T	<NON_REF>	.	.	END=101	GT:DP:GQ:MIN_DP:PL	0/0:1254:0:1254:0,0,1084
+WXY	102	.	G	<NON_REF>	.	.	END=114	GT:DP:GQ:MIN_DP:PL	0/0:1238:99:1192:0,120,1800
+WXY	115	.	CTCTTT	C,CT,<NON_REF>	22565.73	.	BaseQRankSum=-1.580;DP=1232;ExcessHet=3.0103;MLEAC=0,1,0;MLEAF=0.00,0.500,0.00;MQRankSum=-1.003;RAW_MQ=4433044.00;ReadPosRankSum=3.638	GT:AD:DP:GQ:PL:SB	0/2:604,4,594,0:1202:99:22603,19645,46201,0,26849,25073,22454,46769,26953,48807:333,271,330,268
+WXY	121	.	T	<NON_REF>	.	.	END=125	GT:DP:GQ:MIN_DP:PL	0/0:1267:99:1260:0,120,1800
+WXY	126	.	T	G,<NON_REF>	23341.77	.	BaseQRankSum=-1.226;DP=1219;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-0.990;RAW_MQ=4386244.00;ReadPosRankSum=-11.006	GT:AD:DP:GQ:PL:SB	0/1:604,614,0:1218:99:23370,0,25293,25200,27141,52341:333,271,336,278
+WXY	127	.	C	<NON_REF>	.	.	END=146	GT:DP:GQ:MIN_DP:PL	0/0:1294:99:1254:0,120,1800
+WXY	147	.	T	G,<NON_REF>	24315.77	.	BaseQRankSum=-0.339;DP=1265;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-0.986;RAW_MQ=4551844.00;ReadPosRankSum=-0.268	GT:AD:DP:GQ:PL:SB	0/1:623,639,0:1262:99:24344,0,16528,26212,18457,44669:323,300,343,296
+WXY	148	.	A	<NON_REF>	.	.	END=291	GT:DP:GQ:MIN_DP:PL	0/0:1198:99:1057:0,120,1800
+WXY	292	.	A	G,<NON_REF>	15566.77	.	BaseQRankSum=-0.997;DP=1116;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4017600.00;ReadPosRankSum=-1.113	GT:AD:DP:GQ:PL:SB	0/1:534,577,0:1111:99:15595,0,13901,17197,15629,32827:273,261,284,293
+WXY	293	.	A	<NON_REF>	.	.	END=467	GT:DP:GQ:MIN_DP:PL	0/0:1153:99:1029:0,120,1800
+WXY	468	.	G	A,<NON_REF>	43395.77	.	BaseQRankSum=0.544;DP=1301;ExcessHet=3.0103;MLEAC=2,0;MLEAF=1.00,0.00;MQRankSum=0.000;RAW_MQ=4683600.00;ReadPosRankSum=0.289	GT:AD:DP:GQ:PL:SB	1/1:3,1298,0:1301:99:43424,3832,0,43433,3911,43512:2,1,620,678
+WXY	469	.	C	<NON_REF>	.	.	END=473	GT:DP:GQ:MIN_DP:PL	0/0:1352:99:1311:0,120,1800
+WXY	474	.	T	C,<NON_REF>	19166.77	.	BaseQRankSum=-0.331;DP=1338;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4816800.00;ReadPosRankSum=1.335	GT:AD:DP:GQ:PL:SB	0/1:617,711,0:1328:99:19195,0,16010,21048,18144,39191:295,322,347,364
+WXY	475	.	A	<NON_REF>	.	.	END=619	GT:DP:GQ:MIN_DP:PL	0/0:1176:99:1098:0,120,1800
+WXY	620	.	C	G,<NON_REF>	13716.77	.	BaseQRankSum=-2.648;DP=1154;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4154400.00;ReadPosRankSum=-1.013	GT:AD:DP:GQ:PL:SB	0/1:606,545,0:1151:99:13745,0,16526,15573,18161,33734:319,287,245,300
+WXY	621	.	G	<NON_REF>	.	.	END=755	GT:DP:GQ:MIN_DP:PL	0/0:1204:99:1092:0,120,1800
+WXY	756	.	G	A,<NON_REF>	17977.77	.	BaseQRankSum=1.404;DP=1232;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4435200.00;ReadPosRankSum=0.581	GT:AD:DP:GQ:PL:SB	0/1:575,644,0:1219:99:18006,0,15154,19732,17088,36820:281,294,326,318
+WXY	757	.	A	<NON_REF>	.	.	END=949	GT:DP:GQ:MIN_DP:PL	0/0:1308:99:1145:0,120,1800
+WXY	950	.	T	C,<NON_REF>	21778.77	.	BaseQRankSum=0.258;DP=1470;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=5292000.00;ReadPosRankSum=-2.101	GT:AD:DP:GQ:PL:SB	0/1:644,807,0:1451:99:21807,0,16274,23739,18703,42442:301,343,380,427
+WXY	951	.	T	<NON_REF>	.	.	END=1017	GT:DP:GQ:MIN_DP:PL	0/0:1331:99:1265:0,120,1800
+WXY	1018	.	G	C,<NON_REF>	16681.77	.	BaseQRankSum=1.176;DP=1233;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4438800.00;ReadPosRankSum=0.787	GT:AD:DP:GQ:PL:SB	0/1:577,651,0:1228:99:16710,0,14473,18444,16426,34871:272,305,306,345
+WXY	1019	.	G	<NON_REF>	.	.	END=1067	GT:DP:GQ:MIN_DP:PL	0/0:1278:99:1231:0,120,1800
+WXY	1068	.	G	A,<NON_REF>	15702.77	.	BaseQRankSum=1.825;DP=1339;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4820400.00;ReadPosRankSum=1.491	GT:AD:DP:GQ:PL:SB	0/1:654,677,0:1331:99:15731,0,14659,17692,16696,34388:281,373,275,402
+WXY	1069	.	G	<NON_REF>	.	.	END=1141	GT:DP:GQ:MIN_DP:PL	0/0:1356:99:1267:0,120,1800
+WXY	1142	.	G	A,<NON_REF>	15063.77	.	BaseQRankSum=-0.048;DP=1237;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4453200.00;ReadPosRankSum=-2.479	GT:AD:DP:GQ:PL:SB	0/1:575,652,0:1227:99:15092,0,13111,16816,15065,31881:231,344,257,395
+WXY	1143	.	C	<NON_REF>	.	.	END=1167	GT:DP:GQ:MIN_DP:PL	0/0:1187:99:1143:0,120,1800
+WXY	1168	.	T	C,<NON_REF>	13233.77	.	BaseQRankSum=-0.420;DP=1124;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4046400.00;ReadPosRankSum=0.292	GT:AD:DP:GQ:PL:SB	0/1:535,583,0:1118:99:13262,0,12269,14866,14015,28881:205,330,227,356
+WXY	1169	.	A	<NON_REF>	.	.	END=1203	GT:DP:GQ:MIN_DP:PL	0/0:804:99:622:0,120,1800
+WXY	1204	.	T	<NON_REF>	.	.	END=1213	GT:DP:GQ:MIN_DP:PL	0/0:457:0:340:0,0,0
+matK	1	.	C	<NON_REF>	.	.	END=899	GT:DP:GQ:MIN_DP:PL	0/0:0:0:0:0,0,0
+psaA	1	.	C	<NON_REF>	.	.	END=751	GT:DP:GQ:MIN_DP:PL	0/0:0:0:0:0,0,0
+psaA	752	.	T	<NON_REF>	.	.	END=754	GT:DP:GQ:MIN_DP:PL	0/0:2:6:2:0,6,49
+psaA	755	.	A	C,<NON_REF>	22.58	.	DP=2;ExcessHet=3.0103;MLEAC=2,0;MLEAF=1.00,0.00;RAW_MQ=7200.00	GT:AD:DP:GQ:PL:SB	1/1:0,2,0:2:6:49,6,0,49,6,49:0,0,1,1
+psaA	756	.	C	<NON_REF>	.	.	END=874	GT:DP:GQ:MIN_DP:PL	0/0:2:6:2:0,6,49
+psaA	875	.	T	<NON_REF>	.	.	END=993	GT:DP:GQ:MIN_DP:PL	0/0:0:0:0:0,0,0
+trnL	1	.	C	<NON_REF>	.	.	END=923	GT:DP:GQ:MIN_DP:PL	0/0:0:0:0:0,0,0
+LFY	1	.	C	<NON_REF>	.	.	END=1	GT:DP:GQ:MIN_DP:PL	0/0:7:21:7:0,21,295
+LFY	2	.	C	<NON_REF>	.	.	END=6	GT:DP:GQ:MIN_DP:PL	0/0:7:0:7:0,0,169
+LFY	7	.	A	<NON_REF>	.	.	END=7	GT:DP:GQ:MIN_DP:PL	0/0:21:20:21:0,20,556
+LFY	8	.	C	<NON_REF>	.	.	END=8	GT:DP:GQ:MIN_DP:PL	0/0:47:98:47:0,98,1347
+LFY	9	.	G	<NON_REF>	.	.	END=49	GT:DP:GQ:MIN_DP:PL	0/0:445:99:51:0,120,1800
+LFY	50	.	G	C,A,<NON_REF>	17048.77	.	BaseQRankSum=1.588;DP=563;ExcessHet=3.0103;MLEAC=0,2,0;MLEAF=0.00,1.00,0.00;MQRankSum=0.000;RAW_MQ=2026800.00;ReadPosRankSum=0.394	GT:AD:DP:GQ:PL:SB	2/2:6,24,532,0:562:99:17077,17225,22801,1470,729,0,17950,20505,1634,20548:3,3,329,227
+LFY	51	.	C	<NON_REF>	.	.	END=65	GT:DP:GQ:MIN_DP:PL	0/0:716:99:630:0,120,1800
+LFY	66	.	G	<NON_REF>	.	.	END=66	GT:DP:GQ:MIN_DP:PL	0/0:781:34:781:0,34,18863
+LFY	67	.	C	<NON_REF>	.	.	END=67	GT:DP:GQ:MIN_DP:PL	0/0:787:55:787:0,55,19112
+LFY	68	.	T	<NON_REF>	.	.	END=68	GT:DP:GQ:MIN_DP:PL	0/0:778:20:778:0,20,18874
+LFY	69	.	C	<NON_REF>	.	.	END=135	GT:DP:GQ:MIN_DP:PL	0/0:939:99:783:0,120,1800
+LFY	136	.	C	<NON_REF>	.	.	END=136	GT:DP:GQ:MIN_DP:PL	0/0:1260:0:1260:0,0,28741
+LFY	137	.	C	T,<NON_REF>	9490.77	.	BaseQRankSum=-0.017;DP=1115;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.802;RAW_MQ=4012336.00;ReadPosRankSum=0.181	GT:AD:DP:GQ:PL:SB	0/1:674,432,0:1106:99:9519,0,18216,11556,19510,31066:380,294,255,177
+LFY	138	.	G	<NON_REF>	.	.	END=153	GT:DP:GQ:MIN_DP:PL	0/0:1316:99:1270:0,120,1800
+LFY	154	.	T	<NON_REF>	.	.	END=154	GT:DP:GQ:MIN_DP:PL	0/0:1346:0:1346:0,0,29480
+LFY	155	.	G	<NON_REF>	.	.	END=157	GT:DP:GQ:MIN_DP:PL	0/0:1394:99:1391:0,120,1800
+LFY	158	.	C	<NON_REF>	.	.	END=158	GT:DP:GQ:MIN_DP:PL	0/0:1411:0:1411:0,0,32933
+LFY	159	.	A	<NON_REF>	.	.	END=163	GT:DP:GQ:MIN_DP:PL	0/0:1370:99:1307:0,120,1800
+LFY	164	.	G	T,<NON_REF>	11.12	.	BaseQRankSum=-1.186;DP=1144;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-3.716;RAW_MQ=4116736.00;ReadPosRankSum=-2.413	GT:AD:DP:GQ:PL:SB	0/1:1065,77,0:1142:39:39,0,30660,3286,30912,34198:634,431,42,35
+LFY	165	.	G	<NON_REF>	.	.	END=174	GT:DP:GQ:MIN_DP:PL	0/0:1294:99:1279:0,120,1800
+LFY	175	.	T	C,<NON_REF>	44.77	.	BaseQRankSum=-1.561;DP=1167;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-3.515;RAW_MQ=4199536.00;ReadPosRankSum=-1.837	GT:AD:DP:GQ:PL:SB	0/1:1077,87,0:1164:73:73,0,31707,3314,31969,35283:634,443,47,40
+LFY	176	.	G	<NON_REF>	.	.	END=203	GT:DP:GQ:MIN_DP:PL	0/0:1274:99:1235:0,120,1800
+LFY	204	.	C	<NON_REF>	.	.	END=204	GT:DP:GQ:MIN_DP:PL	0/0:1271:0:1271:0,0,30215
+LFY	205	.	T	<NON_REF>	.	.	END=245	GT:DP:GQ:MIN_DP:PL	0/0:1239:99:1171:0,120,1800
+LFY	246	.	T	C,<NON_REF>	1629.77	.	BaseQRankSum=1.303;DP=1184;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-4.291;RAW_MQ=4259808.00;ReadPosRankSum=2.399	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1068,116,0:1184:99:0|1:246_T_C:1658,0,45880,4981,46241,51222:573,495,66,50
+LFY	247	.	T	<NON_REF>	.	.	END=247	GT:DP:GQ:MIN_DP:PL	0/0:1255:99:1255:0,120,1800
+LFY	248	.	G	C,<NON_REF>	1663.77	.	BaseQRankSum=1.160;DP=1218;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-4.318;RAW_MQ=4382208.00;ReadPosRankSum=2.383	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1100,118,0:1218:99:0|1:246_T_C:1692,0,46054,5032,46418,51450:593,507,67,51
+LFY	249	.	G	<NON_REF>	.	.	END=271	GT:DP:GQ:MIN_DP:PL	0/0:1361:99:1289:0,120,1800
+LFY	272	.	G	A,<NON_REF>	1811.77	.	BaseQRankSum=0.151;DP=1246;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-3.943;RAW_MQ=4483008.00;ReadPosRankSum=-1.610	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1104,142,0:1246:99:0|1:246_T_C:1840,0,44417,5339,44849,50189:582,522,78,64
+LFY	273	.	C	<NON_REF>	.	.	END=298	GT:DP:GQ:MIN_DP:PL	0/0:1256:99:1200:0,120,1800
+LFY	299	.	G	C,<NON_REF>	14749.77	.	BaseQRankSum=0.665;DP=1210;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4356000.00;ReadPosRankSum=-0.415	GT:AD:DP:GQ:PL:SB	0/1:669,530,0:1199:99:14778,0,17894,16787,19483,36271:350,319,267,263
+LFY	300	.	G	<NON_REF>	.	.	END=322	GT:DP:GQ:MIN_DP:PL	0/0:1267:99:1214:0,120,1800
+LFY	323	.	G	C,<NON_REF>	2423.77	.	BaseQRankSum=-0.947;DP=1216;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4377600.00;ReadPosRankSum=-1.672	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1083,133,0:1216:99:0|1:323_G_C:2452,0,47383,5899,47811,53710:503,580,63,70
+LFY	324	.	C	<NON_REF>	.	.	END=325	GT:DP:GQ:MIN_DP:PL	0/0:1335:99:1326:0,120,1800
+LFY	326	.	C	T,<NON_REF>	2505.77	.	BaseQRankSum=-1.655;DP=1293;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4654800.00;ReadPosRankSum=-1.412	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1152,141,0:1293:99:0|1:323_G_C:2534,0,48470,6047,48904,54950:548,604,67,74
+LFY	327	.	C	<NON_REF>	.	.	END=344	GT:DP:GQ:MIN_DP:PL	0/0:1396:99:1388:0,120,1800
+LFY	345	.	C	G,<NON_REF>	1787.77	.	BaseQRankSum=-0.793;DP=1295;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4662000.00;ReadPosRankSum=2.124	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1171,123,0:1294:99:0|1:323_G_C:1816,0,50416,5459,50808,56266:554,617,57,66
+LFY	346	.	G	<NON_REF>	.	.	END=348	GT:DP:GQ:MIN_DP:PL	0/0:1433:99:1398:0,120,1800
+LFY	349	.	A	G,<NON_REF>	2123.77	.	BaseQRankSum=-2.529;DP=1363;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4906800.00;ReadPosRankSum=2.314	GT:AD:DP:GQ:PL:SB	0/1:1219,141,0:1360:99:2152,0,34882,5813,35313,41125:581,638,65,76
+LFY	350	.	C	<NON_REF>	.	.	END=355	GT:DP:GQ:MIN_DP:PL	0/0:1504:99:1488:0,120,1800
+LFY	356	.	A	G,<NON_REF>	1470.77	.	BaseQRankSum=-1.242;DP=1414;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=5090400.00;ReadPosRankSum=2.017	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1278,135,0:1413:99:0|1:323_G_C:1499,0,56243,5569,56649,62218:592,686,61,74
+LFY	357	.	C	<NON_REF>	.	.	END=379	GT:DP:GQ:MIN_DP:PL	0/0:1560:99:1508:0,120,1800
+LFY	380	.	T	C,<NON_REF>	2379.77	.	BaseQRankSum=-0.972;DP=1475;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-4.254;RAW_MQ=5306812.00;ReadPosRankSum=0.914	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1318,152,0:1470:99:0|1:380_T_C:2408,0,54644,6418,55108,61527:627,691,69,83
+LFY	381	.	G	<NON_REF>	.	.	END=388	GT:DP:GQ:MIN_DP:PL	0/0:1567:99:1544:0,120,1800
+LFY	389	.	C	T,<NON_REF>	2039.77	.	BaseQRankSum=0.152;DP=1553;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-8.582;RAW_MQ=5582432.00;ReadPosRankSum=1.444	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1397,151,0:1548:99:0|1:380_T_C:2068,0,58532,6302,58990,65292:650,747,68,83
+LFY	390	.	C	<NON_REF>	.	.	END=407	GT:DP:GQ:MIN_DP:PL	0/0:1695:99:1642:0,99,1485
+LFY	408	.	T	A,C,<NON_REF>	12844.77	.	BaseQRankSum=-1.008;DP=1555;ExcessHet=3.0103;MLEAC=1,0,0;MLEAF=0.500,0.00,0.00;MQRankSum=2.763;RAW_MQ=5586641.00;ReadPosRankSum=2.433	GT:AD:DP:GQ:PL:SB	0/1:972,561,5,0:1538:99:12873,0,28894,16417,30638,51454,16408,30739,49576,49027:482,490,286,280
+LFY	409	.	A	<NON_REF>	.	.	END=410	GT:DP:GQ:MIN_DP:PL	0/0:1645:99:1644:0,108,1620
+LFY	411	.	CGT	C,<NON_REF>	57096.73	.	BaseQRankSum=-2.212;DP=1544;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=9.263;RAW_MQ=5547041.00;ReadPosRankSum=1.342	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:143,1357,0:1500:99:0|1:411_CGT_C:57134,0,1813,57568,6047,63615:72,71,675,682
+LFY	412	.	G	A,<NON_REF>	1627.77	.	BaseQRankSum=1.854;DP=1538;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-9.471;RAW_MQ=5525441.00;ReadPosRankSum=-1.600	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1397,141,0:1538:99:1|0:411_CGT_C:1656,0,58702,5945,59133,65077:693,704,70,71
+LFY	413	.	T	<NON_REF>	.	.	END=414	GT:DP:GQ:MIN_DP:PL	0/0:1551:0:1540:0,0,0
+LFY	415	.	T	<NON_REF>	.	.	END=417	GT:DP:GQ:MIN_DP:PL	0/0:1565:99:1562:0,120,1800
+LFY	418	.	C	T,<NON_REF>	396.77	.	BaseQRankSum=8.221;DP=1463;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-9.255;RAW_MQ=5258579.00;ReadPosRankSum=-0.961	GT:AD:DP:GQ:PL:SB	0/1:1364,99,0:1463:99:425,0,57888,4600,58240,62841:677,687,33,66
+LFY	419	.	T	<NON_REF>	.	.	END=420	GT:DP:GQ:MIN_DP:PL	0/0:1523:99:1518:0,120,1800
+LFY	421	.	G	<NON_REF>	.	.	END=423	GT:DP:GQ:MIN_DP:PL	0/0:1524:0:1516:0,0,39948
+LFY	424	.	T	<NON_REF>	.	.	END=425	GT:DP:GQ:MIN_DP:PL	0/0:1519:99:1508:0,120,1800
+LFY	426	.	C	T,<NON_REF>	56797.77	.	BaseQRankSum=-7.303;DP=1470;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=9.069;RAW_MQ=5283779.00;ReadPosRankSum=2.802	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:103,1364,0:1467:99:0|1:411_CGT_C:56826,0,121,57136,4325,61461:35,68,681,683
+LFY	427	.	C	<NON_REF>	.	.	END=477	GT:DP:GQ:MIN_DP:PL	0/0:1597:99:1517:0,120,1800
+LFY	478	.	A	G,T,<NON_REF>	15611.77	.	BaseQRankSum=-0.108;DP=1566;ExcessHet=3.0103;MLEAC=1,0,0;MLEAF=0.500,0.00,0.00;MQRankSum=-0.866;RAW_MQ=5632531.00;ReadPosRankSum=2.006	GT:AD:DP:GQ:PL:SB	0/1:904,615,38,0:1557:99:15640,0,25686,18107,27812,65374,19584,29190,57980,57086:455,449,329,324
+LFY	479	.	C	<NON_REF>	.	.	END=491	GT:DP:GQ:MIN_DP:PL	0/0:1610:99:1589:0,120,1800
+LFY	492	.	G	T,A,<NON_REF>	53575.77	.	BaseQRankSum=-3.359;DP=1524;ExcessHet=3.0103;MLEAC=2,0,0;MLEAF=1.00,0.00,0.00;MQRankSum=6.151;RAW_MQ=5479847.00;ReadPosRankSum=2.246	GT:AD:DP:GQ:PL:SB	1/1:37,1431,38,0:1506:99:53604,2895,0,53732,2854,64360,55085,4450,60688,60942:16,21,737,732
+LFY	493	.	T	<NON_REF>	.	.	END=495	GT:DP:GQ:MIN_DP:PL	0/0:1612:99:1604:0,120,1800
+LFY	496	.	TTG	T,CTG,<NON_REF>	20112.73	.	BaseQRankSum=1.332;DP=1552;ExcessHet=3.0103;MLEAC=1,0,0;MLEAF=0.500,0.00,0.00;MQRankSum=2.119;RAW_MQ=5580647.00;ReadPosRankSum=2.553	GT:AD:DP:GQ:PL:SB	0/1:684,763,3,0:1450:99:20150,0,24216,24046,22269,56834,23835,25004,53070,53661:332,352,387,379
+LFY	499	.	T	<NON_REF>	.	.	END=499	GT:DP:GQ:MIN_DP:PL	0/0:1620:0:1620:0,0,479
+LFY	500	.	G	<NON_REF>	.	.	END=552	GT:DP:GQ:MIN_DP:PL	0/0:1570:99:1438:0,120,1800
+LFY	553	.	A	G,<NON_REF>	56392.77	.	DP=1331;ExcessHet=3.0103;MLEAC=2,0;MLEAF=1.00,0.00;RAW_MQ=4791600.00	GT:AD:DP:GQ:PGT:PID:PL:SB	1/1:0,1329,0:1329:99:0|1:553_A_G:56421,4025,0,56421,4025,56421:0,0,627,702
+LFY	554	.	G	<NON_REF>	.	.	END=557	GT:DP:GQ:MIN_DP:PL	0/0:1435:99:1423:0,120,1800
+LFY	558	.	C	<NON_REF>	.	.	END=558	GT:DP:GQ:MIN_DP:PL	0/0:1414:52:1414:0,52,35583
+LFY	559	.	G	<NON_REF>	.	.	END=584	GT:DP:GQ:MIN_DP:PL	0/0:1430:99:1374:0,120,1800
+LFY	585	.	T	C,<NON_REF>	63634.77	.	DP=1385;ExcessHet=3.0103;MLEAC=2,0;MLEAF=1.00,0.00;RAW_MQ=4986000.00	GT:AD:DP:GQ:PGT:PID:PL:SB	1/1:0,1381,0:1381:99:0|1:553_A_G:63663,4310,0,63663,4310,63663:0,0,609,772
+LFY	586	.	C	<NON_REF>	.	.	END=602	GT:DP:GQ:MIN_DP:PL	0/0:1543:99:1471:0,120,1800
+LFY	603	.	C	<NON_REF>	.	.	END=603	GT:DP:GQ:MIN_DP:PL	0/0:1471:0:1471:0,0,36149
+LFY	604	.	C	<NON_REF>	.	.	END=611	GT:DP:GQ:MIN_DP:PL	0/0:1465:99:1459:0,120,1800
+LFY	612	.	A	<NON_REF>	.	.	END=612	GT:DP:GQ:MIN_DP:PL	0/0:1465:0:1465:0,0,36808
+LFY	613	.	G	<NON_REF>	.	.	END=618	GT:DP:GQ:MIN_DP:PL	0/0:1463:99:1422:0,120,1800
+LFY	619	.	G	C,<NON_REF>	49311.77	.	BaseQRankSum=-0.162;DP=1366;ExcessHet=3.0103;MLEAC=2,0;MLEAF=1.00,0.00;MQRankSum=0.000;RAW_MQ=4917600.00;ReadPosRankSum=0.986	GT:AD:DP:GQ:PGT:PID:PL:SB	1/1:78,1282,0:1360:99:0|1:553_A_G:49340,788,0,49574,3895,52681:41,37,576,706
+LFY	620	.	A	<NON_REF>	.	.	END=626	GT:DP:GQ:MIN_DP:PL	0/0:1465:99:1431:0,120,1800
+LFY	627	.	C	<NON_REF>	.	.	END=627	GT:DP:GQ:MIN_DP:PL	0/0:1422:0:1422:0,0,34598
+LFY	628	.	A	<NON_REF>	.	.	END=684	GT:DP:GQ:MIN_DP:PL	0/0:1474:99:1392:0,120,1800
+LFY	685	.	G	<NON_REF>	.	.	END=685	GT:DP:GQ:MIN_DP:PL	0/0:1431:0:1431:0,0,35360
+LFY	686	.	G	<NON_REF>	.	.	END=696	GT:DP:GQ:MIN_DP:PL	0/0:1409:99:1387:0,120,1800
+LFY	697	.	T	G,C,<NON_REF>	4279.77	.	BaseQRankSum=0.397;DP=1311;ExcessHet=3.0103;MLEAC=1,0,0;MLEAF=0.500,0.00,0.00;MQRankSum=0.000;RAW_MQ=4719600.00;ReadPosRankSum=-0.798	GT:AD:DP:GQ:PL:SB	0/1:1125,181,4,0:1310:99:4308,0,46915,7648,40079,46655,7823,44428,47731,51203:503,622,81,104
+LFY	698	.	G	<NON_REF>	.	.	END=703	GT:DP:GQ:MIN_DP:PL	0/0:1404:99:1371:0,120,1800
+LFY	704	.	C	T,<NON_REF>	15437.77	.	BaseQRankSum=-1.668;DP=1310;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4716000.00;ReadPosRankSum=-4.307	GT:AD:DP:GQ:PL:SB	0/1:830,477,0:1307:99:15466,0,31532,18016,33002,51018:359,471,210,267
+LFY	705	.	G	A,<NON_REF>	4189.77	.	BaseQRankSum=1.759;DP=1312;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4723200.00;ReadPosRankSum=0.278	GT:AD:DP:GQ:PL:SB	0/1:1138,174,0:1312:99:4218,0,49164,7812,49727,57538:496,642,72,102
+LFY	706	.	C	<NON_REF>	.	.	END=707	GT:DP:GQ:MIN_DP:PL	0/0:1399:99:1397:0,120,1800
+LFY	708	.	A	G,<NON_REF>	8540.77	.	BaseQRankSum=-1.481;DP=1339;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4820400.00;ReadPosRankSum=-1.821	GT:AD:DP:GQ:PL:SB	0/1:854,435,0:1289:99:8569,0,25831,11169,27155,38324:364,490,189,246
+LFY	709	.	G	<NON_REF>	.	.	END=711	GT:DP:GQ:MIN_DP:PL	0/0:1449:99:1419:0,120,1800
+LFY	712	.	G	A,<NON_REF>	3857.77	.	BaseQRankSum=2.339;DP=1366;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4917600.00;ReadPosRankSum=2.486	GT:AD:DP:GQ:PL:SB	0/1:1193,173,0:1366:99:3886,0,43630,7561,44178,51739:503,690,66,107
+LFY	713	.	G	<NON_REF>	.	.	END=718	GT:DP:GQ:MIN_DP:PL	0/0:1470:99:1454:0,120,1800
+LFY	719	.	G	A,<NON_REF>	418.77	.	BaseQRankSum=2.273;DP=1407;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=5065200.00;ReadPosRankSum=1.352	GT:AD:DP:GQ:PL:SB	0/1:1300,107,0:1407:99:447,0,56023,4493,56345,60838:519,781,36,71
+LFY	720	.	A	<NON_REF>	.	.	END=726	GT:DP:GQ:MIN_DP:PL	0/0:1472:99:1447:0,120,1800
+LFY	727	.	C	T,<NON_REF>	17437.77	.	BaseQRankSum=0.052;DP=1340;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4824000.00;ReadPosRankSum=-1.633	GT:AD:DP:GQ:PL:SB	0/1:615,715,0:1330:99:17466,0,16595,19325,18742,38067:243,372,274,441
+LFY	728	.	G	<NON_REF>	.	.	END=742	GT:DP:GQ:MIN_DP:PL	0/0:1432:99:1404:0,120,1800
+LFY	743	.	T	A,<NON_REF>	4035.77	.	BaseQRankSum=2.775;DP=1312;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4723200.00;ReadPosRankSum=-0.027	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1135,171,0:1306:99:0|1:743_T_A:4064,0,46671,7515,47213,54728:436,699,57,114
+LFY	744	.	C	<NON_REF>	.	.	END=763	GT:DP:GQ:MIN_DP:PL	0/0:1323:99:1268:0,120,1800
+LFY	764	.	G	T,<NON_REF>	3205.77	.	BaseQRankSum=3.521;DP=1191;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-3.864;RAW_MQ=4286018.00;ReadPosRankSum=0.917	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1045,140,0:1185:99:0|1:743_T_A:3234,0,44583,6466,45047,51513:390,655,40,100
+LFY	765	.	G	<NON_REF>	.	.	END=765	GT:DP:GQ:MIN_DP:PL	0/0:1314:99:1314:0,120,1800
+LFY	766	.	C	A,T,<NON_REF>	15011.77	.	BaseQRankSum=1.112;DP=1203;ExcessHet=3.0103;MLEAC=1,0,0;MLEAF=0.500,0.00,0.00;MQRankSum=-1.038;RAW_MQ=4329218.00;ReadPosRankSum=-2.771	GT:AD:DP:GQ:PL:SB	0/1:416,628,143,0:1187:99:15040,0,8564,11681,5418,38794,17673,11481,32698,36740:166,250,260,511
+LFY	767	.	G	<NON_REF>	.	.	END=771	GT:DP:GQ:MIN_DP:PL	0/0:1310:99:1255:0,120,1800
+LFY	772	.	G	A,<NON_REF>	2916.77	.	BaseQRankSum=3.931;DP=1204;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=-3.864;RAW_MQ=4332818.00;ReadPosRankSum=0.681	GT:AD:DP:GQ:PGT:PID:PL:SB	0/1:1060,142,0:1202:99:0|1:743_T_A:2945,0,44372,6216,44821,51037:390,670,40,102
+LFY	773	.	G	<NON_REF>	.	.	END=781	GT:DP:GQ:MIN_DP:PL	0/0:1300:99:1244:0,120,1800
+LFY	782	.	A	C,<NON_REF>	1648.77	.	BaseQRankSum=2.015;DP=1201;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.000;RAW_MQ=4323600.00;ReadPosRankSum=1.860	GT:AD:DP:GQ:PL:SB	0/1:1068,133,0:1201:99:1677,0,43390,4962,43794,48756:402,666,41,92
+LFY	783	.	G	<NON_REF>	.	.	END=813	GT:DP:GQ:MIN_DP:PL	0/0:1171:99:1078:0,120,1800
+LFY	814	.	C	G,<NON_REF>	405.77	.	BaseQRankSum=2.468;DP=1029;ExcessHet=3.0103;MLEAC=1,0;MLEAF=0.500,0.00;MQRankSum=0.372;RAW_MQ=3703936.00;ReadPosRankSum=-2.447	GT:AD:DP:GQ:PL:SB	0/1:897,122,0:1019:99:434,0,23181,3115,23542,26658:341,556,42,80
+LFY	815	.	G	<NON_REF>	.	.	END=843	GT:DP:GQ:MIN_DP:PL	0/0:984:99:822:0,120,1800
+LFY	844	.	C	T,G,<NON_REF>	22656.77	.	BaseQRankSum=0.568;DP=761;ExcessHet=3.0103;MLEAC=1,1,0;MLEAF=0.500,0.500,0.00;MQRankSum=-0.065;RAW_MQ=2739136.00;ReadPosRankSum=0.330	GT:AD:DP:GQ:PL:SB	1/2:5,669,77,0:751:8:22684,2162,8,18285,0,17953,21737,2225,18349,21535:2,3,267,479
+LFY	845	.	G	<NON_REF>	.	.	END=860	GT:DP:GQ:MIN_DP:PL	0/0:618:99:466:0,105,1575
+LFY	861	.	T	<NON_REF>	.	.	END=861	GT:DP:GQ:MIN_DP:PL	0/0:407:57:407:0,57,855
+LFY	862	.	G	<NON_REF>	.	.	END=864	GT:DP:GQ:MIN_DP:PL	0/0:326:6:326:0,6,90
+LFY	865	.	C	<NON_REF>	.	.	END=875	GT:DP:GQ:MIN_DP:PL	0/0:36:0:2:0,0,0
