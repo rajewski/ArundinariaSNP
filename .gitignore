@@ -1,6 +1,8 @@
 *.fastq.gz
+*.bam
+*.bam.bai
+*.bai
 history/
-results/*
 *~
 .Rproj.user
 .Rhistory
