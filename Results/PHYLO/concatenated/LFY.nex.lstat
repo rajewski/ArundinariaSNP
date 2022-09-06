@@ -1,0 +1,4 @@
+run	arithmetic_mean	harmonic_mean	values_discarded
+1	-2.987504e+03	-3.056669e+03	no
+2	-2.990123e+03	-3.049611e+03	no
+all	-2.988127e+03	-3.055976e+03	no
