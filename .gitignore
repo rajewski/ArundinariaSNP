@@ -1,5 +1,6 @@
 .Rproj.user
-.Rhistory*.bai
+.Rhistory
+*.bai
 *~
 *.bam
 *.bam.bai
